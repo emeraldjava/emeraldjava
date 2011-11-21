@@ -47,7 +47,41 @@
 		<ExecutiveSummary></ExecutiveSummary>
 		<Objective>Architecting and developing data integration solutions using Xml technology.</Objective>
 		<EmploymentHistory></EmploymentHistory>
-		<EducationHistory></EducationHistory>
+		<EducationHistory>
+			<SchoolOrInstitution schoolType="university">
+				<School>
+					<SchoolName>Trinity College Dublin</SchoolName>
+				</School>
+				<Degree>
+					<DegreeName>M.Sc</DegreeName>
+					<DegreeDate>
+						<YearMonth>1999-2000</YearMonth>
+					</DegreeDate>
+					<DegreeMajor>
+						<Name>Network and Distributed Systems</Name>
+					</DegreeMajor>
+				</Degree>
+			</SchoolOrInstitution>
+			<SchoolOrInstitution schoolType="university">
+				<School>
+					<SchoolName>Trinity College Dublin</SchoolName>
+				</School>
+				<Degree>
+					<DegreeName>B.A.</DegreeName>
+					<DegreeDate>
+						<YearMonth>1995-1999</YearMonth>
+					</DegreeDate>
+					<DegreeMajor>
+						<Name>Engineering</Name>
+					</DegreeMajor>
+				</Degree>
+			</SchoolOrInstitution>
+			<SchoolOrInstitution schoolType="school">
+				<School>
+					<SchoolName>CBS Naas</SchoolName>
+				</School>
+			</SchoolOrInstitution>
+		</EducationHistory>
 		<LicensesAndCertifications></LicensesAndCertifications>
 		<Qualifications></Qualifications>
 		<Achievements></Achievements>
@@ -56,6 +90,19 @@
 		<SupportingMaterials></SupportingMaterials>
 		<Comments></Comments>
 		<RevisionDate>21-11-2011</RevisionDate>
-		<Languages></Languages>
+		<Languages>
+			<Language>
+                    <LanguageCode>EN</LanguageCode>
+                    <Read>true</Read>
+                    <Write>true</Write>
+                    <Speak>true</Speak>
+             </Language>
+             <Language>
+                    <LanguageCode>DE</LanguageCode>
+                    <Read>true</Read>
+                    <Write>false</Write>
+                    <Speak>true</Speak>
+             </Language>
+		</Languages>
 	</StructuredXMLResume>
 </Resume>
