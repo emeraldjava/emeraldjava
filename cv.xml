@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Resume xml:lang="EN" xmlns="http://ns.hr-xml.org/2007-04-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ns.hr-xml.org/2007-04-15
-Resume.xsd">
+<Resume xml:lang="EN" 
+	xmlns="http://ns.hr-xml.org/2007-04-15" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://ns.hr-xml.org/2_5/HR-XML-2_5/StandAlone/Resume.xsd">
 	<StructuredXMLResume>
+		
 		<ContactInfo>
 			<PersonName>
 				<GivenName>Paul</GivenName>
@@ -41,6 +44,18 @@ Resume.xsd">
 				</Fax> -->
 			</ContactMethod>
 		</ContactInfo>
-<!-- 		<Objective>Architecting and developing data integration solutions using Xml technology.</Objective> -->
-
+		<ExecutiveSummary></ExecutiveSummary>
+		<Objective>Architecting and developing data integration solutions using Xml technology.</Objective>
+		<EmploymentHistory></EmploymentHistory>
+		<EducationHistory></EducationHistory>
+		<LicensesAndCertifications></LicensesAndCertifications>
+		<Qualifications></Qualifications>
+		<Achievements></Achievements>
+		<Associations></Associations>
+		<ResumeAdditionalItems></ResumeAdditionalItems>
+		<SupportingMaterials></SupportingMaterials>
+		<Comments></Comments>
+		<RevisionDate>21-11-2011</RevisionDate>
+		<Languages></Languages>
+	</StructuredXMLResume>
 </Resume>
