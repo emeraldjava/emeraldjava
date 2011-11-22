@@ -156,6 +156,61 @@
 					</EndDate>
 				</PositionHistory>
 			</EmployerOrg>
+			<EmployerOrg>
+				<EmployerOrgName>UBS</EmployerOrgName>
+				<EmployerContactInfo>
+					<LocationSummary>
+						<Municipality>Zurich</Municipality>
+						<Region>Switzerland</Region>
+					</LocationSummary>
+				</EmployerContactInfo>
+				<PositionHistory>
+					<Description>
+					Curam provide a social enterprise management solution that can be customised for various social welfare organisations across the globe.
+					</Description>
+					<Title>Contract Software Engineers</Title>
+					<OrgName>
+						<OrganizationName>Unemployment Insurance</OrganizationName>
+					</OrgName>
+	<Description>
+	ZFM is a real time settlement and reconciliation system based on XML messaging over MQ. As project leader my responsibilities have included the design and implementation of an API, the planning and co-ordination of development and testing, both within our group and with other departments. The system consists of various java applications communicating via XML and MQ. A web-based tool supports tracking and supervision of messages within the system.
+	eBus provides a consolidated view of all deal confirmation messages within the FX trading platform. As project lead I was responsible for the design of a common message specification, implementation with XML/XSL over MQ, and the co-ordination of the testing and release phases.
+	</Description>
+					<StartDate>
+						<YearMonth>2003-10</YearMonth>
+					</StartDate>
+					<EndDate>
+						<YearMonth>2006-05</YearMonth>
+					</EndDate>
+				</PositionHistory>
+			</EmployerOrg>
+			<EmployerOrg>
+				<EmployerOrgName>UBS</EmployerOrgName>
+				<EmployerContactInfo>
+					<LocationSummary>
+						<Municipality>London</Municipality>
+						<Region>England</Region>
+					</LocationSummary>
+				</EmployerContactInfo>
+				<PositionHistory>
+					<Description>
+					Curam provide a social enterprise management solution that can be customised for various social welfare organisations across the globe.
+					</Description>
+					<Title>Contract Software Engineers</Title>
+					<OrgName>
+						<OrganizationName>Unemployment Insurance</OrganizationName>
+					</OrgName>
+	<Description>
+	Swix is a system for managing open trade positions within the FX branch of the bank. Lead Java developer my responsibilities included the initial XML protocol specification, implementation of a web application (Tomcat) and co-ordination of testing with other groups and business users.
+	</Description>
+					<StartDate>
+						<YearMonth>2003-01</YearMonth>
+					</StartDate>
+					<EndDate>
+						<YearMonth>2003-09</YearMonth>
+					</EndDate>
+				</PositionHistory>
+			</EmployerOrg>
 		</EmploymentHistory>
 		<EducationHistory>
 			<SchoolOrInstitution schoolType="university">
