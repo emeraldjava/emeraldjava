@@ -45,14 +45,39 @@
 				<PositionHistory>
 					<Title>Contract Software Engineers</Title>
 					<OrgName>
-						<OrganizationName>xmlHelpline.com Consulting</OrganizationName>
+						<OrganizationName>Touchpoint</OrganizationName>
 					</OrgName>
 	<Description>
-	* Touchpoint Scrum master and developer on the core product with responsibllity for the implementation of new features and bug fixes. Introduction of unit test code coverage metrics and a framework for featuring testing interfaces of the product.
+	* Scrum master and developer on the core product with responsibllity for the implementation of new features and bug fixes. Introduction of unit test code coverage metrics and a framework for featuring testing interfaces of the product.
 	</Description>
 					<StartDate>
 						<YearMonth>2001-01</YearMonth>
 					</StartDate>
+				</PositionHistory>
+			</EmployerOrg>
+			<EmployerOrg>
+				<EmployerOrgName>TerraNua</EmployerOrgName>
+				<EmployerContactInfo>
+					<LocationSummary>
+						<Municipality>Dublin</Municipality>
+						<Region>Dublin</Region>
+					</LocationSummary>
+				</EmployerContactInfo>
+				<PositionHistory>
+					<Description>Java contractor within terranua’s consultancy group focused on providing a risk control system to the Fidelity organization. Full front to back development work, using Spring (MVC) and Hibernate technologies to deploy within Tomcat/Websphere with an Oracle DB.</Description>
+					<Title>Contract Software Engineers</Title>
+					<OrgName>
+						<OrganizationName>Risk Reporting</OrganizationName>
+					</OrgName>
+	<Description>
+	* Risk Reporting Responsible for a risk reporting system which queries risk details from the DB, creating a xml report which is then transformed via XSL to html and word formats for user preview and printing.
+	</Description>
+					<StartDate>
+						<YearMonth>2008-03</YearMonth>
+					</StartDate>
+					<EndDate>
+						<YearMonth>2009-10</YearMonth>
+					</EndDate>
 				</PositionHistory>
 			</EmployerOrg>
 		</EmploymentHistory>
