@@ -56,6 +56,28 @@
 				</PositionHistory>
 			</EmployerOrg>
 			<EmployerOrg>
+				<EmployerOrgName>Aegon</EmployerOrgName>
+				<EmployerContactInfo>
+					<LocationSummary>
+						<Municipality>Dublin</Municipality>
+						<Region>Dublin</Region>
+					</LocationSummary>
+				</EmployerContactInfo>
+				<PositionHistory>
+					<Title>Contract Software Engineers</Title>
+					<Description>Java contractor within the Aegon office providing service for the UK and Dutch Aegon companies.</Description>
+					<OrgName>
+						<OrganizationName>Touchpoint</OrganizationName>
+					</OrgName>
+	<Description>
+	* Validation Service Replatforming Conversion of a legacy client side validation component onto a JBoss J2EE platform to allow support for EJB and Webservice requests. Hibernate & Spring with Wicket UI.
+	</Description>
+					<StartDate>
+						<YearMonth>2001-01</YearMonth>
+					</StartDate>
+				</PositionHistory>
+			</EmployerOrg>
+			<EmployerOrg>
 				<EmployerOrgName>TerraNua</EmployerOrgName>
 				<EmployerContactInfo>
 					<LocationSummary>
