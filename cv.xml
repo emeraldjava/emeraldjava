@@ -129,6 +129,33 @@
 					</EndDate>
 				</PositionHistory>
 			</EmployerOrg>
+			<EmployerOrg>
+				<EmployerOrgName>Curam</EmployerOrgName>
+				<EmployerContactInfo>
+					<LocationSummary>
+						<Municipality>Dublin</Municipality>
+						<Region>Dublin</Region>
+					</LocationSummary>
+				</EmployerContactInfo>
+				<PositionHistory>
+					<Description>
+					Curam provide a social enterprise management solution that can be customised for various social welfare organisations across the globe.
+					</Description>
+					<Title>Contract Software Engineers</Title>
+					<OrgName>
+						<OrganizationName>Unemployment Insurance</OrganizationName>
+					</OrgName>
+	<Description>
+	* Java developer within the workflow group, which involved the full software development lifecycle on various J2EE platforms. Implementation of a unit testing framework and tools to auto-generate unit test stubs from the project model. Maintenance of the smoke test and continuous integration systems. Curam use a model driven development process and have a custom ORM style solution for database transparency.
+	</Description>
+					<StartDate>
+						<YearMonth>2006-09</YearMonth>
+					</StartDate>
+					<EndDate>
+						<YearMonth>2007-09</YearMonth>
+					</EndDate>
+				</PositionHistory>
+			</EmployerOrg>
 		</EmploymentHistory>
 		<EducationHistory>
 			<SchoolOrInstitution schoolType="university">
