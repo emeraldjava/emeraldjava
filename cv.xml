@@ -2,6 +2,7 @@
 <Resume xml:lang="EN" xmlns="http://ns.hr-xml.org/2007-04-15"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://ns.hr-xml.org/2_5/HR-XML-2_5/StandAlone/Resume.xsd">
+
 	<StructuredXMLResume>
 
 		<ContactInfo>
@@ -32,7 +33,29 @@
 		<ExecutiveSummary></ExecutiveSummary>
 		<Objective>Architecting and developing data integration solutions
 			using Xml technology.</Objective>
-		<EmploymentHistory></EmploymentHistory>
+		<EmploymentHistory>
+			<EmployerOrg>
+				<EmployerOrgName>Arantech</EmployerOrgName>
+				<EmployerContactInfo>
+					<LocationSummary>
+						<Municipality>Blackrock</Municipality>
+						<Region>Dublin</Region>
+					</LocationSummary>
+				</EmployerContactInfo>
+				<PositionHistory>
+					<Title>Contract Software Engineers</Title>
+					<OrgName>
+						<OrganizationName>xmlHelpline.com Consulting</OrganizationName>
+					</OrgName>
+	<Description>
+	* Touchpoint Scrum master and developer on the core product with responsibllity for the implementation of new features and bug fixes. Introduction of unit test code coverage metrics and a framework for featuring testing interfaces of the product.
+	</Description>
+					<StartDate>
+						<YearMonth>2001-01</YearMonth>
+					</StartDate>
+				</PositionHistory>
+			</EmployerOrg>
+		</EmploymentHistory>
 		<EducationHistory>
 			<SchoolOrInstitution schoolType="university">
 				<School>
@@ -69,7 +92,9 @@
 			</SchoolOrInstitution>
 		</EducationHistory>
 		<LicensesAndCertifications></LicensesAndCertifications>
-		<Qualifications></Qualifications>
+		<Qualifications>
+			
+		</Qualifications>
 		<Achievements></Achievements>
 		<Associations></Associations>
 		<ResumeAdditionalItems></ResumeAdditionalItems>
