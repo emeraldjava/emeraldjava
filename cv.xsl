@@ -225,8 +225,7 @@ Web: <a class="url" href="{/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:Conta
 							</xsl:for-each>
 						</div>
 					</div>
-					<hr/>
-					<div>
+<!-- 					<div>
 						<h2>Tags</h2> (technorati)
 						<div>
 							<div class="tags">
@@ -257,7 +256,7 @@ Web: <a class="url" href="{/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:Conta
 								</ul>
 							</div>
 						</div>
-					</div>
+					</div>-->
 				</div>
 			</body>
 		</html>

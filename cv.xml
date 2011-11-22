@@ -2,9 +2,10 @@
 <Resume xml:lang="EN" xmlns="http://ns.hr-xml.org/2007-04-15"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://ns.hr-xml.org/2_5/HR-XML-2_5/StandAlone/Resume.xsd">
-
+	<!-- 
+	view-source:http://davecardwell.co.uk/cv/
+	-->
 	<StructuredXMLResume>
-
 		<ContactInfo>
 			<PersonName>
 				<GivenName>Paul</GivenName>
@@ -25,14 +26,12 @@
 				<Telephone>
 					<FormattedNumber>+353 86 3701860</FormattedNumber>
 				</Telephone>
-				<InternetEmailAddress>paul.t.oconnell@gmail.com
-				</InternetEmailAddress>
+				<InternetEmailAddress>paul.t.oconnell@gmail.com</InternetEmailAddress>
 				<!-- <Fax> <FormattedNumber>+1 919 449 8801</FormattedNumber> </Fax> -->
 			</ContactMethod>
 		</ContactInfo>
 		<ExecutiveSummary></ExecutiveSummary>
-		<Objective>Architecting and developing data integration solutions
-			using Xml technology.</Objective>
+		<Objective>Architecting and developing data integration solutions using Xml technology.</Objective>
 		<EmploymentHistory>
 			<EmployerOrg>
 				<EmployerOrgName>Arantech</EmployerOrgName>
@@ -70,7 +69,7 @@
 						<OrganizationName>Touchpoint</OrganizationName>
 					</OrgName>
 	<Description>
-	* Validation Service Replatforming Conversion of a legacy client side validation component onto a JBoss J2EE platform to allow support for EJB and Webservice requests. Hibernate & Spring with Wicket UI.
+	* Validation Service Replatforming Conversion of a legacy client side validation component onto a JBoss J2EE platform to allow support for EJB and Webservice requests. Hibernate and Spring with Wicket UI.
 	</Description>
 					<StartDate>
 						<YearMonth>2001-01</YearMonth>
@@ -211,20 +210,43 @@
 					</EndDate>
 				</PositionHistory>
 			</EmployerOrg>
+			<EmployerOrg>
+				<EmployerOrgName>Ericsson</EmployerOrgName>
+				<EmployerContactInfo>
+					<LocationSummary>
+						<Municipality>Dublin</Municipality>
+						<Region>Ireland</Region>
+					</LocationSummary>
+				</EmployerContactInfo>
+				<PositionHistory>
+					<Title>Software Engineer</Title>
+					<Description>RANOS is an operations and management system for Ericsson’s 3G telecommunications radio network system.</Description>
+					<OrgName>
+						<OrganizationName>RANOS</OrganizationName>
+					</OrgName>
+	<Description>
+	* Member of a framework group, which provided generic server side Java/CORBA components
+	</Description>
+					<StartDate>
+						<YearMonth>2000-10</YearMonth>
+					</StartDate>
+					<EndDate>
+						<YearMonth>2002-12</YearMonth>
+					</EndDate>
+				</PositionHistory>
+			</EmployerOrg>
 		</EmploymentHistory>
 		<EducationHistory>
 			<SchoolOrInstitution schoolType="university">
+				
 				<School>
 					<SchoolName>Trinity College Dublin</SchoolName>
 				</School>
 				<Degree>
-					<DegreeName>M.Sc</DegreeName>
+					<DegreeName>M.Sc Network and Distributed Systems</DegreeName>
 					<DegreeDate>
-						<YearMonth>1999-2000</YearMonth>
+						<YearMonth>200009</YearMonth>
 					</DegreeDate>
-					<DegreeMajor>
-						<Name>Network and Distributed Systems</Name>
-					</DegreeMajor>
 				</Degree>
 			</SchoolOrInstitution>
 			<SchoolOrInstitution schoolType="university">
@@ -234,7 +256,7 @@
 				<Degree>
 					<DegreeName>B.A.</DegreeName>
 					<DegreeDate>
-						<YearMonth>1995-1999</YearMonth>
+						<YearMonth>199905</YearMonth>
 					</DegreeDate>
 					<DegreeMajor>
 						<Name>Engineering</Name>
