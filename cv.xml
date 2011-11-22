@@ -102,6 +102,33 @@
 					</EndDate>
 				</PositionHistory>
 			</EmployerOrg>
+			<EmployerOrg>
+				<EmployerOrgName>Norkom</EmployerOrgName>
+				<EmployerContactInfo>
+					<LocationSummary>
+						<Municipality>Dublin</Municipality>
+						<Region>Dublin</Region>
+					</LocationSummary>
+				</EmployerContactInfo>
+				<PositionHistory>
+					<Description>
+					Java contractor within Norkom’s development group, using the Spring, Struts and Hibernate technologies to create a financial crime and compliance application that can be deployed into various J2EE server and database environments.
+					</Description>
+					<Title>Contract Software Engineers</Title>
+					<OrgName>
+						<OrganizationName>Watch List Management</OrganizationName>
+					</OrgName>
+	<Description>
+	* Day to day work involves bug fixing and small pieces of new development on various branches of this sub-project.
+	</Description>
+					<StartDate>
+						<YearMonth>2007-10</YearMonth>
+					</StartDate>
+					<EndDate>
+						<YearMonth>2008-02</YearMonth>
+					</EndDate>
+				</PositionHistory>
+			</EmployerOrg>
 		</EmploymentHistory>
 		<EducationHistory>
 			<SchoolOrInstitution schoolType="university">
