@@ -1,51 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Resume xml:lang="EN" 
-	xmlns="http://ns.hr-xml.org/2007-04-15" 
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+<Resume xml:lang="EN" xmlns="http://ns.hr-xml.org/2007-04-15"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://ns.hr-xml.org/2_5/HR-XML-2_5/StandAlone/Resume.xsd">
 	<StructuredXMLResume>
-		
+
 		<ContactInfo>
 			<PersonName>
 				<GivenName>Paul</GivenName>
 				<!-- <MiddleName>Thomas</MiddleName> -->
 				<FamilyName>O'Connell</FamilyName>
 			</PersonName>
-<!-- 			<ContactMethod>
-				<Use>business</Use>
-				<Location>office</Location>
-				<Telephone>
-					<FormattedNumber>+353 86 3701860</FormattedNumber>
-				</Telephone>
-				<Fax>
-					<FormattedNumber>+1 919 449 8801</FormattedNumber>
-				</Fax>
-				<InternetEmailAddress>paul.t.oconnell@gmail.com</InternetEmailAddress>
-				<InternetWebAddress>http://www.xmlhelpline.com</InternetWebAddress>
-				<PostalAddress type="streetAddress">
-					<CountryCode>US</CountryCode>
-					<PostalCode>27612</PostalCode>
-					<Region>NC</Region>
-					<Municipality>Raleigh</Municipality>
-					<DeliveryAddress>
-						<AddressLine>5916 Valley Estates Drive</AddressLine>
-					</DeliveryAddress>
-				</PostalAddress>
-			</ContactMethod> -->
+			<!-- <ContactMethod> <Use>business</Use> <Location>office</Location> <Telephone> 
+				<FormattedNumber>+353 86 3701860</FormattedNumber> </Telephone> <Fax> <FormattedNumber>+1 
+				919 449 8801</FormattedNumber> </Fax> <InternetEmailAddress>paul.t.oconnell@gmail.com</InternetEmailAddress> 
+				<InternetWebAddress>http://www.xmlhelpline.com</InternetWebAddress> <PostalAddress 
+				type="streetAddress"> <CountryCode>US</CountryCode> <PostalCode>27612</PostalCode> 
+				<Region>NC</Region> <Municipality>Raleigh</Municipality> <DeliveryAddress> 
+				<AddressLine>5916 Valley Estates Drive</AddressLine> </DeliveryAddress> </PostalAddress> 
+				</ContactMethod> -->
 			<ContactMethod>
 				<Use>business</Use>
 				<Location>x:cell</Location>
 				<Telephone>
 					<FormattedNumber>+353 86 3701860</FormattedNumber>
 				</Telephone>
-				<InternetEmailAddress>paul.t.oconnell@gmail.com</InternetEmailAddress>
-				<!-- <Fax>
-					<FormattedNumber>+1 919 449 8801</FormattedNumber>
-				</Fax> -->
+				<InternetEmailAddress>paul.t.oconnell@gmail.com
+				</InternetEmailAddress>
+				<!-- <Fax> <FormattedNumber>+1 919 449 8801</FormattedNumber> </Fax> -->
 			</ContactMethod>
 		</ContactInfo>
 		<ExecutiveSummary></ExecutiveSummary>
-		<Objective>Architecting and developing data integration solutions using Xml technology.</Objective>
+		<Objective>Architecting and developing data integration solutions
+			using Xml technology.</Objective>
 		<EmploymentHistory></EmploymentHistory>
 		<EducationHistory>
 			<SchoolOrInstitution schoolType="university">
@@ -92,17 +78,17 @@
 		<RevisionDate>21-11-2011</RevisionDate>
 		<Languages>
 			<Language>
-                    <LanguageCode>EN</LanguageCode>
-                    <Read>true</Read>
-                    <Write>true</Write>
-                    <Speak>true</Speak>
-             </Language>
-             <Language>
-                    <LanguageCode>DE</LanguageCode>
-                    <Read>true</Read>
-                    <Write>false</Write>
-                    <Speak>true</Speak>
-             </Language>
+				<LanguageCode>EN</LanguageCode>
+				<Read>true</Read>
+				<Write>true</Write>
+				<Speak>true</Speak>
+			</Language>
+			<Language>
+				<LanguageCode>DE</LanguageCode>
+				<Read>true</Read>
+				<Write>false</Write>
+				<Speak>true</Speak>
+			</Language>
 		</Languages>
 	</StructuredXMLResume>
 </Resume>
