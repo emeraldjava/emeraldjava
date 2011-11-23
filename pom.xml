@@ -1,0 +1,107 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>emeraldjava</groupId>
+  <artifactId>emeraldjava</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  
+  <build>
+  	<plugins>
+  		<plugin>
+  		<groupId>ch.becompany</groupId>
+      <artifactId>fop-maven-plugin</artifactId>
+      <version>1.0-SNAPSHOT</version>
+      <configuration>
+        <inputFiles>
+          <basedir>src/main/xml</basedir>
+        </inputFiles>
+        <xslFile>src/main/xsl-fo/foobar.xsl</xslFile>
+      </configuration>
+  		</plugin>
+
+  	
+  	<!-- http://www.vineetmanohar.com/2009/11/3-ways-to-run-java-main-from-maven/ -->
+  	<plugin>
+   <groupId>org.codehaus.mojo</groupId>
+   <artifactId>exec-maven-plugin</artifactId>
+   <version>1.2.1</version>
+   <!--
+   <executions>
+    <execution>
+	 <phase>test</phase>
+     <goals>
+      <goal>java</goal>
+     </goals>
+
+    </execution>
+   </executions>-->
+   
+        <configuration>
+    	<executable>java</executable>
+    	<arguments>
+            <argument>-Xms512m</argument>
+            <argument>-Xmx512m</argument>
+            <argument>-XX:NewRatio=3</argument>
+            <argument>-XX:+PrintGCTimeStamps</argument>
+            <argument>-XX:+PrintGCDetails</argument>
+            <argument>-Xloggc:gc.log</argument>
+            <argument>-classpath</argument>
+            <classpath/>
+            <argument>org.apache.fop.cli.Main</argument>
+            <argument>-out list</argument>
+          </arguments>
+ <!--     	<mainClass>org.apache.fop.cli.Main</mainClass>-->
+
+      <!-- <arguments>
+       <argument>arg0</argument>
+       <argument>arg1</argument>
+      </arguments>-->
+     </configuration>
+  </plugin>
+  	
+  	<!-- 
+  	<plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>xml-maven-plugin</artifactId>
+        <executions>
+          <execution>
+            <goals>
+              <goal>transform</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <transformationSets>
+            <transformationSet>
+              <dir>src/main/xml</dir>
+              <stylesheet>src/main/stylesheet.xsl</stylesheet>
+              <outputProperties>
+                <outputProperty>
+                  <name>omit-xml-declaration</name>
+                  <value>yes</value>
+                </outputProperty>
+              </outputProperties>
+            </transformationSet>
+          </transformationSets>
+           <transformationSets>
+            <transformationSet>
+              <dir>xml</dir>
+              <stylesheet>it4.xsl</stylesheet>
+            </transformationSet>
+          </transformationSets>
+        </configuration>
+        </configuration>
+      </plugin>-->
+  	
+  	  	</plugins>
+  </build>
+  
+  <dependencies>
+  	<dependency>
+    <groupId>org.apache.xmlgraphics</groupId>
+    <artifactId>fop</artifactId>
+    <version>1.0</version>
+</dependency>
+  
+  </dependencies>
+</project>

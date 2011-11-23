@@ -1,0 +1,8 @@
+
+Install the fop maven plugin
+
+	svn checkout http://fop-maven-plugin.googlecode.com/svn/trunk/ fop-maven-plugin-read-only
+	
+	
+
+	mvn ch.becompany:fop-maven-plugin:1.0-SNAPSHOT:fop
