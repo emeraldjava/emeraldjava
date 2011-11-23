@@ -48,14 +48,13 @@
             <argument>-classpath</argument>
             <classpath/>
             <argument>org.apache.fop.cli.Main</argument>
-            <argument>-out list</argument>
+            <argument> -xml ./src/main/xml/cv.xml -xsl ./src/main/xsl/format/fo.xsl -pdf ./target/cv.pdf</argument>
+            <!-- fop -xml foo.xml -xsl foo.xsl -pdf foo.pdf -->
+            <!-- 
+            <argument>-xml ./src/main/xml/cv.xml</argument>
+            <argument>-xsl ./src/main/xsl/format/fo.xsl</argument>
+            <argument>-pdf ./target/cv.pdf</argument>-->
           </arguments>
- <!--     	<mainClass>org.apache.fop.cli.Main</mainClass>-->
-
-      <!-- <arguments>
-       <argument>arg0</argument>
-       <argument>arg1</argument>
-      </arguments>-->
      </configuration>
   </plugin>
   	
