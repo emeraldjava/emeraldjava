@@ -38,14 +38,7 @@
 					<OrgName>
 						<OrganizationName />
 					</OrgName>
-					<Description>
-					Scrum master and developer on the core product with
-					responsibllity
-					for the implementation of new features and bug fixes.
-					Introduction
-					of unit test code coverage metrics and a framework for
-					featuring
-					testing interfaces of the product.</Description>
+					<Description>Scrum master and developer on the core product with responsibllity for the implementation of new features and bug fixes. Introduction of unit test code coverage metrics and a framework for featuring testing interfaces of the product.</Description>
 					<StartDate>
 						<YearMonth>2010-01</YearMonth>
 					</StartDate>
@@ -56,12 +49,10 @@
 				<EmployerContactInfo />
 				<PositionHistory>
 					<Title>Contract Software Engineer</Title>
-					<!-- HR-XML OrgName required but not supported (no equivalent for it 
-						in XML Resume). -->
 					<OrgName>
 						<OrganizationName />
 					</OrgName>
-					<Description>Analyzed bedpan cleanliness strategies for royal family. Learned how to make soufflés.</Description>
+					<Description>Validation Service Replatforming Conversion of a legacy client side validation component onto a JBoss J2EE platform to allow support for EJB and Webservice requests. Hibernate & Spring with Wicket UI.</Description>
 					<StartDate>
 						<YearMonth>2008-08</YearMonth>
 					</StartDate>
@@ -70,6 +61,116 @@
 					</EndDate>
 				</PositionHistory>
 			</EmployerOrg>
+			<EmployerOrg>
+				<EmployerOrgName>Terranua</EmployerOrgName>
+				<EmployerContactInfo />
+				<PositionHistory>
+					<Title>Contract Software Engineer</Title>
+					<OrgName>
+						<OrganizationName />
+					</OrgName>
+					<Description>Risk Reporting Responsible for a risk reporting system which queries risk details from the DB, creating a xml report which is then transformed via XSL to html and word formats for user preview and printing.</Description>
+					<StartDate>
+						<YearMonth>2008-08</YearMonth>
+					</StartDate>
+					<EndDate>
+						<YearMonth>2009-09</YearMonth>
+					</EndDate>
+				</PositionHistory>
+			</EmployerOrg>
+			<EmployerOrg>
+				<EmployerOrgName>Norkom</EmployerOrgName>
+				<EmployerContactInfo />
+				<PositionHistory>
+					<Title>Contract Software Engineer</Title>
+					<OrgName>
+						<OrganizationName />
+					</OrgName>
+					<Description>Watch List Management Day to day work involves bug fixing and small pieces of new development on various branches of this sub-project.</Description>
+					<StartDate>
+						<YearMonth>2008-08</YearMonth>
+					</StartDate>
+					<EndDate>
+						<YearMonth>2009-09</YearMonth>
+					</EndDate>
+				</PositionHistory>
+			</EmployerOrg>
+			<EmployerOrg>
+				<EmployerOrgName>Norkom</EmployerOrgName>
+				<EmployerContactInfo />
+				<PositionHistory>
+					<Title>Contract Software Engineer</Title>
+					<OrgName>
+						<OrganizationName />
+					</OrgName>
+					<Description>Unemployment Insurance Java developer within the workflow group, which involved the full software development lifecycle on various J2EE platforms. Implementation of a unit testing framework and tools to auto-generate unit test stubs from the project model. Maintenance of the smoke test and continuous integration systems. Curam use a model driven development process and have a custom ORM style solution for database transparency</Description>
+					<StartDate>
+						<YearMonth>2008-08</YearMonth>
+					</StartDate>
+					<EndDate>
+						<YearMonth>2009-09</YearMonth>
+					</EndDate>
+				</PositionHistory>
+			</EmployerOrg>
+			<EmployerOrg>
+				<EmployerOrgName>Curam</EmployerOrgName>
+				<EmployerContactInfo />
+				<PositionHistory>
+					<Title>Contract Software Engineer</Title>
+					<OrgName>
+						<OrganizationName />
+					</OrgName>
+					<Description>Unemployment Insurance Java developer within the workflow group, which involved the full software development lifecycle on various J2EE platforms. Implementation of a unit testing framework and tools to auto-generate unit test stubs from the project model. Maintenance of the smoke test and continuous integration systems. Curam use a model driven development process and have a custom ORM style solution for database transparency</Description>
+					<StartDate>
+						<YearMonth>2008-08</YearMonth>
+					</StartDate>
+					<EndDate>
+						<YearMonth>2009-09</YearMonth>
+					</EndDate>
+				</PositionHistory>
+			</EmployerOrg>
+			<EmployerOrg>
+				<EmployerOrgName>UBS</EmployerOrgName>
+				<EmployerContactInfo />
+				<PositionHistory>
+					<Title>Contract Software Engineer</Title>
+					<OrgName>
+						<OrganizationName />
+					</OrgName>
+					<Description>
+					ZFM is a real time settlement and reconciliation system based on XML messaging over MQ. As project leader my responsibilities have included the design and implementation of an API, the planning and co-ordination of development and testing, both within our group and with other departments. The system consists of various java applications communicating via XML and MQ. A web-based tool supports tracking and supervision of messages within the system.
+eBus provides a consolidated view of all deal confirmation messages within the FX trading platform. As project lead I was responsible for the design of a common message specification, implementation with XML/XSL over MQ, and the co-ordination of the testing and release phases.
+Swix is a system for managing open trade positions within the FX branch of the bank. Lead Java developer my responsibilities included the initial XML protocol specification, implementation of a web application (Tomcat) and co-ordination of testing with other groups and business users.
+</Description>
+
+					<StartDate>
+						<YearMonth>2008-08</YearMonth>
+					</StartDate>
+					<EndDate>
+						<YearMonth>2009-09</YearMonth>
+					</EndDate>
+				</PositionHistory>
+			</EmployerOrg>
+			<EmployerOrg>
+				<EmployerOrgName>Erisson</EmployerOrgName>
+				<EmployerContactInfo />
+				<PositionHistory>
+					<Title>Contract Software Engineer</Title>
+					<OrgName>
+						<OrganizationName />
+					</OrgName>
+					<Description>RANOS is an operations and management system for Ericsson’s 3G telecommunications radio network system. Member of a framework group, which provided generic server side Java/CORBA components</Description>
+					<StartDate>
+						<YearMonth>2008-08</YearMonth>
+					</StartDate>
+					<EndDate>
+						<YearMonth>2009-09</YearMonth>
+					</EndDate>
+				</PositionHistory>
+			</EmployerOrg>
+			
+			
+			
 		</EmploymentHistory>
 		<EducationHistory>
 			<!-- All degrees assumed to be university-level. -->
