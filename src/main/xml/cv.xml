@@ -94,11 +94,39 @@
 		</EducationHistory>
 		<Qualifications>
 			<!-- Skill area title not supported (unless no skill set title is given). -->
-			<Competency name="Special Skills">
-				<Competency
-					name="Speak multiple European languages with no discernable accent" />
-				<Competency name="Able to predict earthquakes" />
+			<Competency name="Java">
+				<Competency	name="Spring, Hibernate/JPA/SQL, J2EE/EJB, JMS Messaging, Concurrency. Grails Framework. General interest in new open source technologies, test driven design and agile / continuous integration processes." />
+				<Competency name="Sun Certified Java Developer" />
 			</Competency>
+			<Competency name="Dist">
+				<Competency name="ANT Expert. Bamboo. Sonar. Clover. Eclemma. PMD"></Competency>
+			</Competency>
+			<Competency name="Dist">
+				<Competency name="Expert knowledge of XML messaging for modeling various business process flows. RMI, CORBA, SOAP, Web Services. Web"></Competency>
+			</Competency>
+			<Competency name="Web">
+				<Competency name="Expert knowledge of Wicket, Servlets, JSP, Struts, Spring MVC, JSF. HTML, Javascript, AJAX, CSS and DOM. Detailed knowledge of Tomcat and Apache servers. Jetty. PHP. Zend Framework. YAML. GWTXML	"></Competency>
+			</Competency>
+
+			<Competency name="XML">
+				<Competency name="Extensive use of DOM and SAX parsers,XSL,FOP,JAXB.D"></Competency>
+			</Competency>
+			<Competency name="SCM">
+				<Competency name="SCM Tools	Expert knowledge of SCM systems (SVN/Git/ClearCase). Eclipse, Intellij, Netbeans."></Competency>
+			</Competency>
+			<Competency name="J2EE Servers">
+				<Competency name="Websphere, Weblogic, JBoss, Glassfish, Geronimo"></Competency>
+			</Competency>
+			<Competency name="Databases">
+				<Competency name="	Oracle, Db2, MySQL, H2."></Competency>
+			</Competency>
+			<Competency name="Testing">
+				<Competency name="Junit, TestNG, DBUnit, Selenium"></Competency>
+			</Competency>
+			<Competency name="Build Tools">
+				<Competency name="ANT Expert. Bamboo. Sonar. Clover. Eclemma. PMD"></Competency>
+			</Competency>
+			
 		</Qualifications>
 		<!-- Copyright not supported. -->
 		<RevisionDate>2012-05-01</RevisionDate>
