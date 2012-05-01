@@ -6,7 +6,6 @@
 			<PersonName>
 				<GivenName>Paul</GivenName>
 				<FamilyName>O'Connell</FamilyName>
-				
 			</PersonName>
 			
 			<ContactMethod>
@@ -79,16 +78,25 @@
 					<SchoolName>Trinity College Dublin</SchoolName>
 				</School>
 				<Degree>
-					<DegreeName></DegreeName>
-					<DegreeMajor>
-						<Name>M.Sc Network and Distributed Systems</Name>
-					</DegreeMajor>
+					<DegreeName>M.Sc Network and Distributed Systems</DegreeName>
 					<DatesOfAttendance>
-						<StartDate>
-							<YearMonth>1631-02</YearMonth>
-						</StartDate>
+						<StartDate><YearMonth>1999-10</YearMonth></StartDate>
+						<EndDate><YearMonth>2000-10</YearMonth></EndDate>
 					</DatesOfAttendance>
-					<Comments>Graduated with lowest honors.</Comments>
+					<Comments>Dissertation Title: Collaborative Ad-hoc Applications. An investigation into the use of trust based security in ad-hoc JINI systems.</Comments>
+				</Degree>
+			</SchoolOrInstitution>
+			<SchoolOrInstitution schoolType="university">
+				<School>
+					<SchoolName>Trinity College Dublin</SchoolName>
+				</School>
+				<Degree>
+					<DegreeName>B.A.I in Computer and Electronic Engineering, B.A in Engineering Mathematics</DegreeName>
+					<DatesOfAttendance>
+						<StartDate><YearMonth>1995-09</YearMonth></StartDate>
+						<EndDate><YearMonth>1999-06</YearMonth></EndDate>
+					</DatesOfAttendance>
+					<Comments>Final Year Project Title: Digital Filtering System for Internet Telephony.</Comments>
 				</Degree>
 			</SchoolOrInstitution>
 		</EducationHistory>
