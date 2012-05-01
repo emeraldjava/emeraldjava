@@ -1,393 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE resume PUBLIC "-//Paul//DTD Resume 1.5.1//EN" "http://xmlresume.sourceforge.net/dtd/resume.dtd">
-<!-- view-source:http://davecardwell.co.uk/cv/ -->
-<resume>
-	<header>
-		<name>
-			<firstname>Paul</firstname>
-			<surname>O'Connell</surname>
-			<title>Mr</title>
-		</name>
-		<birth>
-			<date>
-				<dayOfMonth>18</dayOfMonth>
-				<month>11</month>
-				<year>1977</year>
-			</date>
-		</birth>
-		<contact>
-			<email>paul.t.oconnell@gmail.com</email>
-			<phone>+353 86 3701860</phone>
-		</contact>
-	</header>
-
-	<objective>
-		<para>Java developer with focus for Spring/EJB, test driven
-			development and CI processes.
-		</para>
-	</objective>
-	<history>
-		<job>
-			<employer>Arantech</employer>
-			<location>Blackrock, Dublin</location>
-			<jobtitle>Java Software Engineer</jobtitle>
-			<description>
-				<para>* Scrum master and developer on the core product with
+<Resume xmlns="http://ns.hr-xml.org/2007-04-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://ns.hr-xml.org/2007-04-15 http://ns.hr-xml.org/2_5/HR-XML-2_5/SEP/Candidate.xsd">
+	<StructuredXMLResume>
+		<ContactInfo>
+			<PersonName>
+				<GivenName>Paul</GivenName>
+				<FamilyName>O'Connell</FamilyName>
+				
+			</PersonName>
+			
+			<ContactMethod>
+				<!-- Phone location not supported. -->
+				<Telephone>
+					<FormattedNumber>+353 86 3701806</FormattedNumber>
+				</Telephone>
+				<InternetEmailAddress>paul.t.oconnell@gmail.com</InternetEmailAddress>
+				<!-- <InternetWebAddress>http://doe.com/~doe/</InternetWebAddress> -->
+				<PostalAddress>
+					<!-- Country not found; assumed to be US. -->
+					<CountryCode>Ireland</CountryCode>
+					<Region>Dublin 14</Region>
+					<Municipality>Churchtown</Municipality>
+					<DeliveryAddress>
+						<AddressLine>2B Milltown Drive</AddressLine>
+					</DeliveryAddress>
+				</PostalAddress>
+			</ContactMethod>
+		</ContactInfo>
+		<Objective>Java developer with focus for Spring/EJB, test driven development and CI processes.</Objective>
+		<EmploymentHistory>
+			<EmployerOrg>
+				<EmployerOrgName>Arantech</EmployerOrgName>
+				<EmployerContactInfo />
+				<PositionHistory>
+					<Title>Java Software Engineer</Title>
+					<!-- HR-XML OrgName required but not supported (no equivalent for it 
+						in XML Resume). -->
+					<OrgName>
+						<OrganizationName />
+					</OrgName>
+					<Description>
+					Scrum master and developer on the core product with
 					responsibllity
 					for the implementation of new features and bug fixes.
 					Introduction
 					of unit test code coverage metrics and a framework for
 					featuring
-					testing interfaces of the product.
-				</para>
-			</description>
-			<period>
-				<from>
-					<date>
-						<month>01</month>
-						<year>2010</year>
-					</date>
-				</from>
-				<to>
-					<present />
-				</to>
-			</period>
-		</job>
-		<job>
-			<employer>Aegon</employer>
-			<location>
-				Dublin
-			</location>
-			<title>Contract Software Engineer</title>
-			<description>
-				Java contractor within the Aegon office providing service for the UK
-				and Dutch Aegon companies.
-			</description>
-			<projects>
-				<project>Validation Service Replatforming Conversion of a legacy
-					client
-					side validation component onto a JBoss J2EE platform to allow
-					support for EJB and Webservice requests. Hibernate and Spring with
-					Wicket UI
-				</project>
-			</projects>
-			<period>
-				<from>
-					<date>
-						<year>2008</year>
-						<month>10</month>
-					</date>
-				</from>
-				<to>
-					<date>
-						<year>2009</year>
-						<month>09</month>
-					</date>
-				</to>
-			</period>
-		</job>
-		<job>
-			<employer>TerraNua</employer>
-			<location>
-				Dublin
-			</location>
-			<description>
-				<para>Java contractor within terranua’s consultancy group
-					focused on
-					providing a risk control system to the Fidelity
-					organization. Full
-					front to back development work, using Spring
-					(MVC) and Hibernate
-					technologies to deploy within Tomcat/Websphere
-					with an Oracle DB.
-				</para>
-			</description>
-			<title>Contract Software Engineer</title>
-			<projects>
-				<project>Risk Reporting Responsible for a risk reporting
-					system which
-					queries risk details from the DB, creating a xml report
-					which is
-					then transformed via XSL to html and word formats for user
-					preview
-					and printing.
-				</project>
-			</projects>
-			<period>
-				<from>
-					<date>
-						<year>2008</year>
-						<month>03</month>
-					</date>
-				</from>
-				<to>
-					<date>
-						<year>2009</year>
-						<month>10</month>
-					</date>
-				</to>
-			</period>
-		</job>
-		<job>
-			<employer>Norkom</employer>
-			<description>
-				<para>
-					Java contractor within Norkom’s development group,
-					using the
-					Spring, Struts and Hibernate technologies to create a
-					financial
-					crime and compliance application that can be deployed
-					into various
-					J2EE server and database environments.
-				</para>
-			</description>
-			<title>Contract Software Engineert</title>
-			<projects>
-				<project>Watch List Management Day to day work involves bug fixing
-					and small pieces
-					of new
-					development on various branches of this
-					sub-project.
-				</project>
-			</projects>
-			<period>
-				<from>
-					<date>
-						<year>2007</year>
-						<month>10</month>
-					</date>
-				</from>
-				<to>
-					<date>
-						<year>2008</year>
-						<month>02</month>
-					</date>
-				</to>
-			</period>
-		</job>
-		<job>
-			<employer>Curam</employer>
-			<description>
-				<para>
-					Curam provide a social enterprise management solution
-					that can
-					be customised for various social welfare organisations
-					across the
-					globe.
-				</para>
-			</description>
-			<title>Contract Software Engineers</title>
-			<projects>
-				<project>Java developer within the workflow group, which
-					involved the
-					full
-					software development lifecycle on various J2EE
-					platforms.
-					Implementation of a unit testing framework and tools to
-					auto-generate unit test stubs from the project model. Maintenance
-					of the smoke test and continuous integration systems. Curam use a
-					model driven development process and have a custom ORM style
-					solution for database transparency.
-				</project>
-			</projects>
-			<period>
-				<from>
-					<date>
-						<year>2006</year>
-						<month>09</month>
-					</date>
-				</from>
-				<to>
-					<date>
-						<year>2007</year>
-						<month>09</month>
-					</date>
-				</to>
-			</period>
-		</job>
-		<job>
-			<employer>UBS</employer>
-			<location>
-				Zurich, Switzerland
-			</location>
-			<description>
-				<para>
-					Curam provide a social enterprise management solution
-					that can
-					be customised for various social welfare organisations
-					across the
-					globe.
-				</para>
-			</description>
-			<title>Contract Software Engineer</title>
-			<projects>
-				<project>ZFM is a real time settlement and reconciliation system
-					based on XML
-					messaging over MQ. As project leader my
-					responsibilities have
-					included the design and implementation of an
-					API, the planning and
-					co-ordination of development and testing, both
-					within our group and
-					with other departments. The system consists of
-					various java
-					applications communicating via XML and MQ. A web-based
-					tool
-					supports tracking and supervision of messages within the
-					system.
-				</project>
-				<project>eBus provides a consolidated view of all deal confirmation
-					messages
-					within the FX trading platform. As project lead I was
-					responsible
-					for the design of a common message specification,
-					implementation
-					with XML/XSL over MQ, and the co-ordination of the
-					testing and
-					release phases.
-				</project>
-			</projects>
-			<period>
-				<from>
-					<date>
-						<year>2003</year>
-						<month>10</month>
-					</date>
-				</from>
-				<to>
-					<date>
-						<year>2006</year>
-						<month>05</month>
-					</date>
-				</to>
-			</period>
-		</job>
-		<job>
-			<employer>UBS</employer>
-			<location>
-				London England
-			</location>
-			<projects>
-				<project>Swix is a system for managing open trade positions
-					within
-					the FX branch
-					of the bank. Lead Java developer my
-					responsibilities
-					included the
-					initial XML protocol specification,
-					implementation of a
-					web
-					application (Tomcat) and co-ordination of
-					testing with other
-					groups
-					and business users.
-				</project>
-			</projects>
-			<period>
-				<from>
-					<date>
-						<year>2003</year>
-						<month>01</month>
-					</date>
-				</from>
-				<to>
-					<date>
-						<year>2003</year>
-						<month>09</month>
-					</date>
-				</to>
-			</period>
-		</job>
-		<job>
-			<employer>Ericsson</employer>
-			<title>Software Engineer</title>
-			<description>
-				<para>RANOS is an operations and management system for
-					Ericsson’s 3G
-					telecommunications radio network system.
-				</para>
-			</description>
-			<projects>
-				<project>Member of a framework group, which provided generic
-					server
-					side
-					Java/CORBA components
-				</project>
-			</projects>
-			<period>
-				<from>
-					<date>
-						<year>2000</year>
-						<month>10</month>
-					</date>
-				</from>
-				<to>
-					<date>
-						<year>2002</year>
-						<month>12</month>
-					</date>
-				</to>
-			</period>
-		</job>
-	</history>
-	<academics>
-		<degrees>
-			<degree>
-				<location>
-					Trinity College Dublin
-				</location>
-				<level>M.Sc Network and Distributed Systems</level>
-				<projects>
-					<project>
-						Dissertation Title : Collaborative Ad-hoc Applications. An
-						investigation into the use of trust based security in an ad-hoc
-						JINI system.
-					</project>
-				</projects>
-				<period>
-					<from>
-						<date>
-							<year>1999</year>
-							<month>09</month>
-						</date>
-					</from>
-					<to>
-						<date>
-							<year>2000</year>
-							<month>09</month>
-						</date>
-					</to>
-				</period>
-			</degree>
-			<degree>
-				<location>
-					Trinity College Dublin
-				</location>
-				<level>Electronic and Computer Engineering</level>
-				<projects>
-					<project>
-						Final Year Project : Digitial Filtering System for
-						Internet Telephony.
-					</project>
-				</projects>
-				<period>
-					<from>
-						<date>
-							<year>1999</year>
-							<month>09</month>
-						</date>
-					</from>
-					<to>
-						<date>
-							<year>2000</year>
-							<month>09</month>
-						</date>
-					</to>
-				</period>
-			</degree>
-		</degrees>
-	</academics>
-	<lastModified>
-		22-12-2011
-	</lastModified>
-</resume>
+					testing interfaces of the product.</Description>
+					<StartDate>
+						<YearMonth>2010-01</YearMonth>
+					</StartDate>
+				</PositionHistory>
+			</EmployerOrg>
+			<EmployerOrg>
+				<EmployerOrgName>Aegon</EmployerOrgName>
+				<EmployerContactInfo />
+				<PositionHistory>
+					<Title>Contract Software Engineer</Title>
+					<!-- HR-XML OrgName required but not supported (no equivalent for it 
+						in XML Resume). -->
+					<OrgName>
+						<OrganizationName />
+					</OrgName>
+					<Description>Analyzed bedpan cleanliness strategies for royal family. Learned how to make soufflés.</Description>
+					<StartDate>
+						<YearMonth>2008-08</YearMonth>
+					</StartDate>
+					<EndDate>
+						<YearMonth>2009-09</YearMonth>
+					</EndDate>
+				</PositionHistory>
+			</EmployerOrg>
+		</EmploymentHistory>
+		<EducationHistory>
+			<!-- All degrees assumed to be university-level. -->
+			<SchoolOrInstitution schoolType="university">
+				<School>
+					<SchoolName>Trinity College Dublin</SchoolName>
+				</School>
+				<Degree>
+					<DegreeName></DegreeName>
+					<DegreeMajor>
+						<Name>M.Sc Network and Distributed Systems</Name>
+					</DegreeMajor>
+					<DatesOfAttendance>
+						<StartDate>
+							<YearMonth>1631-02</YearMonth>
+						</StartDate>
+					</DatesOfAttendance>
+					<Comments>Graduated with lowest honors.</Comments>
+				</Degree>
+			</SchoolOrInstitution>
+		</EducationHistory>
+		<Qualifications>
+			<!-- Skill area title not supported (unless no skill set title is given). -->
+			<Competency name="Special Skills">
+				<Competency
+					name="Speak multiple European languages with no discernable accent" />
+				<Competency name="Able to predict earthquakes" />
+			</Competency>
+		</Qualifications>
+		<!-- Copyright not supported. -->
+		<RevisionDate>2012-05-01</RevisionDate>
+	</StructuredXMLResume>
+</Resume>
