@@ -11,9 +11,14 @@ To handle the transformation of the xml to output formats I am using
 
      http://code.google.com/p/docbkx-tools/
 
-docbkx:generate-pdf
+Maven commands
 
-http://lab.madgex.com/hresume/
+     mvn xml:transform
+     mvn docbkx:generate-pdf
+
+Resources     
+     
+     http://lab.madgex.com/hresume/
      
      http://gergo.erdi.hu/projects/cv-xsl/
          

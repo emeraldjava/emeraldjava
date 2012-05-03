@@ -1,56 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Candidate xmlns="http://ns.hr-xml.org/2007-04-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://ns.hr-xml.org/2007-04-15 http://ns.hr-xml.org/2_5/HR-XML-2_5/SEP/Candidate.xsd">
-	<CandidateProfile>
-		<ProfileName>Automatically generated Europass CV and xslt from EuroCv</ProfileName>
-		<PersonalData>
-			<PersonDescriptors>
-				<DemographicDescriptors>
-					<Nationality>Irish</Nationality>
-					<PrimaryLanguage>English</PrimaryLanguage>
-				</DemographicDescriptors>
-				<BiologicalDescriptors>
-					<DateOfBirth>1977-11-18</DateOfBirth>
-					<GenderCode>0</GenderCode>
-				</BiologicalDescriptors>
-			</PersonDescriptors>
-		</PersonalData>
-	</CandidateProfile>
-	<Resume>
-		<StructuredXMLResume>
-			<ContactInfo>
-				<PersonName>
-					<GivenName>Paul</GivenName>
-					<FamilyName>O'Connell</FamilyName>
-				</PersonName>
+<Resume xmlns="http://ns.hr-xml.org/2007-04-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://ns.hr-xml.org/2007-04-15 http://ns.hr-xml.org/2_5/HR-XML-2_5/SEP/Resume.xsd">
+	<StructuredXMLResume>
+		<ContactInfo>
+			<PersonName>
+				<GivenName>Paul</GivenName>
+				<FamilyName>O'Connell</FamilyName>
+			</PersonName>
 
-				<ContactMethod>
-					<!-- Phone location not supported. -->
-					<Telephone>
-						<FormattedNumber>+353 86 3701806</FormattedNumber>
-					</Telephone>
-					<InternetEmailAddress>paul.t.oconnell@gmail.com</InternetEmailAddress>
-					<!-- <InternetWebAddress>http://doe.com/~doe/</InternetWebAddress> -->
-					<PostalAddress>
-						<!-- Country not found; assumed to be US. -->
-						<CountryCode>Ireland</CountryCode>
-						<Region>Dublin 14</Region>
-						<Municipality>Churchtown</Municipality>
-						<DeliveryAddress>
-							<AddressLine>2B Milltown Drive</AddressLine>
-						</DeliveryAddress>
-					</PostalAddress>
-				</ContactMethod>
-			</ContactInfo>
-			<Objective>Java developer with focus for Spring/EJB, test driven development and CI processes.</Objective>
-			<EmploymentHistory>
-				<EmployerOrg>
-					<EmployerOrgName>Arantech</EmployerOrgName>
-					<EmployerContactInfo />
-					<PositionHistory>
-						<Title>Java Software Engineer</Title>
-						<!-- HR-XML OrgName required but not supported (no equivalent for it 
-							in XML Resume). -->
+			<ContactMethod>
+				<!-- Phone location not supported. -->
+				<Telephone>
+					<FormattedNumber>+353 86 3701806</FormattedNumber>
+				</Telephone>
+				<InternetEmailAddress>paul.t.oconnell@gmail.com</InternetEmailAddress>
+				<!-- <InternetWebAddress>http://doe.com/~doe/</InternetWebAddress> -->
+				<PostalAddress>
+					<!-- Country not found; assumed to be US. -->
+					<CountryCode>Ireland</CountryCode>
+					<Region>Dublin 14</Region>
+					<Municipality>Churchtown</Municipality>
+					<DeliveryAddress>
+						<AddressLine>2B Milltown Drive</AddressLine>
+					</DeliveryAddress>
+				</PostalAddress>
+			</ContactMethod>
+		</ContactInfo>
+		<Objective>Java developer with focus for Spring/EJB, test driven development and CI processes.</Objective>
+		<EmploymentHistory>
+			<EmployerOrg>
+				<EmployerOrgName>Arantech</EmployerOrgName>
+				<EmployerContactInfo />
+				<PositionHistory>
+					<Title>Java Software Engineer</Title>
+					<!-- HR-XML OrgName required but not supported (no equivalent for it 
+						in XML Resume). -->
 						<OrgName>
 							<OrganizationName />
 						</OrgName>
@@ -190,83 +174,82 @@ Swix is a system for managing open trade positions within the FX branch of the b
 			</EmploymentHistory>
 			<EducationHistory>
 				<!-- All degrees assumed to be university-level. -->
-				<SchoolOrInstitution schoolType="university">
-					<School>
-						<SchoolName>Trinity College Dublin</SchoolName>
-					</School>
-					<Degree>
-						<DegreeName>M.Sc Network and Distributed Systems</DegreeName>
-						<DatesOfAttendance>
-							<StartDate>
-								<YearMonth>1999-10</YearMonth>
-							</StartDate>
-							<EndDate>
-								<YearMonth>2000-10</YearMonth>
-							</EndDate>
-						</DatesOfAttendance>
-						<Comments>Dissertation Title: Collaborative Ad-hoc Applications. An investigation into the use of trust based security in ad-hoc JINI systems.</Comments>
-					</Degree>
-				</SchoolOrInstitution>
-				<SchoolOrInstitution schoolType="university">
-					<School>
-						<SchoolName>Trinity College Dublin</SchoolName>
-					</School>
-					<Degree>
-						<DegreeName>B.A.I in Computer and Electronic Engineering, B.A in Engineering Mathematics</DegreeName>
-						<DatesOfAttendance>
-							<StartDate>
-								<YearMonth>1995-09</YearMonth>
-							</StartDate>
-							<EndDate>
-								<YearMonth>1999-06</YearMonth>
-							</EndDate>
-						</DatesOfAttendance>
-						<Comments>Final Year Project Title: Digital Filtering System for Internet Telephony.</Comments>
-					</Degree>
-				</SchoolOrInstitution>
-			</EducationHistory>
-			<Qualifications>
-				<!-- Skill area title not supported (unless no skill set title is given). -->
-				<Competency name="Java">
-					<Competency
-						name="Spring, Hibernate/JPA/SQL, J2EE/EJB, JMS Messaging, Concurrency. Grails Framework. General interest in new open source technologies, test driven design and agile / continuous integration processes." />
-					<Competency name="Sun Certified Java Developer" />
-				</Competency>
-				<Competency name="Dist">
-					<Competency name="ANT Expert. Bamboo. Sonar. Clover. Eclemma. PMD"></Competency>
-				</Competency>
-				<Competency name="Dist">
-					<Competency
-						name="Expert knowledge of XML messaging for modeling various business process flows. RMI, CORBA, SOAP, Web Services. Web"></Competency>
-				</Competency>
-				<Competency name="Web">
-					<Competency
-						name="Expert knowledge of Wicket, Servlets, JSP, Struts, Spring MVC, JSF. HTML, Javascript, AJAX, CSS and DOM. Detailed knowledge of Tomcat and Apache servers. Jetty. PHP. Zend Framework. YAML. GWTXML	"></Competency>
-				</Competency>
+			<SchoolOrInstitution schoolType="university">
+				<School>
+					<SchoolName>Trinity College Dublin</SchoolName>
+				</School>
+				<Degree>
+					<DegreeName>M.Sc Network and Distributed Systems</DegreeName>
+					<DatesOfAttendance>
+						<StartDate>
+							<YearMonth>1999-10</YearMonth>
+						</StartDate>
+						<EndDate>
+							<YearMonth>2000-10</YearMonth>
+						</EndDate>
+					</DatesOfAttendance>
+					<Comments>Dissertation Title: Collaborative Ad-hoc Applications. An investigation into the use of trust based security in ad-hoc JINI systems.</Comments>
+				</Degree>
+			</SchoolOrInstitution>
+			<SchoolOrInstitution schoolType="university">
+				<School>
+					<SchoolName>Trinity College Dublin</SchoolName>
+				</School>
+				<Degree>
+					<DegreeName>B.A.I in Computer and Electronic Engineering, B.A in Engineering Mathematics</DegreeName>
+					<DatesOfAttendance>
+						<StartDate>
+							<YearMonth>1995-09</YearMonth>
+						</StartDate>
+						<EndDate>
+							<YearMonth>1999-06</YearMonth>
+						</EndDate>
+					</DatesOfAttendance>
+					<Comments>Final Year Project Title: Digital Filtering System for Internet Telephony.</Comments>
+				</Degree>
+			</SchoolOrInstitution>
+		</EducationHistory>
+		<Qualifications>
+			<!-- Skill area title not supported (unless no skill set title is given). -->
+			<Competency name="Java">
+				<Competency
+					name="Spring, Hibernate/JPA/SQL, J2EE/EJB, JMS Messaging, Concurrency. Grails Framework. General interest in new open source technologies, test driven design and agile / continuous integration processes." />
+				<Competency name="Sun Certified Java Developer" />
+			</Competency>
+			<Competency name="Dist">
+				<Competency name="ANT Expert. Bamboo. Sonar. Clover. Eclemma. PMD"></Competency>
+			</Competency>
+			<Competency name="Dist">
+				<Competency
+					name="Expert knowledge of XML messaging for modeling various business process flows. RMI, CORBA, SOAP, Web Services. Web"></Competency>
+			</Competency>
+			<Competency name="Web">
+				<Competency
+					name="Expert knowledge of Wicket, Servlets, JSP, Struts, Spring MVC, JSF. HTML, Javascript, AJAX, CSS and DOM. Detailed knowledge of Tomcat and Apache servers. Jetty. PHP. Zend Framework. YAML. GWTXML	"></Competency>
+			</Competency>
 
-				<Competency name="XML">
-					<Competency name="Extensive use of DOM and SAX parsers,XSL,FOP,JAXB.D"></Competency>
-				</Competency>
-				<Competency name="SCM">
-					<Competency
-						name="SCM Tools	Expert knowledge of SCM systems (SVN/Git/ClearCase). Eclipse, Intellij, Netbeans."></Competency>
-				</Competency>
-				<Competency name="J2EE Servers">
-					<Competency name="Websphere, Weblogic, JBoss, Glassfish, Geronimo"></Competency>
-				</Competency>
-				<Competency name="Databases">
-					<Competency name="	Oracle, Db2, MySQL, H2."></Competency>
-				</Competency>
-				<Competency name="Testing">
-					<Competency name="Junit, TestNG, DBUnit, Selenium"></Competency>
-				</Competency>
-				<Competency name="Build Tools">
-					<Competency name="ANT Expert. Bamboo. Sonar. Clover. Eclemma. PMD"></Competency>
-				</Competency>
+			<Competency name="XML">
+				<Competency name="Extensive use of DOM and SAX parsers,XSL,FOP,JAXB.D"></Competency>
+			</Competency>
+			<Competency name="SCM">
+				<Competency
+					name="SCM Tools	Expert knowledge of SCM systems (SVN/Git/ClearCase). Eclipse, Intellij, Netbeans."></Competency>
+			</Competency>
+			<Competency name="J2EE Servers">
+				<Competency name="Websphere, Weblogic, JBoss, Glassfish, Geronimo"></Competency>
+			</Competency>
+			<Competency name="Databases">
+				<Competency name="	Oracle, Db2, MySQL, H2."></Competency>
+			</Competency>
+			<Competency name="Testing">
+				<Competency name="Junit, TestNG, DBUnit, Selenium"></Competency>
+			</Competency>
+			<Competency name="Build Tools">
+				<Competency name="ANT Expert. Bamboo. Sonar. Clover. Eclemma. PMD"></Competency>
+			</Competency>
 
-			</Qualifications>
-			<!-- Copyright not supported. -->
-			<RevisionDate>2012-05-01</RevisionDate>
-		</StructuredXMLResume>
-	</Resume>
-</Candidate>
+		</Qualifications>
+		<!-- Copyright not supported. -->
+		<RevisionDate>2012-05-01</RevisionDate>
+	</StructuredXMLResume>
+</Resume>
