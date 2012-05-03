@@ -1,243 +1,272 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Resume xmlns="http://ns.hr-xml.org/2007-04-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<Candidate xmlns="http://ns.hr-xml.org/2007-04-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://ns.hr-xml.org/2007-04-15 http://ns.hr-xml.org/2_5/HR-XML-2_5/SEP/Candidate.xsd">
-	<StructuredXMLResume>
-		<ContactInfo>
-			<PersonName>
-				<GivenName>Paul</GivenName>
-				<FamilyName>O'Connell</FamilyName>
-			</PersonName>
-			
-			<ContactMethod>
-				<!-- Phone location not supported. -->
-				<Telephone>
-					<FormattedNumber>+353 86 3701806</FormattedNumber>
-				</Telephone>
-				<InternetEmailAddress>paul.t.oconnell@gmail.com</InternetEmailAddress>
-				<!-- <InternetWebAddress>http://doe.com/~doe/</InternetWebAddress> -->
-				<PostalAddress>
-					<!-- Country not found; assumed to be US. -->
-					<CountryCode>Ireland</CountryCode>
-					<Region>Dublin 14</Region>
-					<Municipality>Churchtown</Municipality>
-					<DeliveryAddress>
-						<AddressLine>2B Milltown Drive</AddressLine>
-					</DeliveryAddress>
-				</PostalAddress>
-			</ContactMethod>
-		</ContactInfo>
-		<Objective>Java developer with focus for Spring/EJB, test driven development and CI processes.</Objective>
-		<EmploymentHistory>
-			<EmployerOrg>
-				<EmployerOrgName>Arantech</EmployerOrgName>
-				<EmployerContactInfo />
-				<PositionHistory>
-					<Title>Java Software Engineer</Title>
-					<!-- HR-XML OrgName required but not supported (no equivalent for it 
-						in XML Resume). -->
-					<OrgName>
-						<OrganizationName />
-					</OrgName>
-					<Description>Scrum master and developer on the core product with responsibllity for the implementation of new features and bug fixes. Introduction of unit test code coverage metrics and a framework for featuring testing interfaces of the product.</Description>
-					<StartDate>
-						<YearMonth>2010-01</YearMonth>
-					</StartDate>
-				</PositionHistory>
-			</EmployerOrg>
-			<EmployerOrg>
-				<EmployerOrgName>Aegon</EmployerOrgName>
-				<EmployerContactInfo />
-				<PositionHistory>
-					<Title>Contract Software Engineer</Title>
-					<OrgName>
-						<OrganizationName />
-					</OrgName>
-					<Description>Validation Service Replatforming Conversion of a legacy client side validation component onto a JBoss J2EE platform to allow support for EJB and Webservice requests. Hibernate & Spring with Wicket UI.</Description>
-					<StartDate>
-						<YearMonth>2008-08</YearMonth>
-					</StartDate>
-					<EndDate>
-						<YearMonth>2009-09</YearMonth>
-					</EndDate>
-				</PositionHistory>
-			</EmployerOrg>
-			<EmployerOrg>
-				<EmployerOrgName>Terranua</EmployerOrgName>
-				<EmployerContactInfo />
-				<PositionHistory>
-					<Title>Contract Software Engineer</Title>
-					<OrgName>
-						<OrganizationName />
-					</OrgName>
-					<Description>Risk Reporting Responsible for a risk reporting system which queries risk details from the DB, creating a xml report which is then transformed via XSL to html and word formats for user preview and printing.</Description>
-					<StartDate>
-						<YearMonth>2008-08</YearMonth>
-					</StartDate>
-					<EndDate>
-						<YearMonth>2009-09</YearMonth>
-					</EndDate>
-				</PositionHistory>
-			</EmployerOrg>
-			<EmployerOrg>
-				<EmployerOrgName>Norkom</EmployerOrgName>
-				<EmployerContactInfo />
-				<PositionHistory>
-					<Title>Contract Software Engineer</Title>
-					<OrgName>
-						<OrganizationName />
-					</OrgName>
-					<Description>Watch List Management Day to day work involves bug fixing and small pieces of new development on various branches of this sub-project.</Description>
-					<StartDate>
-						<YearMonth>2008-08</YearMonth>
-					</StartDate>
-					<EndDate>
-						<YearMonth>2009-09</YearMonth>
-					</EndDate>
-				</PositionHistory>
-			</EmployerOrg>
-			<EmployerOrg>
-				<EmployerOrgName>Norkom</EmployerOrgName>
-				<EmployerContactInfo />
-				<PositionHistory>
-					<Title>Contract Software Engineer</Title>
-					<OrgName>
-						<OrganizationName />
-					</OrgName>
-					<Description>Unemployment Insurance Java developer within the workflow group, which involved the full software development lifecycle on various J2EE platforms. Implementation of a unit testing framework and tools to auto-generate unit test stubs from the project model. Maintenance of the smoke test and continuous integration systems. Curam use a model driven development process and have a custom ORM style solution for database transparency</Description>
-					<StartDate>
-						<YearMonth>2008-08</YearMonth>
-					</StartDate>
-					<EndDate>
-						<YearMonth>2009-09</YearMonth>
-					</EndDate>
-				</PositionHistory>
-			</EmployerOrg>
-			<EmployerOrg>
-				<EmployerOrgName>Curam</EmployerOrgName>
-				<EmployerContactInfo />
-				<PositionHistory>
-					<Title>Contract Software Engineer</Title>
-					<OrgName>
-						<OrganizationName />
-					</OrgName>
-					<Description>Unemployment Insurance Java developer within the workflow group, which involved the full software development lifecycle on various J2EE platforms. Implementation of a unit testing framework and tools to auto-generate unit test stubs from the project model. Maintenance of the smoke test and continuous integration systems. Curam use a model driven development process and have a custom ORM style solution for database transparency</Description>
-					<StartDate>
-						<YearMonth>2008-08</YearMonth>
-					</StartDate>
-					<EndDate>
-						<YearMonth>2009-09</YearMonth>
-					</EndDate>
-				</PositionHistory>
-			</EmployerOrg>
-			<EmployerOrg>
-				<EmployerOrgName>UBS</EmployerOrgName>
-				<EmployerContactInfo />
-				<PositionHistory>
-					<Title>Contract Software Engineer</Title>
-					<OrgName>
-						<OrganizationName />
-					</OrgName>
-					<Description>
+	<CandidateProfile>
+		<ProfileName>Automatically generated Europass CV and xslt from EuroCv</ProfileName>
+		<PersonalData>
+			<PersonDescriptors>
+				<DemographicDescriptors>
+					<Nationality>Irish</Nationality>
+					<PrimaryLanguage>English</PrimaryLanguage>
+				</DemographicDescriptors>
+				<BiologicalDescriptors>
+					<DateOfBirth>1977-11-18</DateOfBirth>
+					<GenderCode>0</GenderCode>
+				</BiologicalDescriptors>
+			</PersonDescriptors>
+		</PersonalData>
+	</CandidateProfile>
+	<Resume>
+		<StructuredXMLResume>
+			<ContactInfo>
+				<PersonName>
+					<GivenName>Paul</GivenName>
+					<FamilyName>O'Connell</FamilyName>
+				</PersonName>
+
+				<ContactMethod>
+					<!-- Phone location not supported. -->
+					<Telephone>
+						<FormattedNumber>+353 86 3701806</FormattedNumber>
+					</Telephone>
+					<InternetEmailAddress>paul.t.oconnell@gmail.com</InternetEmailAddress>
+					<!-- <InternetWebAddress>http://doe.com/~doe/</InternetWebAddress> -->
+					<PostalAddress>
+						<!-- Country not found; assumed to be US. -->
+						<CountryCode>Ireland</CountryCode>
+						<Region>Dublin 14</Region>
+						<Municipality>Churchtown</Municipality>
+						<DeliveryAddress>
+							<AddressLine>2B Milltown Drive</AddressLine>
+						</DeliveryAddress>
+					</PostalAddress>
+				</ContactMethod>
+			</ContactInfo>
+			<Objective>Java developer with focus for Spring/EJB, test driven development and CI processes.</Objective>
+			<EmploymentHistory>
+				<EmployerOrg>
+					<EmployerOrgName>Arantech</EmployerOrgName>
+					<EmployerContactInfo />
+					<PositionHistory>
+						<Title>Java Software Engineer</Title>
+						<!-- HR-XML OrgName required but not supported (no equivalent for it 
+							in XML Resume). -->
+						<OrgName>
+							<OrganizationName />
+						</OrgName>
+						<Description>Scrum master and developer on the core product with responsibllity for the implementation of new features and bug fixes. Introduction of unit test code coverage metrics and a framework for featuring testing interfaces of the product.</Description>
+						<StartDate>
+							<YearMonth>2010-01</YearMonth>
+						</StartDate>
+					</PositionHistory>
+				</EmployerOrg>
+				<EmployerOrg>
+					<EmployerOrgName>Aegon</EmployerOrgName>
+					<EmployerContactInfo />
+					<PositionHistory>
+						<Title>Contract Software Engineer</Title>
+						<OrgName>
+							<OrganizationName />
+						</OrgName>
+						<Description>Validation Service Replatforming Conversion of a legacy client side validation component onto a JBoss J2EE platform to allow support for EJB and Webservice requests. Hibernate, Spring with Wicket UI.</Description>
+						<StartDate>
+							<YearMonth>2008-08</YearMonth>
+						</StartDate>
+						<EndDate>
+							<YearMonth>2009-09</YearMonth>
+						</EndDate>
+					</PositionHistory>
+				</EmployerOrg>
+				<EmployerOrg>
+					<EmployerOrgName>Terranua</EmployerOrgName>
+					<EmployerContactInfo />
+					<PositionHistory>
+						<Title>Contract Software Engineer</Title>
+						<OrgName>
+							<OrganizationName />
+						</OrgName>
+						<Description>Risk Reporting Responsible for a risk reporting system which queries risk details from the DB, creating a xml report which is then transformed via XSL to html and word formats for user preview and printing.</Description>
+						<StartDate>
+							<YearMonth>2008-08</YearMonth>
+						</StartDate>
+						<EndDate>
+							<YearMonth>2009-09</YearMonth>
+						</EndDate>
+					</PositionHistory>
+				</EmployerOrg>
+				<EmployerOrg>
+					<EmployerOrgName>Norkom</EmployerOrgName>
+					<EmployerContactInfo />
+					<PositionHistory>
+						<Title>Contract Software Engineer</Title>
+						<OrgName>
+							<OrganizationName />
+						</OrgName>
+						<Description>Watch List Management Day to day work involves bug fixing and small pieces of new development on various branches of this sub-project.</Description>
+						<StartDate>
+							<YearMonth>2008-08</YearMonth>
+						</StartDate>
+						<EndDate>
+							<YearMonth>2009-09</YearMonth>
+						</EndDate>
+					</PositionHistory>
+				</EmployerOrg>
+				<EmployerOrg>
+					<EmployerOrgName>Norkom</EmployerOrgName>
+					<EmployerContactInfo />
+					<PositionHistory>
+						<Title>Contract Software Engineer</Title>
+						<OrgName>
+							<OrganizationName />
+						</OrgName>
+						<Description>Unemployment Insurance Java developer within the workflow group, which involved the full software development lifecycle on various J2EE platforms. Implementation of a unit testing framework and tools to auto-generate unit test stubs from the project model. Maintenance of the smoke test and continuous integration systems. Curam use a model driven development process and have a custom ORM style solution for database transparency</Description>
+						<StartDate>
+							<YearMonth>2008-08</YearMonth>
+						</StartDate>
+						<EndDate>
+							<YearMonth>2009-09</YearMonth>
+						</EndDate>
+					</PositionHistory>
+				</EmployerOrg>
+				<EmployerOrg>
+					<EmployerOrgName>Curam</EmployerOrgName>
+					<EmployerContactInfo />
+					<PositionHistory>
+						<Title>Contract Software Engineer</Title>
+						<OrgName>
+							<OrganizationName />
+						</OrgName>
+						<Description>Unemployment Insurance Java developer within the workflow group, which involved the full software development lifecycle on various J2EE platforms. Implementation of a unit testing framework and tools to auto-generate unit test stubs from the project model. Maintenance of the smoke test and continuous integration systems. Curam use a model driven development process and have a custom ORM style solution for database transparency</Description>
+						<StartDate>
+							<YearMonth>2008-08</YearMonth>
+						</StartDate>
+						<EndDate>
+							<YearMonth>2009-09</YearMonth>
+						</EndDate>
+					</PositionHistory>
+				</EmployerOrg>
+				<EmployerOrg>
+					<EmployerOrgName>UBS</EmployerOrgName>
+					<EmployerContactInfo />
+					<PositionHistory>
+						<Title>Contract Software Engineer</Title>
+						<OrgName>
+							<OrganizationName />
+						</OrgName>
+						<Description>
 					ZFM is a real time settlement and reconciliation system based on XML messaging over MQ. As project leader my responsibilities have included the design and implementation of an API, the planning and co-ordination of development and testing, both within our group and with other departments. The system consists of various java applications communicating via XML and MQ. A web-based tool supports tracking and supervision of messages within the system.
 eBus provides a consolidated view of all deal confirmation messages within the FX trading platform. As project lead I was responsible for the design of a common message specification, implementation with XML/XSL over MQ, and the co-ordination of the testing and release phases.
 Swix is a system for managing open trade positions within the FX branch of the bank. Lead Java developer my responsibilities included the initial XML protocol specification, implementation of a web application (Tomcat) and co-ordination of testing with other groups and business users.
 </Description>
 
-					<StartDate>
-						<YearMonth>2008-08</YearMonth>
-					</StartDate>
-					<EndDate>
-						<YearMonth>2009-09</YearMonth>
-					</EndDate>
-				</PositionHistory>
-			</EmployerOrg>
-			<EmployerOrg>
-				<EmployerOrgName>Erisson</EmployerOrgName>
-				<EmployerContactInfo />
-				<PositionHistory>
-					<Title>Contract Software Engineer</Title>
-					<OrgName>
-						<OrganizationName />
-					</OrgName>
-					<Description>RANOS is an operations and management system for Ericsson’s 3G telecommunications radio network system. Member of a framework group, which provided generic server side Java/CORBA components</Description>
-					<StartDate>
-						<YearMonth>2008-08</YearMonth>
-					</StartDate>
-					<EndDate>
-						<YearMonth>2009-09</YearMonth>
-					</EndDate>
-				</PositionHistory>
-			</EmployerOrg>
-			
-			
-			
-		</EmploymentHistory>
-		<EducationHistory>
-			<!-- All degrees assumed to be university-level. -->
-			<SchoolOrInstitution schoolType="university">
-				<School>
-					<SchoolName>Trinity College Dublin</SchoolName>
-				</School>
-				<Degree>
-					<DegreeName>M.Sc Network and Distributed Systems</DegreeName>
-					<DatesOfAttendance>
-						<StartDate><YearMonth>1999-10</YearMonth></StartDate>
-						<EndDate><YearMonth>2000-10</YearMonth></EndDate>
-					</DatesOfAttendance>
-					<Comments>Dissertation Title: Collaborative Ad-hoc Applications. An investigation into the use of trust based security in ad-hoc JINI systems.</Comments>
-				</Degree>
-			</SchoolOrInstitution>
-			<SchoolOrInstitution schoolType="university">
-				<School>
-					<SchoolName>Trinity College Dublin</SchoolName>
-				</School>
-				<Degree>
-					<DegreeName>B.A.I in Computer and Electronic Engineering, B.A in Engineering Mathematics</DegreeName>
-					<DatesOfAttendance>
-						<StartDate><YearMonth>1995-09</YearMonth></StartDate>
-						<EndDate><YearMonth>1999-06</YearMonth></EndDate>
-					</DatesOfAttendance>
-					<Comments>Final Year Project Title: Digital Filtering System for Internet Telephony.</Comments>
-				</Degree>
-			</SchoolOrInstitution>
-		</EducationHistory>
-		<Qualifications>
-			<!-- Skill area title not supported (unless no skill set title is given). -->
-			<Competency name="Java">
-				<Competency	name="Spring, Hibernate/JPA/SQL, J2EE/EJB, JMS Messaging, Concurrency. Grails Framework. General interest in new open source technologies, test driven design and agile / continuous integration processes." />
-				<Competency name="Sun Certified Java Developer" />
-			</Competency>
-			<Competency name="Dist">
-				<Competency name="ANT Expert. Bamboo. Sonar. Clover. Eclemma. PMD"></Competency>
-			</Competency>
-			<Competency name="Dist">
-				<Competency name="Expert knowledge of XML messaging for modeling various business process flows. RMI, CORBA, SOAP, Web Services. Web"></Competency>
-			</Competency>
-			<Competency name="Web">
-				<Competency name="Expert knowledge of Wicket, Servlets, JSP, Struts, Spring MVC, JSF. HTML, Javascript, AJAX, CSS and DOM. Detailed knowledge of Tomcat and Apache servers. Jetty. PHP. Zend Framework. YAML. GWTXML	"></Competency>
-			</Competency>
+						<StartDate>
+							<YearMonth>2008-08</YearMonth>
+						</StartDate>
+						<EndDate>
+							<YearMonth>2009-09</YearMonth>
+						</EndDate>
+					</PositionHistory>
+				</EmployerOrg>
+				<EmployerOrg>
+					<EmployerOrgName>Erisson</EmployerOrgName>
+					<EmployerContactInfo />
+					<PositionHistory>
+						<Title>Contract Software Engineer</Title>
+						<OrgName>
+							<OrganizationName />
+						</OrgName>
+						<Description>RANOS is an operations and management system for Ericsson’s 3G telecommunications radio network system. Member of a framework group, which provided generic server side Java/CORBA components</Description>
+						<StartDate>
+							<YearMonth>2008-08</YearMonth>
+						</StartDate>
+						<EndDate>
+							<YearMonth>2009-09</YearMonth>
+						</EndDate>
+					</PositionHistory>
+				</EmployerOrg>
 
-			<Competency name="XML">
-				<Competency name="Extensive use of DOM and SAX parsers,XSL,FOP,JAXB.D"></Competency>
-			</Competency>
-			<Competency name="SCM">
-				<Competency name="SCM Tools	Expert knowledge of SCM systems (SVN/Git/ClearCase). Eclipse, Intellij, Netbeans."></Competency>
-			</Competency>
-			<Competency name="J2EE Servers">
-				<Competency name="Websphere, Weblogic, JBoss, Glassfish, Geronimo"></Competency>
-			</Competency>
-			<Competency name="Databases">
-				<Competency name="	Oracle, Db2, MySQL, H2."></Competency>
-			</Competency>
-			<Competency name="Testing">
-				<Competency name="Junit, TestNG, DBUnit, Selenium"></Competency>
-			</Competency>
-			<Competency name="Build Tools">
-				<Competency name="ANT Expert. Bamboo. Sonar. Clover. Eclemma. PMD"></Competency>
-			</Competency>
-			
-		</Qualifications>
-		<!-- Copyright not supported. -->
-		<RevisionDate>2012-05-01</RevisionDate>
-	</StructuredXMLResume>
-</Resume>
+
+
+			</EmploymentHistory>
+			<EducationHistory>
+				<!-- All degrees assumed to be university-level. -->
+				<SchoolOrInstitution schoolType="university">
+					<School>
+						<SchoolName>Trinity College Dublin</SchoolName>
+					</School>
+					<Degree>
+						<DegreeName>M.Sc Network and Distributed Systems</DegreeName>
+						<DatesOfAttendance>
+							<StartDate>
+								<YearMonth>1999-10</YearMonth>
+							</StartDate>
+							<EndDate>
+								<YearMonth>2000-10</YearMonth>
+							</EndDate>
+						</DatesOfAttendance>
+						<Comments>Dissertation Title: Collaborative Ad-hoc Applications. An investigation into the use of trust based security in ad-hoc JINI systems.</Comments>
+					</Degree>
+				</SchoolOrInstitution>
+				<SchoolOrInstitution schoolType="university">
+					<School>
+						<SchoolName>Trinity College Dublin</SchoolName>
+					</School>
+					<Degree>
+						<DegreeName>B.A.I in Computer and Electronic Engineering, B.A in Engineering Mathematics</DegreeName>
+						<DatesOfAttendance>
+							<StartDate>
+								<YearMonth>1995-09</YearMonth>
+							</StartDate>
+							<EndDate>
+								<YearMonth>1999-06</YearMonth>
+							</EndDate>
+						</DatesOfAttendance>
+						<Comments>Final Year Project Title: Digital Filtering System for Internet Telephony.</Comments>
+					</Degree>
+				</SchoolOrInstitution>
+			</EducationHistory>
+			<Qualifications>
+				<!-- Skill area title not supported (unless no skill set title is given). -->
+				<Competency name="Java">
+					<Competency
+						name="Spring, Hibernate/JPA/SQL, J2EE/EJB, JMS Messaging, Concurrency. Grails Framework. General interest in new open source technologies, test driven design and agile / continuous integration processes." />
+					<Competency name="Sun Certified Java Developer" />
+				</Competency>
+				<Competency name="Dist">
+					<Competency name="ANT Expert. Bamboo. Sonar. Clover. Eclemma. PMD"></Competency>
+				</Competency>
+				<Competency name="Dist">
+					<Competency
+						name="Expert knowledge of XML messaging for modeling various business process flows. RMI, CORBA, SOAP, Web Services. Web"></Competency>
+				</Competency>
+				<Competency name="Web">
+					<Competency
+						name="Expert knowledge of Wicket, Servlets, JSP, Struts, Spring MVC, JSF. HTML, Javascript, AJAX, CSS and DOM. Detailed knowledge of Tomcat and Apache servers. Jetty. PHP. Zend Framework. YAML. GWTXML	"></Competency>
+				</Competency>
+
+				<Competency name="XML">
+					<Competency name="Extensive use of DOM and SAX parsers,XSL,FOP,JAXB.D"></Competency>
+				</Competency>
+				<Competency name="SCM">
+					<Competency
+						name="SCM Tools	Expert knowledge of SCM systems (SVN/Git/ClearCase). Eclipse, Intellij, Netbeans."></Competency>
+				</Competency>
+				<Competency name="J2EE Servers">
+					<Competency name="Websphere, Weblogic, JBoss, Glassfish, Geronimo"></Competency>
+				</Competency>
+				<Competency name="Databases">
+					<Competency name="	Oracle, Db2, MySQL, H2."></Competency>
+				</Competency>
+				<Competency name="Testing">
+					<Competency name="Junit, TestNG, DBUnit, Selenium"></Competency>
+				</Competency>
+				<Competency name="Build Tools">
+					<Competency name="ANT Expert. Bamboo. Sonar. Clover. Eclemma. PMD"></Competency>
+				</Competency>
+
+			</Qualifications>
+			<!-- Copyright not supported. -->
+			<RevisionDate>2012-05-01</RevisionDate>
+		</StructuredXMLResume>
+	</Resume>
+</Candidate>

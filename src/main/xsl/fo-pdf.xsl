@@ -1,5 +1,8 @@
 <xsl:stylesheet version="1.0"
-	xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fo="http://www.w3.org/1999/XSL/Format">
+	xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
+	xmlns:fo="http://www.w3.org/1999/XSL/Format"
+	xmlns:h="http://ns.hr-xml.org/2007-04-15"
+	>
 	<xsl:output method="xml" encoding="utf-8" omit-xml-declaration="no" indent="yes" />
 	<xsl:param name="base-size" select="9" />
 
@@ -23,16 +26,12 @@
 	<xsl:variable name="margin-bottom" select="$margin-vert + 10" />
 	<xsl:template match="/">
 		<xsl:variable name="text-fullname">
-			<xsl:if test="resume/header/name/title">
-				<xsl:value-of select="resume/header/name/title"/>
-				<xsl:text> </xsl:text>
-			</xsl:if>
-			<xsl:value-of select="resume/header/name/firstname"/>
+			<xsl:value-of select="/h:Candidate/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:GivenName"/>
 			<xsl:text> </xsl:text>
-			<xsl:value-of select="resume/header/name/surname"/>
+			<xsl:value-of select="/h:Canditate/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:FamilyName"/>
 		</xsl:variable>
 		<xsl:variable name="text-cv">
-			Curriculum vitæ
+			Curriculum vitae <xsl:value-of select="$text-fullname" />
 		</xsl:variable>
 		<fo:root>
 			<fo:layout-master-set>
@@ -82,7 +81,7 @@
 					<fo:block space-before="5mm" font-size="{$text-size}pt">
 						Visit
 						<fo:inline font-family="Courier New" font-weight="bold">
-							<xsl:value-of select="/cv/@uri" />
+							<xsl:value-of select="/h:Candidate/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:GivenName"/>
 						</fo:inline>
 						for an online version of this CV, complete with hyperlinks to all
 						the referenced projects.

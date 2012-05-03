@@ -21,7 +21,6 @@
 
 	</dependencies>
 
-
 	<build>
 		<plugins>
 			<plugin>
@@ -36,7 +35,7 @@
 					</dependency>
 				</dependencies>
 				<executions>
-					<execution>
+				 	<execution>
 						<goals>
 							<goal>generate-pdf</goal>
 						</goals>
@@ -46,7 +45,34 @@
 							<xincludeSupported>true</xincludeSupported>
 							<includes>cv.xml</includes>
 							<foCustomization>src/main/xsl/fo-pdf.xsl</foCustomization>
-							<targetDirectory>${project.build.directory}/target</targetDirectory>
+							<targetDirectory>${project.build.directory}</targetDirectory>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+						<plugin>
+				<groupId>com.agilejava.docbkx</groupId>
+				<artifactId>docbkx-maven-plugin</artifactId>
+				<version>2.0.14</version>
+				<dependencies>
+					<dependency>
+						<groupId>org.docbook</groupId>
+						<artifactId>docbook-xml</artifactId>
+						<version>4.4</version>
+					</dependency>
+				</dependencies>
+				<executions>
+					<execution>
+						<goals>
+							<goal>generate-html</goal>
+						</goals>
+						<phase>package</phase>
+						<configuration>
+							<sourceDirectory>${basedir}/src/main/xml</sourceDirectory>
+							<xincludeSupported>true</xincludeSupported>
+							<includes>cv.xml</includes>
+							<foCustomization>src/main/xsl/fo-pdf.xsl</foCustomization>
+							<targetDirectory>${project.build.directory}</targetDirectory>
 						</configuration>
 					</execution>
 				</executions>
