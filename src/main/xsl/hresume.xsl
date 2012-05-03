@@ -2,14 +2,15 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:h="http://ns.hr-xml.org/2007-04-15">
 	<xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes"/>
 	<xsl:template match="/">
-		<html>
-			<head>
-				<title>
-					<xsl:value-of select="concat(/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:GivenName,' ',/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:MiddleName,' ',/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:FamilyName)"/>'s Resume</title>
-
+<html>
+<head>
+<title>
+<xsl:value-of select="concat(/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:GivenName,' ',/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:MiddleName,' ',/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:FamilyName)"/>'s Curriculum Vitae
+</title>
 </head>
 <body>
 <div class="hresume">
+	<h1 id="cv">Curriculum Vitae</h1>
 	<div class="contact vcard">
 		<div class="fn n" id="j">
 			<span class="given-name">
@@ -59,7 +60,7 @@
 			</xsl:for-each>
 		</div>
 		<div style="float: left;">
-		Email: <a class="email" href="mailto:{/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:ContactMethod/h:InternetEmailAddress}">
+		Email: <a class="external email fn" href="mailto:{/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:ContactMethod/h:InternetEmailAddress}">
 		<xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:ContactMethod/h:InternetEmailAddress"/>
 		</a>
 		<br/>
@@ -85,12 +86,10 @@
 			<div class="experience vevent vcard">
 				<div class="htitle">
 					<!-- div float container -->
-					<span class="title">
-						<xsl:value-of select="h:PositionHistory/h:Title"/>
-					</span>
-					<br/>
+					
+
 					<span class="org">
-						<xsl:value-of select="h:PositionHistory/h:OrgName/h:OrganizationName"/>
+						<xsl:value-of select="h:EmployerOrgName"/>
 					</span>, <span class="location">
 						<xsl:value-of select="h:EmployerContactInfo/h:LocationSummary/h:Municipality"/>, <xsl:value-of select="h:EmployerContactInfo/h:LocationSummary/h:Region"/>
 					</span>
@@ -102,13 +101,17 @@
 						<xsl:value-of select="h:PositionHistory/h:EndDate/h:YearMonth"/>
 					</abbr>
 				</div>
-				<div style="clear: both">
-					<xsl:text disable-output-escaping="yes"><![CDATA[&nbsp;]]></xsl:text>
-				</div>
+
+				<span class="title">
+					<xsl:value-of select="h:PositionHistory/h:Title"/>
+				</span>
 				<div class="description">
 					<xsl:value-of select="h:PositionHistory/h:Description"/>
 				</div>
 			</div>
+				<div style="clear: both">
+					<xsl:text disable-output-escaping="yes"><![CDATA[&nbsp;]]></xsl:text>
+				</div>
 		</xsl:for-each>
 	</div>
 </div>

@@ -29,48 +29,55 @@
 		<EmploymentHistory>
 			<EmployerOrg>
 				<EmployerOrgName>Arantech</EmployerOrgName>
-				<EmployerContactInfo />
+				<EmployerContactInfo>
+					<LocationSummary>
+						<Municipality>Blackrock</Municipality>
+						<Region>Dublin</Region>
+					</LocationSummary>
+				</EmployerContactInfo>
 				<PositionHistory>
 					<Title>Java Software Engineer</Title>
-					<!-- HR-XML OrgName required but not supported (no equivalent for it 
-						in XML Resume). -->
-						<OrgName>
-							<OrganizationName />
-						</OrgName>
-						<Description>Scrum master and developer on the core product with responsibllity for the implementation of new features and bug fixes. Introduction of unit test code coverage metrics and a framework for featuring testing interfaces of the product.</Description>
-						<StartDate>
+					<Description>Developer on the core product with responsibility for the implementation of new features and bug fixes. Introduction of unit test code coverage metrics and a framework for featuring testing interfaces of the product.</Description>
+					<StartDate>
 							<YearMonth>2010-01</YearMonth>
 						</StartDate>
-					</PositionHistory>
-				</EmployerOrg>
+						<EndDate>
+							<YearMonth>Present</YearMonth>
+						</EndDate>
+				</PositionHistory>
+			</EmployerOrg>
 				<EmployerOrg>
 					<EmployerOrgName>Aegon</EmployerOrgName>
-					<EmployerContactInfo />
+					<EmployerContactInfo>
+						<LocationSummary>
+							<Municipality>IFSC</Municipality>
+							<Region>Dublin</Region>
+						</LocationSummary>
+					</EmployerContactInfo>
 					<PositionHistory>
 						<Title>Contract Software Engineer</Title>
-						<OrgName>
-							<OrganizationName />
-						</OrgName>
 						<Description>Validation Service Replatforming Conversion of a legacy client side validation component onto a JBoss J2EE platform to allow support for EJB and Webservice requests. Hibernate, Spring with Wicket UI.</Description>
 						<StartDate>
-							<YearMonth>2008-08</YearMonth>
+							<YearMonth>2008-10</YearMonth>
 						</StartDate>
 						<EndDate>
-							<YearMonth>2009-09</YearMonth>
+							<YearMonth>2009-10</YearMonth>
 						</EndDate>
 					</PositionHistory>
 				</EmployerOrg>
 				<EmployerOrg>
-					<EmployerOrgName>Terranua</EmployerOrgName>
-					<EmployerContactInfo />
+					<EmployerOrgName>Terranua/Fidelity</EmployerOrgName>
+					<EmployerContactInfo>
+						<LocationSummary>
+							<Municipality>Hatch Street</Municipality>
+							<Region>Dublin</Region>
+						</LocationSummary>
+					</EmployerContactInfo>
 					<PositionHistory>
 						<Title>Contract Software Engineer</Title>
-						<OrgName>
-							<OrganizationName />
-						</OrgName>
 						<Description>Risk Reporting Responsible for a risk reporting system which queries risk details from the DB, creating a xml report which is then transformed via XSL to html and word formats for user preview and printing.</Description>
 						<StartDate>
-							<YearMonth>2008-08</YearMonth>
+							<YearMonth>2008-03</YearMonth>
 						</StartDate>
 						<EndDate>
 							<YearMonth>2009-09</YearMonth>
@@ -79,97 +86,110 @@
 				</EmployerOrg>
 				<EmployerOrg>
 					<EmployerOrgName>Norkom</EmployerOrgName>
-					<EmployerContactInfo />
+					<EmployerContactInfo>
+						<LocationSummary>
+							<Municipality>Henry St</Municipality>
+							<Region>Dublin</Region>
+						</LocationSummary>
+					</EmployerContactInfo>
 					<PositionHistory>
 						<Title>Contract Software Engineer</Title>
-						<OrgName>
-							<OrganizationName />
-						</OrgName>
 						<Description>Watch List Management Day to day work involves bug fixing and small pieces of new development on various branches of this sub-project.</Description>
 						<StartDate>
-							<YearMonth>2008-08</YearMonth>
+							<YearMonth>2007-10</YearMonth>
 						</StartDate>
 						<EndDate>
-							<YearMonth>2009-09</YearMonth>
-						</EndDate>
-					</PositionHistory>
-				</EmployerOrg>
-				<EmployerOrg>
-					<EmployerOrgName>Norkom</EmployerOrgName>
-					<EmployerContactInfo />
-					<PositionHistory>
-						<Title>Contract Software Engineer</Title>
-						<OrgName>
-							<OrganizationName />
-						</OrgName>
-						<Description>Unemployment Insurance Java developer within the workflow group, which involved the full software development lifecycle on various J2EE platforms. Implementation of a unit testing framework and tools to auto-generate unit test stubs from the project model. Maintenance of the smoke test and continuous integration systems. Curam use a model driven development process and have a custom ORM style solution for database transparency</Description>
-						<StartDate>
-							<YearMonth>2008-08</YearMonth>
-						</StartDate>
-						<EndDate>
-							<YearMonth>2009-09</YearMonth>
+							<YearMonth>2008-02</YearMonth>
 						</EndDate>
 					</PositionHistory>
 				</EmployerOrg>
 				<EmployerOrg>
 					<EmployerOrgName>Curam</EmployerOrgName>
-					<EmployerContactInfo />
+					<EmployerContactInfo>
+						<LocationSummary>
+							<Municipality>Park West</Municipality>
+							<Region>Dublin</Region>
+						</LocationSummary>
+					</EmployerContactInfo>
 					<PositionHistory>
-						<Title>Contract Software Engineer</Title>
-						<OrgName>
-							<OrganizationName />
-						</OrgName>
+						<Title>Software Engineer</Title>
 						<Description>Unemployment Insurance Java developer within the workflow group, which involved the full software development lifecycle on various J2EE platforms. Implementation of a unit testing framework and tools to auto-generate unit test stubs from the project model. Maintenance of the smoke test and continuous integration systems. Curam use a model driven development process and have a custom ORM style solution for database transparency</Description>
 						<StartDate>
-							<YearMonth>2008-08</YearMonth>
+							<YearMonth>2006-09</YearMonth>
 						</StartDate>
 						<EndDate>
-							<YearMonth>2009-09</YearMonth>
+							<YearMonth>2007-09</YearMonth>
 						</EndDate>
 					</PositionHistory>
 				</EmployerOrg>
 				<EmployerOrg>
 					<EmployerOrgName>UBS</EmployerOrgName>
-					<EmployerContactInfo />
+					<EmployerContactInfo>
+						<LocationSummary>
+							<Municipality>Europastrasse 2</Municipality>
+							<Region>Zurich</Region>
+							<CountryCode>Switzerland</CountryCode>
+						</LocationSummary>
+					</EmployerContactInfo>
 					<PositionHistory>
-						<Title>Contract Software Engineer</Title>
-						<OrgName>
-							<OrganizationName />
-						</OrgName>
+						<Title>Software Engineer</Title>
 						<Description>
 					ZFM is a real time settlement and reconciliation system based on XML messaging over MQ. As project leader my responsibilities have included the design and implementation of an API, the planning and co-ordination of development and testing, both within our group and with other departments. The system consists of various java applications communicating via XML and MQ. A web-based tool supports tracking and supervision of messages within the system.
 eBus provides a consolidated view of all deal confirmation messages within the FX trading platform. As project lead I was responsible for the design of a common message specification, implementation with XML/XSL over MQ, and the co-ordination of the testing and release phases.
 Swix is a system for managing open trade positions within the FX branch of the bank. Lead Java developer my responsibilities included the initial XML protocol specification, implementation of a web application (Tomcat) and co-ordination of testing with other groups and business users.
 </Description>
-
 						<StartDate>
-							<YearMonth>2008-08</YearMonth>
+							<YearMonth>2003-11</YearMonth>
 						</StartDate>
 						<EndDate>
-							<YearMonth>2009-09</YearMonth>
+							<YearMonth>2006-05</YearMonth>
+						</EndDate>
+					</PositionHistory>
+				</EmployerOrg>
+				<EmployerOrg>
+					<EmployerOrgName>UBS</EmployerOrgName>
+					<EmployerContactInfo>
+					<LocationSummary>
+							<Municipality>Liverpool St</Municipality>
+							<Region>London</Region>
+							<CountryCode>England</CountryCode>
+						</LocationSummary>
+					</EmployerContactInfo>
+					<PositionHistory>
+						<Title>Software Engineer</Title>
+						<Description>
+Swix is a system for managing open trade positions within the FX branch of the bank. Lead Java developer my responsibilities included the initial XML protocol specification, implementation of a web application (Tomcat) and co-ordination of testing with other groups and business users.
+</Description>
+						<StartDate>
+							<YearMonth>2003-01</YearMonth>
+						</StartDate>
+						<EndDate>
+							<YearMonth>2003-10</YearMonth>
 						</EndDate>
 					</PositionHistory>
 				</EmployerOrg>
 				<EmployerOrg>
 					<EmployerOrgName>Erisson</EmployerOrgName>
-					<EmployerContactInfo />
+					<EmployerContactInfo>
+						<LocationSummary>
+							<Municipality>Clonskeagh</Municipality>
+							<Region>Dublin</Region>
+						</LocationSummary>
+					</EmployerContactInfo>
 					<PositionHistory>
-						<Title>Contract Software Engineer</Title>
+						<Title>Software Engineer</Title>
 						<OrgName>
 							<OrganizationName />
 						</OrgName>
 						<Description>RANOS is an operations and management system for Ericsson’s 3G telecommunications radio network system. Member of a framework group, which provided generic server side Java/CORBA components</Description>
 						<StartDate>
-							<YearMonth>2008-08</YearMonth>
+							<YearMonth>2000-10</YearMonth>
 						</StartDate>
 						<EndDate>
-							<YearMonth>2009-09</YearMonth>
+							<YearMonth>2002-12</YearMonth>
 						</EndDate>
 					</PositionHistory>
 				</EmployerOrg>
-
-
-
 			</EmploymentHistory>
 			<EducationHistory>
 				<!-- All degrees assumed to be university-level. -->
@@ -215,7 +235,7 @@ Swix is a system for managing open trade positions within the FX branch of the b
 					name="Spring, Hibernate/JPA/SQL, J2EE/EJB, JMS Messaging, Concurrency. Grails Framework. General interest in new open source technologies, test driven design and agile / continuous integration processes." />
 				<Competency name="Sun Certified Java Developer" />
 			</Competency>
-			<Competency name="Dist">
+			<Competency name="CI Tools">
 				<Competency name="ANT Expert. Bamboo. Sonar. Clover. Eclemma. PMD"></Competency>
 			</Competency>
 			<Competency name="Dist">
