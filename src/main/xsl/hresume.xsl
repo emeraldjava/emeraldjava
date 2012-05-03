@@ -6,93 +6,7 @@
 			<head>
 				<title>
 					<xsl:value-of select="concat(/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:GivenName,' ',/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:MiddleName,' ',/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:FamilyName)"/>'s Resume</title>
-				<style type="text/css">
 
-.hresume
-{
-    widt 100%;
-    padding: 10px;
-}
-
-.hresume abbr
-{
-    border: none;
-}
-
-.hresume address
-{
-    font-style: normal;
-}
-
-.hresume hr
-{
-    display: block;
-}
-
-.hresume .contact .fn
-{
-    font-weight: bold;
-    font-size: 12pt;
-}
-
-.hresume h2
-{
-    font-size: 12pt;
-    padding: 0 0 5px 0;
-    margin: 0;
-}
-
-.hresume .education, .hresume .accreditation
-{
-    margin: 10px 0 10px 20px;
-    padding: 1px;
-}
-
-.hresume .experience
-{
-    margin: 10px 0 30px 20px;
-    padding: 1px;
-}
-
-.hresume .summary, .hresume .tags
-{
-    margin: 10px 0 20px 20px;
-    padding: 1px;
-}
-
-.hresume .education .htitle, .hresume .experience .htitle
-{
-    float: left;
-}
-
-.hresume .htitle .include
-{
-    display: none;
-}
-
-.hresume .education .date_duration, .hresume .experience .date_duration
-{
-    float: right;
-    font-size: smaller;
-}
-
-.hresume .education .summary
-{
-    margin: 0;
-}
-
-.hresume .tags ul
-{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.hresume .tags ul li
-{
-    display: inline;
-}
-</style>
 </head>
 <body>
 <div class="hresume">
@@ -149,13 +63,13 @@
 		<xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:ContactMethod/h:InternetEmailAddress"/>
 		</a>
 		<br/>
-		Web: <a class="url" href="{/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:ContactMethod/h:InternetWebAddress}">
+		<!-- Web: <a class="url" href="{/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:ContactMethod/h:InternetWebAddress}">
 		<xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:ContactMethod/h:InternetWebAddress"/>
 		</a>
 		<br/>
 		<a class="url" href="{/h:Resume/h:StructuredXMLResume/h:ResumeAdditionalItems/h:ResumeAdditionalItem/h:Description}">
 		<xsl:value-of select="substring-after(/h:Resume/h:StructuredXMLResume/h:ResumeAdditionalItems/h:ResumeAdditionalItem/@type,'x:')"/>
-		</a>
+		</a>-->
 		</div>
 <div style="clear: both;">
 <xsl:text disable-output-escaping="yes"><![CDATA[&nbsp;]]></xsl:text>
