@@ -32,3 +32,12 @@ Resources
      
      http://ns.hr-xml.org/2_5/HR-XML-2_5/SEP/Resume.xsd
      http://www.xmlhelpline.com/blog/2007/08/18.html
+     
+     http://suda.co.uk/cv/
+     
+     
+http://lab.madgex.com/api/hresumeconversion1_0/?url=https://raw.github.com/emeraldjava/emeraldjava/master/src/main/html/resume.html&format=pdf&section-order=name,summary,skills,work,education,affiliation,publications,contact-details&terminology=en-gb
+     
+     http://lab.madgex.com/api/hresumeconversion1_0/?url=https://raw.github.com/emeraldjava/emeraldjava/master/src/main/html/resume.html&format=word&section-order=name,summary,skills,work,education,affiliation,publications,contact-details&terminology=en-us
+     
+     

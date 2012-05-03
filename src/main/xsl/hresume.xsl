@@ -112,7 +112,7 @@
 					</span>
 				</div>
 				<div class="date_duration">
-					<abbr class="dtstart" title="2001-01-01">
+					<abbr class="dtstart" title="{h:PositionHistory/h:StartDate/h:YearMonth}">
 						<xsl:value-of select="h:PositionHistory/h:StartDate/h:YearMonth"/>
 					</abbr> - <abbr class="dtend">
 						<xsl:value-of select="h:PositionHistory/h:EndDate/h:YearMonth"/>
