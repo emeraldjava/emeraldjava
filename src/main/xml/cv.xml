@@ -7,7 +7,6 @@
 				<GivenName>Paul</GivenName>
 				<FamilyName>O'Connell</FamilyName>
 			</PersonName>
-
 			<ContactMethod>
 				<!-- Phone location not supported. -->
 				<Telephone>
