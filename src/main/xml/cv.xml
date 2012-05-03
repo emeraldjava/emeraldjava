@@ -230,43 +230,16 @@ Swix is a system for managing open trade positions within the FX branch of the b
 		</EducationHistory>
 		<Qualifications>
 			<!-- Skill area title not supported (unless no skill set title is given). -->
-			<Competency name="Java">
-				<Competency
-					name="Spring, Hibernate/JPA/SQL, J2EE/EJB, JMS Messaging, Concurrency. Grails Framework. General interest in new open source technologies, test driven design and agile / continuous integration processes." />
-				<Competency name="Sun Certified Java Developer" />
-			</Competency>
-			<Competency name="CI Tools">
-				<Competency name="ANT Expert. Bamboo. Sonar. Clover. Eclemma. PMD"></Competency>
-			</Competency>
-			<Competency name="Dist">
-				<Competency
-					name="Expert knowledge of XML messaging for modeling various business process flows. RMI, CORBA, SOAP, Web Services. Web"></Competency>
-			</Competency>
-			<Competency name="Web">
-				<Competency
-					name="Expert knowledge of Wicket, Servlets, JSP, Struts, Spring MVC, JSF. HTML, Javascript, AJAX, CSS and DOM. Detailed knowledge of Tomcat and Apache servers. Jetty. PHP. Zend Framework. YAML. GWTXML	"></Competency>
-			</Competency>
-
-			<Competency name="XML">
-				<Competency name="Extensive use of DOM and SAX parsers,XSL,FOP,JAXB.D"></Competency>
-			</Competency>
-			<Competency name="SCM">
-				<Competency
-					name="SCM Tools	Expert knowledge of SCM systems (SVN/Git/ClearCase). Eclipse, Intellij, Netbeans."></Competency>
-			</Competency>
-			<Competency name="J2EE Servers">
-				<Competency name="Websphere, Weblogic, JBoss, Glassfish, Geronimo"></Competency>
-			</Competency>
-			<Competency name="Databases">
-				<Competency name="	Oracle, Db2, MySQL, H2."></Competency>
-			</Competency>
-			<Competency name="Testing">
-				<Competency name="Junit, TestNG, DBUnit, Selenium"></Competency>
-			</Competency>
-			<Competency name="Build Tools">
-				<Competency name="ANT Expert. Bamboo. Sonar. Clover. Eclemma. PMD"></Competency>
-			</Competency>
-
+			<Competency name="Java" description="Spring, ORM, J2EE/EJB, JMS, Concurrency. General interest in new open source technologies, test driven design and agile / continuous integration processes. Sun Certified Java Developer"/>
+			<Competency name="CI Tools" description="ANT Expert. Bamboo. Sonar. Clover. Eclemma. PMD"/>
+			<Competency name="Dist" description="Expert knowledge of XML messaging for modeling various business process flows. RMI, CORBA, SOAP, Web Services. Web"/>
+			<Competency name="Web" description="Expert knowledge of Wicket, Servlets, JSP, Struts, Spring MVC, JSF. HTML, Javascript, AJAX, CSS and DOM. Detailed knowledge of Tomcat and Apache servers. Jetty. PHP. Zend Framework. YAML."/>
+			<Competency name="XML" description="Extensive use of DOM and SAX parsers,XSL,FOP,JAXB.D"/>
+			<Competency name="SCM" description="SCM Tools	Expert knowledge of SCM systems (SVN/Git/ClearCase). Eclipse, Intellij, Netbeans."/>
+			<Competency name="J2EE Servers" description="Websphere, Weblogic, JBoss, Glassfish, Geronimo"/>
+			<Competency name="Databases" description="Oracle, Db2, MySQL, H2."/>
+			<Competency name="Testing" description="Junit, TestNG, DBUnit, Selenium"/>
+			<Competency name="Build Tools" description="ANT Expert. Bamboo. Sonar. Clover. Eclemma. PMD"/>
 		</Qualifications>
 		<!-- Copyright not supported. -->
 		<RevisionDate>2012-05-01</RevisionDate>

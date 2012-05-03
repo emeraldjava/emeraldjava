@@ -77,7 +77,23 @@
 </div>
 </div>
 
-<!-- experence -->
+<hr/>
+<div>
+	<h2>Skills</h2>
+	<div>
+		<div class="tags">
+			<ul>
+				<xsl:for-each select="/h:Resume/h:StructuredXMLResume/h:Qualifications/h:Competency">
+					<li>
+						<xsl:value-of select="@name"/> : <xsl:value-of select="@description"/>
+					</li>
+				</xsl:for-each>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<!-- experience -->
 <hr/>
 <div>
 	<h2>Professional Experience</h2>
@@ -147,23 +163,6 @@
 	</div>
 </div>
 
-<hr/>
-<div>
-	<h2>Competency</h2>
-	<div>
-		<div class="tags">
-			<ul>
-				<xsl:for-each select="/h:Resume/h:StructuredXMLResume/h:Qualifications/h:Competency">
-					<li>
-						<a class="skill" target="_blank" rel="tag" href="http://www.technorati.com/tag/{@name}">
-							<xsl:value-of select="@name"/>
-						</a>
-					</li>
-				</xsl:for-each>
-			</ul>
-		</div>
-	</div>
-</div>
 
 				</div>
 			</body>
