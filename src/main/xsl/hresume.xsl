@@ -85,7 +85,8 @@
 			<ul>
 				<xsl:for-each select="/h:Resume/h:StructuredXMLResume/h:Qualifications/h:Competency">
 					<li>
-						<xsl:value-of select="@name"/> : <xsl:value-of select="@description"/>
+						<a class="skill" target="_blank" rel="tag" href="http://stackoverflow.com/questions/tagged/{@name}">
+						<xsl:value-of select="@name"/></a> : <xsl:value-of select="@description"/>
 					</li>
 				</xsl:for-each>
 			</ul>
