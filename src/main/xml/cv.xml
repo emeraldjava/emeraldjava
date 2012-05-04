@@ -5,6 +5,7 @@
 		<ContactInfo>
 			<PersonName>
 				<GivenName>Paul</GivenName>
+				<AlternateScript>M.Sc, B.A.I, B.A</AlternateScript>
 				<FamilyName>O'Connell</FamilyName>
 			</PersonName>
 			<ContactMethod>
@@ -25,7 +26,7 @@
 				</PostalAddress>
 			</ContactMethod>
 		</ContactInfo>
-		<Objective>Java developer with focus for Spring/EJB, test driven development and CI processes.</Objective>
+		<Objective>To work as a senior java developer within an agile team using test driven design and continuous integration methodology to develop N-tier applications.</Objective>
 		<EmploymentHistory>
 			<EmployerOrg>
 				<EmployerOrgName>Arantech</EmployerOrgName>

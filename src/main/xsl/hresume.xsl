@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:h="http://ns.hr-xml.org/2007-04-15">
-	<xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes"/>
-	<xsl:template match="/">
+<xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes"/>
+<xsl:template match="/">
 <html>
 <head>
 <title>
@@ -16,11 +16,11 @@
 			<span class="given-name">
 				<xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:GivenName"/>
 			</span>
-			<span class="middle-name">
-				<xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:MiddleName"/>
-			</span>
 			<span class="family-name">
 				<xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:FamilyName"/>
+			</span>
+			<span class="middle-name">
+, <xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:AlternateScript"/>
 			</span>
 		</div>
 		<div class="adr">
@@ -46,37 +46,35 @@
 				<span class="tel">
 					<span class="value">
 						<xsl:value-of select="h:Telephone/h:FormattedNumber"/>
-					</span> (<span class="type">
-						<xsl:choose>
-							<xsl:when test="contains(h:Location,'x:')">
-								<xsl:value-of select="substring-after(h:Location,'x:')"/>
-							</xsl:when>
-							<xsl:otherwise>
-								<xsl:value-of select="h:Location"/>
-							</xsl:otherwise>
-						</xsl:choose>
-					</span>)</span>
-				<br/>
+					</span>
+				</span>
 			</xsl:for-each>
 		</div>
-		<div style="float: left;">
-		Email: <a class="external email fn" href="mailto:{/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:ContactMethod/h:InternetEmailAddress}">
-		<xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:ContactMethod/h:InternetEmailAddress"/>
-		</a>
 		<br/>
-		<!-- Web: <a class="url" href="{/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:ContactMethod/h:InternetWebAddress}">
-		<xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:ContactMethod/h:InternetWebAddress"/>
-		</a>
-		<br/>
-		<a class="url" href="{/h:Resume/h:StructuredXMLResume/h:ResumeAdditionalItems/h:ResumeAdditionalItem/h:Description}">
-		<xsl:value-of select="substring-after(/h:Resume/h:StructuredXMLResume/h:ResumeAdditionalItems/h:ResumeAdditionalItem/@type,'x:')"/>
-		</a>-->
-		</div>
+<div style="float: left;">
+Email: <a class="external email fn" href="mailto:{/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:ContactMethod/h:InternetEmailAddress}">
+<xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:ContactMethod/h:InternetEmailAddress"/>
+</a>
+<br/>
+<!-- Web: <a class="url" href="{/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:ContactMethod/h:InternetWebAddress}">
+<xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:ContactMethod/h:InternetWebAddress"/>
+</a>
+<br/>
+<a class="url" href="{/h:Resume/h:StructuredXMLResume/h:ResumeAdditionalItems/h:ResumeAdditionalItem/h:Description}">
+<xsl:value-of select="substring-after(/h:Resume/h:StructuredXMLResume/h:ResumeAdditionalItems/h:ResumeAdditionalItem/@type,'x:')"/>
+</a>-->
+</div>
 <div style="clear: both;">
 <xsl:text disable-output-escaping="yes"><![CDATA[&nbsp;]]></xsl:text>
 </div>
 </div>
-
+<hr/>
+<div>
+	<h2>Objective</h2>
+	<p class="summary">
+	<xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:Objective"/>
+	</p>
+</div>
 <hr/>
 <div>
 	<h2>Skills</h2>
@@ -164,9 +162,8 @@
 	</div>
 </div>
 
-
-				</div>
-			</body>
-		</html>
-	</xsl:template>
+</div>
+</body>
+</html>
+</xsl:template>
 </xsl:stylesheet>
