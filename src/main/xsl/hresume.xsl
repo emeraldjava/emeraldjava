@@ -112,7 +112,7 @@ Email: <a class="external email fn" href="mailto:{/h:Resume/h:StructuredXMLResum
 				<div class="date_duration">
 					<abbr class="dtstart" title="{h:PositionHistory/h:StartDate/h:YearMonth}">
 						<xsl:value-of select="h:PositionHistory/h:StartDate/h:YearMonth"/>
-					</abbr> - <abbr class="dtend">
+					</abbr> - <abbr class="dtend" title="{h:PositionHistory/h:EndDate/h:YearMonth}">
 						<xsl:value-of select="h:PositionHistory/h:EndDate/h:YearMonth"/>
 					</abbr>
 				</div>
@@ -149,7 +149,7 @@ Email: <a class="external email fn" href="mailto:{/h:Resume/h:StructuredXMLResum
 					</span>
 					<br/>
 					<span class="org">
-						<a class="url fn org" href="{h:School/h:InternetDomainName}">
+						<a class="url fn org" href="{h:School/h:InternetDomainName}" title="{h:School/h:SchoolName}">
 							<xsl:value-of select="h:School/h:SchoolName"/>
 						</a>
 					</span>
