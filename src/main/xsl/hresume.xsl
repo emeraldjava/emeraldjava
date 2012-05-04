@@ -144,19 +144,20 @@ Email: <a class="external email fn" href="mailto:{/h:Resume/h:StructuredXMLResum
 						<xsl:value-of select="h:Degree/h:DegreeName"/>
 					</span>
 					<br/>
-					<span class="org">
+					<span class="summary">
 						<xsl:value-of select="h:Degree/h:Comments"/>
 					</span>
 					<br/>
 					<span class="org">
-						<xsl:value-of select="h:OrganizationUnit"/>,
-						<xsl:value-of select="h:School/h:SchoolName"/>
+						<a class="url fn org" href="{h:School/h:InternetDomainName}">
+							<xsl:value-of select="h:School/h:SchoolName"/>
+						</a>
 					</span>
 				</div>
 				<div class="date_duration">
 					<abbr class="dtstart" title="{h:Degree/h:DatesOfAttendance/h:StartDate/h:YearMonth}">
 						<xsl:value-of select="h:Degree/h:DatesOfAttendance/h:StartDate/h:YearMonth"/>
-					</abbr> --> <abbr class="dtend">
+					</abbr> : <abbr class="dtend" title="{h:Degree/h:DatesOfAttendance/h:EndDate/h:YearMonth}">
 						<xsl:value-of select="h:Degree/h:DatesOfAttendance/h:EndDate/h:YearMonth"/>
 					</abbr>
 				</div>

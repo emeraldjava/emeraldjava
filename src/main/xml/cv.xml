@@ -196,8 +196,8 @@ Swix is a system for managing open trade positions within the FX branch of the b
 				<!-- All degrees assumed to be university-level. -->
 			<SchoolOrInstitution schoolType="university">
 				<School>
-					<InternetDomainName>http://www.tcd.ie</InternetDomainName>
-					<SchoolName>Trinity College Dublin</SchoolName>
+					<InternetDomainName>http://www.scss.tcd.ie/postgraduate/mscnds/</InternetDomainName>
+					<SchoolName>Department of Computer Science, Trinity College Dublin</SchoolName>
 				</School>
 				<OrganizationUnit organizationType="department">Department of Computer Science</OrganizationUnit>
 				<Degree>
@@ -217,8 +217,8 @@ Swix is a system for managing open trade positions within the FX branch of the b
 			</SchoolOrInstitution>
 			<SchoolOrInstitution schoolType="university">
 				<School>
-					<InternetDomainName>http://www.tcd.ie</InternetDomainName>
-					<SchoolName>Trinity College Dublin</SchoolName>
+					<InternetDomainName>http://www.tcd.ie/Engineering/</InternetDomainName>
+					<SchoolName>Department of Engineering, Trinity College Dublin</SchoolName>
 				</School>
 				<OrganizationUnit organizationType="department">Department of Engineering</OrganizationUnit>
 				<Degree>
