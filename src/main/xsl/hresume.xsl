@@ -142,10 +142,14 @@ Email: <a class="external email fn" href="mailto:{/h:Resume/h:StructuredXMLResum
 					<!-- div float container -->
 					<span class="summary">
 						<xsl:value-of select="h:Degree/h:DegreeName"/>
-						<xsl:value-of select="h:Degree/h:DegreeMajor/h:Name"/>
 					</span>
 					<br/>
 					<span class="org">
+						<xsl:value-of select="h:Degree/h:Comments"/>
+					</span>
+					<br/>
+					<span class="org">
+						<xsl:value-of select="h:OrganizationUnit"/>,
 						<xsl:value-of select="h:School/h:SchoolName"/>
 					</span>
 				</div>

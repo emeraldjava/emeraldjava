@@ -196,10 +196,13 @@ Swix is a system for managing open trade positions within the FX branch of the b
 				<!-- All degrees assumed to be university-level. -->
 			<SchoolOrInstitution schoolType="university">
 				<School>
+					<InternetDomainName>http://www.tcd.ie</InternetDomainName>
 					<SchoolName>Trinity College Dublin</SchoolName>
 				</School>
+				<OrganizationUnit organizationType="department">Department of Computer Science</OrganizationUnit>
 				<Degree>
 					<DegreeName>M.Sc Network and Distributed Systems</DegreeName>
+					<DegreeDate><YearMonth>2000-10</YearMonth></DegreeDate>
 					<DatesOfAttendance>
 						<StartDate>
 							<YearMonth>1999-10</YearMonth>
@@ -210,13 +213,17 @@ Swix is a system for managing open trade positions within the FX branch of the b
 					</DatesOfAttendance>
 					<Comments>Dissertation Title: Collaborative Ad-hoc Applications. An investigation into the use of trust based security in ad-hoc JINI systems.</Comments>
 				</Degree>
+				<Degree></Degree>
 			</SchoolOrInstitution>
 			<SchoolOrInstitution schoolType="university">
 				<School>
+					<InternetDomainName>http://www.tcd.ie</InternetDomainName>
 					<SchoolName>Trinity College Dublin</SchoolName>
 				</School>
+				<OrganizationUnit organizationType="department">Department of Engineering</OrganizationUnit>
 				<Degree>
 					<DegreeName>B.A.I in Computer and Electronic Engineering, B.A in Engineering Mathematics</DegreeName>
+					<DegreeDate><YearMonth>1999-06</YearMonth></DegreeDate>
 					<DatesOfAttendance>
 						<StartDate>
 							<YearMonth>1995-09</YearMonth>
