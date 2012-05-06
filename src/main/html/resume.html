@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <html xmlns:h="http://ns.hr-xml.org/2007-04-15">
 <head>
+<link href="./css/bootstrap.css" rel="stylesheet"/>
+<style type="text/css">
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+</style>
+<link href="./css/bootstrap-responsive.css" rel="stylesheet"/>
 <title>Paul  O'Connell's Curriculum Vitae
 </title>
 </head>
 <body>
-<div class="hresume">
-<h1 id="cv">Curriculum Vitae</h1>
+<div class="hresume container">
+<h1 class="brand" id="cv">Curriculum Vitae</h1>
 <div class="contact vcard">
 <div class="fn n" id="j">
 <span class="given-name">Paul</span>
@@ -34,7 +42,7 @@ Email: <a class="external email fn" href="mailto:paul.t.oconnell@gmail.com">paul
 <div style="clear: both;">&nbsp;</div>
 </div>
 <hr/>
-<div>
+<div class="hero-unit">
 <h2>Objective</h2>
 <p class="summary">To work as a senior java developer within an agile team using test driven design and continuous integration methodology to develop N-tier applications.</p>
 </div>
@@ -74,67 +82,79 @@ Email: <a class="external email fn" href="mailto:paul.t.oconnell@gmail.com">paul
 <div class="vcalendar">
 <div class="experience vevent vcard">
 <div class="htitle">
-<span class="org">Arantech</span>, <span class="location">Blackrock, Dublin</span>
+<span class="org">
+<h2>Arantech</h2>
+</span>, <span class="location">Blackrock, Dublin</span>
 </div>
 <div class="date_duration">
 <abbr class="dtstart" title="2010-01">2010-01</abbr> - <abbr class="dtend" title="Present">Present</abbr>
 </div>
-<span class="title">Java Software Engineer</span>
+<h3 class="title">Java Software Engineer</h3>
 <div class="description">Developer on the core product with responsibility for the implementation of new features and bug fixes. Introduction of unit test code coverage metrics and a framework for featuring testing interfaces of the product.</div>
 </div>
 <div style="clear: both">&nbsp;</div>
 <div class="experience vevent vcard">
 <div class="htitle">
-<span class="org">Aegon</span>, <span class="location">IFSC, Dublin</span>
+<span class="org">
+<h2>Aegon</h2>
+</span>, <span class="location">IFSC, Dublin</span>
 </div>
 <div class="date_duration">
 <abbr class="dtstart" title="2008-10">2008-10</abbr> - <abbr class="dtend" title="2009-10">2009-10</abbr>
 </div>
-<span class="title">Contract Software Engineer</span>
+<h3 class="title">Contract Software Engineer</h3>
 <div class="description">Validation Service Replatforming Conversion of a legacy client side validation component onto a JBoss J2EE platform to allow support for EJB and Webservice requests. Hibernate, Spring with Wicket UI.</div>
 </div>
 <div style="clear: both">&nbsp;</div>
 <div class="experience vevent vcard">
 <div class="htitle">
-<span class="org">Terranua/Fidelity</span>, <span class="location">Hatch Street, Dublin</span>
+<span class="org">
+<h2>Terranua/Fidelity</h2>
+</span>, <span class="location">Hatch Street, Dublin</span>
 </div>
 <div class="date_duration">
 <abbr class="dtstart" title="2008-03">2008-03</abbr> - <abbr class="dtend" title="2009-09">2009-09</abbr>
 </div>
-<span class="title">Contract Software Engineer</span>
+<h3 class="title">Contract Software Engineer</h3>
 <div class="description">Risk Reporting Responsible for a risk reporting system which queries risk details from the DB, creating a xml report which is then transformed via XSL to html and word formats for user preview and printing.</div>
 </div>
 <div style="clear: both">&nbsp;</div>
 <div class="experience vevent vcard">
 <div class="htitle">
-<span class="org">Norkom</span>, <span class="location">Henry St, Dublin</span>
+<span class="org">
+<h2>Norkom</h2>
+</span>, <span class="location">Henry St, Dublin</span>
 </div>
 <div class="date_duration">
 <abbr class="dtstart" title="2007-10">2007-10</abbr> - <abbr class="dtend" title="2008-02">2008-02</abbr>
 </div>
-<span class="title">Contract Software Engineer</span>
+<h3 class="title">Contract Software Engineer</h3>
 <div class="description">Watch List Management Day to day work involves bug fixing and small pieces of new development on various branches of this sub-project.</div>
 </div>
 <div style="clear: both">&nbsp;</div>
 <div class="experience vevent vcard">
 <div class="htitle">
-<span class="org">Curam</span>, <span class="location">Park West, Dublin</span>
+<span class="org">
+<h2>Curam</h2>
+</span>, <span class="location">Park West, Dublin</span>
 </div>
 <div class="date_duration">
 <abbr class="dtstart" title="2006-09">2006-09</abbr> - <abbr class="dtend" title="2007-09">2007-09</abbr>
 </div>
-<span class="title">Software Engineer</span>
+<h3 class="title">Software Engineer</h3>
 <div class="description">Unemployment Insurance Java developer within the workflow group, which involved the full software development lifecycle on various J2EE platforms. Implementation of a unit testing framework and tools to auto-generate unit test stubs from the project model. Maintenance of the smoke test and continuous integration systems. Curam use a model driven development process and have a custom ORM style solution for database transparency</div>
 </div>
 <div style="clear: both">&nbsp;</div>
 <div class="experience vevent vcard">
 <div class="htitle">
-<span class="org">UBS</span>, <span class="location">Europastrasse 2, Zurich</span>
+<span class="org">
+<h2>UBS</h2>
+</span>, <span class="location">Europastrasse 2, Zurich</span>
 </div>
 <div class="date_duration">
 <abbr class="dtstart" title="2003-11">2003-11</abbr> - <abbr class="dtend" title="2006-05">2006-05</abbr>
 </div>
-<span class="title">Software Engineer</span>
+<h3 class="title">Software Engineer</h3>
 <div class="description">
 					ZFM is a real time settlement and reconciliation system based on XML messaging over MQ. As project leader my responsibilities have included the design and implementation of an API, the planning and co-ordination of development and testing, both within our group and with other departments. The system consists of various java applications communicating via XML and MQ. A web-based tool supports tracking and supervision of messages within the system.
 eBus provides a consolidated view of all deal confirmation messages within the FX trading platform. As project lead I was responsible for the design of a common message specification, implementation with XML/XSL over MQ, and the co-ordination of the testing and release phases.
@@ -144,12 +164,14 @@ Swix is a system for managing open trade positions within the FX branch of the b
 <div style="clear: both">&nbsp;</div>
 <div class="experience vevent vcard">
 <div class="htitle">
-<span class="org">UBS</span>, <span class="location">Liverpool St, London</span>
+<span class="org">
+<h2>UBS</h2>
+</span>, <span class="location">Liverpool St, London</span>
 </div>
 <div class="date_duration">
 <abbr class="dtstart" title="2003-01">2003-01</abbr> - <abbr class="dtend" title="2003-10">2003-10</abbr>
 </div>
-<span class="title">Software Engineer</span>
+<h3 class="title">Software Engineer</h3>
 <div class="description">
 Swix is a system for managing open trade positions within the FX branch of the bank. Lead Java developer my responsibilities included the initial XML protocol specification, implementation of a web application (Tomcat) and co-ordination of testing with other groups and business users.
 </div>
@@ -157,12 +179,14 @@ Swix is a system for managing open trade positions within the FX branch of the b
 <div style="clear: both">&nbsp;</div>
 <div class="experience vevent vcard">
 <div class="htitle">
-<span class="org">Erisson</span>, <span class="location">Clonskeagh, Dublin</span>
+<span class="org">
+<h2>Erisson</h2>
+</span>, <span class="location">Clonskeagh, Dublin</span>
 </div>
 <div class="date_duration">
 <abbr class="dtstart" title="2000-10">2000-10</abbr> - <abbr class="dtend" title="2002-12">2002-12</abbr>
 </div>
-<span class="title">Software Engineer</span>
+<h3 class="title">Software Engineer</h3>
 <div class="description">RANOS is an operations and management system for Ericsson’s 3G telecommunications radio network system. Member of a framework group, which provided generic server side Java/CORBA components</div>
 </div>
 <div style="clear: both">&nbsp;</div>

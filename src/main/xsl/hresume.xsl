@@ -4,13 +4,22 @@
 <xsl:template match="/">
 <html>
 <head>
+    <!-- Le styles -->
+    <link href="./css/bootstrap.css" rel="stylesheet"/>
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    </style>
+    <link href="./css/bootstrap-responsive.css" rel="stylesheet"/>
 <title>
 <xsl:value-of select="concat(/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:GivenName,' ',/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:MiddleName,' ',/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:FamilyName)"/>'s Curriculum Vitae
 </title>
 </head>
 <body>
-<div class="hresume">
-	<h1 id="cv">Curriculum Vitae</h1>
+<div class="hresume container">
+	<h1 class="brand" id="cv">Curriculum Vitae</h1>
 	<div class="contact vcard">
 		<div class="fn n" id="j">
 			<span class="given-name">
@@ -69,7 +78,7 @@ Email: <a class="external email fn" href="mailto:{/h:Resume/h:StructuredXMLResum
 </div>
 </div>
 <hr/>
-<div>
+<div class="hero-unit">
 	<h2>Objective</h2>
 	<p class="summary">
 	<xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:Objective"/>
@@ -104,7 +113,7 @@ Email: <a class="external email fn" href="mailto:{/h:Resume/h:StructuredXMLResum
 					
 
 					<span class="org">
-						<xsl:value-of select="h:EmployerOrgName"/>
+						<h2><xsl:value-of select="h:EmployerOrgName"/></h2>
 					</span>, <span class="location">
 						<xsl:value-of select="h:EmployerContactInfo/h:LocationSummary/h:Municipality"/>, <xsl:value-of select="h:EmployerContactInfo/h:LocationSummary/h:Region"/>
 					</span>
@@ -117,9 +126,9 @@ Email: <a class="external email fn" href="mailto:{/h:Resume/h:StructuredXMLResum
 					</abbr>
 				</div>
 
-				<span class="title">
+				<h3 class="title">
 					<xsl:value-of select="h:PositionHistory/h:Title"/>
-				</span>
+				</h3>
 				<div class="description">
 					<xsl:value-of select="h:PositionHistory/h:Description"/>
 				</div>
