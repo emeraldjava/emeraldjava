@@ -24,7 +24,7 @@
       <div class="span12">
         <h1 class="brand" id="cv">Curriculum Vitae</h1>
         <div class="row show-grid contact vcard">
-          <div class="span4">
+          <div class="span3 offset2">
               <div class="fn n" id="j">
                           <span class="given-name">
                               <xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:GivenName"/>
@@ -36,8 +36,6 @@
               , <xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:AlternateScript"/>
                           </span>
               </div>
-          </div>
-          <div class="span4">
               <div class="adr">
                 <span class="street-address">
                     <xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:ContactMethod/h:PostalAddress/h:DeliveryAddress/h:AddressLine"/>
@@ -60,7 +58,7 @@
             </div>
 
           </div>
-          <div class="span4">
+          <div class="span3 offset1">
               <!-- contact details -->
               <div style="float: left; padding-right: 15px;">
                   <xsl:for-each select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:ContactMethod">
@@ -111,40 +109,49 @@
 	<div class="vcalendar">
 		<xsl:for-each select="/h:Resume/h:StructuredXMLResume/h:EmploymentHistory/h:EmployerOrg">
 			<div class="experience vevent vcard">
-				<blockquote class="htitle">
+				<div class="htitle">
 					<!-- div float container -->
 
-					<p class="org">
-						<h3><xsl:value-of select="h:EmployerOrgName"/></h3>
-					</p>
-                    <small class="UserArea">
-					    <xsl:value-of select="h:PositionHistory/h:UserArea"/>
-				    </small>
-                    <br/>
+						<h3 class="org"><xsl:value-of select="h:EmployerOrgName"/>
+                    <small>
 
-                    <div class="row">
-                        <div class="span10">
-                            <div class="row">
-      <div class="span2">
-          <div class="date_duration">
+                        <div class="date date_duration">
 				<abbr class="dtstart" title="{h:PositionHistory/h:StartDate/h:YearMonth}">
 						<xsl:value-of select="h:PositionHistory/h:StartDate/h:YearMonth"/>
 					</abbr> - <abbr class="dtend" title="{h:PositionHistory/h:EndDate/h:YearMonth}">
 						<xsl:value-of select="h:PositionHistory/h:EndDate/h:YearMonth"/>
 					</abbr>
 				</div>
-      </div>
-      <div class="span8">
-          <xsl:value-of select="h:PositionHistory/h:Description"/></div>
-      </div>
-                    </div>
-    </div>
+                    </small>
+                        </h3>
+
+                    <ul class="unstyled">
+                    <li><xsl:value-of select="h:PositionHistory/h:UserArea"/></li>
+                        <ul>
+                            <xsl:for-each select="h:PositionHistory/h:Description">
+                                <li><xsl:value-of select="."/></li>
+                            </xsl:for-each>
+                        </ul>
+                    </ul>
+                    <!--
+                    <div class="row">
+                        <div class="span10">
+                            <div class="row">
+                                  <div class="span2">
+                                      <div class="date_duration">
+                                  </div>
+                                  <div class="span8">
+                                      <xsl:value-of select="h:PositionHistory/h:Description"/></div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>                -->
 
 
                     <!--<span class="location">
 						<xsl:value-of select="h:EmployerContactInfo/h:LocationSummary/h:Municipality"/>, <xsl:value-of select="h:EmployerContactInfo/h:LocationSummary/h:Region"/>
 					</span>-->
-				</blockquote>
+				</div>
 
 
 

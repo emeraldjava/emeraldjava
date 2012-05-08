@@ -39,10 +39,10 @@
 				</EmployerContactInfo>
 				<PositionHistory>
 					<Title>Java Software Engineer</Title>
-					<Description>
-					Java developer on the Touchpoint customer experience management solution product for use by the mobile operators.
-					</Description>
-					<UserArea>Developer on the core product with responsibility for the implementation of new features and bug fixes. Introduction of unit test code coverage metrics and a framework for featuring testing interfaces of the product.</UserArea>
+                    <UserArea>Java contractor working on various Customer Experience Management components for use by the mobile operators.</UserArea>
+					<Description>Introduction of a generic entity framework into the core Touchpoint product.</Description>
+                    <Description>Create a test framework for integration and system testing of the product.</Description>
+                    <Description>Introduced the use of the sonar code quality engine to the organisation.</Description>
 					<StartDate>
 						<YearMonth>2010-01</YearMonth>
 					</StartDate>
@@ -126,7 +126,10 @@
 					<PositionHistory>
 						<Title>Software Engineer</Title>
 						<UserArea>Curam provide a social enterprise management solution that can be customised for various social welfare organisations across the globe.</UserArea>
-						<Description>Unemployment Insurance Java developer within the workflow group, which involved the full software development lifecycle on various J2EE platforms. Implementation of a unit testing framework and tools to auto-generate unit test stubs from the project model. Maintenance of the smoke test and continuous integration systems. Curam use a model driven development process and have a custom ORM style solution for database transparency</Description>
+						<Description>Unemployment Insurance Java developer within the workflow group which involved the full software development lifecycle on various J2EE platforms.</Description>
+                        <Description>Implementation of a unit testing framework and tools to auto-generate unit test stubs from the project model.</Description>
+                        <Description>Maintenance of the smoke test and continuous integration systems.</Description>
+                        <!--<Description>Curam use a model driven development process and have a custom ORM style solution for database transparency</Description>-->
 						<StartDate>
 							<YearMonth>2006-09</YearMonth>
 						</StartDate>
@@ -164,11 +167,11 @@ Swix is a system for managing open trade positions within the FX branch of the b
 				<EmployerOrg>
 					<EmployerOrgName>UBS</EmployerOrgName>
 					<EmployerContactInfo>
-					<LocationSummary>
-							<Municipality>Liverpool St</Municipality>
-							<Region>London</Region>
-							<CountryCode>England</CountryCode>
-						</LocationSummary>
+                        <LocationSummary>
+                            <Municipality>Liverpool St</Municipality>
+                            <Region>London</Region>
+                            <CountryCode>England</CountryCode>
+                        </LocationSummary>
 					</EmployerContactInfo>
 					<PositionHistory>
 						<Title>Software Engineer</Title>
@@ -183,7 +186,7 @@ Swix is a system for managing open trade positions within the FX branch of the b
 					</PositionHistory>
 				</EmployerOrg>
 				<EmployerOrg>
-					<EmployerOrgName>Erisson</EmployerOrgName>
+                    <EmployerOrgName>Erisson</EmployerOrgName>
 					<EmployerContactInfo>
 						<LocationSummary>
 							<Municipality>Clonskeagh</Municipality>
@@ -192,11 +195,8 @@ Swix is a system for managing open trade positions within the FX branch of the b
 					</EmployerContactInfo>
 					<PositionHistory>
 						<Title>Software Engineer</Title>
-						<OrgName>
-							<OrganizationName />
-						</OrgName>
-                        <UserArea>RANOS is an operations and management system for Ericsson’s 3G telecommunications radio network system.</UserArea>
-						<Description>Member of a framework group, which provided generic server side Java/CORBA components</Description>
+						<UserArea>RANOS is an operations and management system for Ericsson’s 3G telecommunications radio network system.</UserArea>
+						<Description>Member of a framework group which provided generic server side Java/CORBA components.</Description>
 						<StartDate>
 							<YearMonth>2000-10</YearMonth>
 						</StartDate>
