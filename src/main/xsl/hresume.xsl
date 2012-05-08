@@ -20,7 +20,7 @@
 <body>
 <div class="hresume container">
 
-    <div class="row">
+    <div class="row hero-unit">
       <div class="span12">
         <h1 class="brand" id="cv">Curriculum Vitae</h1>
         <div class="row show-grid contact vcard">
@@ -82,7 +82,7 @@
       </div>
     </div>
 <hr/>
-<div class="hero-unit">
+<div>
 	<h2>Objective</h2>
 	<p class="summary">
 	<xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:Objective"/>
@@ -93,14 +93,13 @@
 	<h2>Skills</h2>
 	<div>
 		<div class="tags">
-			<ul>
+			<dl class="dl-horizontal">
 				<xsl:for-each select="/h:Resume/h:StructuredXMLResume/h:Qualifications/h:Competency">
-					<li>
-						<a class="skill" target="_blank" rel="tag" href="http://stackoverflow.com/questions/tagged/{@name}">
-						<xsl:value-of select="@name"/></a> : <xsl:value-of select="@description"/>
-					</li>
+					<dt>
+                       <a class="skill" target="_blank" rel="tag" href="http://stackoverflow.com/questions/tagged/{@name}">
+					<xsl:value-of select="@name"/></a></dt><dd><xsl:value-of select="@description"/></dd>
 				</xsl:for-each>
-			</ul>
+			</dl>
 		</div>
 	</div>
 </div>
@@ -124,7 +123,7 @@
                     <br/>
 
                     <div class="row">
-                        <div class="span12">
+                        <div class="span10">
                             <div class="row">
       <div class="span2">
           <div class="date_duration">
@@ -135,7 +134,7 @@
 					</abbr>
 				</div>
       </div>
-      <div class="span9">
+      <div class="span8">
           <xsl:value-of select="h:PositionHistory/h:Description"/></div>
       </div>
                     </div>

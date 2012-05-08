@@ -147,6 +147,7 @@
 					</EmployerContactInfo>
 					<PositionHistory>
 						<Title>Software Engineer</Title>
+                        <UserArea>Internation assignment as a Software developer within Foreign Exchange IT group in Zurich, Switzerland.</UserArea>
 						<Description>
 					ZFM is a real time settlement and reconciliation system based on XML messaging over MQ. As project leader my responsibilities have included the design and implementation of an API, the planning and co-ordination of development and testing, both within our group and with other departments. The system consists of various java applications communicating via XML and MQ. A web-based tool supports tracking and supervision of messages within the system.
 eBus provides a consolidated view of all deal confirmation messages within the FX trading platform. As project lead I was responsible for the design of a common message specification, implementation with XML/XSL over MQ, and the co-ordination of the testing and release phases.
@@ -171,9 +172,8 @@ Swix is a system for managing open trade positions within the FX branch of the b
 					</EmployerContactInfo>
 					<PositionHistory>
 						<Title>Software Engineer</Title>
-						<Description>
-Swix is a system for managing open trade positions within the FX branch of the bank. Lead Java developer my responsibilities included the initial XML protocol specification, implementation of a web application (Tomcat) and co-ordination of testing with other groups and business users.
-</Description>
+                        <UserArea>Software developer within Foreign Exchange IT group based in London.</UserArea>
+						<Description>Lead Java developer on the Swix tool to handle open positions on a daily basis. My responsibilities included the initial XML protocol specification, implementation of a web application (Tomcat) and co-ordination of testing with other groups and business users.</Description>
 						<StartDate>
 							<YearMonth>2003-01</YearMonth>
 						</StartDate>
@@ -195,7 +195,8 @@ Swix is a system for managing open trade positions within the FX branch of the b
 						<OrgName>
 							<OrganizationName />
 						</OrgName>
-						<Description>RANOS is an operations and management system for Ericsson’s 3G telecommunications radio network system. Member of a framework group, which provided generic server side Java/CORBA components</Description>
+                        <UserArea>RANOS is an operations and management system for Ericsson’s 3G telecommunications radio network system.</UserArea>
+						<Description>Member of a framework group, which provided generic server side Java/CORBA components</Description>
 						<StartDate>
 							<YearMonth>2000-10</YearMonth>
 						</StartDate>
