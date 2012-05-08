@@ -19,64 +19,68 @@
 </head>
 <body>
 <div class="hresume container">
-	<h1 class="brand" id="cv">Curriculum Vitae</h1>
-	<div class="contact vcard">
-		<div class="fn n" id="j">
-			<span class="given-name">
-				<xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:GivenName"/>
-			</span>
-			<span class="family-name">
-				<xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:FamilyName"/>
-			</span>
-			<span class="middle-name">
-, <xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:AlternateScript"/>
-			</span>
-		</div>
-		<div class="adr">
-			<span class="street-address">
-				<xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:ContactMethod/h:PostalAddress/h:DeliveryAddress/h:AddressLine"/>
-			</span>
-			<br/>
-			<span class="locality">
-				<xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:ContactMethod/h:PostalAddress/h:Municipality"/>
-			</span>, <span class="region">
-				<xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:ContactMethod/h:PostalAddress/h:Region"/>
-			</span>
-			<span class="postal-code">
-				<xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:ContactMethod/h:PostalAddress/h:PostalCode"/>
-			</span>
-			<span class="country-name">
-				<xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:ContactMethod/h:PostalAddress/h:CountryCode"/>
-			</span>
-		</div>
-		<!-- contact details -->
-		<div style="float: left; padding-right: 15px;">
-			<xsl:for-each select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:ContactMethod">
-				<span class="tel">
-					<span class="value">
-						<xsl:value-of select="h:Telephone/h:FormattedNumber"/>
-					</span>
-				</span>
-			</xsl:for-each>
-		</div>
-		<br/>
-<div style="float: left;">
-Email: <a class="external email fn" href="mailto:{/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:ContactMethod/h:InternetEmailAddress}">
-<xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:ContactMethod/h:InternetEmailAddress"/>
-</a>
-<br/>
-<!-- Web: <a class="url" href="{/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:ContactMethod/h:InternetWebAddress}">
-<xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:ContactMethod/h:InternetWebAddress"/>
-</a>
-<br/>
-<a class="url" href="{/h:Resume/h:StructuredXMLResume/h:ResumeAdditionalItems/h:ResumeAdditionalItem/h:Description}">
-<xsl:value-of select="substring-after(/h:Resume/h:StructuredXMLResume/h:ResumeAdditionalItems/h:ResumeAdditionalItem/@type,'x:')"/>
-</a>-->
-</div>
-<div style="clear: both;">
-<xsl:text disable-output-escaping="yes"><![CDATA[&nbsp;]]></xsl:text>
-</div>
-</div>
+
+    <div class="row">
+      <div class="span12">
+        <h1 class="brand" id="cv">Curriculum Vitae</h1>
+        <div class="row show-grid contact vcard">
+          <div class="span4">
+              <div class="fn n" id="j">
+                          <span class="given-name">
+                              <xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:GivenName"/>
+                          </span>
+                          <span class="family-name">
+                              <xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:FamilyName"/>
+                          </span>
+                          <span class="middle-name">
+              , <xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:AlternateScript"/>
+                          </span>
+              </div>
+          </div>
+          <div class="span4">
+              <div class="adr">
+                <span class="street-address">
+                    <xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:ContactMethod/h:PostalAddress/h:DeliveryAddress/h:AddressLine"/>
+                </span>
+                <br/>
+                <span class="locality">
+                    <xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:ContactMethod/h:PostalAddress/h:Municipality"/>
+                </span>
+                <br/>
+                <span class="region">
+                    <xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:ContactMethod/h:PostalAddress/h:Region"/>
+                </span>
+                <br/>
+                <span class="postal-code">
+                    <xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:ContactMethod/h:PostalAddress/h:PostalCode"/>
+                </span>
+                <span class="country-name">
+                    <xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:ContactMethod/h:PostalAddress/h:CountryCode"/>
+                </span>
+            </div>
+
+          </div>
+          <div class="span4">
+              <!-- contact details -->
+              <div style="float: left; padding-right: 15px;">
+                  <xsl:for-each select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:ContactMethod">
+                      <span class="tel">
+                          <span class="value">
+                              <xsl:value-of select="h:Telephone/h:FormattedNumber"/>
+                          </span>
+                      </span>
+                  </xsl:for-each>
+              </div>
+              <br/>
+              <div style="float: left;">
+              Email: <a class="external email fn" href="mailto:{/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:ContactMethod/h:InternetEmailAddress}">
+                  <xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:ContactMethod/h:InternetEmailAddress"/>
+              </a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
 <hr/>
 <div class="hero-unit">
 	<h2>Objective</h2>

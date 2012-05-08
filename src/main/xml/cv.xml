@@ -5,8 +5,8 @@
 		<ContactInfo>
 			<PersonName>
 				<GivenName>Paul</GivenName>
-				<AlternateScript>M.Sc, B.A.I, B.A</AlternateScript>
 				<FamilyName>O'Connell</FamilyName>
+				<AlternateScript>M.Sc, B.A.I, B.A</AlternateScript>
 			</PersonName>
 			<ContactMethod>
 				<!-- Phone location not supported. -->
@@ -31,6 +31,7 @@
 			<EmployerOrg>
 				<EmployerOrgName>Arantech</EmployerOrgName>
 				<EmployerContactInfo>
+					<InternetDomainName>http://www.arantech.com/</InternetDomainName>
 					<LocationSummary>
 						<Municipality>Blackrock</Municipality>
 						<Region>Dublin</Region>
@@ -38,18 +39,22 @@
 				</EmployerContactInfo>
 				<PositionHistory>
 					<Title>Java Software Engineer</Title>
-					<Description>Developer on the core product with responsibility for the implementation of new features and bug fixes. Introduction of unit test code coverage metrics and a framework for featuring testing interfaces of the product.</Description>
+					<Description>
+					Java developer on the Touchpoint customer experience management solution product for use by the mobile operators.
+					</Description>
+					<UserArea>Developer on the core product with responsibility for the implementation of new features and bug fixes. Introduction of unit test code coverage metrics and a framework for featuring testing interfaces of the product.</UserArea>
 					<StartDate>
-							<YearMonth>2010-01</YearMonth>
-						</StartDate>
-						<EndDate>
-							<YearMonth>Present</YearMonth>
-						</EndDate>
+						<YearMonth>2010-01</YearMonth>
+					</StartDate>
+					<EndDate>
+						<YearMonth>2012-06</YearMonth>
+					</EndDate>
 				</PositionHistory>
 			</EmployerOrg>
 				<EmployerOrg>
 					<EmployerOrgName>Aegon</EmployerOrgName>
 					<EmployerContactInfo>
+						<InternetDomainName>http://www.aegon.ie/</InternetDomainName>
 						<LocationSummary>
 							<Municipality>IFSC</Municipality>
 							<Region>Dublin</Region>
@@ -57,6 +62,7 @@
 					</EmployerContactInfo>
 					<PositionHistory>
 						<Title>Contract Software Engineer</Title>
+						<UserArea>Java contractor within the Aegon office providing service for the UK and Dutch Aegon companies.</UserArea>
 						<Description>Validation Service Replatforming Conversion of a legacy client side validation component onto a JBoss J2EE platform to allow support for EJB and Webservice requests. Hibernate, Spring with Wicket UI.</Description>
 						<StartDate>
 							<YearMonth>2008-10</YearMonth>
@@ -69,6 +75,7 @@
 				<EmployerOrg>
 					<EmployerOrgName>Terranua/Fidelity</EmployerOrgName>
 					<EmployerContactInfo>
+						<InternetDomainName>http://www.terranua.com/</InternetDomainName>
 						<LocationSummary>
 							<Municipality>Hatch Street</Municipality>
 							<Region>Dublin</Region>
@@ -76,6 +83,7 @@
 					</EmployerContactInfo>
 					<PositionHistory>
 						<Title>Contract Software Engineer</Title>
+						<UserArea>Terranua, Dublin, Ireland Java contractor within terranua’s consultancy group focused on providing a risk control system to the Fidelity organization. Full front to back development work, using Spring (MVC) and Hibernate technologies to deploy within Tomcat/Websphere with an Oracle DB.</UserArea>
 						<Description>Risk Reporting Responsible for a risk reporting system which queries risk details from the DB, creating a xml report which is then transformed via XSL to html and word formats for user preview and printing.</Description>
 						<StartDate>
 							<YearMonth>2008-03</YearMonth>
@@ -88,6 +96,7 @@
 				<EmployerOrg>
 					<EmployerOrgName>Norkom</EmployerOrgName>
 					<EmployerContactInfo>
+						<InternetDomainName>https://www.deticanetreveal.com</InternetDomainName>
 						<LocationSummary>
 							<Municipality>Henry St</Municipality>
 							<Region>Dublin</Region>
@@ -95,6 +104,7 @@
 					</EmployerContactInfo>
 					<PositionHistory>
 						<Title>Contract Software Engineer</Title>
+						<UserArea>Java contractor within Norkom’s development group, using the Spring, Struts and Hibernate technologies to create a financial crime and compliance application that can be deployed into various J2EE server and database environments.</UserArea>
 						<Description>Watch List Management Day to day work involves bug fixing and small pieces of new development on various branches of this sub-project.</Description>
 						<StartDate>
 							<YearMonth>2007-10</YearMonth>
@@ -107,6 +117,7 @@
 				<EmployerOrg>
 					<EmployerOrgName>Curam</EmployerOrgName>
 					<EmployerContactInfo>
+						<InternetDomainName>http://www.curamsoftware.com/</InternetDomainName>
 						<LocationSummary>
 							<Municipality>Park West</Municipality>
 							<Region>Dublin</Region>
@@ -114,6 +125,7 @@
 					</EmployerContactInfo>
 					<PositionHistory>
 						<Title>Software Engineer</Title>
+						<UserArea>Curam provide a social enterprise management solution that can be customised for various social welfare organisations across the globe.</UserArea>
 						<Description>Unemployment Insurance Java developer within the workflow group, which involved the full software development lifecycle on various J2EE platforms. Implementation of a unit testing framework and tools to auto-generate unit test stubs from the project model. Maintenance of the smoke test and continuous integration systems. Curam use a model driven development process and have a custom ORM style solution for database transparency</Description>
 						<StartDate>
 							<YearMonth>2006-09</YearMonth>
@@ -126,6 +138,7 @@
 				<EmployerOrg>
 					<EmployerOrgName>UBS</EmployerOrgName>
 					<EmployerContactInfo>
+						<InternetDomainName>http://www.ubs.com/global/en/investment-bank/institutions/foreign-exchange.html</InternetDomainName>
 						<LocationSummary>
 							<Municipality>Europastrasse 2</Municipality>
 							<Region>Zurich</Region>
