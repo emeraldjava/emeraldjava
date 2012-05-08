@@ -117,8 +117,9 @@
 					
 
 					<span class="org">
-						<h2><xsl:value-of select="h:EmployerOrgName"/></h2>
-					</span>, <span class="location">
+						<h3><xsl:value-of select="h:EmployerOrgName"/></h3>
+					</span>
+                    <span class="location">
 						<xsl:value-of select="h:EmployerContactInfo/h:LocationSummary/h:Municipality"/>, <xsl:value-of select="h:EmployerContactInfo/h:LocationSummary/h:Region"/>
 					</span>
 				</div>
@@ -130,10 +131,13 @@
 					</abbr>
 				</div>
 
-				<h3 class="title">
+				<!--<h3 class="title">
 					<xsl:value-of select="h:PositionHistory/h:Title"/>
-				</h3>
-				<div class="description">
+				</h3>-->
+				<h6 class="UserArea">
+					<xsl:value-of select="h:PositionHistory/h:UserArea"/>
+				</h6>
+                <div class="description">
 					<xsl:value-of select="h:PositionHistory/h:Description"/>
 				</div>
 			</div>
