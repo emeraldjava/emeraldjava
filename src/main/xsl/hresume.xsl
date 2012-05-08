@@ -112,38 +112,53 @@
 	<div class="vcalendar">
 		<xsl:for-each select="/h:Resume/h:StructuredXMLResume/h:EmploymentHistory/h:EmployerOrg">
 			<div class="experience vevent vcard">
-				<div class="htitle">
+				<blockquote class="htitle">
 					<!-- div float container -->
-					
 
-					<span class="org">
+					<p class="org">
 						<h3><xsl:value-of select="h:EmployerOrgName"/></h3>
-					</span>
-                    <span class="location">
-						<xsl:value-of select="h:EmployerContactInfo/h:LocationSummary/h:Municipality"/>, <xsl:value-of select="h:EmployerContactInfo/h:LocationSummary/h:Region"/>
-					</span>
-				</div>
-				<div class="date_duration">
-					<abbr class="dtstart" title="{h:PositionHistory/h:StartDate/h:YearMonth}">
+					</p>
+                    <small class="UserArea">
+					    <xsl:value-of select="h:PositionHistory/h:UserArea"/>
+				    </small>
+                    <br/>
+
+                    <div class="row">
+                        <div class="span12">
+                            <div class="row">
+      <div class="span2">
+          <div class="date_duration">
+				<abbr class="dtstart" title="{h:PositionHistory/h:StartDate/h:YearMonth}">
 						<xsl:value-of select="h:PositionHistory/h:StartDate/h:YearMonth"/>
 					</abbr> - <abbr class="dtend" title="{h:PositionHistory/h:EndDate/h:YearMonth}">
 						<xsl:value-of select="h:PositionHistory/h:EndDate/h:YearMonth"/>
 					</abbr>
 				</div>
+      </div>
+      <div class="span9">
+          <xsl:value-of select="h:PositionHistory/h:Description"/></div>
+      </div>
+                    </div>
+    </div>
+
+
+                    <!--<span class="location">
+						<xsl:value-of select="h:EmployerContactInfo/h:LocationSummary/h:Municipality"/>, <xsl:value-of select="h:EmployerContactInfo/h:LocationSummary/h:Region"/>
+					</span>-->
+				</blockquote>
+
+
 
 				<!--<h3 class="title">
 					<xsl:value-of select="h:PositionHistory/h:Title"/>
 				</h3>-->
-				<h6 class="UserArea">
-					<xsl:value-of select="h:PositionHistory/h:UserArea"/>
-				</h6>
+
+                <!--
                 <div class="description">
 					<xsl:value-of select="h:PositionHistory/h:Description"/>
-				</div>
+				</div>             -->
 			</div>
-				<div style="clear: both">
-					<xsl:text disable-output-escaping="yes"><![CDATA[&nbsp;]]></xsl:text>
-				</div>
+
 		</xsl:for-each>
 	</div>
 </div>
