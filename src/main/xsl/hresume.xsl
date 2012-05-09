@@ -32,7 +32,7 @@
                           <span class="family-name">
                               <xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:FamilyName"/>
                           </span>
-                          <span class="middle-name">
+                          <span>
               , <xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:AlternateScript"/>
                           </span>
               </div>
@@ -106,24 +106,26 @@
 <hr/>
 <div>
 	<h2>Professional Experience</h2>
-	<div class="vcalendar">
+	<ol class="vcalendar unstyled">
 		<xsl:for-each select="/h:Resume/h:StructuredXMLResume/h:EmploymentHistory/h:EmployerOrg">
-			<div class="experience vevent vcard">
+			<li class="experience vevent vcard">
 				<div class="htitle">
 					<!-- div float container -->
 
-						<h3 class="org"><xsl:value-of select="h:EmployerOrgName"/>
-                    <small>
-
-                        <div class="date date_duration">
-				<abbr class="dtstart" title="{h:PositionHistory/h:StartDate/h:YearMonth}">
-						<xsl:value-of select="h:PositionHistory/h:StartDate/h:YearMonth"/>
-					</abbr> - <abbr class="dtend" title="{h:PositionHistory/h:EndDate/h:YearMonth}">
-						<xsl:value-of select="h:PositionHistory/h:EndDate/h:YearMonth"/>
-					</abbr>
-				</div>
-                    </small>
-                        </h3>
+					<h3 class="org">
+                        <a target="_blank" href="{h:EmployerContactInfo/h:InternetDomainName}">
+                            <xsl:value-of select="h:EmployerOrgName"/>
+                        </a>
+                        <small>
+                            <div class="date date_duration">
+                                <abbr class="dtstart" title="{h:PositionHistory/h:StartDate/h:YearMonth}">
+                                <xsl:value-of select="h:PositionHistory/h:StartDate/h:YearMonth"/>
+                                </abbr> - <abbr class="dtend" title="{h:PositionHistory/h:EndDate/h:YearMonth}">
+                                <xsl:value-of select="h:PositionHistory/h:EndDate/h:YearMonth"/>
+                                </abbr>
+                            </div>
+                        </small>
+                    </h3>
 
                     <ul class="unstyled">
                     <li><xsl:value-of select="h:PositionHistory/h:UserArea"/></li>
@@ -133,40 +135,11 @@
                             </xsl:for-each>
                         </ul>
                     </ul>
-                    <!--
-                    <div class="row">
-                        <div class="span10">
-                            <div class="row">
-                                  <div class="span2">
-                                      <div class="date_duration">
-                                  </div>
-                                  <div class="span8">
-                                      <xsl:value-of select="h:PositionHistory/h:Description"/></div>
-                                  </div>
-                            </div>
-                        </div>
-                    </div>                -->
-
-
-                    <!--<span class="location">
-						<xsl:value-of select="h:EmployerContactInfo/h:LocationSummary/h:Municipality"/>, <xsl:value-of select="h:EmployerContactInfo/h:LocationSummary/h:Region"/>
-					</span>-->
 				</div>
-
-
-
-				<!--<h3 class="title">
-					<xsl:value-of select="h:PositionHistory/h:Title"/>
-				</h3>-->
-
-                <!--
-                <div class="description">
-					<xsl:value-of select="h:PositionHistory/h:Description"/>
-				</div>             -->
-			</div>
+			</li>
 
 		</xsl:for-each>
-	</div>
+	</ol>
 </div>
 
 <!-- experence -->
@@ -182,12 +155,12 @@
 						<xsl:value-of select="h:Degree/h:DegreeName"/>
 					</span>
 					<br/>
-					<span class="summary">
+					<span class="description">
 						<xsl:value-of select="h:Degree/h:Comments"/>
 					</span>
 					<br/>
-					<span class="org">
-						<a class="url fn org" href="{h:School/h:InternetDomainName}" title="{h:School/h:SchoolName}">
+					<span>
+						<a class="fn org url" href="{h:School/h:InternetDomainName}" title="{h:School/h:SchoolName}">
 							<xsl:value-of select="h:School/h:SchoolName"/>
 						</a>
 					</span>

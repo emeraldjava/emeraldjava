@@ -16,13 +16,12 @@
 				<InternetEmailAddress>paul.t.oconnell@gmail.com</InternetEmailAddress>
 				<!-- <InternetWebAddress>http://doe.com/~doe/</InternetWebAddress> -->
 				<PostalAddress>
-					<!-- Country not found; assumed to be US. -->
-					<CountryCode>Ireland</CountryCode>
-					<Region>Dublin 14</Region>
-					<Municipality>Churchtown</Municipality>
 					<DeliveryAddress>
-						<AddressLine>2B Milltown Drive</AddressLine>
+					    <AddressLine>2B Milltown Drive</AddressLine>
 					</DeliveryAddress>
+                    <Municipality>Churchtown</Municipality>
+                    <Region>Dublin 14</Region>
+                    <CountryCode>Ireland</CountryCode>
 				</PostalAddress>
 			</ContactMethod>
 		</ContactInfo>
@@ -150,13 +149,15 @@
 					</EmployerContactInfo>
 					<PositionHistory>
 						<Title>Software Engineer</Title>
-                        <UserArea>Internation assignment as a Software developer within Foreign Exchange IT group in Zurich, Switzerland.</UserArea>
-						<Description>
-					ZFM is a real time settlement and reconciliation system based on XML messaging over MQ. As project leader my responsibilities have included the design and implementation of an API, the planning and co-ordination of development and testing, both within our group and with other departments. The system consists of various java applications communicating via XML and MQ. A web-based tool supports tracking and supervision of messages within the system.
-eBus provides a consolidated view of all deal confirmation messages within the FX trading platform. As project lead I was responsible for the design of a common message specification, implementation with XML/XSL over MQ, and the co-ordination of the testing and release phases.
-Swix is a system for managing open trade positions within the FX branch of the bank. Lead Java developer my responsibilities included the initial XML protocol specification, implementation of a web application (Tomcat) and co-ordination of testing with other groups and business users.
-</Description>
-						<StartDate>
+                        <UserArea>International assignment as a software developer within the Foreign Exchange IT group in Zurich, Switzerland.</UserArea>
+						<Description>ZFM is a real time settlement and reconciliation system based on XML messaging over MQ. As project leader
+                        my responsibilities have included the design and implementation of an API, the planning and co-ordination of development
+                        and testing, both within our group and with other departments. The system consists of various java applications communicating
+                        via XML and MQ. A web-based tool supports tracking and supervision of messages within the system.</Description>
+                        <Description>eBus provides a consolidated view of all deal confirmation messages within the FX trading platform.
+                        As project lead I was responsible for the design of a common message specification, implementation with XML/XSL over
+                        MQ, and the co-ordination of the testing and release phases.</Description>
+                        <StartDate>
 							<YearMonth>2003-11</YearMonth>
 						</StartDate>
 						<EndDate>
@@ -167,6 +168,7 @@ Swix is a system for managing open trade positions within the FX branch of the b
 				<EmployerOrg>
 					<EmployerOrgName>UBS</EmployerOrgName>
 					<EmployerContactInfo>
+                        <InternetDomainName>http://www.ubs.com/global/en/investment-bank/institutions/foreign-exchange.html</InternetDomainName>
                         <LocationSummary>
                             <Municipality>Liverpool St</Municipality>
                             <Region>London</Region>
@@ -176,7 +178,9 @@ Swix is a system for managing open trade positions within the FX branch of the b
 					<PositionHistory>
 						<Title>Software Engineer</Title>
                         <UserArea>Software developer within Foreign Exchange IT group based in London.</UserArea>
-						<Description>Lead Java developer on the Swix tool to handle open positions on a daily basis. My responsibilities included the initial XML protocol specification, implementation of a web application (Tomcat) and co-ordination of testing with other groups and business users.</Description>
+						<Description>Lead Java developer on the Swix tool to handle open positions on a daily basis. My
+                            responsibilities included the initial XML protocol specification, implementation of a web application
+                            (Tomcat) and co-ordination of testing with other groups and business users.</Description>
 						<StartDate>
 							<YearMonth>2003-01</YearMonth>
 						</StartDate>
@@ -188,6 +192,7 @@ Swix is a system for managing open trade positions within the FX branch of the b
 				<EmployerOrg>
                     <EmployerOrgName>Erisson</EmployerOrgName>
 					<EmployerContactInfo>
+                        <InternetDomainName>http://www.ericsson.com/ie/</InternetDomainName>
 						<LocationSummary>
 							<Municipality>Clonskeagh</Municipality>
 							<Region>Dublin</Region>
@@ -252,16 +257,16 @@ Swix is a system for managing open trade positions within the FX branch of the b
 		</EducationHistory>
 		<Qualifications>
 			<!-- Skill area title not supported (unless no skill set title is given). -->
-			<Competency name="Java" description="Spring, ORM, J2EE/EJB, JMS, Concurrency. General interest in new open source technologies, test driven design and agile / continuous integration processes. Sun Certified Java Developer"/>
-			<Competency name="CI Tools" description="ANT Expert. Bamboo. Sonar. Clover. Eclemma. PMD"/>
-			<Competency name="Dist" description="Expert knowledge of XML messaging for modeling various business process flows. RMI, CORBA, SOAP, Web Services. Web"/>
-			<Competency name="Web" description="Expert knowledge of Wicket, Servlets, JSP, Struts, Spring MVC, JSF. HTML, Javascript, AJAX, CSS and DOM. Detailed knowledge of Tomcat and Apache servers. Jetty. PHP. Zend Framework. YAML."/>
-			<Competency name="XML" description="Extensive use of DOM and SAX parsers,XSL,FOP,JAXB.D"/>
-			<Competency name="SCM" description="SCM Tools	Expert knowledge of SCM systems (SVN/Git/ClearCase). Eclipse, Intellij, Netbeans."/>
-			<Competency name="J2EE Servers" description="Websphere, Weblogic, JBoss, Glassfish, Geronimo"/>
-			<Competency name="Databases" description="Oracle, Db2, MySQL, H2."/>
-			<Competency name="Testing" description="Junit, TestNG, DBUnit, Selenium"/>
-			<Competency name="Build Tools" description="ANT Expert. Bamboo. Sonar. Clover. Eclemma. PMD"/>
+            <Competency name="Languages" description="Java, XML, SQL, PHP"/>
+			<Competency name="Java" description="Spring, ORM (JPA/Hibernate), J2EE/EJB, JMS, Concurrency, RMI/CORBA, WebServices/SOAP, Sun Certified Java Developer"/>
+			<Competency name="Web" description="Servlets, JSP, Spring MVC, Wicket, HTML5, Javascript, AJAX, CSS"/>
+            <Competency name="Testing Tools" description="Junit, TestNG, DBUnit, Selenium, OpenEJB"/>
+			<Competency name="Build/CI Tools" description="ANT, Maven, Bamboo/Jenkins, FindBugs, PMD, Sonar, Clover/Jacoco"/>
+			<Competency name="XML" description="Extensive use of DOM and SAX parsers, XSL, FOP, JAXB"/>
+			<Competency name="SCM Tools" description="SVN, Git, ClearCase"/>
+			<Competency name="Servers" description="JBoss, Tomcat, Apache, Jetty, Glassfish"/>
+			<Competency name="Databases" description="Oracle, MySql, Db2, H2"/>
+			<Competency name="PHP Tools" description="LAMP server, Zend Framework, Joomla"/>
 		</Qualifications>
 		<!-- Copyright not supported. -->
 		<RevisionDate>2012-05-01</RevisionDate>
