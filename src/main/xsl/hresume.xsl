@@ -21,21 +21,24 @@
 <div class="hresume container">
 
     <div class="row hero-unit">
-      <div class="span12">
-        <h1 class="brand" id="cv">Curriculum Vitae</h1>
-        <div class="row show-grid contact vcard">
-          <div class="span3 offset2">
-              <div class="fn n" id="j">
-                          <span class="given-name">
-                              <xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:GivenName"/>
-                          </span>
-                          <span class="family-name">
-                              <xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:FamilyName"/>
-                          </span>
-                          <span>
-              , <xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:AlternateScript"/>
-                          </span>
-              </div>
+      <div class="span12 contact vcard">
+          <blockquote>
+          <h2 class="brand" id="cv"><xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:GivenName"/> <xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:FamilyName"/> Curriculum Vitae
+            <small><xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:AlternateScript"/></small>
+        </h2>
+          </blockquote>
+        <div class="row show-grid">
+          <div class="span3">
+              <!--<div class="fn n" id="j">
+                  <span class="given-name">
+                      <xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:GivenName"/>
+                  </span>
+                  <span class="family-name">
+                      <xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:FamilyName"/>
+                  </span>
+                  <span>[ <xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:AlternateScript"/> ]
+                  </span>
+              </div>                       -->
               <div class="adr">
                 <span class="street-address">
                     <xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:ContactMethod/h:PostalAddress/h:DeliveryAddress/h:AddressLine"/>
@@ -60,11 +63,21 @@
           </div>
           <div class="span3 offset1">
               <!-- contact details -->
+              <dl class="dl-horizontal">
+                <dt>Mobile</dt>
+                <dd><xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:ContactMethod/h:Telephone/h:FormattedNumber"/></dd>
+                <dt>Email</dt>
+                <dd><a class="external email fn" href="mailto:{/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:ContactMethod/h:InternetEmailAddress}">
+                  <xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:ContactMethod/h:InternetEmailAddress"/>
+                    </a>
+                </dd>
+              </dl>
+              <!--
               <div style="float: left; padding-right: 15px;">
                   <xsl:for-each select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:ContactMethod">
                       <span class="tel">
                           <span class="value">
-                              <xsl:value-of select="h:Telephone/h:FormattedNumber"/>
+                              <xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:ContactMethod/h:Telephone/h:FormattedNumber"/>
                           </span>
                       </span>
                   </xsl:for-each>
@@ -74,7 +87,7 @@
               Email: <a class="external email fn" href="mailto:{/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:ContactMethod/h:InternetEmailAddress}">
                   <xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:ContactMethod/h:InternetEmailAddress"/>
               </a>
-              </div>
+              </div>                -->
           </div>
         </div>
       </div>
@@ -94,8 +107,10 @@
 			<dl class="dl-horizontal">
 				<xsl:for-each select="/h:Resume/h:StructuredXMLResume/h:Qualifications/h:Competency">
 					<dt>
-                       <a class="skill" target="_blank" rel="tag" href="http://stackoverflow.com/questions/tagged/{@name}">
-					<xsl:value-of select="@name"/></a></dt><dd><xsl:value-of select="@description"/></dd>
+                        <a class="skill" target="_blank" rel="tag" href="http://stackoverflow.com/questions/tagged/{@name}">
+					    <xsl:value-of select="@name"/></a>
+                    </dt>
+                    <dd><xsl:value-of select="@description"/></dd>
 				</xsl:for-each>
 			</dl>
 		</div>
