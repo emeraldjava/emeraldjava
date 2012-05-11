@@ -102,7 +102,7 @@
 			<li id="{h:EmployerOrgName}vcard" class="experience vevent vcard">
 				<div class="htitle">
 					<h3>
-                        <a class="org url" target="_blank" href="{h:EmployerContactInfo/h:InternetDomainName}">
+                        <a class="org url" target="_blank" href="{h:EmployerContactInfo/h:InternetDomainName}" title="{h:EmployerOrgName}">
                             <div class="fn"><span class="summary"><xsl:value-of select="h:EmployerOrgName"/></span></div>
                         </a>
 
@@ -128,9 +128,8 @@
                         </ul>
                     </ul>
 				</div>
-			<br/>
             </li>
-
+            <br/>
 		</xsl:for-each>
 	</ol>
 </div>
@@ -144,27 +143,33 @@
 			<div id="{h:Degree/h:DegreeName}vcard" class="education vevent vcard">
 				<div class="htitle">
 					<!-- div float container -->
-					<span class="summary">
-						<xsl:value-of select="h:Degree/h:DegreeName"/>
-					</span>
-					<br/>
+					<h3 class="summary">
+                        <a class="fn org url" target="_blank" href="{h:School/h:InternetDomainName}" title="{h:School/h:SchoolName}">
+							<span class="summary"><xsl:value-of select="h:Degree/h:DegreeName"/></span>
+						</a>
+                        <small class="pull-right"><xsl:value-of select="h:School/h:SchoolName"/></small>
+                        <small>
+                            <div class="date_duration">
+                                <abbr class="dtstart" title="{h:Degree/h:DatesOfAttendance/h:StartDate/h:YearMonth}">
+                                    <xsl:value-of select="h:Degree/h:DatesOfAttendance/h:StartDate/h:YearMonth"/>
+                                </abbr> : <abbr class="dtend" title="{h:Degree/h:DatesOfAttendance/h:EndDate/h:YearMonth}">
+                                    <xsl:value-of select="h:Degree/h:DatesOfAttendance/h:EndDate/h:YearMonth"/>
+                                </abbr>
+                            </div>
+                        </small>
+
+					</h3>
 					<span class="description">
 						<xsl:value-of select="h:Degree/h:Comments"/>
 					</span>
-					<br/>
-					<span>
+
+					<!--<span>
 						<a class="fn org url" href="{h:School/h:InternetDomainName}" title="{h:School/h:SchoolName}">
 							<xsl:value-of select="h:School/h:SchoolName"/>
 						</a>
-					</span>
+					</span>        -->
 				</div>
-				<div class="date_duration">
-					<abbr class="dtstart" title="{h:Degree/h:DatesOfAttendance/h:StartDate/h:YearMonth}">
-						<xsl:value-of select="h:Degree/h:DatesOfAttendance/h:StartDate/h:YearMonth"/>
-					</abbr> : <abbr class="dtend" title="{h:Degree/h:DatesOfAttendance/h:EndDate/h:YearMonth}">
-						<xsl:value-of select="h:Degree/h:DatesOfAttendance/h:EndDate/h:YearMonth"/>
-					</abbr>
-				</div>
+
                 <br/>
 				<!--<div style="clear: both">
 					<xsl:text disable-output-escaping="yes"><![CDATA[&nbsp;]]></xsl:text>
