@@ -38,9 +38,9 @@
 				</EmployerContactInfo>
 				<PositionHistory>
 					<Title>Java Software Engineer</Title>
-                    <UserArea>Java contractor working on various Customer Experience Management components for use by the mobile operators.</UserArea>
-					<Description>Introduction of a generic entity framework into the core Touchpoint product.</Description>
-                    <Description>Create a test framework for integration and system testing of the product.</Description>
+                    <UserArea>Java contractor working on various Customer Experience Management components in the Touchpoint and Proaction products.</UserArea>
+					<Description>Implemented a generic entity framework to handle CRUD operations in the core Touchpoint product.</Description>
+                    <Description>Created a test framework for integration and system testing of the product.</Description>
                     <Description>Introduced the use of the sonar code quality engine to the organisation.</Description>
 					<StartDate>
 						<YearMonth>2010-01</YearMonth>
@@ -61,8 +61,10 @@
 					</EmployerContactInfo>
 					<PositionHistory>
 						<Title>Contract Software Engineer</Title>
-						<UserArea>Java contractor within the Aegon office providing service for the UK and Dutch Aegon companies.</UserArea>
-						<Description>Validation Service Replatforming Conversion of a legacy client side validation component onto a JBoss J2EE platform to allow support for EJB and Webservice requests. Hibernate, Spring with Wicket UI.</Description>
+						<UserArea>Java contractor within the Aegon office providing support for UK and Dutch pension providers.</UserArea>
+						<Description>Implemented a validation service that allowed for reuse of rule hierarchies across products and locales from a database configuration.</Description>
+                        <Description>The service was exposed via EJB and a WebService and replace hardcoded validation rules within a Swing client.</Description>
+                        <Description>Provided a Wicket based UI to visualise the configurations.</Description>
 						<StartDate>
 							<YearMonth>2008-10</YearMonth>
 						</StartDate>
@@ -82,8 +84,9 @@
 					</EmployerContactInfo>
 					<PositionHistory>
 						<Title>Contract Software Engineer</Title>
-						<UserArea>Terranua, Dublin, Ireland Java contractor within terranua’s consultancy group focused on providing a risk control system to the Fidelity organization. Full front to back development work, using Spring (MVC) and Hibernate technologies to deploy within Tomcat/Websphere with an Oracle DB.</UserArea>
+						<UserArea>Java contractor within Terranua’s consultancy group focused on providing a risk control system to the Fidelity organization.</UserArea>
 						<Description>Risk Reporting Responsible for a risk reporting system which queries risk details from the DB, creating a xml report which is then transformed via XSL to html and word formats for user preview and printing.</Description>
+                        <Description>Full front to back development work, using Spring (MVC) and Hibernate technologies to deploy within Tomcat/Websphere with an Oracle DB.</Description>
 						<StartDate>
 							<YearMonth>2008-03</YearMonth>
 						</StartDate>
@@ -104,7 +107,7 @@
 					<PositionHistory>
 						<Title>Contract Software Engineer</Title>
 						<UserArea>Java contractor within Norkom’s development group, using the Spring, Struts and Hibernate technologies to create a financial crime and compliance application that can be deployed into various J2EE server and database environments.</UserArea>
-						<Description>Watch List Management Day to day work involves bug fixing and small pieces of new development on various branches of this sub-project.</Description>
+						<Description>Watch List Management Day to day work involved bug fixing and small pieces of new development on various branches of this sub-project.</Description>
 						<StartDate>
 							<YearMonth>2007-10</YearMonth>
 						</StartDate>
@@ -125,7 +128,7 @@
 					<PositionHistory>
 						<Title>Software Engineer</Title>
 						<UserArea>Curam provide a social enterprise management solution that can be customised for various social welfare organisations across the globe.</UserArea>
-						<Description>Unemployment Insurance Java developer within the workflow group which involved the full software development lifecycle on various J2EE platforms.</Description>
+						<Description>I worked on the Unemployment Insurance product within the workflow group which involved the full software development lifecycle on various J2EE platforms.</Description>
                         <Description>Implementation of a unit testing framework and tools to auto-generate unit test stubs from the project model.</Description>
                         <Description>Maintenance of the smoke test and continuous integration systems.</Description>
                         <!--<Description>Curam use a model driven development process and have a custom ORM style solution for database transparency</Description>-->
@@ -178,7 +181,7 @@
 					<PositionHistory>
 						<Title>Software Engineer</Title>
                         <UserArea>Software developer within Foreign Exchange IT group based in London.</UserArea>
-						<Description>Lead Java developer on the Swix tool to handle open positions on a daily basis. My
+						<Description>Java developer on the Swix tool to handle open positions on a daily basis. My
                             responsibilities included the initial XML protocol specification, implementation of a web application
                             (Tomcat) and co-ordination of testing with other groups and business users.</Description>
 						<StartDate>
@@ -231,6 +234,7 @@
 						</EndDate>
 					</DatesOfAttendance>
 					<Comments>Dissertation Title: Collaborative Ad-hoc Applications. An investigation into the use of trust based security in ad-hoc JINI systems.</Comments>
+                    <!--<Comments>http://www.scss.tcd.ie/publications/tech-reports/reports.00/TCD-CS-2000-49.pdf</Comments>-->
 				</Degree>
 				<Degree></Degree>
 			</SchoolOrInstitution>

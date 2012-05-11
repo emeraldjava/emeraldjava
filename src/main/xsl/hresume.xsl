@@ -22,12 +22,12 @@
 
     <div class="row hero-unit">
       <div id="contactvcard" class="span12 contact vcard">
-          <blockquote>
-          <h2 class="brand" id="cv">
-            <div><div class="fn n"><span class="given-name"><xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:GivenName"/></span><span class="family-name"> <xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:FamilyName"/></span></div> Curriculum Vitae</div>
+        <div class="row">
+          <h2>
+            <div><div class="fn n"><span class="given-name"><xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:GivenName"/></span><span class="family-name"> <xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:FamilyName"/></span></div><span>Curriculum Vitae</span></div>
             <small><xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:AlternateScript"/></small>
-            </h2>
-          </blockquote>
+          </h2>
+        </div>
         <div class="row show-grid">
           <div class="span3">
               <div class="adr">
@@ -105,6 +105,8 @@
                         <a class="org url" target="_blank" href="{h:EmployerContactInfo/h:InternetDomainName}">
                             <div class="fn"><span class="summary"><xsl:value-of select="h:EmployerOrgName"/></span></div>
                         </a>
+
+                        <small class="pull-right"><xsl:value-of select="h:EmployerContactInfo/h:LocationSummary/h:Municipality"/>, <xsl:value-of select="h:EmployerContactInfo/h:LocationSummary/h:Region"/></small>
                         <small>
                             <div class="date date_duration">
                                 <abbr class="dtstart" title="{h:PositionHistory/h:StartDate/h:YearMonth}">
@@ -114,6 +116,7 @@
                                 </abbr>
                             </div>
                         </small>
+
                     </h3>
 
                     <ul class="unstyled description">
@@ -125,7 +128,8 @@
                         </ul>
                     </ul>
 				</div>
-			</li>
+			<br/>
+            </li>
 
 		</xsl:for-each>
 	</ol>
@@ -161,6 +165,7 @@
 						<xsl:value-of select="h:Degree/h:DatesOfAttendance/h:EndDate/h:YearMonth"/>
 					</abbr>
 				</div>
+                <br/>
 				<!--<div style="clear: both">
 					<xsl:text disable-output-escaping="yes"><![CDATA[&nbsp;]]></xsl:text>
 				</div>        -->
