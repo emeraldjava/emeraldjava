@@ -27,7 +27,30 @@
 		</ContactInfo>
 		<Objective>To work as a senior java developer within an agile team using test driven design and continuous integration methodology to develop N-tier applications.</Objective>
 		<EmploymentHistory>
-			<EmployerOrg>
+		    <EmployerOrg>
+				<EmployerOrgName>Aegon</EmployerOrgName>
+				<EmployerContactInfo>
+					<InternetDomainName>http://www.aegon.ie/</InternetDomainName>
+					<LocationSummary>
+						<Municipality>IFSC</Municipality>
+						<Region>Dublin</Region>
+					</LocationSummary>
+				</EmployerContactInfo>
+				<PositionHistory>
+					<Title>Contract Software Engineer</Title>
+					<UserArea>Worked within the Financials One team on the RDR and German Product projects</UserArea>
+					<Description>Implementation of financial transactions using Hibernate/Jboss</Description>
+                    <Description>Implemented a JAXB Based SEPA ISO XML for German payments via Citi</Description>
+                    <Description>Migration of services/process to utilise Spring Integration and Spring Batch</Description>
+					<StartDate>
+						<YearMonth>2012-07</YearMonth>
+					</StartDate>
+<!-- 					<EndDate> -->
+<!-- 						<YearMonth>2013-06</YearMonth> -->
+<!-- 					</EndDate> -->
+				</PositionHistory>
+			</EmployerOrg>
+		    <EmployerOrg>
 				<EmployerOrgName>Arantech</EmployerOrgName>
 				<EmployerContactInfo>
 					<InternetDomainName>http://www.arantech.com/</InternetDomainName>
