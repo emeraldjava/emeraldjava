@@ -17,9 +17,9 @@
 				<!-- <InternetWebAddress>http://doe.com/~doe/</InternetWebAddress> -->
 				<PostalAddress>
 					<DeliveryAddress>
-					    <AddressLine>2B Milltown Drive</AddressLine>
+					    <AddressLine>33 Patrick Doyle Road</AddressLine>
 					</DeliveryAddress>
-                    <Municipality>Churchtown</Municipality>
+                    <Municipality>Dundrum</Municipality>
                     <Region>Dublin 14</Region>
                     <CountryCode>Ireland</CountryCode>
 				</PostalAddress>
@@ -50,171 +50,171 @@
 					</EndDate>
 				</PositionHistory>
 			</EmployerOrg>
-				<EmployerOrg>
-					<EmployerOrgName>Aegon</EmployerOrgName>
-					<EmployerContactInfo>
-						<InternetDomainName>http://www.aegon.ie/</InternetDomainName>
-						<LocationSummary>
-							<Municipality>IFSC</Municipality>
-							<Region>Dublin</Region>
-						</LocationSummary>
-					</EmployerContactInfo>
-					<PositionHistory>
-						<Title>Contract Software Engineer</Title>
-						<UserArea>Java contractor within the Aegon office providing support for UK and Dutch pension providers.</UserArea>
-						<Description>Implemented a validation service that allowed for reuse of rule hierarchies across products and locales from a database configuration.</Description>
-                        <Description>The service was exposed via EJB and a WebService and replace hardcoded validation rules within a Swing client.</Description>
-                        <Description>Provided a Wicket based UI to visualise the configurations.</Description>
-						<StartDate>
-							<YearMonth>2008-10</YearMonth>
-						</StartDate>
-						<EndDate>
-							<YearMonth>2009-10</YearMonth>
-						</EndDate>
-					</PositionHistory>
-				</EmployerOrg>
-				<EmployerOrg>
-					<EmployerOrgName>Terranua</EmployerOrgName>
-					<EmployerContactInfo>
-						<InternetDomainName>http://www.terranua.com/</InternetDomainName>
-						<LocationSummary>
-							<Municipality>Hatch Street</Municipality>
-							<Region>Dublin</Region>
-						</LocationSummary>
-					</EmployerContactInfo>
-					<PositionHistory>
-						<Title>Contract Software Engineer</Title>
-						<UserArea>Java contractor within Terranua’s consultancy group focused on providing a risk control system to the Fidelity organization.</UserArea>
-						<Description>Risk Reporting Responsible for a risk reporting system which queries risk details from the DB, creating a xml report which is then transformed via XSL to html and word formats for user preview and printing.</Description>
-                        <Description>Full front to back development work, using Spring (MVC) and Hibernate technologies to deploy within Tomcat/Websphere with an Oracle DB.</Description>
-						<StartDate>
-							<YearMonth>2008-03</YearMonth>
-						</StartDate>
-						<EndDate>
-							<YearMonth>2009-09</YearMonth>
-						</EndDate>
-					</PositionHistory>
-				</EmployerOrg>
-				<EmployerOrg>
-					<EmployerOrgName>Norkom</EmployerOrgName>
-					<EmployerContactInfo>
-						<InternetDomainName>https://www.deticanetreveal.com</InternetDomainName>
-						<LocationSummary>
-							<Municipality>Henry St</Municipality>
-							<Region>Dublin</Region>
-						</LocationSummary>
-					</EmployerContactInfo>
-					<PositionHistory>
-						<Title>Contract Software Engineer</Title>
-						<UserArea>Java contractor within Norkom’s development group, using the Spring, Struts and Hibernate technologies to create a financial crime and compliance application that can be deployed into various J2EE server and database environments.</UserArea>
-						<Description>Watch List Management Day to day work involved bug fixing and small pieces of new development on various branches of this sub-project.</Description>
-						<StartDate>
-							<YearMonth>2007-10</YearMonth>
-						</StartDate>
-						<EndDate>
-							<YearMonth>2008-02</YearMonth>
-						</EndDate>
-					</PositionHistory>
-				</EmployerOrg>
-				<EmployerOrg>
-					<EmployerOrgName>Curam</EmployerOrgName>
-					<EmployerContactInfo>
-						<InternetDomainName>http://www.curamsoftware.com/</InternetDomainName>
-						<LocationSummary>
-							<Municipality>Park West</Municipality>
-							<Region>Dublin</Region>
-						</LocationSummary>
-					</EmployerContactInfo>
-					<PositionHistory>
-						<Title>Software Engineer</Title>
-						<UserArea>Curam provide a social enterprise management solution that can be customised for various social welfare organisations across the globe.</UserArea>
-						<Description>I worked on the Unemployment Insurance product within the workflow group which involved the full software development lifecycle on various J2EE platforms.</Description>
-                        <Description>Implementation of a unit testing framework and tools to auto-generate unit test stubs from the project model.</Description>
-                        <Description>Maintenance of the smoke test and continuous integration systems.</Description>
-                        <!--<Description>Curam use a model driven development process and have a custom ORM style solution for database transparency</Description>-->
-						<StartDate>
-							<YearMonth>2006-09</YearMonth>
-						</StartDate>
-						<EndDate>
-							<YearMonth>2007-09</YearMonth>
-						</EndDate>
-					</PositionHistory>
-				</EmployerOrg>
-				<EmployerOrg>
-					<EmployerOrgName>UBS</EmployerOrgName>
-					<EmployerContactInfo>
-						<InternetDomainName>http://www.ubs.com/global/en/investment-bank/institutions/foreign-exchange.html</InternetDomainName>
-						<LocationSummary>
-							<Municipality>Europastrasse 2</Municipality>
-							<Region>Zurich</Region>
-							<CountryCode>Switzerland</CountryCode>
-						</LocationSummary>
-					</EmployerContactInfo>
-					<PositionHistory>
-						<Title>Software Engineer</Title>
-                        <UserArea>International assignment as a software developer within the Foreign Exchange IT group in Zurich, Switzerland.</UserArea>
-						<Description>ZFM is a real time settlement and reconciliation system based on XML messaging over MQ. As project leader
-                        my responsibilities have included the design and implementation of an API, the planning and co-ordination of development
-                        and testing, both within our group and with other departments. The system consists of various java applications communicating
-                        via XML and MQ. A web-based tool supports tracking and supervision of messages within the system.</Description>
-                        <Description>eBus provides a consolidated view of all deal confirmation messages within the FX trading platform.
-                        As project lead I was responsible for the design of a common message specification, implementation with XML/XSL over
-                        MQ, and the co-ordination of the testing and release phases.</Description>
-                        <StartDate>
-							<YearMonth>2003-11</YearMonth>
-						</StartDate>
-						<EndDate>
-							<YearMonth>2006-05</YearMonth>
-						</EndDate>
-					</PositionHistory>
-				</EmployerOrg>
-				<EmployerOrg>
-					<EmployerOrgName>UBS</EmployerOrgName>
-					<EmployerContactInfo>
-                        <InternetDomainName>http://www.ubs.com/global/en/investment-bank/institutions/foreign-exchange.html</InternetDomainName>
-                        <LocationSummary>
-                            <Municipality>Liverpool St</Municipality>
-                            <Region>London</Region>
-                            <CountryCode>England</CountryCode>
-                        </LocationSummary>
-					</EmployerContactInfo>
-					<PositionHistory>
-						<Title>Software Engineer</Title>
-                        <UserArea>Software developer within Foreign Exchange IT group based in London.</UserArea>
-						<Description>Java developer on the Swix tool to handle open positions on a daily basis. My
-                            responsibilities included the initial XML protocol specification, implementation of a web application
-                            (Tomcat) and co-ordination of testing with other groups and business users.</Description>
-						<StartDate>
-							<YearMonth>2003-01</YearMonth>
-						</StartDate>
-						<EndDate>
-							<YearMonth>2003-10</YearMonth>
-						</EndDate>
-					</PositionHistory>
-				</EmployerOrg>
-				<EmployerOrg>
-                    <EmployerOrgName>Ericsson</EmployerOrgName>
-					<EmployerContactInfo>
-                        <InternetDomainName>http://www.ericsson.com/ie/</InternetDomainName>
-						<LocationSummary>
-							<Municipality>Clonskeagh</Municipality>
-							<Region>Dublin</Region>
-						</LocationSummary>
-					</EmployerContactInfo>
-					<PositionHistory>
-						<Title>Software Engineer</Title>
-						<UserArea>RANOS is an operations and management system for Ericsson’s 3G telecommunications radio network system.</UserArea>
-						<Description>Member of a framework group which provided generic server side Java/CORBA components.</Description>
-						<StartDate>
-							<YearMonth>2000-10</YearMonth>
-						</StartDate>
-						<EndDate>
-							<YearMonth>2002-12</YearMonth>
-						</EndDate>
-					</PositionHistory>
-				</EmployerOrg>
-			</EmploymentHistory>
-			<EducationHistory>
+			<EmployerOrg>
+				<EmployerOrgName>Aegon</EmployerOrgName>
+				<EmployerContactInfo>
+					<InternetDomainName>http://www.aegon.ie/</InternetDomainName>
+					<LocationSummary>
+						<Municipality>IFSC</Municipality>
+						<Region>Dublin</Region>
+					</LocationSummary>
+				</EmployerContactInfo>
+				<PositionHistory>
+					<Title>Contract Software Engineer</Title>
+					<UserArea>Java contractor within the Aegon office providing support for UK and Dutch pension providers.</UserArea>
+					<Description>Implemented a validation service that allowed for reuse of rule hierarchies across products and locales from a database configuration.</Description>
+                       <Description>The service was exposed via EJB and a WebService and replace hardcoded validation rules within a Swing client.</Description>
+                       <Description>Provided a Wicket based UI to visualise the configurations.</Description>
+					<StartDate>
+						<YearMonth>2008-10</YearMonth>
+					</StartDate>
+					<EndDate>
+						<YearMonth>2009-10</YearMonth>
+					</EndDate>
+				</PositionHistory>
+			</EmployerOrg>
+			<EmployerOrg>
+				<EmployerOrgName>Terranua</EmployerOrgName>
+				<EmployerContactInfo>
+					<InternetDomainName>http://www.terranua.com/</InternetDomainName>
+					<LocationSummary>
+						<Municipality>Hatch Street</Municipality>
+						<Region>Dublin</Region>
+					</LocationSummary>
+				</EmployerContactInfo>
+				<PositionHistory>
+					<Title>Contract Software Engineer</Title>
+					<UserArea>Java contractor within Terranua’s consultancy group focused on providing a risk control system to the Fidelity organization.</UserArea>
+					<Description>Risk Reporting Responsible for a risk reporting system which queries risk details from the DB, creating a xml report which is then transformed via XSL to html and word formats for user preview and printing.</Description>
+                       <Description>Full front to back development work, using Spring (MVC) and Hibernate technologies to deploy within Tomcat/Websphere with an Oracle DB.</Description>
+					<StartDate>
+						<YearMonth>2008-03</YearMonth>
+					</StartDate>
+					<EndDate>
+						<YearMonth>2009-09</YearMonth>
+					</EndDate>
+				</PositionHistory>
+			</EmployerOrg>
+			<EmployerOrg>
+				<EmployerOrgName>Norkom</EmployerOrgName>
+				<EmployerContactInfo>
+					<InternetDomainName>https://www.deticanetreveal.com</InternetDomainName>
+					<LocationSummary>
+						<Municipality>Henry St</Municipality>
+						<Region>Dublin</Region>
+					</LocationSummary>
+				</EmployerContactInfo>
+				<PositionHistory>
+					<Title>Contract Software Engineer</Title>
+					<UserArea>Java contractor within Norkom’s development group, using the Spring, Struts and Hibernate technologies to create a financial crime and compliance application that can be deployed into various J2EE server and database environments.</UserArea>
+					<Description>Watch List Management Day to day work involved bug fixing and small pieces of new development on various branches of this sub-project.</Description>
+					<StartDate>
+						<YearMonth>2007-10</YearMonth>
+					</StartDate>
+					<EndDate>
+						<YearMonth>2008-02</YearMonth>
+					</EndDate>
+				</PositionHistory>
+			</EmployerOrg>
+			<EmployerOrg>
+				<EmployerOrgName>Curam</EmployerOrgName>
+				<EmployerContactInfo>
+					<InternetDomainName>http://www.curamsoftware.com/</InternetDomainName>
+					<LocationSummary>
+						<Municipality>Park West</Municipality>
+						<Region>Dublin</Region>
+					</LocationSummary>
+				</EmployerContactInfo>
+				<PositionHistory>
+					<Title>Software Engineer</Title>
+					<UserArea>Curam provide a social enterprise management solution that can be customised for various social welfare organisations across the globe.</UserArea>
+					<Description>I worked on the Unemployment Insurance product within the workflow group which involved the full software development lifecycle on various J2EE platforms.</Description>
+                       <Description>Implementation of a unit testing framework and tools to auto-generate unit test stubs from the project model.</Description>
+                       <Description>Maintenance of the smoke test and continuous integration systems.</Description>
+                       <!--<Description>Curam use a model driven development process and have a custom ORM style solution for database transparency</Description>-->
+					<StartDate>
+						<YearMonth>2006-09</YearMonth>
+					</StartDate>
+					<EndDate>
+						<YearMonth>2007-09</YearMonth>
+					</EndDate>
+				</PositionHistory>
+			</EmployerOrg>
+			<EmployerOrg>
+				<EmployerOrgName>UBS</EmployerOrgName>
+				<EmployerContactInfo>
+					<InternetDomainName>http://www.ubs.com/global/en/investment-bank/institutions/foreign-exchange.html</InternetDomainName>
+					<LocationSummary>
+						<Municipality>Europastrasse 2</Municipality>
+						<Region>Zurich</Region>
+						<CountryCode>Switzerland</CountryCode>
+					</LocationSummary>
+				</EmployerContactInfo>
+				<PositionHistory>
+					<Title>Software Engineer</Title>
+                       <UserArea>International assignment as a software developer within the Foreign Exchange IT group in Zurich, Switzerland.</UserArea>
+					<Description>ZFM is a real time settlement and reconciliation system based on XML messaging over MQ. As project leader
+                       my responsibilities have included the design and implementation of an API, the planning and co-ordination of development
+                       and testing, both within our group and with other departments. The system consists of various java applications communicating
+                       via XML and MQ. A web-based tool supports tracking and supervision of messages within the system.</Description>
+                       <Description>eBus provides a consolidated view of all deal confirmation messages within the FX trading platform.
+                       As project lead I was responsible for the design of a common message specification, implementation with XML/XSL over
+                       MQ, and the co-ordination of the testing and release phases.</Description>
+                       <StartDate>
+						<YearMonth>2003-11</YearMonth>
+					</StartDate>
+					<EndDate>
+						<YearMonth>2006-05</YearMonth>
+					</EndDate>
+				</PositionHistory>
+			</EmployerOrg>
+			<EmployerOrg>
+				<EmployerOrgName>UBS</EmployerOrgName>
+				<EmployerContactInfo>
+                       <InternetDomainName>http://www.ubs.com/global/en/investment-bank/institutions/foreign-exchange.html</InternetDomainName>
+                       <LocationSummary>
+                           <Municipality>Liverpool St</Municipality>
+                           <Region>London</Region>
+                           <CountryCode>England</CountryCode>
+                       </LocationSummary>
+				</EmployerContactInfo>
+				<PositionHistory>
+					<Title>Software Engineer</Title>
+                       <UserArea>Software developer within Foreign Exchange IT group based in London.</UserArea>
+					<Description>Java developer on the Swix tool to handle open positions on a daily basis. My
+                           responsibilities included the initial XML protocol specification, implementation of a web application
+                           (Tomcat) and co-ordination of testing with other groups and business users.</Description>
+					<StartDate>
+						<YearMonth>2003-01</YearMonth>
+					</StartDate>
+					<EndDate>
+						<YearMonth>2003-10</YearMonth>
+					</EndDate>
+				</PositionHistory>
+			</EmployerOrg>
+			<EmployerOrg>
+                   <EmployerOrgName>Ericsson</EmployerOrgName>
+				<EmployerContactInfo>
+                       <InternetDomainName>http://www.ericsson.com/ie/</InternetDomainName>
+					<LocationSummary>
+						<Municipality>Clonskeagh</Municipality>
+						<Region>Dublin</Region>
+					</LocationSummary>
+				</EmployerContactInfo>
+				<PositionHistory>
+					<Title>Software Engineer</Title>
+					<UserArea>RANOS is an operations and management system for Ericsson’s 3G telecommunications radio network system.</UserArea>
+					<Description>Member of a framework group which provided generic server side Java/CORBA components.</Description>
+					<StartDate>
+						<YearMonth>2000-10</YearMonth>
+					</StartDate>
+					<EndDate>
+						<YearMonth>2002-12</YearMonth>
+					</EndDate>
+				</PositionHistory>
+			</EmployerOrg>
+		</EmploymentHistory>
+		<EducationHistory>
 				<!-- All degrees assumed to be university-level. -->
 			<SchoolOrInstitution schoolType="university">
 				<School>
