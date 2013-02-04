@@ -35,78 +35,88 @@
         <classpath>
             <fileset dir="${fop_home.dir}" includes="*.jar"/>
             <fileset dir="C:\Tools\Maven\localRepository\commons-logging\commons-logging\1.1.1" includes="*.jar"/>
+            <fileset dir="C:\Tools\Maven\localRepository\org\apache\xmlgraphics\xmlgraphics-commons\1.5" includes="*.jar"/>
+            <fileset dir="C:\Tools\Maven\localRepository\commons-io\commons-io\2.4" includes="*.jar"/>
+<fileset dir="C:\Tools\Maven\localRepository\avalon-framework\avalon-framework-api\4.2.0" includes="*.jar"/>
+<fileset dir="C:\Tools\Maven\localRepository\org\apache\xmlgraphics\batik-util\1.7" includes="*.jar"/>
+<fileset dir="C:\Tools\Maven\localRepository\org\apache\xmlgraphics\batik-bridge\1.7" includes="*.jar"/>
+<fileset dir="C:\Tools\Maven\localRepository\org\apache\xmlgraphics\batik-svggen\1.7" includes="*.jar"/>
+<fileset dir="C:\Tools\Maven\localRepository\org\apache\xmlgraphics\batik-ext\1.7" includes="*.jar"/>
+<fileset dir="C:\Tools\Maven\localRepository\org\apache\xmlgraphics\batik-awt-util\1.7" includes="*.jar"/>
+<fileset dir="C:\Tools\Maven\localRepository\org\apache\xmlgraphics\batik-css\1.7" includes="*.jar"/>
+
         </classpath>
     </taskdef>
 
-    <target name="ascii2docbook" description="Converts text documentation in asciidoc format to docbook xml">
-        <mkdir dir="docs/docbook"/>
-        <exec executable="${python2}" dir="${asciidoc.home}" searchpath="true">
-            <arg value="asciidoc.py"/>
-            <arg value="-b"/>
-            <arg value="docbook"/>
-            <arg value="-d"/>
-            <arg value="book"/>
-            <arg value="-o"/>
-            <arg value="${basedir}/docs/docbook/fit4extjs4.xml"/>
-            <arg value="${basedir}/docs/asciidoc/fit4extjs4.txt"/>
-        </exec>
-    </target>
+<!--     <target name="ascii2docbook" description="Converts text documentation in asciidoc format to docbook xml"> -->
+<!--         <mkdir dir="docs/docbook"/> -->
+<!--         <exec executable="${python2}" dir="${asciidoc.home}" searchpath="true"> -->
+<!--             <arg value="asciidoc.py"/> -->
+<!--             <arg value="-b"/> -->
+<!--             <arg value="docbook"/> -->
+<!--             <arg value="-d"/> -->
+<!--             <arg value="book"/> -->
+<!--             <arg value="-o"/> -->
+<!--             <arg value="${basedir}/docs/docbook/fit4extjs4.xml"/> -->
+<!--             <arg value="${basedir}/docs/asciidoc/fit4extjs4.txt"/> -->
+<!--         </exec> -->
+<!--     </target> -->
 
-    <target name="ascii2html" description="Converts text documentation in asciidoc format to docbook xml">
-        <mkdir dir="docs/html"/>
-        <exec executable="${python2}" dir="${asciidoc.home}" searchpath="true">
-            <arg value="asciidoc.py"/>
-            <arg value="-n"/>
-            <arg value="-b"/>
-            <arg value="html"/>
-            <arg value="-o"/>
-            <arg value="${basedir}/docs/html/fit4extjs4.html"/>
-            <arg value="${basedir}/docs/asciidoc/fit4extjs4.txt"/>
-        </exec>
-    </target>
+<!--     <target name="ascii2html" description="Converts text documentation in asciidoc format to docbook xml"> -->
+<!--         <mkdir dir="docs/html"/> -->
+<!--         <exec executable="${python2}" dir="${asciidoc.home}" searchpath="true"> -->
+<!--             <arg value="asciidoc.py"/> -->
+<!--             <arg value="-n"/> -->
+<!--             <arg value="-b"/> -->
+<!--             <arg value="html"/> -->
+<!--             <arg value="-o"/> -->
+<!--             <arg value="${basedir}/docs/html/fit4extjs4.html"/> -->
+<!--             <arg value="${basedir}/docs/asciidoc/fit4extjs4.txt"/> -->
+<!--         </exec> -->
+<!--     </target> -->
 
-    <target name="docbook2fo" depends="ascii2docbook" description="Converts docbook xml to fo">
-        <xslt style="${docbook.home}/fo/docbook.xsl"
-              classpathref="saxon.classpath"
-              basedir="${xml.dir}"
-              extension=".fo"
-              destdir="${fo.dir}"
-              includes="*.xml">
+<!--     <target name="docbook2fo" depends="ascii2docbook" description="Converts docbook xml to fo"> -->
+<!--         <xslt style="${docbook.home}/fo/docbook.xsl" -->
+<!--               classpathref="saxon.classpath" -->
+<!--               basedir="${xml.dir}" -->
+<!--               extension=".fo" -->
+<!--               destdir="${fo.dir}" -->
+<!--               includes="*.xml"> -->
 
-            <factory name="net.sf.saxon.TransformerFactoryImpl"/>
+<!--             <factory name="net.sf.saxon.TransformerFactoryImpl"/> -->
 
-            <param name="paper.type" expression="A4"/>
+<!--             <param name="paper.type" expression="A4"/> -->
 
-            <!-- these parameters make bookmarks work in the generated PDF -->
-            <param name="fop.extensions" expression="0"/>
-            <param name="fop1.extensions" expression="1"/>
+<!--             these parameters make bookmarks work in the generated PDF -->
+<!--             <param name="fop.extensions" expression="0"/> -->
+<!--             <param name="fop1.extensions" expression="1"/> -->
 
-            <!-- Number sections -->
-            <param name="section.autolabel" expression="1"/>
+<!--             Number sections -->
+<!--             <param name="section.autolabel" expression="1"/> -->
 
-            <!-- Include chapter numbers in sections-->
-            <param name="section.label.includes.component.label" expression="1"/>
+<!--             Include chapter numbers in sections -->
+<!--             <param name="section.label.includes.component.label" expression="1"/> -->
 
-            <!-- this allows xinclude processing to work -->
-            <sysproperty key="org.apache.xerces.xni.parser.XMLParserConfiguration"
-                         value="org.apache.xerces.parsers.XIncludeParserConfiguration"/>
-        </xslt>
-    </target>
+<!--             this allows xinclude processing to work -->
+<!--             <sysproperty key="org.apache.xerces.xni.parser.XMLParserConfiguration" -->
+<!--                          value="org.apache.xerces.parsers.XIncludeParserConfiguration"/> -->
+<!--         </xslt> -->
+<!--     </target> -->
 
-    <target name="docbook2html" description="Converts docbook xml to html">
-        <xslt basedir="${xml.dir}" force="true" destdir="docs/html" style="${docbook.home}/html/docbook.xsl"
-              classpathref="saxon.classpath">
-            <include name="*.xml"/>
-            <sysproperty key="org.apache.xerces.xni.parser.XMLParserConfiguration"
-                         value="org.apache.xerces.parsers.XIncludeParserConfiguration"/>
-        </xslt>
+<!--     <target name="docbook2html" description="Converts docbook xml to html"> -->
+<!--         <xslt basedir="${xml.dir}" force="true" destdir="docs/html" style="${docbook.home}/html/docbook.xsl" -->
+<!--               classpathref="saxon.classpath"> -->
+<!--             <include name="*.xml"/> -->
+<!--             <sysproperty key="org.apache.xerces.xni.parser.XMLParserConfiguration" -->
+<!--                          value="org.apache.xerces.parsers.XIncludeParserConfiguration"/> -->
+<!--         </xslt> -->
 
 
-    </target>
+<!--     </target> -->
 
-    <target name="fo2pdf" depends="docbook2fo" description="Generates multiple PDF files">
+    <target name="fo2pdf" description="Generates multiple PDF files">
         <fop format="application/pdf" outdir="${pdf.out.dir}" basedir="docs">
-            <fileset dir="${fo.srcdir}">
+            <fileset dir="${fo.src.dir}">
                 <include name="*.fo"/>
             </fileset>
         </fop>
