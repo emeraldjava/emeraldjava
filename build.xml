@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<project name="fop">
+
+    <!--
+        For docbook see guides, see
+        http://wiki.wsmoak.net/cgi-bin/wiki.pl?DocBookToPDF
+        and
+        http://wiki.apache.org/ant/CreateDocBookDocumentation
+
+        BE SURE TO USE AT LEAST ant 1.8.2: In earlier versions there's a bug that causes ant to ignore the classpath in xslt task.
+    -->
+
+    <!--<property file="build.properties" />-->
+
+    <property name="docbook.home" value="code/docbook-xsl-fo"/>
+    <property name="asciidoc.home" value="../3rdparty/asciidoc-8.6.4"/>
+    <property name="python2" value="python"/>
+    
+    <property name="xml.dir" value="docs/docbook"/>
+    
+    <property name="fop_home.dir" value="C:\Tools\Maven\localRepository\org\apache\xmlgraphics\fop\1.0"/>
+    
+    <property name="src.dir" value="src/main"/>
+    <property name="fo.src.dir" value="${src.dir}/fo"/>
+    
+    <property name="target.dir" value="target"/>
+    <property name="pdf.out.dir" value="${target.dir}/pdf"/>
+
+<!--     <path id="saxon.classpath"> -->
+<!--         <pathelement location="code/lib_dev/saxon/saxon9.jar"/> -->
+<!--     </path> -->
+
+    <taskdef name="fop" classname="org.apache.fop.tools.anttasks.Fop">
+        <classpath>
+            <fileset dir="${fop_home.dir}" includes="*.jar"/>
+            <fileset dir="C:\Tools\Maven\localRepository\commons-logging\commons-logging\1.1.1" includes="*.jar"/>
+        </classpath>
+    </taskdef>
+
+    <target name="ascii2docbook" description="Converts text documentation in asciidoc format to docbook xml">
+        <mkdir dir="docs/docbook"/>
+        <exec executable="${python2}" dir="${asciidoc.home}" searchpath="true">
+            <arg value="asciidoc.py"/>
+            <arg value="-b"/>
+            <arg value="docbook"/>
+            <arg value="-d"/>
+            <arg value="book"/>
+            <arg value="-o"/>
+            <arg value="${basedir}/docs/docbook/fit4extjs4.xml"/>
+            <arg value="${basedir}/docs/asciidoc/fit4extjs4.txt"/>
+        </exec>
+    </target>
+
+    <target name="ascii2html" description="Converts text documentation in asciidoc format to docbook xml">
+        <mkdir dir="docs/html"/>
+        <exec executable="${python2}" dir="${asciidoc.home}" searchpath="true">
+            <arg value="asciidoc.py"/>
+            <arg value="-n"/>
+            <arg value="-b"/>
+            <arg value="html"/>
+            <arg value="-o"/>
+            <arg value="${basedir}/docs/html/fit4extjs4.html"/>
+            <arg value="${basedir}/docs/asciidoc/fit4extjs4.txt"/>
+        </exec>
+    </target>
+
+    <target name="docbook2fo" depends="ascii2docbook" description="Converts docbook xml to fo">
+        <xslt style="${docbook.home}/fo/docbook.xsl"
+              classpathref="saxon.classpath"
+              basedir="${xml.dir}"
+              extension=".fo"
+              destdir="${fo.dir}"
+              includes="*.xml">
+
+            <factory name="net.sf.saxon.TransformerFactoryImpl"/>
+
+            <param name="paper.type" expression="A4"/>
+
+            <!-- these parameters make bookmarks work in the generated PDF -->
+            <param name="fop.extensions" expression="0"/>
+            <param name="fop1.extensions" expression="1"/>
+
+            <!-- Number sections -->
+            <param name="section.autolabel" expression="1"/>
+
+            <!-- Include chapter numbers in sections-->
+            <param name="section.label.includes.component.label" expression="1"/>
+
+            <!-- this allows xinclude processing to work -->
+            <sysproperty key="org.apache.xerces.xni.parser.XMLParserConfiguration"
+                         value="org.apache.xerces.parsers.XIncludeParserConfiguration"/>
+        </xslt>
+    </target>
+
+    <target name="docbook2html" description="Converts docbook xml to html">
+        <xslt basedir="${xml.dir}" force="true" destdir="docs/html" style="${docbook.home}/html/docbook.xsl"
+              classpathref="saxon.classpath">
+            <include name="*.xml"/>
+            <sysproperty key="org.apache.xerces.xni.parser.XMLParserConfiguration"
+                         value="org.apache.xerces.parsers.XIncludeParserConfiguration"/>
+        </xslt>
+
+
+    </target>
+
+    <target name="fo2pdf" depends="docbook2fo" description="Generates multiple PDF files">
+        <fop format="application/pdf" outdir="${pdf.out.dir}" basedir="docs">
+            <fileset dir="${fo.srcdir}">
+                <include name="*.fo"/>
+            </fileset>
+        </fop>
+    </target>
+
+</project>
