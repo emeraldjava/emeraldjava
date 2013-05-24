@@ -86,8 +86,8 @@
 					<Title>Contract Software Engineer</Title>
 					<UserArea>Java contractor within the Aegon office providing support for UK and Dutch pension providers.</UserArea>
 					<Description>Implemented a validation service that allowed for reuse of rule hierarchies across products and locales from a database configuration.</Description>
-                       <Description>The service was exposed via EJB and a WebService and replace hardcoded validation rules within a Swing client.</Description>
-                       <Description>Provided a Wicket based UI to visualise the configurations.</Description>
+                    <Description>The service was exposed via EJB and a WebService and replace hardcoded validation rules within a Swing client.</Description>
+                    <Description>Provided a Wicket based UI to visualise the configurations.</Description>
 					<StartDate>
 						<YearMonth>2008-10</YearMonth>
 					</StartDate>
@@ -107,9 +107,9 @@
 				</EmployerContactInfo>
 				<PositionHistory>
 					<Title>Contract Software Engineer</Title>
-					<UserArea>Java contractor within Terranua’s consultancy group focused on providing a risk control system to the Fidelity organization.</UserArea>
+					<UserArea>Java contractor within Terranua's consultancy group focused on providing a risk control system to the Fidelity organization.</UserArea>
 					<Description>Risk Reporting Responsible for a risk reporting system which queries risk details from the DB, creating a xml report which is then transformed via XSL to html and word formats for user preview and printing.</Description>
-                       <Description>Full front to back development work, using Spring (MVC) and Hibernate technologies to deploy within Tomcat/Websphere with an Oracle DB.</Description>
+                    <Description>Full front to back development work, using Spring (MVC) and Hibernate technologies to deploy within Tomcat/Websphere with an Oracle DB.</Description>
 					<StartDate>
 						<YearMonth>2008-03</YearMonth>
 					</StartDate>
@@ -129,7 +129,7 @@
 				</EmployerContactInfo>
 				<PositionHistory>
 					<Title>Contract Software Engineer</Title>
-					<UserArea>Java contractor within Norkom’s development group, using the Spring, Struts and Hibernate technologies to create a financial crime and compliance application that can be deployed into various J2EE server and database environments.</UserArea>
+					<UserArea>Java contractor within Norkom's development group, using the Spring, Struts and Hibernate technologies to create a financial crime and compliance application that can be deployed into various J2EE server and database environments.</UserArea>
 					<Description>Watch List Management Day to day work involved bug fixing and small pieces of new development on various branches of this sub-project.</Description>
 					<StartDate>
 						<YearMonth>2007-10</YearMonth>
@@ -286,14 +286,14 @@
 			<!-- Skill area title not supported (unless no skill set title is given). -->
             <Competency name="Languages" description="Java, XML, SQL, PHP"/>
 			<Competency name="Java" description="Spring, ORM (JPA/Hibernate), J2EE/EJB, JMS, Concurrency, RMI/CORBA, WebServices/SOAP, Sun Certified Java Developer"/>
-			<Competency name="Web" description="Servlets, JSP, Spring MVC, Wicket, HTML5, Javascript, AJAX, CSS"/>
+			<Competency name="Web" description="Play, Grails, Servlets, JSP, Spring MVC, Wicket, HTML5, Javascript, AJAX, CSS"/>
             <Competency name="Testing Tools" description="Junit, TestNG, DBUnit, Selenium, OpenEJB"/>
-			<Competency name="Build/CI Tools" description="ANT, Maven, Bamboo/Jenkins, FindBugs, PMD, Sonar, Clover/Jacoco"/>
+			<Competency name="Build/CI Tools" description="Maven, ANT, Gradle, Bamboo/Jenkins, FindBugs, PMD, Sonar, Clover/Jacoco"/>
 			<Competency name="XML" description="Extensive use of DOM and SAX parsers, XSL, FOP, JAXB"/>
 			<Competency name="SCM Tools" description="SVN, Git, ClearCase"/>
 			<Competency name="Servers" description="JBoss, Tomcat, Apache, Jetty, Glassfish"/>
 			<Competency name="Databases" description="Oracle, MySql, Db2, H2"/>
-			<Competency name="PHP Tools" description="LAMP server, Zend Framework, Joomla"/>
+			<Competency name="PHP" description="Wordpress, WAMP server, Zend Framework"/>
 		</Qualifications>
 		<!-- Copyright not supported. -->
 		<RevisionDate>2012-05-01</RevisionDate>
