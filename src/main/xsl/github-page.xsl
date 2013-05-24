@@ -23,14 +23,17 @@
     <header>
       <div class="inner">
         <h1><xsl:value-of select="concat(/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:GivenName,' ',/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:MiddleName,' ',/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:FamilyName)"/></h1>
-        <h2>Curriculum Vitae</h2>
-        <h3><b><xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:Objective"/></b></h3>
+        <h2><xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:AlternateScript"/></h2>
+        
       </div>
     </header>
 
     <div id="content-wrapper">
       <div class="inner clearfix">
         <section id="main-content">
+    <h2>Objective</h2>
+    <p><xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:Objective"/></p>
+        
 	<h2>Skills</h2>
 	<div>
 		<div class="tags">
@@ -127,15 +130,8 @@
         </section>
 
         <aside id="sidebar">
-        
-        <div class="row">
-          <h2>
-            <div><div class="fn n"><span class="given-name"><xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:GivenName"/></span><span class="family-name"> <xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:FamilyName"/></span></div><span>Curriculum Vitae</span></div>
-            <small><xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:AlternateScript"/></small>
-          </h2>
-        </div>
-        
-        <div class="adr">
+       
+	        <div class="adr">
                 <span class="street-address">
                     <xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:ContactMethod/h:PostalAddress/h:DeliveryAddress/h:AddressLine"/>
                 </span>
@@ -156,7 +152,7 @@
                 </span>
             </div>
         
-        <div class="span3 offset1">
+    	    <div class="span3 offset1">
               <!-- contact details -->
               <dl class="dl-horizontal">
                 <dt>Mobile</dt>
@@ -168,7 +164,7 @@
                     </a>
                 </dd>
               </dl>
-          </div>
+        	</div>
         
 <!--           <a href="https://github.com/emeraldjava/emeraldjava/zipball/master" class="button"> -->
 <!--             <small>Download</small> -->
