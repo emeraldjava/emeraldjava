@@ -24,7 +24,7 @@
       <div class="inner">
         <h1><xsl:value-of select="concat(/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:GivenName,' ',/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:MiddleName,' ',/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:FamilyName)"/></h1>
         <h2>Curriculum Vitae</h2>
-        <!--  --><a href="https://github.com/emeraldjava/emeraldjava" class="button"><small>View project on</small>GitHub</a>-->
+        <h3><b><xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:Objective"/></b></h3>
       </div>
     </header>
 
@@ -127,13 +127,6 @@ $ git checkout gh-pages
         </div>
       </div>
     </div>
-<hr/>
-<div>
-	<h2>Objective</h2>
-	<p class="summary">
-	<xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:Objective"/>
-	</p>
-</div>
 <hr/>
 <div>
 	<h2>Skills</h2>
