@@ -106,12 +106,17 @@
 					<transformationSets>
 						<transformationSet>
 							<dir>${basedir}/src/main/xml</dir>
-							<stylesheet>${basedir}/src/main/xsl/hresume.xsl</stylesheet>
+							<stylesheet>${basedir}/src/main/xsl/github-page.xsl</stylesheet>
 							<excludes>
 								<exclude>**/*.dtd</exclude>
 								<exclude>**/*.xsl</exclude>
 							</excludes>
 							<outputDir>target</outputDir>
+							<fileMappers>
+				                <fileMapper implementation="org.codehaus.plexus.components.io.filemappers.FileExtensionMapper">
+				                  <targetExtension>.html</targetExtension>
+				                </fileMapper>
+				              </fileMappers>
 						</transformationSet>
 					</transformationSets>
 				</configuration>
