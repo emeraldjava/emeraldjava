@@ -31,6 +31,99 @@
     <div id="content-wrapper">
       <div class="inner clearfix">
         <section id="main-content">
+	<h2>Skills</h2>
+	<div>
+		<div class="tags">
+			<dl class="dl-horizontal">
+				<xsl:for-each select="/h:Resume/h:StructuredXMLResume/h:Qualifications/h:Competency">
+					<dt>
+                        <a class="skill" target="_blank" rel="tag" href="http://stackoverflow.com/questions/tagged/{@name}">
+					    <xsl:value-of select="@name"/></a>
+                    </dt>
+                    <dd><xsl:value-of select="@description"/></dd>
+				</xsl:for-each>
+			</dl>
+		</div>
+	</div>
+	
+	<h2>Professional Experience</h2>
+	<ol class="vcalendar unstyled">
+		<xsl:for-each select="/h:Resume/h:StructuredXMLResume/h:EmploymentHistory/h:EmployerOrg">
+			<li id="{h:EmployerOrgName}vcard" class="experience vevent vcard">
+				<div class="htitle">
+					<h3>
+                        <a class="org url" target="_blank" href="{h:EmployerContactInfo/h:InternetDomainName}" title="{h:EmployerOrgName}">
+                            <div class="fn"><span class="summary"><xsl:value-of select="h:EmployerOrgName"/></span></div>
+                        </a>
+
+                        <small class="pull-right"><xsl:value-of select="h:EmployerContactInfo/h:LocationSummary/h:Municipality"/>, <xsl:value-of select="h:EmployerContactInfo/h:LocationSummary/h:Region"/></small>
+                        <small>
+                            <div class="date date_duration">
+                                <abbr class="dtstart" title="{h:PositionHistory/h:StartDate/h:YearMonth}">
+                                <xsl:value-of select="h:PositionHistory/h:StartDate/h:YearMonth"/>
+                                </abbr> - <abbr class="dtend" title="{h:PositionHistory/h:EndDate/h:YearMonth}">
+                                <xsl:value-of select="h:PositionHistory/h:EndDate/h:YearMonth"/>
+                                </abbr>
+                            </div>
+                        </small>
+
+                    </h3>
+
+                    <ul class="unstyled description">
+                        <li><span><xsl:value-of select="h:PositionHistory/h:UserArea"/></span></li>
+                        <ul>
+                            <xsl:for-each select="h:PositionHistory/h:Description">
+                                <li><span><xsl:value-of select="."/></span></li>
+                            </xsl:for-each>
+                        </ul>
+                    </ul>
+				</div>
+            </li>
+            <br/>
+		</xsl:for-each>
+	</ol>
+	
+	<h2>Education</h2>
+	<div class="vcalendar">
+		<xsl:for-each select="/h:Resume/h:StructuredXMLResume/h:EducationHistory/h:SchoolOrInstitution">
+			<div id="{h:Degree/h:DegreeName}vcard" class="education vevent vcard">
+				<div class="htitle">
+					<!-- div float container -->
+					<h3 class="summary">
+                        <a class="fn org url" target="_blank" href="{h:School/h:InternetDomainName}" title="{h:School/h:SchoolName}">
+							<span class="summary"><xsl:value-of select="h:Degree/h:DegreeName"/></span>
+						</a>
+                        <small class="pull-right"><xsl:value-of select="h:School/h:SchoolName"/></small>
+                        <small>
+                            <div class="date_duration">
+                                <abbr class="dtstart" title="{h:Degree/h:DatesOfAttendance/h:StartDate/h:YearMonth}">
+                                    <xsl:value-of select="h:Degree/h:DatesOfAttendance/h:StartDate/h:YearMonth"/>
+                                </abbr> : <abbr class="dtend" title="{h:Degree/h:DatesOfAttendance/h:EndDate/h:YearMonth}">
+                                    <xsl:value-of select="h:Degree/h:DatesOfAttendance/h:EndDate/h:YearMonth"/>
+                                </abbr>
+                            </div>
+                        </small>
+
+					</h3>
+					<span class="description">
+						<xsl:value-of select="h:Degree/h:Comments"/>
+					</span>
+
+					<!--<span>
+						<a class="fn org url" href="{h:School/h:InternetDomainName}" title="{h:School/h:SchoolName}">
+							<xsl:value-of select="h:School/h:SchoolName"/>
+						</a>
+					</span>        -->
+				</div>
+
+                <br/>
+				<!--<div style="clear: both">
+					<xsl:text disable-output-escaping="yes"><![CDATA[&nbsp;]]></xsl:text>
+				</div>        -->
+			</div>
+		</xsl:for-each>
+	</div>
+        	
           <h3>Welcome to GitHub Pages.</h3>
 
 <p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
@@ -129,106 +222,18 @@ $ git checkout gh-pages
     </div>
 <hr/>
 <div>
-	<h2>Skills</h2>
-	<div>
-		<div class="tags">
-			<dl class="dl-horizontal">
-				<xsl:for-each select="/h:Resume/h:StructuredXMLResume/h:Qualifications/h:Competency">
-					<dt>
-                        <a class="skill" target="_blank" rel="tag" href="http://stackoverflow.com/questions/tagged/{@name}">
-					    <xsl:value-of select="@name"/></a>
-                    </dt>
-                    <dd><xsl:value-of select="@description"/></dd>
-				</xsl:for-each>
-			</dl>
-		</div>
-	</div>
 </div>
 
 <!-- experience -->
 <hr/>
 <div>
-	<h2>Professional Experience</h2>
-	<ol class="vcalendar unstyled">
-		<xsl:for-each select="/h:Resume/h:StructuredXMLResume/h:EmploymentHistory/h:EmployerOrg">
-			<li id="{h:EmployerOrgName}vcard" class="experience vevent vcard">
-				<div class="htitle">
-					<h3>
-                        <a class="org url" target="_blank" href="{h:EmployerContactInfo/h:InternetDomainName}" title="{h:EmployerOrgName}">
-                            <div class="fn"><span class="summary"><xsl:value-of select="h:EmployerOrgName"/></span></div>
-                        </a>
 
-                        <small class="pull-right"><xsl:value-of select="h:EmployerContactInfo/h:LocationSummary/h:Municipality"/>, <xsl:value-of select="h:EmployerContactInfo/h:LocationSummary/h:Region"/></small>
-                        <small>
-                            <div class="date date_duration">
-                                <abbr class="dtstart" title="{h:PositionHistory/h:StartDate/h:YearMonth}">
-                                <xsl:value-of select="h:PositionHistory/h:StartDate/h:YearMonth"/>
-                                </abbr> - <abbr class="dtend" title="{h:PositionHistory/h:EndDate/h:YearMonth}">
-                                <xsl:value-of select="h:PositionHistory/h:EndDate/h:YearMonth"/>
-                                </abbr>
-                            </div>
-                        </small>
-
-                    </h3>
-
-                    <ul class="unstyled description">
-                        <li><span><xsl:value-of select="h:PositionHistory/h:UserArea"/></span></li>
-                        <ul>
-                            <xsl:for-each select="h:PositionHistory/h:Description">
-                                <li><span><xsl:value-of select="."/></span></li>
-                            </xsl:for-each>
-                        </ul>
-                    </ul>
-				</div>
-            </li>
-            <br/>
-		</xsl:for-each>
-	</ol>
 </div>
 
 <!-- experence -->
 <hr/>
 <div>
-	<h2>Education</h2>
-	<div class="vcalendar">
-		<xsl:for-each select="/h:Resume/h:StructuredXMLResume/h:EducationHistory/h:SchoolOrInstitution">
-			<div id="{h:Degree/h:DegreeName}vcard" class="education vevent vcard">
-				<div class="htitle">
-					<!-- div float container -->
-					<h3 class="summary">
-                        <a class="fn org url" target="_blank" href="{h:School/h:InternetDomainName}" title="{h:School/h:SchoolName}">
-							<span class="summary"><xsl:value-of select="h:Degree/h:DegreeName"/></span>
-						</a>
-                        <small class="pull-right"><xsl:value-of select="h:School/h:SchoolName"/></small>
-                        <small>
-                            <div class="date_duration">
-                                <abbr class="dtstart" title="{h:Degree/h:DatesOfAttendance/h:StartDate/h:YearMonth}">
-                                    <xsl:value-of select="h:Degree/h:DatesOfAttendance/h:StartDate/h:YearMonth"/>
-                                </abbr> : <abbr class="dtend" title="{h:Degree/h:DatesOfAttendance/h:EndDate/h:YearMonth}">
-                                    <xsl:value-of select="h:Degree/h:DatesOfAttendance/h:EndDate/h:YearMonth"/>
-                                </abbr>
-                            </div>
-                        </small>
-
-					</h3>
-					<span class="description">
-						<xsl:value-of select="h:Degree/h:Comments"/>
-					</span>
-
-					<!--<span>
-						<a class="fn org url" href="{h:School/h:InternetDomainName}" title="{h:School/h:SchoolName}">
-							<xsl:value-of select="h:School/h:SchoolName"/>
-						</a>
-					</span>        -->
-				</div>
-
-                <br/>
-				<!--<div style="clear: both">
-					<xsl:text disable-output-escaping="yes"><![CDATA[&nbsp;]]></xsl:text>
-				</div>        -->
-			</div>
-		</xsl:for-each>
-	</div>
+	
 </div>
 
 </div>
