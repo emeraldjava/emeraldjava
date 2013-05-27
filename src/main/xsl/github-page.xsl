@@ -6,14 +6,13 @@
   <head>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="chrome=1"/>
-    <title>My Awesome Project by Harrison Ford</title>
-    
+    <title><xsl:value-of select="concat(/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:GivenName,' ',/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:FamilyName)"/> CV</title>  
     <link rel="stylesheet" href="stylesheets/styles.css"/>
     <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
-    <!-- <script src="javascripts/scale.fix.js"></script>-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+<!--     <script src="javascripts/scale.fix.js"></script> -->
+<!--     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/> -->
     <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"/>
     <![endif]-->
   </head>
   <body>
@@ -75,16 +74,17 @@
                             <h3><div class="fn"><span class="summary"><xsl:value-of select="h:EmployerOrgName"/></span></div></h3>
                         </a>
 
-                        <small class="pull-right"><xsl:value-of select="h:EmployerContactInfo/h:LocationSummary/h:Municipality"/>, <xsl:value-of select="h:EmployerContactInfo/h:LocationSummary/h:Region"/></small>
+                        <h4><xsl:value-of select="h:EmployerContactInfo/h:LocationSummary/h:Municipality"/>, <xsl:value-of select="h:EmployerContactInfo/h:LocationSummary/h:Region"/>
                         <small>
                             <div class="date date_duration">
-                                <abbr class="dtstart" title="{h:PositionHistory/h:StartDate/h:YearMonth}">
+                                from <abbr class="dtstart" title="{h:PositionHistory/h:StartDate/h:YearMonth}">
                                 <xsl:value-of select="h:PositionHistory/h:StartDate/h:YearMonth"/>
-                                </abbr> - <abbr class="dtend" title="{h:PositionHistory/h:EndDate/h:YearMonth}">
+                                </abbr> until <abbr class="dtend" title="{h:PositionHistory/h:EndDate/h:YearMonth}">
                                 <xsl:value-of select="h:PositionHistory/h:EndDate/h:YearMonth"/>
                                 </abbr>
                             </div>
                         </small>
+                        </h4>
                     </div>
 
                     <ol>
