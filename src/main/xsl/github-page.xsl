@@ -4,33 +4,49 @@
 <xsl:template match="/">
 <html>
   <head>
-    <meta charset='utf-8'/>
+    <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="chrome=1"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'/>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
-
+    <title>My Awesome Project by Harrison Ford</title>
+    
+    <link rel="stylesheet" href="stylesheets/styles.css"/>
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+    <!-- <script src="javascripts/scale.fix.js"></script>-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
-    <title><xsl:value-of select="concat(/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:GivenName,' ',/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:MiddleName,' ',/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:FamilyName)"/></title>
   </head>
-
   <body>
+    <div class="wrapper">
     <header>
-      <div class="inner">
-        <h1><xsl:value-of select="concat(/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:GivenName,' ',/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:MiddleName,' ',/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:FamilyName)"/></h1>
-        <h2><xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:AlternateScript"/></h2>
-        
-      </div>
+      <h1 class="header"><xsl:value-of select="concat(/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:GivenName,' ',/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:MiddleName,' ',/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:FamilyName)"/></h1>
+      <h2 class="header"><xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:AlternateScript"/></h2>
+      
+      <p class="header">
+             <div class="adr">
+                <span class="street-address">
+                    <xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:ContactMethod/h:PostalAddress/h:DeliveryAddress/h:AddressLine"/>
+                </span>
+                <br/>
+                <span class="locality">
+                    <xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:ContactMethod/h:PostalAddress/h:Municipality"/>
+                </span>
+                <br/>
+                <span class="region">
+                    <xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:ContactMethod/h:PostalAddress/h:Region"/>
+                </span>
+                <br/>
+                <span>
+                    <xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:ContactMethod/h:PostalAddress/h:PostalCode"/>
+                </span>
+                <span class="country-name">
+                    <xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:ContactMethod/h:PostalAddress/h:CountryCode"/>
+                </span>
+            </div>
+       </p>
     </header>
 
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
+    <section id="main-content">
     <h2>Objective</h2>
     <p><xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:Objective"/></p>
         
@@ -50,13 +66,13 @@
 	</div>
 	
 	<h2>Professional Experience</h2>
-	<ol class="vcalendar unstyled">
+<!-- 	<ul class="vcalendar unstyled"> -->
 		<xsl:for-each select="/h:Resume/h:StructuredXMLResume/h:EmploymentHistory/h:EmployerOrg">
-			<li id="{h:EmployerOrgName}vcard" class="experience vevent vcard">
+			<div id="{h:EmployerOrgName}vcard" class="experience vevent vcard">
 				<div class="htitle">
-					<h3>
+					<div>
                         <a class="org url" target="_blank" href="{h:EmployerContactInfo/h:InternetDomainName}" title="{h:EmployerOrgName}">
-                            <div class="fn"><span class="summary"><xsl:value-of select="h:EmployerOrgName"/></span></div>
+                            <h3><div class="fn"><span class="summary"><xsl:value-of select="h:EmployerOrgName"/></span></div></h3>
                         </a>
 
                         <small class="pull-right"><xsl:value-of select="h:EmployerContactInfo/h:LocationSummary/h:Municipality"/>, <xsl:value-of select="h:EmployerContactInfo/h:LocationSummary/h:Region"/></small>
@@ -69,22 +85,19 @@
                                 </abbr>
                             </div>
                         </small>
+                    </div>
 
-                    </h3>
-
-                    <ul class="unstyled description">
-                        <li><span><xsl:value-of select="h:PositionHistory/h:UserArea"/></span></li>
-                        <ul>
-                            <xsl:for-each select="h:PositionHistory/h:Description">
-                                <li><span><xsl:value-of select="."/></span></li>
-                            </xsl:for-each>
-                        </ul>
-                    </ul>
+                    <ol>
+                    	<li><span><xsl:value-of select="h:PositionHistory/h:UserArea"/></span></li>
+                        <xsl:for-each select="h:PositionHistory/h:Description">
+                            <li><span><xsl:value-of select="."/></span></li>
+                        </xsl:for-each>
+                    </ol>
 				</div>
-            </li>
+            </div>
             <br/>
 		</xsl:for-each>
-	</ol>
+<!-- 	</ul> -->
 	
 	<h2>Education</h2>
 	<div class="vcalendar">
@@ -127,62 +140,17 @@
 		</xsl:for-each>
 	</div>
 
-        </section>
 
-        <aside id="sidebar">
-       
-	        <div class="adr">
-                <span class="street-address">
-                    <xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:ContactMethod/h:PostalAddress/h:DeliveryAddress/h:AddressLine"/>
-                </span>
-                <br/>
-                <span class="locality">
-                    <xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:ContactMethod/h:PostalAddress/h:Municipality"/>
-                </span>
-                <br/>
-                <span class="region">
-                    <xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:ContactMethod/h:PostalAddress/h:Region"/>
-                </span>
-                <br/>
-                <span>
-                    <xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:ContactMethod/h:PostalAddress/h:PostalCode"/>
-                </span>
-                <span class="country-name">
-                    <xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:ContactMethod/h:PostalAddress/h:CountryCode"/>
-                </span>
-            </div>
-        
-    	    <div class="span3 offset1">
-              <!-- contact details -->
-              <dl class="dl-horizontal">
-                <dt>Mobile</dt>
-                <dd><span class="tel"><xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:ContactMethod/h:Telephone/h:FormattedNumber"/></span></dd>
-                <dt>Email</dt>
-                <dd>
-                    <a class="external email" href="mailto:{/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:ContactMethod/h:InternetEmailAddress}">
-                        <xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:ContactMethod/h:InternetEmailAddress"/>
-                    </a>
-                </dd>
-              </dl>
-        	</div>
-        
-<!--           <a href="https://github.com/emeraldjava/emeraldjava/zipball/master" class="button"> -->
-<!--             <small>Download</small> -->
-<!--             .zip file -->
-<!--           </a> -->
-<!--           <a href="https://github.com/emeraldjava/emeraldjava/tarball/master" class="button"> -->
-<!--             <small>Download</small> -->
-<!--             .tar.gz file -->
-<!--           </a> -->
-
-<!--           <p class="repo-owner"><a href="https://github.com/emeraldjava/emeraldjava"></a> is maintained by <a href="https://github.com/emeraldjava">emeraldjava</a>.</p> -->
-
-<!--           <p>This page was generated by <a href="pages.github.com">GitHub Pages</a> using the Architect theme by <a href="http://twitter.com/jasonlong">Jason Long</a>.</p> -->
-        </aside>
-      </div>
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="http://pages.github.com/">GitHub Pages</a> using the <a href="https://github.com/broccolini/dinky">Dinky theme</a></small></p>
+      </footer>
     </div>
-
-</body>
+    <!--[if !IE]>
+    <script>fixScale(document);</script>
+    <![endif]-->
+  </body>
 </html>
+
 </xsl:template>
 </xsl:stylesheet>
