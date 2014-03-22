@@ -39,9 +39,9 @@
 				<PositionHistory>
 					<Title>Contract Software Engineer</Title>
 					<UserArea>Worked within the Financials One team on the RDR and German Product projects</UserArea>
+					<Description>Using Spring Batch to generate Global VA Hedging files.</Description>
 					<Description>Implementation of financial transactions using Hibernate/Jboss</Description>
                     <Description>Implemented a JAXB Based SEPA ISO XML for German payments via Citi</Description>
-                    <Description>Migration of services/process to utilise Spring Integration and Spring Batch</Description>
 					<StartDate>
 						<YearMonth>2012-07</YearMonth>
 					</StartDate>
