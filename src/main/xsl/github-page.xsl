@@ -1,27 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:h="http://ns.hr-xml.org/2007-04-15">
+<xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:h="http://ns.hr-xml.org/2007-04-15">
 <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes"/>
 <xsl:template match="/">
 <html>
   <head>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="chrome=1"/>
-    <title><xsl:value-of select="concat(/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:GivenName,' ',/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:FamilyName)"/> CV</title>  
-    <link rel="stylesheet" href="stylesheets/styles.css"/>
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
-<!--     <script src="javascripts/scale.fix.js"></script> -->
-<!--     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/> -->
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"/>
-    <![endif]-->
+    <title><xsl:value-of select="concat(/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:GivenName,' ',/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:FamilyName)"/> CV</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css"/>
   </head>
   <body>
-    <div class="wrapper">
+    <div class="container">
     <header>
       <h1 class="header"><xsl:value-of select="concat(/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:GivenName,' ',/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:MiddleName,' ',/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:FamilyName)"/></h1>
       <h2 class="header"><xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:PersonName/h:AlternateScript"/></h2>
       
       <p class="header">
+      	<address>
              <div class="adr">
                 <span class="street-address">
                     <xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:ContactMethod/h:PostalAddress/h:DeliveryAddress/h:AddressLine"/>
@@ -42,6 +39,7 @@
                     <xsl:value-of select="/h:Resume/h:StructuredXMLResume/h:ContactInfo/h:ContactMethod/h:PostalAddress/h:CountryCode"/>
                 </span>
             </div>
+          </address>
        </p>
     </header>
 
@@ -109,7 +107,7 @@
                         <a class="fn org url" target="_blank" href="{h:School/h:InternetDomainName}" title="{h:School/h:SchoolName}">
 							<span class="summary"><xsl:value-of select="h:Degree/h:DegreeName"/></span>
 						</a>
-                        <small class="pull-right"><xsl:value-of select="h:School/h:SchoolName"/></small>
+                        <small class="text-left"><strong><xsl:value-of select="h:School/h:SchoolName"/></strong></small>
                         <small>
                             <div class="date_duration">
                                 <abbr class="dtstart" title="{h:Degree/h:DatesOfAttendance/h:StartDate/h:YearMonth}">
@@ -119,7 +117,6 @@
                                 </abbr>
                             </div>
                         </small>
-
 					</h3>
 					<span class="description">
 						<xsl:value-of select="h:Degree/h:Comments"/>
@@ -149,8 +146,9 @@
     <!--[if !IE]>
     <script>fixScale(document);</script>
     <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"/>
+	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"/>
   </body>
 </html>
-
 </xsl:template>
 </xsl:stylesheet>

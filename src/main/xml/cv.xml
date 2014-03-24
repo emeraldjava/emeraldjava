@@ -284,7 +284,7 @@
 		</EducationHistory>
 		<Qualifications>
 			<!-- Skill area title not supported (unless no skill set title is given). -->
-            <Competency name="Languages" description="Java, XML, SQL, PHP"/>
+            <Competency name="Languages" description="Java, PHP"/>
 			<Competency name="Java" description="Spring, ORM (JPA/Hibernate), J2EE/EJB, JMS, Concurrency, RMI/CORBA, WebServices/SOAP, Sun Certified Java Developer"/>
 			<Competency name="Web" description="Spring MVC, Servlets, JSP, Wicket, HTML5, Play, Grails, Javascript, AJAX, CSS"/>
             <Competency name="Testing Tools" description="Junit, TestNG, DBUnit, Selenium, OpenEJB"/>
@@ -296,6 +296,6 @@
 			<Competency name="PHP" description="Wordpress, WAMP server, Zend Framework"/>
 		</Qualifications>
 		<!-- Copyright not supported. -->
-		<RevisionDate>2013-05-27</RevisionDate>
+		<RevisionDate>2014-03-24</RevisionDate>
 	</StructuredXMLResume>
 </Resume>
