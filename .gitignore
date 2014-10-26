@@ -1,2 +1,7 @@
 target/*
 .project
+/target/
+
+.classpath
+
+*.prefs

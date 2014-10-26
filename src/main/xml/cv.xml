@@ -14,7 +14,7 @@
 					<FormattedNumber>+353 86 3701860</FormattedNumber>
 				</Telephone>
 				<InternetEmailAddress>paul.t.oconnell@gmail.com</InternetEmailAddress>
-				<!-- <InternetWebAddress>http://doe.com/~doe/</InternetWebAddress> -->
+				<InternetWebAddress>http://emeraldjava.github.io/</InternetWebAddress>
 				<PostalAddress>
 					<DeliveryAddress>
 					    <AddressLine>33 Patrick Doyle Road</AddressLine>
@@ -37,11 +37,12 @@
 					</LocationSummary>
 				</EmployerContactInfo>
 				<PositionHistory>
-					<Title>Contract Software Engineer</Title>
-					<UserArea>Worked within the Financials One team on the RDR and German Product projects</UserArea>
-					<Description>Using Spring Batch to generate Global VA Hedging files.</Description>
-					<Description>Implementation of financial transactions using Hibernate/Jboss</Description>
-                    <Description>Implemented a JAXB Based SEPA ISO XML for German payments via Citi</Description>
+					<Title>Senior Software Engineer - Contract</Title>
+					<UserArea>Chief designer and developer for a new platform for generating daily hedging files for mutiple products. The system
+					implemented using Spring Batch allows the actuarial team to manipulate data on te fly using SpEL expressions.</UserArea>
+					<Description>Implementation of various financial transactions using Hibernate/Jboss</Description>
+					<Description>Involved with UAT and production release teams to ensure stable releases</Description>
+                    <Description>Extended the existing integration test framework to support reporting of code coverge metrics for all modules via Sonar on a nightly basis</Description>
 					<StartDate>
 						<YearMonth>2012-07</YearMonth>
 					</StartDate>
@@ -109,7 +110,7 @@
 					<Title>Contract Software Engineer</Title>
 					<UserArea>Java contractor within Terranua's consultancy group focused on providing a risk control system to the Fidelity organization.</UserArea>
 					<Description>Risk Reporting Responsible for a risk reporting system which queries risk details from the DB, creating a xml report which is then transformed via XSL to html and word formats for user preview and printing.</Description>
-                    <Description>Full front to back development work, using Spring (MVC) and Hibernate technologies to deploy within Tomcat/Websphere with an Oracle DB.</Description>
+                    <Description>Full front to back development work, using Spring MVC and Hibernate technologies to deploy on Tomcat/Websphere platforms with an Oracle database.</Description>
 					<StartDate>
 						<YearMonth>2008-03</YearMonth>
 					</StartDate>
