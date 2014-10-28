@@ -257,8 +257,7 @@
 							<YearMonth>2000-10</YearMonth>
 						</EndDate>
 					</DatesOfAttendance>
-					<Comments>Dissertation Title: Collaborative Ad-hoc Applications. An investigation into the use of trust based security in ad-hoc JINI systems.</Comments>
-                    <Comments>http://www.tara.tcd.ie/handle/2262/748</Comments>
+					<Comments>Dissertation Title: <a href="http://www.tara.tcd.ie/handle/2262/748">Collaborative Ad-hoc Applications</a> An investigation into the use of trust based security in ad-hoc JINI systems.</Comments>
 				</Degree>
 				<Degree></Degree>
 			</SchoolOrInstitution>

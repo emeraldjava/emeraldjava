@@ -1,3 +1,5 @@
+This project allows me to maintains details of my working career in an XML format, to 
+which i then apply XSLT transforms to create PFD and github specific formats.
 
 Mini project to track my CV so that various output formats can be generated.
 
@@ -35,7 +37,6 @@ Resources
      
      http://suda.co.uk/cv/
      
-	     
 	 http://lab.madgex.com/api/hresumeconversion1_0/?url=https://raw.github.com/emeraldjava/emeraldjava/master/src/main/html/resume.html&format=pdf&section-order=name,summary,skills,work,education,affiliation,publications,contact-details&terminology=en-gb
      
      http://lab.madgex.com/api/hresumeconversion1_0/?url=https://raw.github.com/emeraldjava/emeraldjava/master/src/main/html/resume.html&format=word&section-order=name,summary,skills,work,education,affiliation,publications,contact-details&terminology=en-us
@@ -48,14 +49,12 @@ Resources
      
      http://hcard.geekhood.net/?url=http%3A%2F%2Femeraldjava.github.com%2Femeraldjava%2Fcv#result
 
-       http://wrapbootstrap.com/preview/WB0057UJ3
-       http://hermanfeuerwerker.com/
+	http://wrapbootstrap.com/preview/WB0057UJ3
+  
+    http://hermanfeuerwerker.com/
 
+	http://lab.madgex.com/api/hresumeconversion1_0/?url=http://emeraldjava.github.com/emeraldjava/cv&format=pdf&section-order=name,summary,work,education,skills,affiliation,publications,contact-details&terminology=en-gb
 
-http://lab.madgex.com/api/hresumeconversion1_0/?url=http://emeraldjava.github.com/emeraldjava/cv&format=pdf&section-order=name,summary,work,education,skills,affiliation,publications,contact-details&terminology=en-gb
+	http://lab.madgex.com/api/hresumeconversion1_0/?url=http://emeraldjava.github.com/emeraldjava/cv&format=pdf&section-order=name,summary,skills,work,education,affiliation,publications,contact-details&terminology=en-gb
 
-http://lab.madgex.com/api/hresumeconversion1_0/?url=http://emeraldjava.github.com/emeraldjava/cv&format=pdf&section-order=name,summary,skills,work,education,affiliation,publications,contact-details&terminology=en-gb
-
-
-http://lab.madgex.com/api/hresumeconversion1_0/?url=http://emeraldjava.github.com/emeraldjava/cv&format=pdf&section-order=name,contact-details,summary,skills,work,educations&terminology=en-gb
-
+	http://lab.madgex.com/api/hresumeconversion1_0/?url=http://emeraldjava.github.com/emeraldjava/cv&format=pdf&section-order=name,contact-details,summary,skills,work,educations&terminology=en-gb
