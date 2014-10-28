@@ -25,7 +25,7 @@
 				</PostalAddress>
 			</ContactMethod>
 		</ContactInfo>
-		<Objective>To work as a senior java developer within an agile team using test driven design and continuous integration methodology to develop N-tier applications.</Objective>
+		<Objective>To work as a senior java developer within an agile team using test driven design and continuous integration methodology to develop N-tier applications. Current research interests include node.js, mondo db and angular js.</Objective>
 		<EmploymentHistory>
 		    <EmployerOrg>
 				<EmployerOrgName>Aegon</EmployerOrgName>
@@ -39,7 +39,7 @@
 				<PositionHistory>
 					<Title>Senior Software Engineer - Contract</Title>
 					<UserArea>Chief designer and developer for a new platform for generating daily hedging files for mutiple products. The system
-					implemented using Spring Batch allows the actuarial team to manipulate data on te fly using SpEL expressions.</UserArea>
+					implemented using Spring Batch allows the actuarial team to manipulate data on the fly using Spring Expression Language expressions.</UserArea>
 					<Description>Implementation of various financial transactions using Hibernate/Jboss</Description>
 					<Description>Involved with UAT and production release teams to ensure stable releases</Description>
                     <Description>Extended the existing integration test framework to support reporting of code coverge metrics for all modules via Sonar on a nightly basis</Description>
@@ -258,7 +258,7 @@
 						</EndDate>
 					</DatesOfAttendance>
 					<Comments>Dissertation Title: Collaborative Ad-hoc Applications. An investigation into the use of trust based security in ad-hoc JINI systems.</Comments>
-                    <!--<Comments>http://www.scss.tcd.ie/publications/tech-reports/reports.00/TCD-CS-2000-49.pdf</Comments>-->
+                    <Comments>http://www.tara.tcd.ie/handle/2262/748</Comments>
 				</Degree>
 				<Degree></Degree>
 			</SchoolOrInstitution>
