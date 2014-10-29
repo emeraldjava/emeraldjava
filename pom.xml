@@ -3,7 +3,28 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>emeraldjava</groupId>
 	<artifactId>emeraldjava</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2-SNAPSHOT</version>
+	<url>https://github.com/emeraldjava/</url>
+
+	<issueManagement>
+		<url>https://github.com/emeraldjava/emeraldjava/issues</url>
+		<system>GitHub Issues</system>
+	</issueManagement>
+
+	<licenses>
+		<license>
+			<name>MIT License</name>
+			<url>http://www.opensource.org/licenses/mit-license.php</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<!-- http://blog.akquinet.de/2012/04/12/maven-sites-reloaded/ -->
+	<scm>
+		<url>https://github.com/emeraldjava/emeraldjava</url>
+		<connection>scm:git:git@github.com/emeraldjava/emeraldjava.git</connection>
+		<developerConnection>scm:git:git@github.com/emeraldjava/emeraldjava.git</developerConnection>
+	</scm>
 
 	<dependencies>
 		<dependency>
@@ -15,82 +36,62 @@
 
 	<build>
 		<plugins>
-		    
-		    <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-antrun-plugin</artifactId>
-                <version>1.1</version>
-                <executions>
-                    <execution>
-                        <phase>validate</phase>
-                        <goals>
-                            <goal>run</goal>
-                        </goals>
-                        <configuration>
-                            <tasks>
-                                <echo message="Hello world" />
-                                <echo message="${env.M2_HOME}" ></echo>
-                            </tasks>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-		    
-			<plugin>
-				<groupId>com.agilejava.docbkx</groupId>
-				<artifactId>docbkx-maven-plugin</artifactId>
-				<version>2.0.14</version>
-				<dependencies>
-					<dependency>
-						<groupId>org.docbook</groupId>
-						<artifactId>docbook-xml</artifactId>
-						<version>4.4</version>
-					</dependency>
-				</dependencies>
-				<executions>
-				 	<execution>
-						<goals>
-							<goal>generate-pdf</goal>
-						</goals>
-						<phase>package</phase>
-						<configuration>
-							<sourceDirectory>${basedir}/src/main/xml</sourceDirectory>
-							<xincludeSupported>true</xincludeSupported>
-							<includes>cv.xml</includes>
-							<foCustomization>src/main/xsl/fo-pdf.xsl</foCustomization>
-							<targetDirectory>${project.build.directory}</targetDirectory>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
-			<!-- <plugin>
-				<groupId>com.agilejava.docbkx</groupId>
-				<artifactId>docbkx-maven-plugin</artifactId>
-				<version>2.0.14</version>
-				<dependencies>
-					<dependency>
-						<groupId>org.docbook</groupId>
-						<artifactId>docbook-xml</artifactId>
-						<version>4.4</version>
-					</dependency>
-				</dependencies>
-				<executions>
-					<execution>
-						<goals>
-							<goal>generate-html</goal>
-						</goals>
-						<phase>package</phase>
-						<configuration>
-							<sourceDirectory>${basedir}/src/main/xml</sourceDirectory>
-							<xincludeSupported>true</xincludeSupported>
-							<includes>cv.xml</includes>
-							<foCustomization>src/main/xsl/hresume.xsl</foCustomization>
-							<targetDirectory>${project.build.directory}</targetDirectory>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>-->
-			
+<!-- 			<plugin> -->
+<!-- 				<groupId>org.apache.maven.plugins</groupId> -->
+<!-- 				<artifactId>maven-antrun-plugin</artifactId> -->
+<!-- 				<version>1.1</version> -->
+<!-- 				<executions> -->
+<!-- 					<execution> -->
+<!-- 						<phase>validate</phase> -->
+<!-- 						<goals> -->
+<!-- 							<goal>run</goal> -->
+<!-- 						</goals> -->
+<!-- 						<configuration> -->
+<!-- 							<tasks> -->
+<!-- 								<echo message="Hello world" /> -->
+<!-- 								<echo message="${env.M2_HOME}"></echo> -->
+<!-- 							</tasks> -->
+<!-- 						</configuration> -->
+<!-- 					</execution> -->
+<!-- 				</executions> -->
+<!-- 			</plugin> -->
+
+<!-- 			<plugin> -->
+<!-- 				<groupId>com.agilejava.docbkx</groupId> -->
+<!-- 				<artifactId>docbkx-maven-plugin</artifactId> -->
+<!-- 				<version>2.0.14</version> -->
+<!-- 				<dependencies> -->
+<!-- 					<dependency> -->
+<!-- 						<groupId>org.docbook</groupId> -->
+<!-- 						<artifactId>docbook-xml</artifactId> -->
+<!-- 						<version>4.4</version> -->
+<!-- 					</dependency> -->
+<!-- 				</dependencies> -->
+<!-- 				<executions> -->
+<!-- 					<execution> -->
+<!-- 						<goals> -->
+<!-- 							<goal>generate-pdf</goal> -->
+<!-- 						</goals> -->
+<!-- 						<phase>package</phase> -->
+<!-- 						<configuration> -->
+<!-- 							<sourceDirectory>${basedir}/src/main/xml</sourceDirectory> -->
+<!-- 							<xincludeSupported>true</xincludeSupported> -->
+<!-- 							<includes>cv.xml</includes> -->
+<!-- 							<foCustomization>src/main/xsl/fo-pdf.xsl</foCustomization> -->
+<!-- 							<targetDirectory>${project.build.directory}</targetDirectory> -->
+<!-- 						</configuration> -->
+<!-- 					</execution> -->
+<!-- 				</executions> -->
+<!-- 			</plugin> -->
+			<!-- <plugin> <groupId>com.agilejava.docbkx</groupId> <artifactId>docbkx-maven-plugin</artifactId> 
+				<version>2.0.14</version> <dependencies> <dependency> <groupId>org.docbook</groupId> 
+				<artifactId>docbook-xml</artifactId> <version>4.4</version> </dependency> 
+				</dependencies> <executions> <execution> <goals> <goal>generate-html</goal> 
+				</goals> <phase>package</phase> <configuration> <sourceDirectory>${basedir}/src/main/xml</sourceDirectory> 
+				<xincludeSupported>true</xincludeSupported> <includes>cv.xml</includes> <foCustomization>src/main/xsl/hresume.xsl</foCustomization> 
+				<targetDirectory>${project.build.directory}</targetDirectory> </configuration> 
+				</execution> </executions> </plugin> -->
+
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>xml-maven-plugin</artifactId>
@@ -111,12 +112,12 @@
 								<exclude>**/*.dtd</exclude>
 								<exclude>**/*.xsl</exclude>
 							</excludes>
-							<outputDir>target</outputDir>
+							<outputDir>target/site</outputDir>
 							<fileMappers>
-				                <fileMapper implementation="org.codehaus.plexus.components.io.filemappers.FileExtensionMapper">
-				                  <targetExtension>.html</targetExtension>
-				                </fileMapper>
-				              </fileMappers>
+								<fileMapper implementation="org.codehaus.plexus.components.io.filemappers.FileExtensionMapper">
+									<targetExtension>.html</targetExtension>
+								</fileMapper>
+							</fileMappers>
 						</transformationSet>
 					</transformationSets>
 				</configuration>
@@ -125,10 +126,38 @@
 						<groupId>net.sf.saxon</groupId>
 						<artifactId>saxon</artifactId>
 						<version>8.7</version>
-						</dependency>
+					</dependency>
 				</dependencies>
 			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-site-plugin</artifactId>
+				<version>3.3</version>
+				<configuration>
+					<generateReports>false</generateReports>
+					<generateSitemap>false</generateSitemap>
+				</configuration>
+			</plugin>
 			
+			<plugin>
+				<groupId>com.github.github</groupId>
+				<artifactId>site-maven-plugin</artifactId>
+				<version>0.9</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>site</goal>
+						</goals>
+						<phase>site-deploy</phase>
+						<configuration>
+						    <message>Creating site for ${project.version}</message>
+ 							<path>/</path>
+							<merge>true</merge>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
 		</plugins>
 	</build>
 </project>
