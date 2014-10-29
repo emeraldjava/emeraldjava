@@ -4,7 +4,7 @@ jdk:
 env:
   matrix:
 
-script: mvn install
+script: mvn clean site install
 
 notifications:
   email:
