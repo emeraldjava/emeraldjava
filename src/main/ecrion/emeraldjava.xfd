@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xfd:document xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:xfd="http://www.ecrion.com/xfd/1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xf="http://www.ecrion.com/xf/1.0" xmlns:xc="http://www.ecrion.com/2008/xc" xmlns:svg="http://www.w3.org/2000/svg" xmlns:ns1="http://ns.hr-xml.org/2007-04-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" fo:font-family="Times" fo:font-size="12pt" dt-namespaces="ns1;xsi;" sample-xml="..\xml\index.xml"><xfd:localization>
+		<xfd:locale language-id="en_US" language-name="English (United States)"/>
+	</xfd:localization><fo:layout-master-set>
+		<fo:simple-page-master master-name="Letter Page" page-width="8.500in" page-height="11.000in">
+			<fo:region-body region-name="xsl-region-body" margin="0.700in" />
+			<fo:region-before region-name="xsl-region-before" display-align="after" extent="0.700in"/>
+			<fo:region-after region-name="xsl-region-after" display-align="before" extent="0.700in"/>
+			<fo:region-start region-name="xsl-region-start" extent="0.700in"/>
+			<fo:region-end region-name="xsl-region-end" extent="0.700in"/>
+		</fo:simple-page-master>
+	</fo:layout-master-set>
+	<fo:page-sequence master-reference="Letter Page">
+		<fo:static-content flow-name="xsl-region-after">
+			<fo:block text-align="center"><fo:inline font-style="italic">References Available Apon Request</fo:inline></fo:block>
+		</fo:static-content><fo:static-content flow-name="xsl-region-before">
+			<fo:block><xfd:field xpath="/ns1:Resume/ns1:StructuredXMLResume/ns1:ContactInfo/ns1:PersonName/ns1:GivenName/text()"/>&#x00A0;<xfd:field xpath="/ns1:Resume/ns1:StructuredXMLResume/ns1:ContactInfo/ns1:PersonName/ns1:FamilyName/text()"/></fo:block>
+		</fo:static-content><fo:static-content flow-name="xsl-region-end">
+			<fo:block>&#x00A0;</fo:block>
+		</fo:static-content><fo:static-content flow-name="xsl-region-start">
+			<fo:block>&#x00A0;</fo:block>
+		</fo:static-content><fo:flow flow-name="xsl-region-body">
+			
+<!-- center header -->
+<fo:block text-align="center"><xfd:field xpath="/ns1:Resume/ns1:StructuredXMLResume/ns1:ContactInfo/ns1:PersonName/ns1:GivenName/text()" fo:font-size="14pt" fo:font-weight="bold"/>&#x00A0;<xfd:field xpath="/ns1:Resume/ns1:StructuredXMLResume/ns1:ContactInfo/ns1:PersonName/ns1:FamilyName/text()"/></fo:block>
+<fo:block text-align="center">Address</fo:block>
+	
+<!-- summary -->
+<fo:block text-align="left"><fo:inline font-weight="bold">Professional Summary</fo:inline></fo:block>
+<fo:block text-align="left"><xfd:field xpath="/ns1:Resume/ns1:StructuredXMLResume/ns1:Objective/text()"/></fo:block>
+
+<!-- education -->
+<fo:block text-align="left"><fo:inline font-weight="bold">Education</fo:inline></fo:block>
+<fo:block>
+<xfd:block-repeat xpath="/ns1:Resume/ns1:StructuredXMLResume/ns1:EducationHistory/ns1:SchoolOrInstitution">
+<fo:block text-align="left">Name :&#x00A0;<xfd:field xpath="ns1:School/ns1:SchoolName/text()"/></fo:block>
+</xfd:block-repeat>
+</fo:block>
+
+<!-- skills -->
+<fo:block text-align="left"><fo:inline font-weight="bold">Skills</fo:inline></fo:block>
+
+<!-- experience -->
+<fo:block text-align="left">&#x00A0;</fo:block>
+<fo:block text-align="left"><fo:inline font-weight="bold">Professional Experience</fo:inline></fo:block>
+<fo:block>
+<xfd:block-repeat xpath="/ns1:Resume/ns1:StructuredXMLResume/ns1:EmploymentHistory/ns1:EmployerOrg">
+<fo:block text-align="left"><xfd:field xpath="ns1:EmployerOrgName/text()" fo:font-weight="bold" fo:text-underline-style="solid"/></fo:block>
+<fo:block text-align="left"><xfd:field xpath="ns1:EmployerContactInfo/ns1:LocationSummary/ns1:Municipality/text()"/>&#x00A0;<xfd:field xpath="ns1:EmployerContactInfo/ns1:LocationSummary/ns1:Region/text()"/></fo:block>
+<fo:block text-align="left" start-indent="0.000px"><xfd:field xpath="ns1:PositionHistory/ns1:UserArea/text()" fo:start-indent="0.000px"/></fo:block>
+<xfd:block-repeat xpath="./ns1:PositionHistory/ns1:Description">
+<fo:block text-align="auto" start-indent="8.000px"><xfd:field xpath="text()" fo:start-indent="8.000px" fo:text-align="auto"/></fo:block>
+</xfd:block-repeat>
+</xfd:block-repeat>
+<fo:block text-align="left">new line</fo:block>
+</fo:block>
+
+<!-- hobbies/interests -->
+<fo:block text-align="left">&#x00A0;</fo:block>
+<fo:block text-align="left"><fo:inline font-weight="bold">Hobbies / Interests</fo:inline></fo:block>
+
+<fo:block>
+<xfd:field xpath="/ns1:Resume/ns1:StructuredXMLResume/ns1:ContactInfo/ns1:PersonName/ns1:FamilyName/text()"/> CV&#x00A0;
+</fo:block>
+
+<!-- end -->
+		</fo:flow>
+	</fo:page-sequence>
+</xfd:document>
