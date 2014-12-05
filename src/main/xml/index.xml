@@ -25,7 +25,7 @@
 				</PostalAddress>
 			</ContactMethod>
 		</ContactInfo>
-		<Objective>To work as a senior java developer within an agile team using test driven design and continuous integration methodology to develop N-tier applications. Current research interests include node.js, mondo db and angular js.</Objective>
+		<Objective>To work as a senior java developer within an agile team using test driven design and continuous integration methodology to develop N-tier applications. Current research interests include node.js, bigdata tools and angular js.</Objective>
 		<EmploymentHistory>
 		    <EmployerOrg>
 				<EmployerOrgName>Aegon</EmployerOrgName>
@@ -40,7 +40,7 @@
 					<Title>Senior Software Engineer - Contract</Title>
 					<UserArea>Chief designer and developer for a new platform for generating daily hedging files for mutiple products. The system
 					implemented using Spring Batch allows the actuarial team to manipulate data on the fly using Spring Expression Language expressions.</UserArea>
-					<Description>Implementation of various financial transactions using Hibernate/Jboss</Description>
+					<Description>Implementation of various financial transactions using Hibernate/Jboss and Spring Integration</Description>
 					<Description>Involved with UAT and production release teams to ensure stable releases</Description>
                     <Description>Extended the existing integration test framework to support reporting of code coverge metrics for all modules via Sonar on a nightly basis</Description>
 					<StartDate>
@@ -61,7 +61,7 @@
 					</LocationSummary>
 				</EmployerContactInfo>
 				<PositionHistory>
-					<Title>Java Software Engineer</Title>
+					<Title>Contract Software Engineer</Title>
                     <UserArea>Java contractor working on various Customer Experience Management components in the Touchpoint and Proaction products.</UserArea>
 					<Description>Implemented a generic entity framework to handle CRUD operations in the core Touchpoint product.</Description>
                     <Description>Created a test framework for integration and system testing of the product.</Description>
@@ -176,15 +176,15 @@
 				</EmployerContactInfo>
 				<PositionHistory>
 					<Title>Software Engineer</Title>
-                       <UserArea>International assignment as a software developer within the Foreign Exchange IT group in Zurich, Switzerland.</UserArea>
-					<Description>ZFM is a real time settlement and reconciliation system based on XML messaging over MQ. As project leader
-                       my responsibilities have included the design and implementation of an API, the planning and co-ordination of development
-                       and testing, both within our group and with other departments. The system consists of various java applications communicating
-                       via XML and MQ. A web-based tool supports tracking and supervision of messages within the system.</Description>
-                       <Description>eBus provides a consolidated view of all deal confirmation messages within the FX trading platform.
-                       As project lead I was responsible for the design of a common message specification, implementation with XML/XSL over
-                       MQ, and the co-ordination of the testing and release phases.</Description>
-                       <StartDate>
+				    	<UserArea>International assignment as a software developer within the Foreign Exchange IT group in Zurich, Switzerland.</UserArea>
+						<Description>ZFM is a real time settlement and reconciliation system based on XML messaging over MQ. As project leader
+				        my responsibilities have included the design and implementation of an API, the planning and co-ordination of development
+				        and testing, both within our group and with other departments. The system consists of various java applications communicating
+				        via XML and MQ. A web-based tool supports tracking and supervision of messages within the system.</Description>
+				        <Description>eBus provides a consolidated view of all deal confirmation messages within the FX trading platform.
+				        As project lead I was responsible for the design of a common message specification, implementation with XML/XSL over
+				        MQ, and the co-ordination of the testing and release phases.</Description>
+				        <StartDate>
 						<YearMonth>2003-11</YearMonth>
 					</StartDate>
 					<EndDate>
