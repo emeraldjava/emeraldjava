@@ -91,7 +91,7 @@
 </xslt:choose>
 </xslt:variable>
 <fo:block text-align="left">
-<xsl:if test="string(ns1:EmployerOrgName/text())"><fo:inline font-weight="bold" text-underline-style="solid">
+<xsl:if test="string(ns1:EmployerOrgName/text())"><fo:inline font-weight="bold">
 <xsl:value-of select="ns1:EmployerOrgName/text()"/>
 </fo:inline></xsl:if>
 </fo:block>
