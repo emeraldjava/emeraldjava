@@ -3,11 +3,6 @@ The CV of emeraldjava
 
 [![Build Status](https://travis-ci.org/emeraldjava/emeraldjava.svg?branch=master)](https://travis-ci.org/emeraldjava/emeraldjava)
 
-https://travis-ci.org/emeraldjava/emeraldjava.svg?branch=master
-
-!https://travis-ci.org/emeraldjava/emeraldjava.svg?branch=master!:https://travis-ci.org/emeraldjava/emeraldjava
-
-
 This project allows me to maintains details of my working career in an XML format, to which i then apply XSLT transforms to create PFD and github specific formats.
 
 I have a CI build process setup at
