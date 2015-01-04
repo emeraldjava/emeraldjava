@@ -5,3 +5,7 @@ target/*
 .classpath
 
 *.prefs
+
+*.sublime-workspace
+
+*.sublime-project
