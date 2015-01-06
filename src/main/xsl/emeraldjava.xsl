@@ -29,20 +29,26 @@
 		</fo:simple-page-master>
 	</fo:layout-master-set>
 <fo:page-sequence master-reference="Letter Page">
-		<fo:static-content flow-name="xsl-region-after">
-			<fo:block text-align="center"><fo:inline font-style="italic" font-size="11pt">References Available Apon Request</fo:inline></fo:block>
-		</fo:static-content><fo:static-content flow-name="xsl-region-before">
-			<fo:block><xsl:if test="string(/ns1:Resume/ns1:StructuredXMLResume/ns1:ContactInfo/ns1:PersonName/ns1:GivenName/text())"><fo:inline>
+<fo:static-content flow-name="xsl-region-after">
+	<fo:block text-align="center">
+	<fo:inline font-style="italic" font-size="10pt">References Available Apon Request</fo:inline></fo:block>
+</fo:static-content>
+<fo:static-content flow-name="xsl-region-before">
+	<fo:block text-align="right">
+<fo:inline font-style="italic" font-size="10pt">
 <xsl:value-of select="/ns1:Resume/ns1:StructuredXMLResume/ns1:ContactInfo/ns1:PersonName/ns1:GivenName/text()"/>
-</fo:inline></xsl:if>&#160;<xsl:if test="string(/ns1:Resume/ns1:StructuredXMLResume/ns1:ContactInfo/ns1:PersonName/ns1:FamilyName/text())"><fo:inline>
+</fo:inline>&#160;<fo:inline font-style="italic" font-size="10pt">
 <xsl:value-of select="/ns1:Resume/ns1:StructuredXMLResume/ns1:ContactInfo/ns1:PersonName/ns1:FamilyName/text()"/>
-</fo:inline></xsl:if></fo:block>
-		</fo:static-content><fo:static-content flow-name="xsl-region-end">
-			<fo:block>&#160;</fo:block>
-		</fo:static-content><fo:static-content flow-name="xsl-region-start">
-			<fo:block>&#160;</fo:block>
-		</fo:static-content><fo:flow flow-name="xsl-region-body">
-			
+</fo:inline></fo:block>
+</fo:static-content>
+<fo:static-content flow-name="xsl-region-end">
+	<fo:block>&#160;</fo:block>
+</fo:static-content>
+<fo:static-content flow-name="xsl-region-start">
+	<fo:block>&#160;</fo:block>
+</fo:static-content>
+
+<fo:flow flow-name="xsl-region-body">
 <xslt:comment> center header </xslt:comment>
 <fo:block text-align="center"><xsl:if test="string(/ns1:Resume/ns1:StructuredXMLResume/ns1:ContactInfo/ns1:PersonName/ns1:GivenName/text())"><fo:inline font-size="14pt" font-weight="bold">
 <xsl:value-of select="/ns1:Resume/ns1:StructuredXMLResume/ns1:ContactInfo/ns1:PersonName/ns1:GivenName/text()"/>
@@ -115,21 +121,21 @@
 <xsl:value-of select="ns1:PositionHistory/ns1:UserArea/text()"/>
 </fo:inline></xsl:if>
 </fo:block>
+</fo:block>
+
+<fo:list-block>
 <xsl:for-each select="./ns1:PositionHistory/ns1:Description">
-<fo:block><xslt:variable name="isFirst_id1305415">
-<xslt:choose>
-<xslt:when test="position() = 1">true</xslt:when>
-<xslt:otherwise>false</xslt:otherwise>
-</xslt:choose>
-</xslt:variable>
-<fo:block text-align="auto" start-indent="8.000px">
-<xsl:if test="string(text())"><fo:inline start-indent="8.000px" text-align="auto">
-<xsl:value-of select="text()"/>
-</fo:inline></xsl:if>
-</fo:block>
-</fo:block>
+<fo:list-item>
+  <fo:list-item-label>
+    <fo:block>&#160;</fo:block>
+  </fo:list-item-label>
+  <fo:list-item-body>
+    <fo:block><fo:inline font-size="11pt">- <xsl:value-of select="text()"/></fo:inline></fo:block>
+  </fo:list-item-body>
+</fo:list-item>
 </xsl:for-each>
-</fo:block>
+</fo:list-block>
+
 <fo:block white-space-collapse="false" 
     white-space-treatment="preserve" 
     font-size="0pt" line-height="15px">.</fo:block>
