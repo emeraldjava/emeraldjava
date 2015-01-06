@@ -98,29 +98,23 @@
 <xslt:comment> experience </xslt:comment>
 <fo:block text-align="left">&#160;</fo:block>
 <fo:block text-align="left"><fo:inline font-weight="bold">Professional Experience</fo:inline></fo:block>
-<fo:block>
+
+<xslt:comment>Company</xslt:comment>
 <xsl:for-each select="/ns1:Resume/ns1:StructuredXMLResume/ns1:EmploymentHistory/ns1:EmployerOrg">
-<fo:block><xslt:variable name="isFirst_id1305469">
-<xslt:choose>
-<xslt:when test="position() = 1">true</xslt:when>
-<xslt:otherwise>false</xslt:otherwise>
-</xslt:choose>
-</xslt:variable>
+
 <fo:block text-align="left">
-<xsl:if test="string(ns1:EmployerOrgName/text())"><fo:inline font-weight="bold">
-<xsl:value-of select="ns1:EmployerOrgName/text()"/>
-</fo:inline></xsl:if>
+<fo:inline font-weight="bold"><xsl:value-of select="ns1:EmployerOrgName/text()"/></fo:inline>
 </fo:block>
-<fo:block text-align="left"><xsl:if test="string(ns1:EmployerContactInfo/ns1:LocationSummary/ns1:Municipality/text())"><fo:inline>
+<xslt:comment>Company address</xslt:comment>
+<fo:block text-align="left">
+<fo:inline>
 <xsl:value-of select="ns1:EmployerContactInfo/ns1:LocationSummary/ns1:Municipality/text()"/>
-</fo:inline></xsl:if>&#160;<xsl:if test="string(ns1:EmployerContactInfo/ns1:LocationSummary/ns1:Region/text())"><fo:inline>
+</fo:inline>&#160;<fo:inline>
 <xsl:value-of select="ns1:EmployerContactInfo/ns1:LocationSummary/ns1:Region/text()"/>
-</fo:inline></xsl:if></fo:block>
-<fo:block text-align="left" start-indent="0.000px">
-<xsl:if test="string(ns1:PositionHistory/ns1:UserArea/text())"><fo:inline start-indent="0.000px">
-<xsl:value-of select="ns1:PositionHistory/ns1:UserArea/text()"/>
-</fo:inline></xsl:if>
-</fo:block>
+</fo:inline></fo:block>
+
+<fo:block text-align="left">
+<fo:inline><xsl:value-of select="ns1:PositionHistory/ns1:UserArea/text()"/></fo:inline>
 </fo:block>
 
 <fo:list-block>
@@ -140,7 +134,6 @@
     white-space-treatment="preserve" 
     font-size="0pt" line-height="15px">.</fo:block>
 </xsl:for-each>
-</fo:block>
     
 <xslt:comment> hobbies/interests </xslt:comment>
 <fo:block text-align="left">&#160;</fo:block>
