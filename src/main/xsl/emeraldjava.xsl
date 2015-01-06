@@ -35,7 +35,7 @@
 </fo:static-content>
 <fo:static-content flow-name="xsl-region-before">
 	<fo:block text-align="right">
-<fo:inline font-style="italic" font-size="10pt">
+<fo:inline font-style="italic" font-size="10pt">CV
 <xsl:value-of select="/ns1:Resume/ns1:StructuredXMLResume/ns1:ContactInfo/ns1:PersonName/ns1:GivenName/text()"/>
 </fo:inline>&#160;<fo:inline font-style="italic" font-size="10pt">
 <xsl:value-of select="/ns1:Resume/ns1:StructuredXMLResume/ns1:ContactInfo/ns1:PersonName/ns1:FamilyName/text()"/>
@@ -50,23 +50,34 @@
 
 <fo:flow flow-name="xsl-region-body">
 <xslt:comment> center header </xslt:comment>
-<fo:block text-align="center"><xsl:if test="string(/ns1:Resume/ns1:StructuredXMLResume/ns1:ContactInfo/ns1:PersonName/ns1:GivenName/text())"><fo:inline font-size="14pt" font-weight="bold">
+<fo:block text-align="center"><fo:inline font-size="14pt" font-weight="bold">
 <xsl:value-of select="/ns1:Resume/ns1:StructuredXMLResume/ns1:ContactInfo/ns1:PersonName/ns1:GivenName/text()"/>
-</fo:inline></xsl:if>&#160;<xsl:if test="string(/ns1:Resume/ns1:StructuredXMLResume/ns1:ContactInfo/ns1:PersonName/ns1:FamilyName/text())"><fo:inline font-size="14pt" font-weight="bold">
+</fo:inline>&#160;<fo:inline font-size="14pt" font-weight="bold">
 <xsl:value-of select="/ns1:Resume/ns1:StructuredXMLResume/ns1:ContactInfo/ns1:PersonName/ns1:FamilyName/text()"/>
-</fo:inline></xsl:if></fo:block>
+</fo:inline></fo:block>
+<xslt:comment> Contact </xslt:comment>
+<fo:block text-align="center">
+<fo:inline font-size="12pt">
+<xsl:value-of select="/ns1:Resume/ns1:StructuredXMLResume/ns1:ContactInfo/ns1:ContactMethod/ns1:Telephone/ns1:FormattedNumber/text()"/>
+</fo:inline>
+</fo:block>
+<fo:block text-align="center">
+<fo:inline font-size="12pt">
+<xsl:value-of select="/ns1:Resume/ns1:StructuredXMLResume/ns1:ContactInfo/ns1:ContactMethod/ns1:InternetEmailAddress/text()"/>
+</fo:inline>
+</fo:block>
 <fo:block white-space-collapse="false" 
     white-space-treatment="preserve" 
     font-size="0pt" line-height="15px">.</fo:block>
     
-<fo:block text-align="center">Address</fo:block>
+
 	
 <xslt:comment> summary </xslt:comment>
 <fo:block text-align="left"><fo:inline font-weight="bold">Professional Summary</fo:inline></fo:block>
 <fo:block text-align="left">
-<xsl:if test="string(/ns1:Resume/ns1:StructuredXMLResume/ns1:Objective/text())"><fo:inline>
+<fo:inline>
 <xsl:value-of select="/ns1:Resume/ns1:StructuredXMLResume/ns1:Objective/text()"/>
-</fo:inline></xsl:if>
+</fo:inline>
 </fo:block>
 <fo:block white-space-collapse="false" 
     white-space-treatment="preserve" 
@@ -76,42 +87,40 @@
 <fo:block text-align="left"><fo:inline font-weight="bold">Education</fo:inline></fo:block>
 <fo:block>
 <xsl:for-each select="/ns1:Resume/ns1:StructuredXMLResume/ns1:EducationHistory/ns1:SchoolOrInstitution">
-<fo:block><xslt:variable name="isFirst_id1305530">
-<xslt:choose>
-<xslt:when test="position() = 1">true</xslt:when>
-<xslt:otherwise>false</xslt:otherwise>
-</xslt:choose>
-</xslt:variable>
-<fo:block text-align="left">Name :&#160;<xsl:if test="string(ns1:School/ns1:SchoolName/text())"><fo:inline>
+<fo:block>
+<fo:block text-align="left"><xsl:value-of select="ns1:Degree/ns1:DegreeName/text()"/>.&#160;<fo:inline>
 <xsl:value-of select="ns1:School/ns1:SchoolName/text()"/>
-</fo:inline></xsl:if></fo:block>
+</fo:inline></fo:block>
 </fo:block>
 </xsl:for-each>
 </fo:block>
 <fo:block white-space-collapse="false" 
     white-space-treatment="preserve" 
     font-size="0pt" line-height="15px">.</fo:block>
-    
+
+<!--     
 <xslt:comment> skills </xslt:comment>
 <fo:block text-align="left"><fo:inline font-weight="bold">Skills</fo:inline></fo:block>
+-->
 
 <xslt:comment> experience </xslt:comment>
 <fo:block text-align="left">&#160;</fo:block>
 <fo:block text-align="left"><fo:inline font-weight="bold">Professional Experience</fo:inline></fo:block>
 
-<xslt:comment>Company</xslt:comment>
+<xslt:comment>For each company</xslt:comment>
 <xsl:for-each select="/ns1:Resume/ns1:StructuredXMLResume/ns1:EmploymentHistory/ns1:EmployerOrg">
 
-<fo:block text-align="left">
-<fo:inline font-weight="bold"><xsl:value-of select="ns1:EmployerOrgName/text()"/></fo:inline>
-</fo:block>
-<xslt:comment>Company address</xslt:comment>
-<fo:block text-align="left">
+<xslt:comment>Company name, address and duration</xslt:comment>
+<fo:block text-align-last="justify">
+<fo:inline font-weight="bold"><xsl:value-of select="ns1:EmployerOrgName/text()"/></fo:inline>&#160;:&#160;
 <fo:inline>
 <xsl:value-of select="ns1:EmployerContactInfo/ns1:LocationSummary/ns1:Municipality/text()"/>
 </fo:inline>&#160;<fo:inline>
 <xsl:value-of select="ns1:EmployerContactInfo/ns1:LocationSummary/ns1:Region/text()"/>
-</fo:inline></fo:block>
+</fo:inline>
+<fo:leader leader-pattern="space"/>
+<fo:inline font-weight="italic" font-size="10pt"><xsl:value-of select="ns1:PositionHistory/ns1:Duration/text()"/></fo:inline>
+</fo:block>
 
 <fo:block text-align="left">
 <fo:inline><xsl:value-of select="ns1:PositionHistory/ns1:UserArea/text()"/></fo:inline>
@@ -134,16 +143,20 @@
     white-space-treatment="preserve" 
     font-size="0pt" line-height="15px">.</fo:block>
 </xsl:for-each>
-    
+
+<!--    
 <xslt:comment> hobbies/interests </xslt:comment>
 <fo:block text-align="left">&#160;</fo:block>
 <fo:block text-align="left"><fo:inline font-weight="bold">Hobbies / Interests</fo:inline></fo:block>
+-->
 
+<!-- 
 <fo:block>
 <xsl:if test="string(/ns1:Resume/ns1:StructuredXMLResume/ns1:ContactInfo/ns1:PersonName/ns1:FamilyName/text())"><fo:inline>
 <xsl:value-of select="/ns1:Resume/ns1:StructuredXMLResume/ns1:ContactInfo/ns1:PersonName/ns1:FamilyName/text()"/>
 </fo:inline></xsl:if> CV&#160;
 </fo:block>
+-->
 
 <xslt:comment> end </xslt:comment>
 		</fo:flow>

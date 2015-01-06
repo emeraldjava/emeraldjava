@@ -26,7 +26,7 @@
 				</PostalAddress>
 			</ContactMethod>
 		</ContactInfo>
-		<Objective>Talented Software Developer with MSc. Network and Distributed Systems and almost 15 years’ experience across financial services, insurance and telecom industries in Ireland, UK and Switzerland.  Seeking a challenging Senior Java Developer role within an agile team using test driven design and continuous integration methodology to develop N-tier applications. Current research interests include node.js, big data tools and angular js.</Objective>
+		<Objective>Talented Software Developer with MSc. Network and Distributed Systems and almost 15 years’ experience across financial services, insurance and telecom industries in Ireland, UK and Switzerland.  Seeking a challenging Senior Java Developer role within an agile team using test driven design and continuous integration methodology to develop N-tier applications. Current research interests include reactive, big data and angular js tools.</Objective>
 		<EmploymentHistory>
 		    <EmployerOrg>
 				<EmployerOrgName>Aegon</EmployerOrgName>
@@ -260,7 +260,7 @@
 					<DegreeDate><YearMonth>2000-10</YearMonth></DegreeDate>
 					<DatesOfAttendance>
 						<StartDate>
-							<YearMonth>1999-10</YearMonth>
+						    <YearMonth>1999-10</YearMonth>
 						</StartDate>
 						<EndDate>
 							<YearMonth>2000-10</YearMonth>
