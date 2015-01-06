@@ -112,14 +112,18 @@
 
 <xslt:comment>Company name, address and duration</xslt:comment>
 <fo:block text-align-last="justify">
-<fo:inline font-weight="bold"><xsl:value-of select="ns1:EmployerOrgName/text()"/></fo:inline>&#160;:&#160;
+<fo:inline font-weight="bold"><xsl:value-of select="ns1:EmployerOrgName/text()"/></fo:inline>:&#160;
 <fo:inline>
 <xsl:value-of select="ns1:EmployerContactInfo/ns1:LocationSummary/ns1:Municipality/text()"/>
-</fo:inline>&#160;<fo:inline>
+</fo:inline>,&#160;<fo:inline>
 <xsl:value-of select="ns1:EmployerContactInfo/ns1:LocationSummary/ns1:Region/text()"/>
+</fo:inline><xsl:if test="string(ns1:EmployerContactInfo/ns1:LocationSummary/ns1:CountryCode/text())">,&#160;
+<fo:inline>
+<xsl:value-of select="ns1:EmployerContactInfo/ns1:LocationSummary/ns1:CountryCode/text()"/>
 </fo:inline>
+</xsl:if>
 <fo:leader leader-pattern="space"/>
-<fo:inline font-weight="italic" font-size="10pt"><xsl:value-of select="ns1:PositionHistory/ns1:Duration/text()"/></fo:inline>
+<fo:inline font-style="italic" font-size="9pt"><xsl:value-of select="ns1:PositionHistory/ns1:Duration/text()"/></fo:inline>
 </fo:block>
 
 <fo:block text-align="left">
@@ -144,11 +148,20 @@
     font-size="0pt" line-height="15px">.</fo:block>
 </xsl:for-each>
 
-<!--    
 <xslt:comment> hobbies/interests </xslt:comment>
-<fo:block text-align="left">&#160;</fo:block>
 <fo:block text-align="left"><fo:inline font-weight="bold">Hobbies / Interests</fo:inline></fo:block>
--->
+<fo:list-block>
+<xsl:for-each select="/ns1:Resume/ns1:StructuredXMLResume/ns1:Hobbies/ns1:Hobby">
+<fo:list-item>
+  <fo:list-item-label>
+    <fo:block>&#160;</fo:block>
+  </fo:list-item-label>
+  <fo:list-item-body>
+    <fo:block><fo:inline font-size="11pt">- <xsl:value-of select="text()"/></fo:inline></fo:block>
+  </fo:list-item-body>
+</fo:list-item>
+</xsl:for-each>
+</fo:list-block>
 
 <!-- 
 <fo:block>
