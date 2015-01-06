@@ -30,7 +30,7 @@
 	</fo:layout-master-set>
 <fo:page-sequence master-reference="Letter Page">
 		<fo:static-content flow-name="xsl-region-after">
-			<fo:block text-align="center"><fo:inline font-style="italic">References Available Apon Request</fo:inline></fo:block>
+			<fo:block text-align="center"><fo:inline font-style="italic" font-size="11pt">References Available Apon Request</fo:inline></fo:block>
 		</fo:static-content><fo:static-content flow-name="xsl-region-before">
 			<fo:block><xsl:if test="string(/ns1:Resume/ns1:StructuredXMLResume/ns1:ContactInfo/ns1:PersonName/ns1:GivenName/text())"><fo:inline>
 <xsl:value-of select="/ns1:Resume/ns1:StructuredXMLResume/ns1:ContactInfo/ns1:PersonName/ns1:GivenName/text()"/>
@@ -46,9 +46,13 @@
 <xslt:comment> center header </xslt:comment>
 <fo:block text-align="center"><xsl:if test="string(/ns1:Resume/ns1:StructuredXMLResume/ns1:ContactInfo/ns1:PersonName/ns1:GivenName/text())"><fo:inline font-size="14pt" font-weight="bold">
 <xsl:value-of select="/ns1:Resume/ns1:StructuredXMLResume/ns1:ContactInfo/ns1:PersonName/ns1:GivenName/text()"/>
-</fo:inline></xsl:if>&#160;<xsl:if test="string(/ns1:Resume/ns1:StructuredXMLResume/ns1:ContactInfo/ns1:PersonName/ns1:FamilyName/text())"><fo:inline>
+</fo:inline></xsl:if>&#160;<xsl:if test="string(/ns1:Resume/ns1:StructuredXMLResume/ns1:ContactInfo/ns1:PersonName/ns1:FamilyName/text())"><fo:inline font-size="14pt" font-weight="bold">
 <xsl:value-of select="/ns1:Resume/ns1:StructuredXMLResume/ns1:ContactInfo/ns1:PersonName/ns1:FamilyName/text()"/>
 </fo:inline></xsl:if></fo:block>
+<fo:block white-space-collapse="false" 
+    white-space-treatment="preserve" 
+    font-size="0pt" line-height="15px">.</fo:block>
+    
 <fo:block text-align="center">Address</fo:block>
 	
 <xslt:comment> summary </xslt:comment>
@@ -58,6 +62,9 @@
 <xsl:value-of select="/ns1:Resume/ns1:StructuredXMLResume/ns1:Objective/text()"/>
 </fo:inline></xsl:if>
 </fo:block>
+<fo:block white-space-collapse="false" 
+    white-space-treatment="preserve" 
+    font-size="0pt" line-height="15px">.</fo:block>
 
 <xslt:comment> education </xslt:comment>
 <fo:block text-align="left"><fo:inline font-weight="bold">Education</fo:inline></fo:block>
@@ -75,7 +82,10 @@
 </fo:block>
 </xsl:for-each>
 </fo:block>
-
+<fo:block white-space-collapse="false" 
+    white-space-treatment="preserve" 
+    font-size="0pt" line-height="15px">.</fo:block>
+    
 <xslt:comment> skills </xslt:comment>
 <fo:block text-align="left"><fo:inline font-weight="bold">Skills</fo:inline></fo:block>
 
@@ -91,7 +101,7 @@
 </xslt:choose>
 </xslt:variable>
 <fo:block text-align="left">
-<xsl:if test="string(ns1:EmployerOrgName/text())"><fo:inline font-weight="bold" text-underline-style="solid">
+<xsl:if test="string(ns1:EmployerOrgName/text())"><fo:inline font-weight="bold">
 <xsl:value-of select="ns1:EmployerOrgName/text()"/>
 </fo:inline></xsl:if>
 </fo:block>
@@ -120,10 +130,12 @@
 </fo:block>
 </xsl:for-each>
 </fo:block>
+<fo:block white-space-collapse="false" 
+    white-space-treatment="preserve" 
+    font-size="0pt" line-height="15px">.</fo:block>
 </xsl:for-each>
-<fo:block text-align="left">new line</fo:block>
 </fo:block>
-
+    
 <xslt:comment> hobbies/interests </xslt:comment>
 <fo:block text-align="left">&#160;</fo:block>
 <fo:block text-align="left"><fo:inline font-weight="bold">Hobbies / Interests</fo:inline></fo:block>
