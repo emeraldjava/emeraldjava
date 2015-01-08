@@ -293,16 +293,15 @@
 		</EducationHistory>
 		<Qualifications>
 			<!-- Skill area title not supported (unless no skill set title is given). -->
-            <Competency name="Languages" description="Java, PHP"/>
-			<Competency name="Java" description="Spring, J2EE, ORM (JPA/Hibernate), Concurrency, WebServices, Sun Certified Java Developer"/>
-			<Competency name="Web" description="Spring MVC, Servlets, JSP, Wicket, HTML5, Javascript, AJAX, CSS"/>
-            <Competency name="Testing Tools" description="Junit, Mockito, TestNG, DBUnit, Selenium"/>
-			<Competency name="Build/CI Tools" description="Maven, ANT, Gradle, Bamboo/Jenkins, FindBugs, PMD, Sonar, Clover/Jacoco"/>
-			<Competency name="XML" description="XSL, XPath, FOP-XML, JAXB"/>
+			<Competency name="Java" description="Spring, J2EE, EJB, ORM (JPA/Hibernate), Sun Certified Java Developer"/>
+			<Competency name="Web" description="Spring MVC, Servlets, JSP/JSF, Struts, Javascript, AJAX, CSS, JQuery, Play"/>
+            <Competency name="XML" description="JAXB, XSL(T), XPath, FOP-XML, SOAP, WebServices"/>
+			<Competency name="Testing Tools" description="Junit, Mockito, TestNG, DBUnit, Selenium"/>
+			<Competency name="Servers" description="JBoss, Websphere, Weblogic, Tomcat, Apache, Jetty"/>
+			<Competency name="Databases" description="Oracle, MS SQL Server, Informix, MySql, H2"/>
+			<Competency name="Build/CI Tools" description="Maven, ANT, Bamboo/Jenkins, FindBugs, PMD, Sonar, Jacoco"/>
 			<Competency name="SCM Tools" description="SVN, Git, ClearCase"/>
-			<Competency name="Servers" description="JBoss, Tomcat, Apache, Jetty"/>
-			<Competency name="Databases" description="Oracle, MSSQL, Informix, MySql, Db2, H2"/>
-			<Competency name="PHP" description="Wordpress, Zend Framework, WAMP"/>
+			<Competency name="Other" description="PHP, Groovy, Wordpress, Scala, Zend Framework"/>
 		</Qualifications>
 		<Hobbies>
    		    <Hobby>Chairperson of the Dublin Business Houses Athletic Assiocation. www.bhaa.ie</Hobby>

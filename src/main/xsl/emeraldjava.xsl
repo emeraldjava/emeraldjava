@@ -20,18 +20,18 @@
 <xsl:template match="/">
 <fo:root font-family="Times" font-size="12pt">
 <fo:layout-master-set>
-		<fo:simple-page-master master-name="Letter Page" page-width="8.500in" page-height="11.000in">
-			<fo:region-body region-name="xsl-region-body" margin="0.700in"/>
-			<fo:region-before region-name="xsl-region-before" display-align="after" extent="0.700in"/>
-			<fo:region-after region-name="xsl-region-after" display-align="before" extent="0.700in"/>
-			<fo:region-start region-name="xsl-region-start" extent="0.700in"/>
-			<fo:region-end region-name="xsl-region-end" extent="0.700in"/>
-		</fo:simple-page-master>
-	</fo:layout-master-set>
+	<fo:simple-page-master master-name="Letter Page" page-width="8.500in" page-height="11.000in">
+		<fo:region-body region-name="xsl-region-body" margin="0.700in"/>
+		<fo:region-before region-name="xsl-region-before" display-align="after" extent="0.700in"/>
+		<fo:region-after region-name="xsl-region-after" display-align="before" extent="0.700in"/>
+		<fo:region-start region-name="xsl-region-start" extent="0.700in"/>
+		<fo:region-end region-name="xsl-region-end" extent="0.700in"/>
+	</fo:simple-page-master>
+</fo:layout-master-set>
 <fo:page-sequence master-reference="Letter Page">
 <fo:static-content flow-name="xsl-region-after">
 	<fo:block text-align="center">
-	<fo:inline font-style="italic" font-size="10pt">References Available Apon Request</fo:inline></fo:block>
+	<fo:inline font-style="italic" font-size="10pt">References available apon request.</fo:inline></fo:block>
 </fo:static-content>
 <fo:static-content flow-name="xsl-region-before">
 	<fo:block text-align="right">
@@ -68,9 +68,7 @@
 </fo:block>
 <fo:block white-space-collapse="false" 
     white-space-treatment="preserve" 
-    font-size="0pt" line-height="15px">.</fo:block>
-    
-
+    font-size="0pt" line-height="10px">.</fo:block>
 	
 <xslt:comment> summary </xslt:comment>
 <fo:block text-align="left"><fo:inline font-weight="bold">Professional Summary</fo:inline></fo:block>
@@ -81,8 +79,26 @@
 </fo:block>
 <fo:block white-space-collapse="false" 
     white-space-treatment="preserve" 
-    font-size="0pt" line-height="15px">.</fo:block>
+    font-size="0pt" line-height="10px">.</fo:block>
 
+<xslt:comment>Skills</xslt:comment>
+<fo:block text-align="left"><fo:inline font-weight="bold">Technical Skills</fo:inline></fo:block>
+<fo:list-block>
+<xsl:for-each select="/ns1:Resume/ns1:StructuredXMLResume/ns1:Qualifications/ns1:Competency">
+<fo:list-item>
+  <fo:list-item-label>
+	<fo:block></fo:block>
+  </fo:list-item-label>
+  <fo:list-item-body>
+    <fo:block><fo:inline font-weight="bold"><xsl:value-of select="@name"/>:</fo:inline>&#160;<fo:inline font-size="11pt"><xsl:value-of select="@description"/></fo:inline></fo:block>
+  </fo:list-item-body>
+</fo:list-item>
+</xsl:for-each>
+</fo:list-block>
+<fo:block white-space-collapse="false" 
+    white-space-treatment="preserve" 
+    font-size="0pt" line-height="10px">.</fo:block>
+    
 <xslt:comment> education </xslt:comment>
 <fo:block text-align="left"><fo:inline font-weight="bold">Education</fo:inline></fo:block>
 <fo:block>
@@ -96,12 +112,7 @@
 </fo:block>
 <fo:block white-space-collapse="false" 
     white-space-treatment="preserve" 
-    font-size="0pt" line-height="15px">.</fo:block>
-
-<!--     
-<xslt:comment> skills </xslt:comment>
-<fo:block text-align="left"><fo:inline font-weight="bold">Skills</fo:inline></fo:block>
--->
+    font-size="0pt" line-height="10px">.</fo:block>
 
 <xslt:comment> experience </xslt:comment>
 <fo:block text-align="left">&#160;</fo:block>
@@ -145,7 +156,7 @@
 
 <fo:block white-space-collapse="false" 
     white-space-treatment="preserve" 
-    font-size="0pt" line-height="15px">.</fo:block>
+    font-size="0pt" line-height="10px">.</fo:block>
 </xsl:for-each>
 
 <xslt:comment> hobbies/interests </xslt:comment>
