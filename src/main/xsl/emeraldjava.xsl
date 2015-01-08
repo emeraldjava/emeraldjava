@@ -18,7 +18,7 @@
 <!-- =========================== SCRIPTS ================================ -->
 <!-- ========================= ROOT TEMPLATE =========================== -->
 <xsl:template match="/">
-<fo:root font-family="Times" font-size="12pt">
+<fo:root font-family="Times" font-size="11pt">
 <fo:layout-master-set>
 	<fo:simple-page-master master-name="Letter Page" page-width="8.500in" page-height="11.000in">
 		<fo:region-body region-name="xsl-region-body" margin="0.700in"/>
@@ -103,10 +103,10 @@
 <fo:block text-align="left"><fo:inline font-weight="bold">Education</fo:inline></fo:block>
 <fo:block>
 <xsl:for-each select="/ns1:Resume/ns1:StructuredXMLResume/ns1:EducationHistory/ns1:SchoolOrInstitution">
-<fo:block>
-<fo:block text-align="left"><xsl:value-of select="ns1:Degree/ns1:DegreeName/text()"/>.&#160;<fo:inline>
-<xsl:value-of select="ns1:School/ns1:SchoolName/text()"/>
-</fo:inline></fo:block>
+<fo:block text-align="left">
+<fo:inline font-weight="bold"><xsl:value-of select="ns1:Degree/ns1:DegreeName/text()"/></fo:inline>&#160;
+<fo:inline><xsl:value-of select="ns1:School/ns1:SchoolName/text()"/></fo:inline>&#160;
+<fo:inline><xsl:value-of select="substring(ns1:Degree/ns1:DegreeDate/ns1:YearMonth/text(),1,4)"/></fo:inline>
 </fo:block>
 </xsl:for-each>
 </fo:block>

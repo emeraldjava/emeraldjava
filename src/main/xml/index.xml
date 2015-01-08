@@ -41,9 +41,9 @@
 					<Title>Senior Software Engineer - Contract</Title>
 					<UserArea>Chief Designer and Developer for a new platform that generates daily hedging files for multiple products. The system
 					implemented using Spring Batch allows the actuarial team to manipulate data on the fly using Spring Expression Language expressions.</UserArea>
-					<Description>Implementation of various financial transactions using Hibernate/Jboss and Spring Integration.</Description>
 					<Description>Involved with User Acceptance Testing and Live production releases.</Description>
                     <Description>Extended the existing integration test framework to support reporting of code coverage metrics for all modules via Sonar on a nightly basis.</Description>
+					<Description>Technologies used: J2EE, Spring Batch/Integration, MongoDB, Hibernate, Sonar, Bamboo</Description>
 					<Duration>2 1/2 Years</Duration>
 					<StartDate>
 						<YearMonth>2012-07</YearMonth>
@@ -68,6 +68,7 @@
 					<Description>Implemented a generic entity framework to handle database operations in the core Touchpoint product.</Description>
                     <Description>Created a test framework for integration and system testing of the product.</Description>
                     <Description>Introduced the use of the sonar code quality engine to the organisation.</Description>
+                    <Description>Technologies used: J2EE, JPA, Sonar, Bamboo, Flex</Description>
 					<Duration>2 1/2 Years</Duration>
 					<StartDate>
 						<YearMonth>2010-01</YearMonth>
@@ -90,7 +91,7 @@
 					<Title>Contract Software Engineer</Title>
 					<UserArea>Java Contractor within the Aegon office providing support for UK and Dutch pension providers.</UserArea>
 					<Description>Implemented a validation service that allowed for reuse of rule hierarchies across products and locales from a database configuration.</Description>
-                    <Description>The service was exposed via EJB and a WebService and replace hardcoded validation rules within a Swing client. Provided a Wicket based User Interface to visualise the configurations.</Description>
+                    <Description>Technologies used: EJB, JAXB, Webservices, JBoss, Informix, Swing, Wicket UI</Description>
 					<Duration>1 Year</Duration>
 					<StartDate>
 						<YearMonth>2008-10</YearMonth>
@@ -113,7 +114,7 @@
 					<Title>Contract Software Engineer</Title>
 					<UserArea>Java Contractor within Terranua's consultancy group focused on providing a risk control system to the Fidelity organization.</UserArea>
 					<Description>Risk Reporting: Responsible for a risk reporting system which queries risk details from a database and creates an XML report which is then transformed via XSL to HTML and Word formats for user preview and printing.</Description>
-                    <Description>Full front to back development work, using Spring MVC and Hibernate technologies to deploy on Tomcat/Websphere platforms with an Oracle database.</Description>
+                    <Description>Technologies used: Websphere, JPA, Spring MVC, Oracle, XSLT, XML-FOP</Description>
 					<Duration>1 1/2 Years</Duration>
 					<StartDate>
 						<YearMonth>2008-03</YearMonth>
@@ -134,8 +135,9 @@
 				</EmployerContactInfo>
 				<PositionHistory>
 					<Title>Contract Software Engineer</Title>
-					<UserArea>Java Contractor within Norkom's development group, using the Spring, Struts and Hibernate technologies to create a financial crime and compliance application that can be deployed into various J2EE server and database environments.</UserArea>
+					<UserArea>Java Contractor within Norkom's development group which delivered a financial crime and compliance application that can be deployed into various J2EE server and database environments.</UserArea>
 					<Description>Watch List Management Day to day work involved bug fixing and small pieces of new development on various branches of this sub-project.</Description>
+					<Description>Technologies used: J2EE, Spring, Struts</Description>
 					<Duration>4 Months</Duration>
 					<StartDate>
 						<YearMonth>2007-10</YearMonth>
@@ -160,7 +162,7 @@
 					<Description>Worked on the Unemployment Insurance product within the workflow group which involved the full software development lifecycle on various J2EE platforms.</Description>
                        <Description>Implementation of a unit testing framework and tools to auto-generate unit test stubs from the project model.</Description>
                        <Description>Maintenance of the smoke test and continuous integration systems.</Description>
-                       <!--<Description>Curam use a model driven development process and have a custom ORM style solution for database transparency</Description>-->
+                       <Description>Technologies used: Rational Rose, Reflection, XML Workflows, XML-FOP, Maven Code Generator</Description>
 					<Duration>1 Year</Duration>
 					<StartDate>
 						<YearMonth>2006-09</YearMonth>
@@ -190,6 +192,7 @@
 				        <Description>eBus provides a consolidated view of all deal confirmation messages within the FX trading platform.
 				        As Project Lead I was responsible for the design of a common message specification, implementation with XML/XSL over
 				        MQ, and the co-ordination of the testing and release phases.</Description>
+				    	<Description>Technologies used: J2EE, JMS, XML, XSLT, XPath</Description>
 				    <Duration>2 1/2 Years</Duration>
 				    <StartDate>
 						<YearMonth>2003-11</YearMonth>
@@ -211,10 +214,10 @@
 				</EmployerContactInfo>
 				<PositionHistory>
 					<Title>Software Engineer</Title>
-                       <UserArea>Software developer within Foreign Exchange IT group based in London.</UserArea>
+                    <UserArea>Software developer within Foreign Exchange IT group based in London.</UserArea>
 					<Description>Java developer on the Swix tool to handle open positions on a daily basis. My
-                           responsibilities included the initial XML protocol specification, implementation of a web application
-                           (Tomcat) and co-ordination of testing with other groups and business users.</Description>
+                           responsibilities included the initial XML protocol specification, implementation of a web application and co-ordination of testing with other groups and business users.</Description>
+                    <Description>Technologies used: XML, XSLT, Tomcat</Description>
                     <Duration>9 Months</Duration>
 					<StartDate>
 						<YearMonth>2003-01</YearMonth>
@@ -236,7 +239,8 @@
 				<PositionHistory>
 					<Title>Software Engineer</Title>
 					<UserArea>RANOS is an operations and management system for Ericsson’s 3G telecommunications radio network system.</UserArea>
-					<Description>Member of a framework group which provided generic server side Java/CORBA components.</Description>
+					<Description>Member of a framework group which provided generic server side components.</Description>
+					<Description>Technologies used: Java, RMI, CORBA</Description>
 					<Duration>2 Years</Duration>
 					<StartDate>
 						<YearMonth>2000-10</YearMonth>
@@ -252,7 +256,7 @@
 			<SchoolOrInstitution schoolType="university">
 				<School>
 					<InternetDomainName>http://www.scss.tcd.ie/postgraduate/mscnds/</InternetDomainName>
-					<SchoolName>Department of Computer Science, Trinity College Dublin</SchoolName>
+					<SchoolName>Trinity College Dublin</SchoolName>
 				</School>
 				<OrganizationUnit organizationType="department">Department of Computer Science</OrganizationUnit>
 				<Degree>
@@ -273,7 +277,7 @@
 			<SchoolOrInstitution schoolType="university">
 				<School>
 					<InternetDomainName>http://www.tcd.ie/Engineering/</InternetDomainName>
-					<SchoolName>Department of Engineering, Trinity College Dublin</SchoolName>
+					<SchoolName>Trinity College Dublin</SchoolName>
 				</School>
 				<OrganizationUnit organizationType="department">Department of Engineering</OrganizationUnit>
 				<Degree>
