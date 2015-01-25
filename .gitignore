@@ -9,3 +9,5 @@ target/*
 *.sublime-workspace
 
 *.sublime-project
+
+*.backup
