@@ -26,7 +26,7 @@
 				</PostalAddress>
 			</ContactMethod>
 		</ContactInfo>
-		<Objective>Talented Software Developer with MSc. Network and Distributed Systems and almost 15 years’ experience across financial services, insurance and telecom industries in Ireland, UK and Switzerland.  Seeking a challenging Senior Java Developer role within an agile team using test driven design and continuous integration methodology to develop N-tier applications. Current research interests include reactive, big data and angular js tools.</Objective>
+		<Objective>Talented Software Developer with MSc. Network and Distributed Systems and almost 15 years’ experience across financial services, insurance and telecom industries in Ireland, UK and Switzerland.  Seeking a challenging Senior Java Developer role within an agile team using test driven design and continuous integration methodology to develop N-tier applications. Current technology interests include reactive systems, big data databases and angular js tools.</Objective>
 		<EmploymentHistory>
 		    <EmployerOrg>
 				<EmployerOrgName>Aegon</EmployerOrgName>
@@ -305,7 +305,7 @@
 			<Competency name="Databases" description="Oracle, MS SQL Server, Informix, MySql, H2"/>
 			<Competency name="Build/CI Tools" description="Maven, ANT, Bamboo/Jenkins, FindBugs, PMD, Sonar, Jacoco"/>
 			<Competency name="SCM Tools" description="SVN, Git, ClearCase"/>
-			<Competency name="Other" description="PHP, Groovy, Wordpress, Scala, Zend Framework"/>
+			<Competency name="Other" description="PHP, Groovy, Wordpress, Scala, Akka, Zend Framework"/>
 		</Qualifications>
 		<Hobbies>
    		    <Hobby>Chairperson of the Dublin Business Houses Athletic Assiocation. www.bhaa.ie</Hobby>
@@ -313,6 +313,6 @@
 		    <Hobby>Full Drivers License</Hobby>
 		</Hobbies>
 		<!-- Copyright not supported. -->
-		<RevisionDate>2015-01-06</RevisionDate>		
+		<RevisionDate>2015-01-25</RevisionDate>		
 	</StructuredXMLResume>
 </Resume>
