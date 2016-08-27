@@ -26,9 +26,31 @@
 				</PostalAddress>
 			</ContactMethod>
 		</ContactInfo>
-		<Objective>Talented Software Developer with MSc. Network and Distributed Systems and almost 15 years’ experience across financial services, insurance and telecom industries in Ireland, UK and Switzerland.  Seeking a challenging Senior Java Developer role within an agile team using test driven design and continuous integration methodology to develop N-tier applications. Current technology interests include reactive systems, big data databases and angular js tools.</Objective>
+		<Objective>Talented Software Developer with MSc. Network and Distributed Systems and almost 15 years’ experience across financial services, insurance and telecom industries in Ireland, UK and Switzerland.  Currently working for BearingPoint Ireland as Senior Consulant delivering a customised R6 implementation to Eir. Current technology interests include angular2 UI system, dev-ops processes and use of vagrant/ansible to deliver test environments, Spring boot and Java 8 streams.</Objective>
 		<EmploymentHistory>
-		    <EmployerOrg>
+			<EmployerOrg>
+				<EmployerOrgName>BearingPoint</EmployerOrgName>
+				<EmployerContactInfo>
+					<InternetDomainName>http://www.bearingpointcareers.ie/</InternetDomainName>
+					<LocationSummary>
+						<Municipality>Montague House, Adelaide Rd, Dublin 2</Municipality>
+						<Region>Dublin</Region>
+					</LocationSummary>
+				</EmployerContactInfo>
+				<PositionHistory>
+					<Title>Senior Consultant</Title>
+					<UserArea>Working as a senior dev to deliver new features, support current production issues while attempting to improve processes of E2E testing and test environment support.</UserArea>
+					<Description>Involved the dev-ops group</Description>
+					<Duration>1 1/2 Years</Duration>
+					<StartDate>
+						<YearMonth>2015-03</YearMonth>
+					</StartDate>
+					<EndDate>
+						<YearMonth>Current</YearMonth>
+					</EndDate>
+				</PositionHistory>
+			</EmployerOrg>
+			<EmployerOrg>
 				<EmployerOrgName>Aegon</EmployerOrgName>
 				<EmployerContactInfo>
 					<InternetDomainName>http://www.aegon.ie/</InternetDomainName>
@@ -53,7 +75,7 @@
 					</EndDate>
 				</PositionHistory>
 			</EmployerOrg>
-		    <EmployerOrg>
+			<EmployerOrg>
 				<EmployerOrgName>Arantech</EmployerOrgName>
 				<EmployerContactInfo>
 					<InternetDomainName>http://www.arantech.com/</InternetDomainName>
@@ -313,6 +335,6 @@
 		    <Hobby>Full Drivers License</Hobby>
 		</Hobbies>
 		<!-- Copyright not supported. -->
-		<RevisionDate>2015-01-25</RevisionDate>		
+		<RevisionDate>2015-01-25</RevisionDate>
 	</StructuredXMLResume>
 </Resume>
