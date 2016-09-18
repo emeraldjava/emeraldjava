@@ -20,8 +20,33 @@
   <body>
     <h1>Beer Bottle Label Maker</h1>
 
+		<div><h2>Form Area</h2>
+			<button class="ui-button-primary ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false">
+				<span class="ui-button-text">Generate Labels</span></button>
+
+		</div>
+
+		<div><h2>Label Gen Area</h2>
+				<div id='labels'></div>
+		</div>
+
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+	$( document ).ready(function() {
+
+		$( "button" ).click(function( event ) {
+				//alert( "Thanks for visiting!" );
+
+				str = '';
+		    for (var i=1; i<10;i++) {
+		        str += '<div><span>Label "' + i + '" id="id' + i + '"</span></div>';
+		    }
+		    $('#labels').html(str);
+		});
+});
+		</script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-bootstrap/0.5pre/assets/js/bootstrap.min.js"></script>
   </body>
