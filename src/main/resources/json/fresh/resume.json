@@ -1,0 +1,331 @@
+{
+  "name": "Paul O'Connell",
+  "meta": {
+    "format": "FRESH@0.6.0",
+    "version": "2017.04.03"
+  },
+  "info": {
+    "label": "Senior Developer",
+    "characterClass": "Programmer",
+    "brief": "Talented Software Developer with MSc. Network and Distributed Systems and almost 15 years’ experience across financial services, insurance and telecom industries in Ireland, UK and Switzerland.  Currently working for BearingPoint Ireland as Senior Consulant delivering a customised R6 implementation to Eir. Current technology interests include angular2 UI system, dev-ops processes and use of vagrant/ansible to deliver test environments, Spring boot and Java 8 streams.",
+    "image": "jane_doe.png",
+    "quote": "Be the change you want to see in the world."
+  },
+  "contact": {
+    "website": "https://emeraldjava.github.io",
+    "phone": "086 3701860",
+    "email": "paul.t.oconnell@gmail.com",
+    "other": []
+  },
+  "location": {
+    "address": "33 Patrick Doyle Road",
+    "city": "Milltown",
+    "region": "Dublin",
+    "code": "D14",
+    "country": "Ireland"
+  },
+  "projects": [],
+  "social": [
+    {
+      "label": "GitHub",
+      "network": "GitHub",
+      "user": "janef-was-here",
+      "url": "https://github.com/janef-was-here"
+    },
+    {
+      "label": "Twitter",
+      "network": "Twitter",
+      "user": "janef-was-here",
+      "url": "https://twitter.com/janef-was-here"
+    }
+  ],
+  "employment": {
+    "summary": "7+ years industry IT and software development experience.",
+    "history": [
+      {
+        "employer": "BearingPoint",
+        "position": "Senior Consulatant",
+        "website": "http://www.bearingpoint.ie",
+        "start": "2015-03-01",
+
+        "summary": "Working as a senior dev to deliver new features, support current production issues while attempting to improve processes of E2E testing and test environment support.",
+        "highlights": [
+          "Senior Dev, Team Lead.",
+          "Dev Op's/ CLoud based Azure deployments",
+          "Mentoring, ACT Training"
+        ],
+        "keywords": [
+          "Java",
+          "Dev/Ops",
+          "Spring Boot",
+          "Oracle"
+        ]
+      },
+      {
+        "employer": "Aegon",
+        "position": "Senior Software Engineer - Contract",
+        "website": "http://www.aegon.ie",
+        "start": "2012-07",
+        "end": "2014-12",
+        "summary": "Chief Designer and Developer for a new platform that generates daily hedging files for multiple products. The system implemented using Spring Batch allows the actuarial team to manipulate data on the fly using rules defined via Spring Expression Language.",
+        "highlights": [
+          "Involved with user Acceptance Testing and Live production releases.",
+          "Extended the existing integration test framework to support reporting of code coverage metrics for all modules via Sonar on a nightly basis.",
+          "Technologies used: J2EE, Spring Batch/Integration, SPel, MongoDB, Hibernate, MS SQL Server"
+        ]
+      },
+      {
+        "employer": "Arantech",
+        "position": "Contract Software Engineer",
+        "website": "http://www.arantech.com",
+        "start": "2011-01",
+        "end": "2012-06",
+        "summary": "Java Contractor working on various Customer Experience Management components in the Touchpoint and Proaction products.",
+        "highlights": [
+          "Implemented a generic entity framework to handle database operations in the core Touchpoint product.",
+          "Created a test framework for integration and system testing of the product.",
+          "Introduced the use of the sonar code quality engine to the organisation.",
+          "Technologies used: J2EE, JPA, Sonar, Bamboo"
+        ]
+      },
+      {
+        "employer": "Aegon",
+        "position": "Contract Software Engineer",
+        "website": "http://www.aegon.ie",
+        "start": "2009-10",
+        "end": "2010-10",
+        "summary": "Java Contractor within the Aegon office providing support for UK and Dutch pension providers.",
+        "highlights": [
+          "Implemented a validation service that allowed for reuse of rule hierarchies across products and locales from a database configuration.",
+          "Technologies used: EJB, JAXB, Webservices, JBoss, Informix, Swing, Wicket UI"
+        ]
+      },
+      {
+        "employer": "Terranua",
+        "position": "Contract Software Engineer",
+        "website": "http://www.terranua.com",
+        "start": "2008-03",
+        "end": "2009-09",
+        "summary": "Java Contractor within Terranua's consultancy group focused on providing a risk control system to the Fidelity organization.",
+        "highlights": [
+          "Risk Reporting: Responsible for a risk reporting system which queries risk details from a database and creates an XML report which is then transformed via XSL to HTML and Word formats for user preview and printing.",
+          "Technologies used: Websphere, JPA, Spring MVC, Oracle, XSLT, FOP-XSL"
+        ]
+      },
+      {
+        "employer": "Norkom",
+        "position": "Contract Software Engineer",
+        "website": "http://www.baesystems.com/en/cybersecurity/capability/aml-compliance",
+        "start": "2007-10",
+        "end": "2008-02",
+        "summary": "Java Contractor within Norkom's development group which delivered a financial crime and compliance application that can be deployed into various J2EE server and database environments.",
+        "highlights": [
+          "Watch List Management Day to day work involved bug fixing and small pieces of new development on various branches of this sub-project.",
+          "Technologies used: J2EE, Spring, Struts"
+        ]
+      },
+      {
+        "employer": "Curam",
+        "position": "Software Engineer",
+        "website": "http://www.curamsoftware.com",
+        "start": "2006-09",
+        "end": "2007-09",
+        "summary": "Curam provide a social enterprise management solution that can be customised for various social welfare organisations across the globe.",
+        "highlights": [
+          "Worked on the Unemployment Insurance product within the workflow group which involved the full software development lifecycle on various J2EE platforms.",
+          "Implementation of a unit testing framework and tools to auto-generate unit test stubs from the project model.",
+          "Maintenance of the smoke test and continuous integration systems.",
+          "Technologies used: Rational Rose, Reflection, XML Workflows, FOP-XSL"
+        ]
+      },
+      {
+        "employer": "UBS",
+        "position": "Software Engineer",
+        "website": "http://www.ubs.com/global/en/investment-bank/institutions/foreign-exchange.html",
+        "start": "2003-01",
+        "end": "2006-05",
+        "summary": "International assignment as a software developer within the Foreign Exchange IT group in Zurich, Switzerland and London, England",
+        "highlights": [
+          "ZFM is a real time settlement and reconciliation system based on XML messaging over MQ. As Project Leader responsibilities included the design and implementation of an API, the planning and co-ordination of development and testing, both within our group and with other departments.",
+          "The system consist of various java applications communicating via XML and MQ. A web-based tool supports tracking and supervision of messages within the system.",
+          "eBus provides a consolidated view of all deal confirmation messages within the FX trading platform.",
+          "As Project Lead I was responsible for the design of a common message specification, implementation with XML/XSL over MQ, and the co-ordination of the testing and release phases.",
+          "Technologies used: J2EE, JMS, XML, XSLT, XPath"
+        ]
+      },
+      {
+        "employer": "Ericsson",
+        "position": "Software Engineer",
+        "website": "http://www.ericsson.com/ie/",
+        "start": "2000-10",
+        "end": "2002-12",
+        "summary": "RANOS is an operations and management system for Ericsson’s 3G telecommunications radio network system.",
+        "highlights": [
+          "Member of a framework group which provided generic server side components.",
+          "Technologies used: Java, RMI, CORBA"
+        ]
+      }
+    ]
+  },
+  "education": {
+    "summary": "",
+    "level": "degree",
+    "degree": "M.Sc",
+    "history": [
+      {
+        "institution": "Trinity College Dublin",
+        "title": "M.Sc Network and Distributed Systems",
+        "url": "https://www.cornell.edu/",
+        "start": "1999-09-01",
+        "end": "2000-09-01",
+        "grade": "",
+        "summary": "Dissertation Title: <a href='http://www.tara.tcd.ie/handle/2262/748'>Collaborative Ad-hoc Applications</a> An investigation into the use of trust based security in ad-hoc JINI systems.",
+        "curriculum": [
+        ]
+      },
+      {
+        "institution": "Trinity College Dublin",
+        "title": "B.A.I in Computer and Electronic Engineering, B.A in Engineering Mathematics",
+        "url": "https://en.wikipedia.org/wiki/Medfield_College",
+        "start": "1995-09-01",
+        "end": "1999-06-01",
+        "grade": "",
+        "summary": "Final Year Project Title: Digital Filtering System for Internet Telephony.",
+        "curriculum": [
+        ]
+      }
+    ]
+  },
+  "affiliation": {},
+  "service": {},
+  "skills": {
+    "sets": [
+      {
+        "name": "Java",
+        "level": "Master",
+        "skills": [
+          "Spring",
+          "J2EE",
+          "EJB",
+          "ORM (JPA/Hibernate)",
+          "Sun Certified Java Developer"
+        ]
+      },
+      {
+        "name": "Dev Op's",
+        "level": "Master",
+        "skills": [
+          "Docker",
+          "Vagrant",
+          "Ansible",
+          "Azure Portal / CLI",
+          "AWS",
+          "Jenkins"
+        ]
+      },
+      {
+        "name": "Web",
+        "level": "Master",
+        "skills": [
+          "Spring MVC",
+          "Servlets",
+          "JSP/JSF",
+          "Struts",
+          "Javascript",
+          "AJAX",
+          "CSS",
+          "JQuery",
+          "Play"
+        ]
+      },
+      {
+        "name": "XML",
+        "level": "Master",
+        "skills": [
+          "JAXB",
+          "XSL(T)",
+          "XPath",
+          "FOP-XSL",
+          "SOAP",
+          "WebServices"
+        ]
+      },
+      {
+        "name": "Testing",
+        "level": "Master",
+        "skills": [
+          "Junit",
+          "Mockito",
+          "TestNG",
+          "DBUnit",
+          "Selenium"
+        ]
+      },
+      {
+        "name": "Servers",
+        "level": "Master",
+        "skills": [
+          "JBoss",
+          "Websphere",
+          "Weblogic",
+          "Glassfish",
+          "Tomcat",
+          "Apache",
+          "Jetty"
+        ]
+      },
+      {
+        "name": "Databases",
+        "level": "Master",
+        "skills": [
+          "Oracle",
+          "MS SQL Server",
+          "Informix",
+          "MySql",
+          "H2"
+        ]
+      },
+      {
+        "name": "Build/CI Tools",
+        "level": "Master",
+        "skills": [
+          "Maven",
+          "ANT",
+          "Bamboo/Jenkins",
+          "FindBugs",
+          "PMD",
+          "Sonar",
+          "Jacoco"
+        ]
+      },
+      {
+        "name": "SCM Tools",
+        "level": "Master",
+        "skills": [
+          "SVN",
+          "Git",
+          "ClearCase"
+        ]
+      },
+      {
+        "name": "other",
+        "level": "Expert",
+        "skills": [
+          "PHP",
+          "Groovy",
+          "Wordpress",
+          "Scala",
+          "Akka",
+          "Zend Framework"
+        ]
+      }
+    ],
+    "list": []
+  },
+  "languages": [
+    {
+      "language": "English",
+      "level": "Native speaker"
+    }
+  ]
+}
