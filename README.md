@@ -1,6 +1,36 @@
 The CV of emeraldjava
 =====================
 
+# Json Resume
+
+https://github.com/hacksalot/HackMyResume
+
+https://github.com/jsonresume/resume-schema
+
+https://jsonresume.org/schema/
+
+https://resumefodder.com/generate.html
+
+https://represent.io/
+
+https://www.npmjs.com/package/cv-schema
+
+https://github.com/erming/jsonresume-theme-flat
+
+http://themes.jsonresume.org/flat
+
+https://github.com/steve-perkins/ResumeFodder-templates
+
+http://registry.jsonresume.org/#simplistic
+
+http://registry.jsonresume.org/#modern
+
+# Resume Schema
+
+https://github.com/elevate/sharpresume/blob/master/HRXML200704/HR-XML-2_5/SEP/Resume.xsd
+
+http://schemas.liquid-technologies.com/HR-XML/2007-04-15/
+
 [![Build Status](https://travis-ci.org/emeraldjava/emeraldjava.svg?branch=master)](https://travis-ci.org/emeraldjava/emeraldjava)
 
 This project allows me to maintains details of my working career in an XML format, to which i then apply XSLT transforms to create PFD and github specific formats.
