@@ -41,7 +41,7 @@
 					<Title>Senior Consultant</Title>
 					<UserArea>Working as a senior dev to deliver new features, support current production issues while attempting to improve processes of E2E testing and test environment support.</UserArea>
 					<Description>Involved the dev-ops group</Description>
-					<Duration>1 1/2 Years</Duration>
+					<Duration>2 Years</Duration>
 					<StartDate>
 						<YearMonth>2015-03</YearMonth>
 					</StartDate>
@@ -91,9 +91,9 @@
                     <Description>Created a test framework for integration and system testing of the product.</Description>
                     <Description>Introduced the use of the sonar code quality engine to the organisation.</Description>
                     <Description>Technologies used: J2EE, JPA, Sonar, Bamboo, Flex</Description>
-					<Duration>2 1/2 Years</Duration>
+					<Duration>1 1/2 Years</Duration>
 					<StartDate>
-						<YearMonth>2010-01</YearMonth>
+						<YearMonth>2011-01</YearMonth>
 					</StartDate>
 					<EndDate>
 						<YearMonth>2012-06</YearMonth>
@@ -116,10 +116,10 @@
                     <Description>Technologies used: EJB, JAXB, Webservices, JBoss, Informix, Swing, Wicket UI</Description>
 					<Duration>1 Year</Duration>
 					<StartDate>
-						<YearMonth>2008-10</YearMonth>
+						<YearMonth>2009-10</YearMonth>
 					</StartDate>
 					<EndDate>
-						<YearMonth>2009-10</YearMonth>
+						<YearMonth>2010-10</YearMonth>
 					</EndDate>
 				</PositionHistory>
 			</EmployerOrg>
@@ -206,15 +206,15 @@
 				</EmployerContactInfo>
 				<PositionHistory>
 					<Title>Software Engineer</Title>
-				    	<UserArea>International assignment as a software developer within the Foreign Exchange IT group in Zurich, Switzerland.</UserArea>
-						<Description>ZFM is a real time settlement and reconciliation system based on XML messaging over MQ. As Project Leader
-				        responsibilities included the design and implementation of an API, the planning and co-ordination of development
-				        and testing, both within our group and with other departments. The system consist of various java applications communicating
-				        via XML and MQ. A web-based tool supports tracking and supervision of messages within the system.</Description>
-				        <Description>eBus provides a consolidated view of all deal confirmation messages within the FX trading platform.
-				        As Project Lead I was responsible for the design of a common message specification, implementation with XML/XSL over
-				        MQ, and the co-ordination of the testing and release phases.</Description>
-				    	<Description>Technologies used: J2EE, JMS, XML, XSLT, XPath</Description>
+					<UserArea>International assignment as a software developer within the Foreign Exchange IT group in Zurich, Switzerland.</UserArea>
+					<Description>ZFM is a real time settlement and reconciliation system based on XML messaging over MQ. As Project Leader
+					responsibilities included the design and implementation of an API, the planning and co-ordination of development
+					and testing, both within our group and with other departments. The system consist of various java applications communicating
+					via XML and MQ. A web-based tool supports tracking and supervision of messages within the system.</Description>
+					<Description>eBus provides a consolidated view of all deal confirmation messages within the FX trading platform.
+					As Project Lead I was responsible for the design of a common message specification, implementation with XML/XSL over
+					MQ, and the co-ordination of the testing and release phases.</Description>
+					<Description>Technologies used: J2EE, JMS, XML, XSLT, XPath</Description>
 				    <Duration>2 1/2 Years</Duration>
 				    <StartDate>
 						<YearMonth>2003-11</YearMonth>
@@ -323,7 +323,7 @@
 			<Competency name="Web" description="Spring MVC, Servlets, JSP/JSF, Struts, Javascript, AJAX, CSS, JQuery, Play"/>
             <Competency name="XML" description="JAXB, XSL(T), XPath, FOP-XSL, SOAP, WebServices"/>
 			<Competency name="Testing Tools" description="Junit, Mockito, TestNG, DBUnit, Selenium"/>
-			<Competency name="Servers" description="JBoss, Websphere, Weblogic, Tomcat, Apache, Jetty"/>
+			<Competency name="Servers" description="JBoss, Websphere, Weblogic, Glassfish, Tomcat, Apache, Jetty"/>
 			<Competency name="Databases" description="Oracle, MS SQL Server, Informix, MySql, H2"/>
 			<Competency name="Build/CI Tools" description="Maven, ANT, Bamboo/Jenkins, FindBugs, PMD, Sonar, Jacoco"/>
 			<Competency name="SCM Tools" description="SVN, Git, ClearCase"/>

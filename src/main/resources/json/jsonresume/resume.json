@@ -107,9 +107,9 @@
       "endDate": "2007-09",
       "summary": "Curam provide a social enterprise management solution that can be customised for various social welfare organisations across the globe.",
       "highlights": [
-        "Worked on the Unemployment Insurance product within the workflow group which involved the full software development lifecycle on various J2EE platforms."
-        "Implementation of a unit testing framework and tools to auto-generate unit test stubs from the project model."
-        "Maintenance of the smoke test and continuous integration systems."
+        "Worked on the Unemployment Insurance product within the workflow group which involved the full software development lifecycle on various J2EE platforms.",
+        "Implementation of a unit testing framework and tools to auto-generate unit test stubs from the project model.",
+        "Maintenance of the smoke test and continuous integration systems.",
         "Technologies used: Rational Rose, Reflection, XML Workflows, FOP-XSL"
       ]
     },
@@ -121,13 +121,9 @@
       "endDate": "2006-05",
       "summary": "International assignment as a software developer within the Foreign Exchange IT group in Zurich, Switzerland and London, England",
       "highlights": [
-        "ZFM is a real time settlement and reconciliation system based on XML messaging over MQ. As Project Leader
-        responsibilities included the design and implementation of an API, the planning and co-ordination of development
-        and testing, both within our group and with other departments. The system consist of various java applications communicating
-        via XML and MQ. A web-based tool supports tracking and supervision of messages within the system.",
-        "eBus provides a consolidated view of all deal confirmation messages within the FX trading platform.
-        As Project Lead I was responsible for the design of a common message specification, implementation with XML/XSL over
-        MQ, and the co-ordination of the testing and release phases.",
+        "ZFM is a real time settlement and reconciliation system based on XML messaging over MQ. As Project Leader responsibilities included the design and implementation of an API, the planning and co-ordination of development and testing, both within our group and with other departments. The system consist of various java applications communicating via XML and MQ. A web-based tool supports tracking and supervision of messages within the system.",
+        "eBus provides a consolidated view of all deal confirmation messages within the FX trading platform.",
+        "As Project Lead I was responsible for the design of a common message specification, implementation with XML/XSL over MQ, and the co-ordination of the testing and release phases.",
         "Technologies used: J2EE, JMS, XML, XSLT, XPath"
       ]
     },

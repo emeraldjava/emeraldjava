@@ -309,13 +309,10 @@
       },
       {
         "name": "other",
-        "level": "Expert",
+        "level": "advanced",
         "skills": [
           "PHP",
-          "Groovy",
           "Wordpress",
-          "Scala",
-          "Akka",
           "Zend Framework"
         ]
       }
