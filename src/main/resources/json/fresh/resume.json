@@ -62,20 +62,24 @@
       },
       {
         "employer": "Aegon",
-        "position": "Senior Software Engineer - Contract",
+        "position": "Senior Software Engineer, Contract",
         "website": "http://www.aegon.ie",
         "start": "2012-07",
         "end": "2014-12",
         "summary": "Chief Designer and developer for a new platform that generates daily hedging files for multiple products. The system implemented using Spring Batch allows the actuarial team to manipulate data on the fly using rules defined via Spring Expression Language.",
         "highlights": [
           "Involved with user Acceptance Testing and Live production releases.",
-          "Extended the existing integration test framework to support reporting of code coverage metrics for all modules via Sonar on a nightly basis.",
-          "Technologies used: J2EE, Spring Batch/Integration, SPel, MongoDB, Hibernate, MS SQL Server"
+          "Extended the existing integration test framework to support reporting of code coverage metrics for all modules via Sonar on a nightly basis."
+        ],
+        "keywords": [
+          "JEE",
+          "Spring Batch/Integration/SpEL",
+          "MS SQL Server"
         ]
       },
       {
         "employer": "Arantech",
-        "position": "Software Engineer - Contract",
+        "position": "Software Engineer, Contract",
         "website": "http://www.arantech.com",
         "start": "2011-01",
         "end": "2012-06",
@@ -83,44 +87,68 @@
         "highlights": [
           "Implemented a generic entity framework to handle database operations in the core Touchpoint product.",
           "Created a test framework for integration and system testing of the product.",
-          "Introduced the use of the sonar code quality engine to the organisation.",
-          "Technologies used: J2EE, JPA, Sonar, Bamboo"
+          "Introduced the use of the sonar code quality engine to the organisation."
+        ],
+        "keywords": [
+          "J2EE",
+          "JPS",
+          "Sonar"
         ]
       },
       {
         "employer": "Aegon",
-        "position": "Software Engineer  - Contract",
+        "position": "Software Engineer, Contract",
         "website": "http://www.aegon.ie",
         "start": "2009-10",
         "end": "2010-10",
         "summary": "Java Contractor within the Aegon office providing support for UK and Dutch pension providers.",
         "highlights": [
-          "Implemented a validation service that allowed for reuse of rule hierarchies across products and locales from a database configuration.",
-          "Technologies used: EJB, JAXB, Webservices, JBoss, Informix, Swing, Wicket UI"
+          "Implemented a validation service that allowed for reuse of rule hierarchies across products and locales from a database configuration."
+        ],
+        "keywords": [
+          "J2EE",
+          "Webservices",
+          "Jboss",
+          "JAXB",
+          "Informix",
+          "Swing"
         ]
       },
       {
         "employer": "Terranua",
-        "position": "Software Engineer - Contract",
+        "position": "Software Engineer, Contract",
         "website": "http://www.terranua.com",
         "start": "2008-03",
         "end": "2009-09",
         "summary": "Java Contractor within Terranua's consultancy group focused on providing a risk control system to the Fidelity organization.",
         "highlights": [
-          "Risk Reporting: Responsible for a risk reporting system which queries risk details from a database and creates an XML report which is then transformed via XSL to HTML and Word formats for user preview and printing.",
-          "Technologies used: Websphere, JPA, Spring MVC, Oracle, XSLT, FOP-XSL"
+          "Risk Reporting: Responsible for a risk reporting system which queries risk details from a database and creates an XML report",
+          "There are then transformed via XSL to HTML and Word formats for user preview and printing."
+        ],
+        "keywords": [
+          "J2EE",
+          "Websphere",
+          "JPA",
+          "Spring MCV",
+          "Oracle",
+          "XSLT",
+          "FOP-XSL"
         ]
       },
       {
         "employer": "Norkom",
-        "position": "Software Engineer - Contract",
+        "position": "Software Engineer, Contract",
         "website": "http://www.baesystems.com/en/cybersecurity/capability/aml-compliance",
         "start": "2007-10",
         "end": "2008-02",
         "summary": "Java Contractor within Norkom's development group which delivered a financial crime and compliance application that can be deployed into various J2EE server and database environments.",
         "highlights": [
-          "Watch List Management Day to day work involved bug fixing and small pieces of new development on various branches of this sub-project.",
-          "Technologies used: J2EE, Spring, Struts"
+          "Watch List Management Day to day work involved bug fixing and small pieces of new development on various branches of this sub-project."
+        ],
+        "keywords": [
+          "J2EE",
+          "Spring",
+          "Structs"
         ]
       },
       {
@@ -133,8 +161,12 @@
         "highlights": [
           "Worked on the Unemployment Insurance product within the workflow group which involved the full software development lifecycle on various J2EE platforms.",
           "Implementation of a unit testing framework and tools to auto-generate unit test stubs from the project model.",
-          "Maintenance of the smoke test and continuous integration systems.",
-          "Technologies used: Rational Rose, Reflection, XML Workflows, FOP-XSL"
+          "Maintenance of the smoke test and continuous integration systems."
+        ],
+        "keywords": [
+          "Rational Rose Modeller",
+          "XML Workflows",
+          "FOP-XSL"
         ]
       },
       {
@@ -148,8 +180,14 @@
           "ZFM is a real time settlement and reconciliation system based on XML messaging over MQ. As Project Leader responsibilities included the design and implementation of an API, the planning and co-ordination of development and testing, both within our group and with other departments.",
           "The system consist of various java applications communicating via XML and MQ. A web-based tool supports tracking and supervision of messages within the system.",
           "eBus provides a consolidated view of all deal confirmation messages within the FX trading platform.",
-          "As Project Lead I was responsible for the design of a common message specification, implementation with XML/XSL over MQ, and the co-ordination of the testing and release phases.",
-          "Technologies used: J2EE, JMS, XML, XSLT, XPath"
+          "As Project Lead I was responsible for the design of a common message specification, implementation with XML/XSL over MQ, and the co-ordination of the testing and release phases."
+        ],
+        "keywords": [
+          "J2EE",
+          "JMX",
+          "XML",
+          "XSLT",
+          "XPATH"
         ]
       },
       {
@@ -160,8 +198,12 @@
         "end": "2002-12",
         "summary": "RANOS is an operations and management system for Ericsson’s 3G telecommunications radio network system.",
         "highlights": [
-          "Member of a framework group which provided generic server side components.",
-          "Technologies used: Java, RMI, CORBA"
+          "Member of a framework group which provided generic server side components."
+        ],
+        "keywords": [
+          "Java",
+          "RMI",
+          "CORBA"
         ]
       }
     ]
@@ -203,11 +245,25 @@
         "name": "Java",
         "level": "Master",
         "skills": [
-          "Spring",
           "J2EE",
           "EJB",
           "ORM (JPA/Hibernate)",
+          "Concurrency",
+          "Junit",
+          "TDD",
           "Sun Certified Java Developer"
+        ]
+      },
+      {
+        "name": "Spring",
+        "level": "Master",
+        "skills": [
+          "Core",
+          "Batch",
+          "Integration",
+          "SpEL",
+          "Boot",
+          "Social"
         ]
       },
       {
@@ -244,17 +300,6 @@
         ]
       },
       {
-        "name": "Testing",
-        "level": "Master",
-        "skills": [
-          "Junit",
-          "Mockito",
-          "TestNG",
-          "DBUnit",
-          "Selenium"
-        ]
-      },
-      {
         "name": "Servers",
         "level": "Master",
         "skills": [
@@ -288,25 +333,19 @@
           "FindBugs",
           "PMD",
           "Sonar",
-          "Jacoco"
+          "Jacoco",
+          "GIT",
+          "SVN"
         ]
       },
       {
-        "name": "SCM Tools",
-        "level": "Master",
-        "skills": [
-          "SVN",
-          "Git",
-          "ClearCase"
-        ]
-      },
-      {
-        "name": "other",
+        "name": "Other",
         "level": "advanced",
         "skills": [
           "PHP",
           "Wordpress",
-          "Zend Framework"
+          "Zend Framework",
+          "JHipster"
         ]
       }
     ],
