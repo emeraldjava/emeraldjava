@@ -2,7 +2,7 @@
   "name": "Paul O'Connell",
   "meta": {
     "format": "FRESH@0.6.0",
-    "version": "2017.04.03"
+    "version": "2017.04.11"
   },
   "info": {
     "label": "Senior Developer",
@@ -12,7 +12,6 @@
     "quote": "Be the change you want to see in the world."
   },
   "contact": {
-    "website": "https://emeraldjava.github.io",
     "phone": "086 3701860",
     "email": "paul.t.oconnell@gmail.com",
     "other": []
@@ -40,19 +39,19 @@
     }
   ],
   "employment": {
-    "summary": "7+ years industry IT and software development experience.",
+    "summary": "17+ years industry IT and software development experience.",
     "history": [
       {
         "employer": "BearingPoint",
-        "position": "Senior Consulatant",
+        "position": "Senior Technical Consulatant",
         "website": "http://www.bearingpoint.ie",
         "start": "2015-03-01",
-
-        "summary": "Working as a senior dev to deliver new features, support current production issues while attempting to improve processes of E2E testing and test environment support.",
+        "summary": "I work as a Senior Java developer focused on the delivery of the Infonova R6 platform to the our clients.",
         "highlights": [
-          "Senior Dev, Team Lead.",
-          "Dev Op's/ CLoud based Azure deployments",
-          "Mentoring, ACT Training"
+          "During this time I have acted as Senior Dev, Team Leaf and Scrum Master as various times during this engagement.",
+          "Delivery of new features, support current production issues while attempting to improve processes of E2E testing and test environment support.",
+          "Involved with a proof Of concept project to demonstrate how our solution could be deployed to the Azure Cloud. Using vagrant and docker for internal test deployments.",
+          "I have been asked as a mentor to junior members to the firm and team. I have been involved with the delivery of internal techincal training courses."
         ],
         "keywords": [
           "Java",
@@ -67,7 +66,7 @@
         "website": "http://www.aegon.ie",
         "start": "2012-07",
         "end": "2014-12",
-        "summary": "Chief Designer and Developer for a new platform that generates daily hedging files for multiple products. The system implemented using Spring Batch allows the actuarial team to manipulate data on the fly using rules defined via Spring Expression Language.",
+        "summary": "Chief Designer and developer for a new platform that generates daily hedging files for multiple products. The system implemented using Spring Batch allows the actuarial team to manipulate data on the fly using rules defined via Spring Expression Language.",
         "highlights": [
           "Involved with user Acceptance Testing and Live production releases.",
           "Extended the existing integration test framework to support reporting of code coverage metrics for all modules via Sonar on a nightly basis.",
@@ -76,7 +75,7 @@
       },
       {
         "employer": "Arantech",
-        "position": "Contract Software Engineer",
+        "position": "Software Engineer - Contract",
         "website": "http://www.arantech.com",
         "start": "2011-01",
         "end": "2012-06",
@@ -90,7 +89,7 @@
       },
       {
         "employer": "Aegon",
-        "position": "Contract Software Engineer",
+        "position": "Software Engineer  - Contract",
         "website": "http://www.aegon.ie",
         "start": "2009-10",
         "end": "2010-10",
@@ -102,7 +101,7 @@
       },
       {
         "employer": "Terranua",
-        "position": "Contract Software Engineer",
+        "position": "Software Engineer - Contract",
         "website": "http://www.terranua.com",
         "start": "2008-03",
         "end": "2009-09",
@@ -114,7 +113,7 @@
       },
       {
         "employer": "Norkom",
-        "position": "Contract Software Engineer",
+        "position": "Software Engineer - Contract",
         "website": "http://www.baesystems.com/en/cybersecurity/capability/aml-compliance",
         "start": "2007-10",
         "end": "2008-02",
@@ -219,7 +218,6 @@
           "Vagrant",
           "Ansible",
           "Azure Portal / CLI",
-          "AWS",
           "Jenkins"
         ]
       },
@@ -228,14 +226,9 @@
         "level": "Master",
         "skills": [
           "Spring MVC",
-          "Servlets",
-          "JSP/JSF",
-          "Struts",
-          "Javascript",
-          "AJAX",
-          "CSS",
-          "JQuery",
-          "Play"
+          "Angular",
+          "Servlets,JSP",
+          "Javascript"
         ]
       },
       {
@@ -282,7 +275,7 @@
           "MS SQL Server",
           "Informix",
           "MySql",
-          "H2"
+          "Postgresql"
         ]
       },
       {
@@ -291,7 +284,7 @@
         "skills": [
           "Maven",
           "ANT",
-          "Bamboo/Jenkins",
+          "Jenkins/Bamboo/Teamcity",
           "FindBugs",
           "PMD",
           "Sonar",
