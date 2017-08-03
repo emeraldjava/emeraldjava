@@ -7,7 +7,7 @@
   "info": {
     "label": "Senior Developer",
     "characterClass": "Programmer",
-    "brief": "Talented Software Developer with MSc. Network and Distributed Systems and almost 15 years’ experience across financial services, insurance and telecom industries in Ireland, UK and Switzerland.  Currently working for BearingPoint Ireland as Senior Consulant delivering a customised R6 implementation to Eir. Current technology interests include angular2 UI system, dev-ops processes and use of vagrant/ansible to deliver test environments, Spring boot and Java 8 streams.",
+    "brief": "Talented Software Developer with MSc. Network and Distributed Systems and almost 15 years’ experience across financial services, insurance and telecom industries in Ireland, UK and Switzerland. Currently working for BearingPoint Ireland as Senior Consultant. Current technology interests include Angular2 Typescript apps, dev-ops processes and use of vagrant/ansible to deliver test environments and micro-service REST apps using Spring Boot.",
     "image": "jane_doe.png",
     "quote": "Be the change you want to see in the world."
   },
@@ -46,9 +46,9 @@
         "position": "Senior Technical Consulatant",
         "website": "http://www.bearingpoint.ie",
         "start": "2015-03-01",
-        "summary": "I work as a Senior Java developer focused on the delivery of the Infonova R6 platform to the our clients.",
+        "summary": "I work as a Senior Java developer focused on the delivery of the Infonova R6 platform to our clients.",
         "highlights": [
-          "During this time I have acted as Senior Dev, Team Leaf and Scrum Master as various times during this engagement.",
+          "During this time I have acted as Senior Dev, Team Lead and Scrum Master as various times during this engagement.",
           "Delivery of new features, support current production issues while attempting to improve processes of E2E testing and test environment support.",
           "Involved with a proof of concept projects to demonstrate how our solution could be deployed to the Azure Cloud, and use vagrant / docker for internal test deployments.",
           "I have been asked as a mentor to junior members to the firm and team. I have been involved with the delivery of internal technical training courses."
@@ -57,6 +57,7 @@
           "Java",
           "Dev/Ops",
           "Spring Boot",
+          "Angular2",
           "Oracle"
         ]
       },
@@ -72,14 +73,14 @@
           "Extended the existing integration test framework to support reporting of code coverage metrics for all modules via Sonar on a nightly basis."
         ],
         "keywords": [
-          "JEE",
+          "J2EE",
           "Spring Batch/Integration/SpEL",
           "MS SQL Server"
         ]
       },
       {
         "employer": "Arantech",
-        "position": "Software Engineer, Contract",
+        "position": "Senior Software Engineer, Contract",
         "website": "http://www.arantech.com",
         "start": "2011-01",
         "end": "2012-06",
@@ -97,7 +98,7 @@
       },
       {
         "employer": "Aegon",
-        "position": "Software Engineer, Contract",
+        "position": "Senior Software Engineer, Contract",
         "website": "http://www.aegon.ie",
         "start": "2009-10",
         "end": "2010-10",
@@ -263,6 +264,7 @@
           "Integration",
           "SpEL",
           "Boot",
+          "Cloud",
           "Social"
         ]
       },
@@ -282,9 +284,10 @@
         "level": "Master",
         "skills": [
           "Spring MVC",
-          "Angular",
-          "Servlets,JSP",
-          "Javascript"
+          "Angular2",
+          "Typescript",
+          "JSP",
+          "Bootstrap"
         ]
       },
       {
