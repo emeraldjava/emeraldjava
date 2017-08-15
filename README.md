@@ -1,6 +1,8 @@
 The CV of emeraldjava
 =====================
 
+This is a test
+
 # Json Resume
 
 https://github.com/hacksalot/HackMyResume
@@ -51,7 +53,7 @@ XML Format
 xml -> html using hresume microformat.
 xml -> pdf
 
-To handle the transformation of the xml to output formats I am using 
+To handle the transformation of the xml to output formats I am using
 
      http://code.google.com/p/docbkx-tools/
 
@@ -61,38 +63,38 @@ Maven commands
      mvn docbkx:generate-pdf
 
 Resources     
-     
+
      http://lab.madgex.com/hresume/
-     
+
      http://gergo.erdi.hu/projects/cv-xsl/
-         
+
      http://onesparrow.com/cv-page.html
-     
+
      http://onesparrow.com/xhtml2fo.xsl
-     
+
      http://gergo.erdi.hu/projects/cv-xsl/download/cv.xsl
-     
+
      http://xmlgraphics.apache.org/fop/0.95/output.html#rtf
-     
+
      http://ns.hr-xml.org/2_5/HR-XML-2_5/SEP/Resume.xsd
      http://www.xmlhelpline.com/blog/2007/08/18.html
-     
+
      http://suda.co.uk/cv/
-     
+
 	 http://lab.madgex.com/api/hresumeconversion1_0/?url=https://raw.github.com/emeraldjava/emeraldjava/master/src/main/html/resume.html&format=pdf&section-order=name,summary,skills,work,education,affiliation,publications,contact-details&terminology=en-gb
-     
+
      http://lab.madgex.com/api/hresumeconversion1_0/?url=https://raw.github.com/emeraldjava/emeraldjava/master/src/main/html/resume.html&format=word&section-order=name,summary,skills,work,education,affiliation,publications,contact-details&terminology=en-us
-     
+
      http://emeraldjava.github.com/emeraldjava/cv
-     
+
      http://hcard.geekhood.net/?url=http%3A%2F%2Femeraldjava.github.com%2Femeraldjava%2Fcv#result
-     
+
      http://careers.stackoverflow.com/users/info/103036
-     
+
      http://hcard.geekhood.net/?url=http%3A%2F%2Femeraldjava.github.com%2Femeraldjava%2Fcv#result
 
 	http://wrapbootstrap.com/preview/WB0057UJ3
-  
+
     http://hermanfeuerwerker.com/
 
 	http://lab.madgex.com/api/hresumeconversion1_0/?url=http://emeraldjava.github.com/emeraldjava/cv&format=pdf&section-order=name,summary,work,education,skills,affiliation,publications,contact-details&terminology=en-gb
