@@ -11,3 +11,6 @@ target/*
 *.sublime-project
 
 *.backup
+
+*.idea/
+*.iml
