@@ -19,4 +19,4 @@ https://github.com/nouchka/docker-hackmyresume
 
 ## Themes
 
-npm install jsonresume-theme-kendall
+npm install jsonresume-theme-kendall -g

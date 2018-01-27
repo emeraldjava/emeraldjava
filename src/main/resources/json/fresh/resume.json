@@ -2,25 +2,25 @@
   "name": "Paul O'Connell",
   "meta": {
     "format": "FRESH@0.6.0",
-    "version": "2017.04.11"
+    "version": "2018.01.27"
   },
   "info": {
     "label": "Senior Developer",
     "characterClass": "Programmer",
-    "brief": "Talented Software Developer with MSc. Network and Distributed Systems and almost 15 years’ experience across financial services, insurance and telecom industries in Ireland, UK and Switzerland. Currently working for BearingPoint Ireland as Senior Consultant. Current technology interests include Angular2 Typescript apps, dev-ops processes and use of vagrant/ansible to deliver test environments and micro-service REST apps using Spring Boot.",
-    "image": "jane_doe.png",
+    "brief": "Talented Software Developer with MSc. Network and Distributed Systems with experience across financial services, insurance and telecom industries in Ireland, UK and Switzerland. Currently working for BearingPoint Ireland as Senior Consultant. Current technology interests include Angular2 Typescript apps, dev-ops processes and use of vagrant/ansible to deliver test environments and micro-service REST apps using Spring Boot.",
+    "image": "",
     "quote": "Be the change you want to see in the world."
   },
   "contact": {
-    "phone": "086 3701860",
-    "email": "paul.t.oconnell@gmail.com",
+    "phone": "",
+    "email": "",
     "other": []
   },
   "location": {
-    "address": "33 Patrick Doyle Road",
-    "city": "Milltown",
+    "address": "Apon Request",
+    "city": "",
     "region": "Dublin",
-    "code": "D14",
+    "code": "",
     "country": "Ireland"
   },
   "projects": [],
@@ -39,14 +39,35 @@
     }
   ],
   "employment": {
-    "summary": "17+ years industry IT and software development experience.",
+    "summary": "18+ years industry IT and software development experience.",
     "history": [
       {
+        "employer": "Mastercard",
+        "position": "Consultant",
+        "website": "http://www.mastercard.com",
+        "start": "2017-08-07",
+        "summary": "Team Lead for newly formed InControl Commerical Platform development team.",
+        "highlights": [
+          "On-boarding of new development team to the internal processes of Mastercard using the SAFe methodology to apply agile development strategies.",
+          "Leading development of a green-field full-stack REST microservice using spring-boot, utilizing the SmartData commercial platform and using ARA deployment methodology.",
+          "Supported improvements to CI/CD practices and investigating out we can apply 'automate-everything' practices to database and cloud deployments.",
+          "Support the product and business owners to incrementally deliver business value in each iteration."
+        ],
+        "keywords": [
+          "Java",
+          "Spring Boot",
+          "Oracle",
+          "SAFe",
+          "CI/CD"
+        ]
+      },
+      {
         "employer": "BearingPoint",
-        "position": "Senior Technical Consulatant",
+        "position": "Senior Technical Consultant",
         "website": "http://www.bearingpoint.ie",
         "start": "2015-03-01",
-        "summary": "I work as a Senior Java developer focused on the delivery of the Infonova R6 platform to our clients.",
+        "end": "2017-07-30",
+        "summary": "I worked as a Senior Java developer focused on the delivery of the Infonova R6 platform to our clients.",
         "highlights": [
           "During this time I have acted as Senior Dev, Team Lead and Scrum Master as various times during this engagement.",
           "Delivery of new features, support current production issues while attempting to improve processes of E2E testing and test environment support.",
