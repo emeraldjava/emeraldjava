@@ -7,7 +7,7 @@
   "info": {
     "label": "Senior Developer",
     "characterClass": "Programmer",
-    "brief": "Talented Software Developer with MSc. Network and Distributed Systems with experience across financial services, insurance and telecom industries in Ireland, UK and Switzerland. Currently working for BearingPoint Ireland as Senior Consultant. Current technology interests include Angular2 Typescript apps, dev-ops processes and use of vagrant/ansible to deliver test environments and micro-service REST apps using Spring Boot.",
+    "brief": "Talented Software Developer with a MSc, Network and Distributed Systems with experience across financial services, insurance and telecom industries.",
     "image": "",
     "quote": "Be the change you want to see in the world."
   },
@@ -46,7 +46,7 @@
         "position": "Consultant",
         "website": "http://www.mastercard.com",
         "start": "2017-08-07",
-        "summary": "Team Lead for newly formed InControl Commerical Platform development team.",
+        "summary": "Team Lead for newly formed InControl Commercial Platform development team.",
         "highlights": [
           "On-boarding of new development team to the internal processes of Mastercard using the SAFe methodology to apply agile development strategies.",
           "Leading development of a green-field full-stack REST microservice using spring-boot, utilizing the SmartData commercial platform and using ARA deployment methodology.",
@@ -88,7 +88,7 @@
         "website": "http://www.aegon.ie",
         "start": "2012-07",
         "end": "2014-12",
-        "summary": "Chief Designer and developer for a new platform that generates daily hedging files for multiple products. The system implemented using Spring Batch allows the actuarial team to manipulate data on the fly using rules defined via Spring Expression Language.",
+        "summary": "Chief Designer and developer for a new batch platform that generates daily hedging files for multiple products. The system was implemented using Spring Batch to allow the actuarial team to manipulate data on the fly using rules defined via Spring Expression Language.",
         "highlights": [
           "Involved with user Acceptance Testing and Live production releases.",
           "Extended the existing integration test framework to support reporting of code coverage metrics for all modules via Sonar on a nightly basis."
@@ -290,14 +290,14 @@
         ]
       },
       {
-        "name": "Dev Op's",
+        "name": "Dev Ops",
         "level": "Master",
         "skills": [
           "Docker",
           "Vagrant",
           "Ansible",
           "Azure Portal / CLI",
-          "Jenkins"
+          "Packer"
         ]
       },
       {
@@ -352,10 +352,9 @@
         "level": "Master",
         "skills": [
           "Maven",
+          "Gradle",
           "ANT",
           "Jenkins/Bamboo/Teamcity",
-          "FindBugs",
-          "PMD",
           "Sonar",
           "Jacoco",
           "GIT",
