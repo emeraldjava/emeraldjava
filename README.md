@@ -1,8 +1,6 @@
 The CV of emeraldjava
 =====================
 
-This is a test
-
 # Json Resume
 
 https://github.com/hacksalot/HackMyResume
