@@ -2,7 +2,7 @@
   "name": "Paul O'Connell",
   "meta": {
     "format": "FRESH@0.6.0",
-    "version": "2018.01.27"
+    "version": "2019.06.28"
   },
   "info": {
     "label": "Senior Developer",
@@ -46,11 +46,11 @@
         "position": "Consultant",
         "website": "http://www.mastercard.com",
         "start": "2017-08-07",
-        "summary": "Team Lead for newly formed InControl Commercial Platform development team.",
+        "summary": "Team Lead within the InControl Core development team.",
         "highlights": [
           "On-boarding of new development team to the internal processes of Mastercard using the SAFe methodology to apply agile development strategies.",
           "Leading development of a green-field full-stack REST microservice using spring-boot, utilizing the SmartData commercial platform and using ARA deployment methodology.",
-          "Supported improvements to CI/CD practices and investigating out we can apply 'automate-everything' practices to database and cloud deployments.",
+          "Supported improvements to CI/CD practices and investigating how we can apply 'automate-everything' practices to database and cloud deployments.",
           "Support the product and business owners to incrementally deliver business value in each iteration."
         ],
         "keywords": [
