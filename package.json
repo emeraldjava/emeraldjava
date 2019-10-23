@@ -4,7 +4,7 @@
   "description": "The CV of emeraldjava",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "hackmyresume BUILD ./src/main/resources/json/fresh/resume.json out-compact/paul.oconnell-resume.all -t compact"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/emeraldjava/emeraldjava/issues"
   },
-  "homepage": "https://github.com/emeraldjava/emeraldjava#readme"
+  "homepage": "https://github.com/emeraldjava/emeraldjava#readme",
+  "dependencies": {
+    "hackmyresume": "^1.9.0-beta"
+  }
 }

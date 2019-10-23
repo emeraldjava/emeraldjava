@@ -1,177 +1,79 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-	<groupId>emeraldjava</groupId>
-	<artifactId>emeraldjava</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
-	<url>https://github.com/emeraldjava/</url>
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>emeraldjava</groupId>
+    <artifactId>emeraldjava</artifactId>
+    <version>0.0.2-SNAPSHOT</version>
+    <url>https://github.com/emeraldjava/</url>
 
-	<properties>
-		<poi.version>3.15</poi.version>
-	</properties>
+    <properties>
 
-	<issueManagement>
-		<url>https://github.com/emeraldjava/emeraldjava/issues</url>
-		<system>GitHub Issues</system>
-	</issueManagement>
+    </properties>
 
-	<licenses>
-		<license>
-			<name>MIT License</name>
-			<url>http://www.opensource.org/licenses/mit-license.php</url>
-			<distribution>repo</distribution>
-		</license>
-	</licenses>
+    <issueManagement>
+        <url>https://github.com/emeraldjava/emeraldjava/issues</url>
+        <system>GitHub Issues</system>
+    </issueManagement>
 
-	<!-- http://blog.akquinet.de/2012/04/12/maven-sites-reloaded/ -->
-	<scm>
-		<url>https://github.com/emeraldjava/emeraldjava</url>
-		<connection>scm:git:git@github.com/emeraldjava/emeraldjava.git</connection>
-		<developerConnection>scm:git:git@github.com/emeraldjava/emeraldjava.git</developerConnection>
-	</scm>
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
 
-	<dependencies>
-		<dependency>
-			<groupId>org.apache.xmlgraphics</groupId>
-			<artifactId>fop</artifactId>
-			<version>1.0</version> <!-- 0.94 -->
-		</dependency>
+    <!-- http://blog.akquinet.de/2012/04/12/maven-sites-reloaded/ -->
+    <scm>
+        <url>https://github.com/emeraldjava/emeraldjava</url>
+        <connection>scm:git:git@github.com/emeraldjava/emeraldjava.git</connection>
+        <developerConnection>scm:git:git@github.com/emeraldjava/emeraldjava.git</developerConnection>
+    </scm>
 
-		<dependency>
-			<groupId>org.docx4j</groupId>
-			<artifactId>docx4j</artifactId>
-			<version>3.3.3</version>
-		</dependency>
+    <dependencies>
 
-		<dependency>
-			<groupId>ie.emeraldjava</groupId>
-			<artifactId>hrxml</artifactId>
-			<version>1.0-SNAPSHOT</version>
-		</dependency>
+    </dependencies>
 
-		<dependency>
-			<groupId>org.apache.poi</groupId>
-			<artifactId>poi-ooxml</artifactId>
-			<version>${poi.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.poi</groupId>
-			<artifactId>poi-scratchpad</artifactId>
-			<version>${poi.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>fr.opensagres.xdocreport</groupId>
-			<artifactId>org.apache.poi.xwpf.converter.pdf</artifactId>
-			<version>1.0.6</version>
-		</dependency>
-
-	</dependencies>
-
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>com.agilejava.docbkx</groupId>
-				<artifactId>docbkx-maven-plugin</artifactId>
-				<version>2.0.14</version>
-				<dependencies>
-					<dependency>
-						<groupId>org.docbook</groupId>
-						<artifactId>docbook-xml</artifactId>
-						<version>4.4</version>
-					</dependency>
-				</dependencies>
-				<executions>
-					<execution>
-						<goals>
-							<goal>generate-pdf</goal>
-						</goals>
-						<phase>package</phase>
-						<configuration>
-							<sourceDirectory>${basedir}/src/main/xml</sourceDirectory>
-							<xincludeSupported>true</xincludeSupported>
-							<includes>index.xml</includes>
-							<foCustomization>src/main/xsl/emeraldjava.xsl</foCustomization>
-							<targetDirectory>${project.build.directory}</targetDirectory>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
-			<!-- <plugin> <groupId>com.agilejava.docbkx</groupId> <artifactId>docbkx-maven-plugin</artifactId> 
-				<version>2.0.14</version> <dependencies> <dependency> <groupId>org.docbook</groupId> 
-				<artifactId>docbook-xml</artifactId> <version>4.4</version> </dependency> 
-				</dependencies> <executions> <execution> <goals> <goal>generate-html</goal> 
-				</goals> <phase>package</phase> <configuration> <sourceDirectory>${basedir}/src/main/xml</sourceDirectory> 
-				<xincludeSupported>true</xincludeSupported> <includes>cv.xml</includes> <foCustomization>src/main/xsl/hresume.xsl</foCustomization> 
-				<targetDirectory>${project.build.directory}</targetDirectory> </configuration> 
-				</execution> </executions> </plugin> -->
-
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>xml-maven-plugin</artifactId>
-				<version>1.0</version>
-				<executions>
-					<execution>
-						<goals>
-							<goal>transform</goal>
-						</goals>
-					</execution>
-				</executions>
-				<configuration>
-					<transformationSets>
-						<transformationSet>
-							<dir>${basedir}/src/main/xml</dir>
-							<stylesheet>${basedir}/src/main/xsl/github-page.xsl</stylesheet>
-							<excludes>
-								<exclude>**/*.dtd</exclude>
-								<exclude>**/*.xsl</exclude>
-							</excludes>
-							<outputDir>target/site</outputDir>
-							<fileMappers>
-								<fileMapper implementation="org.codehaus.plexus.components.io.filemappers.FileExtensionMapper">
-									<targetExtension>.html</targetExtension>
-								</fileMapper>
-							</fileMappers>
-						</transformationSet>
-					</transformationSets>
-				</configuration>
-				<dependencies>
-					<dependency>
-						<groupId>net.sf.saxon</groupId>
-						<artifactId>saxon</artifactId>
-						<version>8.7</version>
-					</dependency>
-				</dependencies>
-			</plugin>
-
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-site-plugin</artifactId>
-				<version>3.3</version>
-				<configuration>
-			        <skipDeploy>true</skipDeploy>
-					<generateReports>false</generateReports>
-					<generateSitemap>false</generateSitemap>
-				</configuration>
-			</plugin>
-			
-			<plugin>
-				<groupId>com.github.github</groupId>
-				<artifactId>site-maven-plugin</artifactId>
-				<version>0.9</version>
-				<executions>
-					<execution>
-						<goals>
-							<goal>site</goal>
-						</goals>
-						<phase>site-deploy</phase>
-						<configuration>
-						    <message>Creating site for ${project.version}</message>
- 							<path>/</path>
-							<merge>true</merge>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
-		</plugins>
-	</build>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.github.eirslett</groupId>
+                <artifactId>frontend-maven-plugin</artifactId>
+                <!-- Use the latest released version:
+                https://repo1.maven.org/maven2/com/github/eirslett/frontend-maven-plugin/ -->
+                <version>1.8.0</version>
+                <configuration>
+                    <nodeVersion>v12.11.0</nodeVersion>
+                    <npmVersion>6.11.3</npmVersion>
+                    <!--                    <workingDirectory>src</workingDirectory>-->
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>install node and npm</id>
+                        <goals>
+                            <goal>install-node-and-npm</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>npm install</id>
+                        <goals>
+                            <goal>npm</goal>
+                        </goals>
+                        <configuration>
+                            <arguments>install</arguments>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>gatsby</id>
+                        <goals>
+                            <goal>npm</goal>
+                        </goals>
+                        <configuration>
+                            <arguments>run-script build</arguments>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 </project>
