@@ -1,9 +1,4 @@
-The CV of emeraldjava
-=====================
-
-TEST 2
-
-# Json Resume
+# The CV of emeraldjava
 
 https://github.com/hacksalot/HackMyResume
 
