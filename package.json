@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "hackmyresume BUILD ./src/main/resources/json/fresh/resume.json target/index.html -t compact",
-    "deploy": "gh-pages -d target -r https://$GH_TOKEN@github.com/emeraldjava/emeraldjava.git"
+    "deploy": "gh-pages -d target -r https://$TOKEN@github.com/emeraldjava/emeraldjava.git"
   },
   "repository": {
     "type": "git",
