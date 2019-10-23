@@ -37,11 +37,7 @@ http://schemas.liquid-technologies.com/HR-XML/2007-04-15/
 
 This project allows me to maintains details of my working career in an XML format, to which i then apply XSLT transforms to create PFD and github specific formats.
 
-I have a CI build process setup at
-
-    https://travis-ci.org/emeraldjava/emeraldjava/builds
-
-the next step is for this build to automatically update the github page at
+The next step is for this build to automatically update the github page at
 
 	http://emeraldjava.github.io/emeraldjava/
 
