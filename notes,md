@@ -1,3 +1,6 @@
+52b4da385ed7c2a85edd12dbd2ae8426202cd782
+
+
 name: npm
 
 on: [push]
@@ -20,3 +23,4 @@ jobs:
     - run: npm run-script deploy
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+

@@ -71,7 +71,7 @@
                             <arguments>run-script build</arguments>
                         </configuration>
                     </execution>
-                    <execution>
+                    <!--<execution>
                         <id>gh-pages</id>
                         <goals>
                             <goal>npm</goal>
@@ -82,7 +82,7 @@
                                 <GITHUB_TOKEN>${GITHUB_TOKEN}</GITHUB_TOKEN>
                             </environmentVariables>
                         </configuration>
-                    </execution>
+                    </execution>-->
                 </executions>
             </plugin>
         </plugins>
