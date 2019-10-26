@@ -1,15 +1,12 @@
 target/*
 .project
 /target/
+/gh-pages/
 
 .classpath
-
 *.prefs
-
 *.sublime-workspace
-
 *.sublime-project
-
 *.backup
 
 *.idea/
