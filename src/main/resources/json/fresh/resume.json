@@ -2,7 +2,7 @@
   "name": "Paul O'Connell",
   "meta": {
     "format": "FRESH@0.6.0",
-    "version": "2019.10.26"
+    "version": "2019.10.27"
   },
   "info": {
     "label": "Senior Developer",
@@ -28,18 +28,18 @@
     {
       "label": "GitHub",
       "network": "GitHub",
-      "user": "janef-was-here",
-      "url": "https://github.com/janef-was-here"
+      "user": "emeraldjava",
+      "url": "https://github.com/emeraldjava"
     },
     {
       "label": "Twitter",
       "network": "Twitter",
-      "user": "janef-was-here",
-      "url": "https://twitter.com/janef-was-here"
+      "user": "emeraldjava",
+      "url": "https://twitter.com/emeraldjava"
     }
   ],
   "employment": {
-    "summary": "18+ years industry IT and software development experience.",
+    "summary": "20!? years industry IT and software development experience.",
     "history": [
       {
         "employer": "Mastercard",
