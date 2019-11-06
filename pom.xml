@@ -5,6 +5,7 @@
     <artifactId>emeraldjava</artifactId>
     <version>0.0.3-SNAPSHOT</version>
     <url>https://github.com/emeraldjava/</url>
+    <packaging>pom</packaging>
 
     <properties>
 
