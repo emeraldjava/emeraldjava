@@ -2,12 +2,12 @@
   "name": "Paul O'Connell",
   "meta": {
     "format": "FRESH@0.6.0",
-    "version": "2019.11.08"
+    "version": "2020.05.16"
   },
   "info": {
     "label": "Lead Software Development Engineer",
     "characterClass": "Programmer",
-    "brief": "Software Developer with a MSc, Network and Distributed Systems with experience across financial services, insurance and telecom industries.",
+    "brief": "Lead Software Development Engineer with MSc. Network and Distributed Systems and 20 years’ experience across financial services, insurance and telecom industries in Ireland, UK and Switzerland.  Enjoys the challenge of Team leading within an agile team using test driven design and continuous integration methodology to develop N-tier applications. Current technology interests include Deno, Snowflake DB and Gatsby JS.",
     "image": "",
     "quote": "Be the change you want to see in the world."
   },
@@ -43,10 +43,10 @@
     "history": [
       {
         "employer": "Mastercard",
-        "position": "Consultant",
+        "position": "Lead Software Development Engineer",
         "website": "http://www.mastercard.com",
         "start": "2017-08-07",
-        "summary": "Team Lead within the InControl Core development team.",
+        "summary": "Lead Software Development Engineer at Mastercard",
         "highlights": [
           "On-boarding of new development team to the internal processes of Mastercard using the SAFe methodology to apply agile development strategies.",
           "Leading development of a green-field full-stack REST microservice using spring-boot, utilizing the SmartData commercial platform and using ARA deployment methodology.",
