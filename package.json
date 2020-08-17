@@ -21,6 +21,6 @@
     "hackmyresume": "^1.9.0-beta"
   },
   "devDependencies": {
-    "gh-pages": "^2.1.1"
+    "gh-pages": "^2.2.0"
   }
 }

@@ -2,18 +2,18 @@
   "name": "Paul O'Connell",
   "meta": {
     "format": "FRESH@0.6.0",
-    "version": "2020.05.16"
+    "version": "2020.08.17"
   },
   "info": {
     "label": "Lead Software Development Engineer",
     "characterClass": "Programmer",
-    "brief": "Lead Software Development Engineer with MSc. Network and Distributed Systems and 20 years’ experience across financial services, insurance and telecom industries in Ireland, UK and Switzerland.  Enjoys the challenge of Team leading within an agile team using test driven design and continuous integration methodology to develop N-tier applications. Current technology interests include Deno, Snowflake DB and Gatsby JS.",
+    "brief": "I have been involved in software industry for nearly 20 years working in both product and consulting environments across financial services, insurance and telecom industries internationally. As team lead I enjoy balancing delivery of projects with team development using agile methodolgies with test driven design and continuous integration methodology to develop N-tier applications. With a MSc. Network and Distributed Systems I enjoy learing new technologies with current interests including Gatsby, Go and Piviotal Cloud Platform.",
     "image": "",
-    "quote": "Be the change you want to see in the world."
+    "quote": "Can we automate it?."
   },
   "contact": {
     "phone": "",
-    "email": "paul.t.oconnell@gmail.com",
+    "email": "emerald----@------mail.com",
     "other": []
   },
   "location": {
@@ -43,19 +43,39 @@
     "history": [
       {
         "employer": "Mastercard",
-        "position": "Lead Software Development Engineer",
+        "position": "Lead Software Development Engineer - Customer Data Management",
+        "website": "http://www.mastercard.com",
+        "start": "2019-10-01",
+        "summary": "Lead Software Development Engineer - Customer Data Management",
+        "highlights": [
+          "Team lead for a new team handling migration with Apache Nifif legacy data replication systems.",
+          "Implememntation of Spring Boot / Batch / Api applications with full integration test coverage and automated dpeloyment pipelines to PCF.",
+          "Interview and developer suppport.",
+          "Release mgmt and planning."
+        ],
+        "keywords": [
+          "Apache Nifi",
+          "Spring Boot",
+          "Postgres",
+          "PCF",
+          "CI/CD"
+        ]
+      },
+      {
+        "employer": "Mastercard",
+        "position": "Lead Software Development Engineer - Commercial",
         "website": "http://www.mastercard.com",
         "start": "2017-08-07",
-        "summary": "Lead Software Development Engineer at Mastercard",
+        "end": "2019-09-31",
+        "summary": "Lead Software Development Engineer - Commercial",
         "highlights": [
-          "On-boarding of new development team to the internal processes of Mastercard using the SAFe methodology to apply agile development strategies.",
-          "Leading development of a green-field full-stack REST microservice using spring-boot, utilizing the SmartData commercial platform and using ARA deployment methodology.",
+          "Team lead for the InControl real time Auth message processing system.",
+          "Design and development of features across API servers, authentication and frontend nodes.",
           "Supported improvements to CI/CD practices and investigating how we can apply 'automate-everything' practices to database and cloud deployments.",
           "Support the product and business owners to incrementally deliver business value in each iteration."
         ],
         "keywords": [
           "Java",
-          "Spring Boot",
           "Oracle",
           "SAFe",
           "CI/CD"
@@ -264,39 +284,40 @@
   "skills": {
     "sets": [
       {
-        "name": "Java",
-        "level": "Master",
-        "skills": [
-          "J2EE",
-          "EJB",
-          "ORM (JPA/Hibernate)",
-          "Concurrency",
-          "Junit",
-          "TDD",
-          "Sun Certified Java Developer"
-        ]
-      },
-      {
         "name": "Spring",
         "level": "Master",
         "skills": [
           "Core",
+          "Boot",
           "Batch",
           "Integration",
           "SpEL",
-          "Boot",
           "Cloud",
+          "Data",
           "Social"
+        ]
+      },
+      {
+        "name": "Java",
+        "level": "Master",
+        "skills": [
+          "J2EE",
+          "JPA",
+          "Concurrency",
+          "Reflection",
+          "TDD",
+          "Sun Certified Java Developer"
         ]
       },
       {
         "name": "Dev Ops",
         "level": "Master",
         "skills": [
+          "Ansible",
+          "PCF",
+          "Azure",
           "Docker",
           "Vagrant",
-          "Ansible",
-          "Azure Portal / CLI",
           "Packer"
         ]
       },
@@ -341,24 +362,25 @@
         "level": "Master",
         "skills": [
           "Oracle",
+          "Postgresql",
           "MS SQL Server",
           "Informix",
-          "MySql",
-          "Postgresql"
+          "MySql"
         ]
       },
       {
         "name": "Build/CI Tools",
         "level": "Master",
         "skills": [
+          "GIT",
           "Maven",
           "Gradle",
           "ANT",
-          "Jenkins/Bamboo/Teamcity",
+          "Jenkins",
           "Sonar",
           "Jacoco",
-          "GIT",
-          "SVN"
+          "SVN",
+          "Github Actions"
         ]
       },
       {
@@ -368,7 +390,8 @@
           "PHP",
           "Wordpress",
           "Zend Framework",
-          "JHipster"
+          "Composer",
+          "Gatsby"
         ]
       }
     ],
