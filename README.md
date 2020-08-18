@@ -22,6 +22,7 @@ see https://github.com/hacksalot/HackMyResume
 
     node ./node_modules/kiss-my-resume/cli.js new new.json
     node ./node_modules/kiss-my-resume/cli.js build ./src/main/resources/json/resume/jsonresume.json --theme rocketspacer
+    node ./node_modules/kiss-my-resume/cli.js build ./src/main/resources/json/resume/jsonresume.json -f HTML -o target -n index -t rocketspacer
 
 ## Json Resume Themes
 

@@ -4,8 +4,8 @@
   "description": "The CV of emeraldjava",
   "main": "index.js",
   "scripts": {
-    "build": "node ./node_modules/kiss-my-resume/cli.js build ./src/main/resources/json/resume/jsonresume.json --theme rocketspacer",
-    "deploy": "gh-pages -d out -r https://$GITHUB_TOKEN@github.com/emeraldjava/emeraldjava.git -u \"emeraldjava <paul.t.oconnell@gmail.com>\" "
+    "build": "node ./node_modules/kiss-my-resume/cli.js build ./src/main/resources/json/resume/jsonresume.json -f HTML -o target -n index -t rocketspacer",
+    "deploy": "gh-pages -d target -r https://$GITHUB_TOKEN@github.com/emeraldjava/emeraldjava.git -u \"emeraldjava <paul.t.oconnell@gmail.com>\" "
   },
   "repository": {
     "type": "git",
