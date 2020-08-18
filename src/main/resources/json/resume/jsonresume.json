@@ -1,5 +1,5 @@
 {
-  "meta": { "version": "2020.08.17", "lastModified": "2020-08-18T10:29:37.844Z" },
+  "meta": { "version": "2020.08.18", "lastModified": "2020-08-18T10:29:37.844Z" },
   "basics": {
     "label": "Lead Software Development Engineer",
     "characterClass": "Programmer",
@@ -9,7 +9,7 @@
     "other": [],
     "website": "http://emeraldjava.github.io",
     "name": "Paul O'Connell",
-    "summary": "I have been involved in software industry for nearly 20 years working in both product and consulting environments across financial services, insurance and telecom industries internationally. As team lead I enjoy balancing delivery of projects with team development using agile methodolgies with test driven design and continuous integration methodology to develop N-tier applications. With a MSc. Network and Distributed Systems I enjoy learing new technologies with current interests including Gatsby, Go and Piviotal Cloud Platform.",
+    "summary": "I have been involved in the software industry for nearly 20 years working in both product and consulting environments across financial services, insurance and telecom industries internationally. As team lead I enjoy balancing delivery of projects with team development using agile methodolgies with test driven design and continuous integration methodology to develop N-tier applications. With a MSc. Network and Distributed Systems I enjoy learing new technologies with current interests including Gatsby, Go and Piviotal Cloud Platform.",
     "picture": "",
     "location": "Dublin",
     "profiles": [{
@@ -29,7 +29,6 @@
       "company": "Mastercard",
       "position": "Lead Software Development Engineer - Customer Data Management",
       "startDate": "2019-10-01",
-      "endDate": "undefined",
       "summary": "The Customer Data Management group provides a single set of API to our customers to configure their products.",
       "highlights": [
         "Team lead for a new team handling data migration using Apache Nifi as a platform.",
@@ -159,7 +158,7 @@
       "institution": "Trinity College Dublin",
       "gpa": "",
       "courses": [
-        "Dissertation Title: <a href='http://www.tara.tcd.ie/handle/2262/748'>Collaborative Ad-hoc Applications</a> An investigation into the use of trust based security in ad-hoc JINI systems."
+        "Dissertation Title: Collaborative Ad-hoc Applications - An investigation into the use of trust based security in ad-hoc JINI systems."
       ],
       "startDate": "1999-09-01",
       "endDate": "2000-09-01",
@@ -301,7 +300,13 @@
     ]
   }],
   "awards": "undefined",
-  "publications": "undefined",
+  "publications": [{
+    "name": "Publication",
+    "publisher": "Trinity College Dublin",
+    "releaseDate": "2000-09-01",
+    "website": "http://www.tara.tcd.ie/handle/2262/748",
+    "summary": "Collaborative Ad-hoc Applications"
+  }],
   "interests": "undefined",
   "references": "undefined"
 }
