@@ -1,0 +1,1202 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Paul O&#39;Connell</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+
+  
+  <style type="text/css">
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+body {
+	background: #fff;
+	font-family: Lato, sans-serif;
+	font-weight: 300;
+	color: #333;
+	margin: 0 0 80px;
+	font-size: 15px;
+}
+
+a {
+	color: #E32B46;
+}
+
+a:focus, a:hover {
+	color: #333;
+	text-decoration: none;
+}
+
+strong {
+	font-size: smaller;
+	font-weight: 400;
+	color: #333;
+}
+
+p {
+	line-height: 1.5;
+	margin: 0 0 .5em 0;
+}
+
+p + p {
+	margin-top: 10px;
+}
+
+h1, h2, h3, h4 {
+	margin-top: 0;
+	font-weight: 300;
+	color: #555;
+}
+
+section {
+	margin-top: 24px;
+}
+
+ul, ol {
+	padding-left: 21px;
+}
+
+li {
+	line-height: 1.8;
+	list-style: none;
+}
+
+li:before {
+	content: "\f052";
+	float: left;
+	font: 16px Octicons;
+	margin-top: 6px;
+	margin-left: -20px;
+	opacity: .1;
+	position: absolute;
+}
+
+blockquote {
+  border-left: 3px solid #e7e9ec;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+em {
+	color: #666;
+	font-weight: 300;
+	font-style: normal;
+}
+
+h4 span:first-child {
+	color: #333;
+	font-weight: 400;
+}
+
+.container {
+	max-width: 750px;
+	padding: 0 30px;
+}
+
+.col-sm-6 {
+	margin-bottom: 10px;
+}
+
+.col-sm-12 h4 {
+	margin-top: 12px;
+}
+
+.col-sm-12 + .col-sm-12 {
+	margin-top: 30px;
+}
+
+#header {
+	padding: 50px 0 25px;
+}
+
+#header h2 {
+	color: #95a5a6;
+	font-size: 24px;
+}
+
+#content h3 {
+	color: #555;
+	font-size: 26px;
+	margin-top: -4px;
+}
+
+#content aside {
+	text-align: right;
+	padding-right: 30px;
+}
+
+#profiles .network {
+	text-transform: capitalize;
+}
+
+#work .position,
+#volunteer .position {
+	font-weight: 400;
+	margin-bottom: 8px;
+}
+
+#education .area {
+	font-weight: 400;
+}
+
+#education .area:before {
+	content: "\f0d7";
+	font: 16px Octicons;
+	margin-right: 6px;
+}
+
+#education .studyType {
+	margin-left: 25px;
+}
+
+#awards .summary,
+#publications .summary {
+	margin-top: 8px;
+}
+
+#publications .website a:before {
+	content: attr(href);
+}
+
+@media (min-width: 480px) {
+	.strike-through {
+		border-top: 1px solid #f4f6f6;
+		height: 20px;
+		margin-top: 12px;
+		margin-bottom: -2px;
+		position: relative;
+  }
+
+	.strike-through span,
+	.strike-through a {
+		background: #fff;
+		position: absolute;
+  }
+
+	.strike-through span:first-child {
+		padding-right: 20px;
+		margin-top: -12px;
+  }
+
+	.strike-through span + span {
+		font-size: 14px;
+		margin-top: -10px;
+		padding-left: 20px;
+		right: 0;
+	}
+}
+
+@media (max-width: 768px) {
+	.col-sm-6:last-child {
+		margin-bottom: 0px;
+  }
+
+	#content aside {
+		margin-bottom: 20px;
+		padding-right: 0;
+		text-align: left;
+  }
+
+	#publications .website a:before {
+		content: "View publication";
+	}
+}
+
+@media (max-width: 480px) {
+	h1 {
+		font-size: 28px;
+  }
+
+	#header h2 {
+		font-size: 24px;
+  }
+
+	#content h3 {
+		font-size: 20px;
+  }
+
+	h4 {
+		font-size: 16px;
+  }
+
+	.date {
+		font-size: 14px;
+		margin-bottom: 5px;
+  }
+
+	.strike-through span:first-child {
+		margin-bottom: 7px;
+  }
+
+	.strike-through span {
+		display: block;
+  }
+
+	#header {
+		padding: 30px 0 0;
+  }
+
+	#actions {
+		display: none;
+	}
+}
+
+@media print {
+	body {
+		font-size: 12px;
+  }
+
+	a[href]:after {
+		display: none;
+  }
+
+	h1 {
+		font-size: 24px;
+  }
+
+	#header h2 {
+		font-size: 18px;
+		margin-top: -8px;
+  }
+
+	h4 {
+		font-size: 13px;
+  }
+
+  #header {
+		padding: 0;
+	}
+
+	#content aside {
+		margin: 0 !important;
+	}
+
+	#content h3 {
+		font-size: 16px;
+		margin-top: 0;
+	}
+
+	blockquote {
+		border: 0;
+		border-left: 3px solid #e7e9ec;
+		font-size: 12px;
+	}
+
+	li:before {
+		font: 10px Octicons;
+	}
+
+	.strike-through {
+		border-top-color: transparent;
+  }
+
+	.strike-through span + span {
+		font-size: 12px;
+  }
+
+	.col-sm-push-3 {
+    left: 25%;
+  }
+
+	.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+    float: left;
+  }
+
+	.col-sm-12 {
+	  width: 100%;
+  }
+
+	.col-sm-11 {
+	  width: 91.66666666666666%;
+  }
+
+	.col-sm-10 {
+	  width: 83.33333333333334%;
+  }
+
+	.col-sm-9 {
+	  width: 75%;
+  }
+
+	.col-sm-8 {
+	  width: 66.66666666666666%;
+  }
+
+	.col-sm-7 {
+	  width: 58.333333333333336%;
+  }
+
+	.col-sm-6 {
+	  width: 50%;
+  }
+
+	.col-sm-5 {
+	  width: 41.66666666666667%;
+  }
+
+	.col-sm-4 {
+	  width: 33.33333333333333%;
+  }
+
+	.col-sm-3 {
+	  width: 25%;
+  }
+
+	.col-sm-2 {
+	  width: 16.666666666666664%;
+  }
+
+	.col-sm-1 {
+	  width: 8.333333333333332%;
+  }
+}
+
+  </style>
+  
+</head>
+<body>
+  <!-- HEADER -->
+  <header id="header">
+		<div class="container">
+			<div class="row">
+        <div class="col-sm-3">
+          <img src="" class="img-responsive img-circle pull-right" style="max-height: 88px">
+        </div>
+				<div class="col-sm-9">
+          <h1>Paul O&#39;Connell</h1>
+          <h2>Lead Software Development Engineer</h2>
+				</div>
+			</div>
+		</div>
+	</header>
+
+  <!-- CONTENT: Re-arrange sections order if necessary -->
+  <div id="content" class="container">
+    <!-- Contact -->
+    
+
+
+  <section id="contact" class="row">
+    <aside class="col-sm-3"><h3>Contact</h3></aside>
+    <div class="col-sm-9">
+      <div class="row">
+        
+          <div class="col-sm-6">
+            <strong>Email</strong>
+            <div>
+              <a href="mailto:emerald----@------mail.com">emerald----@------mail.com</a>
+            </div>
+          </div>
+        
+        
+        
+          <div class="col-sm-6">
+            <strong>Website</strong>
+            <div>
+              <a target="_blank" href="http://emeraldjava.github.io">http://emeraldjava.github.io</a>
+            </div>
+          </div>
+        
+      </div>
+    </div>
+  </section>
+
+
+    <!-- About -->
+    
+
+
+  <section id="about" class="row">
+    <aside class="col-sm-3">
+      <h3>About</h3>
+    </aside>
+    <div class="col-sm-9">
+      <p>I have been involved in the software industry for nearly 20 years working in both product and consulting environments across financial services, insurance and telecom industries internationally. As team lead I enjoy balancing delivery of projects with team development using agile methodolgies with test driven design and continuous integration methodology to develop N-tier applications. With a MSc. Network and Distributed Systems I enjoy learing new technologies with current interests including Gatsby, Go and Piviotal Cloud Platform.</p>
+    </div>
+  </section>
+
+
+    <!-- Profiles -->
+    
+
+
+  <section id="profiles" class="row">
+    <aside class="col-sm-3">
+      <h3>Profiles</h3>
+    </aside>
+    <div class="col-sm-9">
+      <div class="row">
+        
+          <div class="col-sm-6">
+            <strong class="network">GitHub</strong>
+            <div class="url">
+              <a target="_blank" href="https://github.com/emeraldjava">emeraldjava</a>
+            </div>
+          </div>
+        
+          <div class="col-sm-6">
+            <strong class="network">Stackoverflow</strong>
+            <div class="url">
+              <a target="_blank" href="https://stackoverflow.com/users/55794/emeraldjava?tab=profile">emeraldjava</a>
+            </div>
+          </div>
+        
+      </div>
+    </div>
+  </section>
+
+
+    <!-- Work -->
+    
+
+
+  <section id="work" class="row">
+    <aside class="col-sm-3">
+      <h3>Work</h3>
+    </aside>
+    <div class="col-sm-9">
+      <div class="row">
+        
+          <div class="col-sm-12">
+            <h4 class="strike-through">
+              <span>Mastercard</span>
+              <span class="date">
+                October 2019 — Now
+              </span>
+            </h4>
+            <div class="website pull-right">
+              <a target="_blank" href=""></a>
+            </div>
+            <div class="position">
+              Lead Software Development Engineer - Customer Data Management
+            </div>
+            <div class="summary">
+              <p>The Customer Data Management group provides a single set of API to our customers to configure their products.</p>
+            </div>
+            
+              <p><strong>Highlights</strong></p>
+              <ul class="highlights">
+                
+                  <li class="bullet">Team lead for a team of 6 developers handling data migration using Apache Nifi as a platform.</li>
+                
+                  <li class="bullet">Design, development and release of Spring Boot / Batch / OpenApi applications with full integration test coverage.</li>
+                
+                  <li class="bullet">Automated deployment pipelines using Jenkins / Ansible to Pivotal Cloud Foundary.</li>
+                
+                  <li class="bullet">Interview and developer support.</li>
+                
+                  <li class="bullet">Release management and planning.</li>
+                
+              </ul>
+            
+          </div>
+        
+          <div class="col-sm-12">
+            <h4 class="strike-through">
+              <span>Mastercard</span>
+              <span class="date">
+                August 2017 — October 2019
+              </span>
+            </h4>
+            <div class="website pull-right">
+              <a target="_blank" href=""></a>
+            </div>
+            <div class="position">
+              Lead Software Development Engineer - Commercial
+            </div>
+            <div class="summary">
+              <p>The Commercial payments group support Virtual Credit Cards allowing rules to be configured and validated in real-time to support B2B payments.</p>
+            </div>
+            
+              <p><strong>Highlights</strong></p>
+              <ul class="highlights">
+                
+                  <li class="bullet">Team lead for the InControl real time Auth message processing system.</li>
+                
+                  <li class="bullet">Design and development of features across API servers, authentication and frontend nodes.</li>
+                
+                  <li class="bullet">Supported improvements to CI/CD practices and investigating how we can apply &#39;automate-everything&#39; practices to database and cloud deployments.</li>
+                
+                  <li class="bullet">Support the product and business owners to incrementally deliver business value in each iteration.</li>
+                
+              </ul>
+            
+          </div>
+        
+          <div class="col-sm-12">
+            <h4 class="strike-through">
+              <span>BearingPoint</span>
+              <span class="date">
+                March 2015 — July 2017
+              </span>
+            </h4>
+            <div class="website pull-right">
+              <a target="_blank" href=""></a>
+            </div>
+            <div class="position">
+              Senior Technical Consultant
+            </div>
+            <div class="summary">
+              <p>I worked as a Senior Java developer focused on the delivery of the Infonova R6 platform to our clients.</p>
+            </div>
+            
+              <p><strong>Highlights</strong></p>
+              <ul class="highlights">
+                
+                  <li class="bullet">During this time I have acted as Senior Dev, Team Lead and Scrum Master as various times during this engagement.</li>
+                
+                  <li class="bullet">Delivery of new features, support current production issues while attempting to improve processes of E2E testing and test environment support.</li>
+                
+                  <li class="bullet">Involved with a proof of concept projects to demonstrate how our solution could be deployed to the Azure Cloud, and use vagrant / docker for internal test deployments.</li>
+                
+                  <li class="bullet">I have been asked as a mentor to junior members to the firm and team. I have been involved with the delivery of internal technical training courses.</li>
+                
+              </ul>
+            
+          </div>
+        
+          <div class="col-sm-12">
+            <h4 class="strike-through">
+              <span>Aegon</span>
+              <span class="date">
+                July 2012 — December 2014
+              </span>
+            </h4>
+            <div class="website pull-right">
+              <a target="_blank" href=""></a>
+            </div>
+            <div class="position">
+              Senior Software Engineer, Contract
+            </div>
+            <div class="summary">
+              <p>Chief Designer and developer for a new batch platform that generates daily hedging files for multiple products. The system was implemented using Spring Batch to allow the actuarial team to manipulate data on the fly using rules defined via Spring Expression Language.</p>
+            </div>
+            
+              <p><strong>Highlights</strong></p>
+              <ul class="highlights">
+                
+                  <li class="bullet">Involved with user Acceptance Testing and Live production releases.</li>
+                
+                  <li class="bullet">Extended the existing integration test framework to support reporting of code coverage metrics for all modules via Sonar on a nightly basis.</li>
+                
+              </ul>
+            
+          </div>
+        
+          <div class="col-sm-12">
+            <h4 class="strike-through">
+              <span>Arantech</span>
+              <span class="date">
+                January 2011 — June 2012
+              </span>
+            </h4>
+            <div class="website pull-right">
+              <a target="_blank" href=""></a>
+            </div>
+            <div class="position">
+              Senior Software Engineer, Contract
+            </div>
+            <div class="summary">
+              <p>Java Contractor working on various Customer Experience Management components in the Touchpoint and Proaction products.</p>
+            </div>
+            
+              <p><strong>Highlights</strong></p>
+              <ul class="highlights">
+                
+                  <li class="bullet">Implemented a generic entity framework to handle database operations in the core Touchpoint product.</li>
+                
+                  <li class="bullet">Created a test framework for integration and system testing of the product.</li>
+                
+                  <li class="bullet">Introduced the use of the sonar code quality engine to the organisation.</li>
+                
+              </ul>
+            
+          </div>
+        
+          <div class="col-sm-12">
+            <h4 class="strike-through">
+              <span>Aegon</span>
+              <span class="date">
+                October 2009 — October 2010
+              </span>
+            </h4>
+            <div class="website pull-right">
+              <a target="_blank" href=""></a>
+            </div>
+            <div class="position">
+              Senior Software Engineer, Contract
+            </div>
+            <div class="summary">
+              <p>Java Contractor within the Aegon office providing support for UK and Dutch pension providers.</p>
+            </div>
+            
+              <p><strong>Highlights</strong></p>
+              <ul class="highlights">
+                
+                  <li class="bullet">Implemented a validation service that allowed for reuse of rule hierarchies across products and locales from a database configuration.</li>
+                
+              </ul>
+            
+          </div>
+        
+          <div class="col-sm-12">
+            <h4 class="strike-through">
+              <span>Terranua</span>
+              <span class="date">
+                March 2008 — September 2009
+              </span>
+            </h4>
+            <div class="website pull-right">
+              <a target="_blank" href=""></a>
+            </div>
+            <div class="position">
+              Software Engineer, Contract
+            </div>
+            <div class="summary">
+              <p>Java Contractor within Terranua&#39;s consultancy group focused on providing a risk control system to the Fidelity organization.</p>
+            </div>
+            
+              <p><strong>Highlights</strong></p>
+              <ul class="highlights">
+                
+                  <li class="bullet">Risk Reporting: Responsible for a risk reporting system which queries risk details from a database and creates an XML report</li>
+                
+                  <li class="bullet">There are then transformed via XSL to HTML and Word formats for user preview and printing.</li>
+                
+              </ul>
+            
+          </div>
+        
+          <div class="col-sm-12">
+            <h4 class="strike-through">
+              <span>Norkom</span>
+              <span class="date">
+                October 2007 — February 2008
+              </span>
+            </h4>
+            <div class="website pull-right">
+              <a target="_blank" href=""></a>
+            </div>
+            <div class="position">
+              Software Engineer, Contract
+            </div>
+            <div class="summary">
+              <p>Java Contractor within Norkom&#39;s development group which delivered a financial crime and compliance application that can be deployed into various J2EE server and database environments.</p>
+            </div>
+            
+              <p><strong>Highlights</strong></p>
+              <ul class="highlights">
+                
+                  <li class="bullet">Watch List Management Day to day work involved bug fixing and small pieces of new development on various branches of this sub-project.</li>
+                
+              </ul>
+            
+          </div>
+        
+          <div class="col-sm-12">
+            <h4 class="strike-through">
+              <span>Curam</span>
+              <span class="date">
+                September 2006 — September 2007
+              </span>
+            </h4>
+            <div class="website pull-right">
+              <a target="_blank" href=""></a>
+            </div>
+            <div class="position">
+              Software Engineer
+            </div>
+            <div class="summary">
+              <p>Curam provide a social enterprise management solution that can be customised for various social welfare organisations across the globe.</p>
+            </div>
+            
+              <p><strong>Highlights</strong></p>
+              <ul class="highlights">
+                
+                  <li class="bullet">Worked on the Unemployment Insurance product within the workflow group which involved the full software development lifecycle on various J2EE platforms.</li>
+                
+                  <li class="bullet">Implementation of a unit testing framework and tools to auto-generate unit test stubs from the project model.</li>
+                
+                  <li class="bullet">Maintenance of the smoke test and continuous integration systems.</li>
+                
+              </ul>
+            
+          </div>
+        
+          <div class="col-sm-12">
+            <h4 class="strike-through">
+              <span>UBS</span>
+              <span class="date">
+                January 2003 — May 2006
+              </span>
+            </h4>
+            <div class="website pull-right">
+              <a target="_blank" href=""></a>
+            </div>
+            <div class="position">
+              Software Engineer
+            </div>
+            <div class="summary">
+              <p>International assignment as a software developer within the Foreign Exchange IT group in Zurich, Switzerland and London, England</p>
+            </div>
+            
+              <p><strong>Highlights</strong></p>
+              <ul class="highlights">
+                
+                  <li class="bullet">ZFM is a real time settlement and reconciliation system based on XML messaging over MQ. As Project Leader responsibilities included the design and implementation of an API, the planning and co-ordination of development and testing, both within our group and with other departments.</li>
+                
+                  <li class="bullet">The system consist of various java applications communicating via XML and MQ. A web-based tool supports tracking and supervision of messages within the system.</li>
+                
+                  <li class="bullet">eBus provides a consolidated view of all deal confirmation messages within the FX trading platform.</li>
+                
+                  <li class="bullet">As Project Lead I was responsible for the design of a common message specification, implementation with XML/XSL over MQ, and the co-ordination of the testing and release phases.</li>
+                
+              </ul>
+            
+          </div>
+        
+          <div class="col-sm-12">
+            <h4 class="strike-through">
+              <span>Ericsson</span>
+              <span class="date">
+                October 2000 — December 2002
+              </span>
+            </h4>
+            <div class="website pull-right">
+              <a target="_blank" href=""></a>
+            </div>
+            <div class="position">
+              Software Engineer
+            </div>
+            <div class="summary">
+              <p>RANOS is an operations and management system for Ericsson’s 3G telecommunications radio network system.</p>
+            </div>
+            
+              <p><strong>Highlights</strong></p>
+              <ul class="highlights">
+                
+                  <li class="bullet">Member of a framework group which provided generic server side components.</li>
+                
+              </ul>
+            
+          </div>
+        
+      </div>
+    </div>
+  </section>
+
+
+    <!-- Skills -->
+    
+
+
+  <section id="skills" class="row">
+    <aside class="col-sm-3">
+      <h3>Skills</h3>
+    </aside>
+    <div class="col-sm-9">
+      <div class="row">
+        
+          <div class="col-sm-6">
+            <div class="name">
+              <h4>Spring</h4>
+            </div>
+            
+              <ul class="keywords">
+                
+                  <li>Core</li>
+                
+                  <li>Boot</li>
+                
+                  <li>Batch</li>
+                
+                  <li>Integration</li>
+                
+                  <li>SpEL</li>
+                
+                  <li>Cloud</li>
+                
+                  <li>Data</li>
+                
+                  <li>Social</li>
+                
+              </ul>
+            
+          </div>
+        
+          <div class="col-sm-6">
+            <div class="name">
+              <h4>Java</h4>
+            </div>
+            
+              <ul class="keywords">
+                
+                  <li>J2EE</li>
+                
+                  <li>JPA</li>
+                
+                  <li>Concurrency</li>
+                
+                  <li>Reflection</li>
+                
+                  <li>TDD</li>
+                
+                  <li>Sun Certified Java Developer</li>
+                
+              </ul>
+            
+          </div>
+        
+          <div class="col-sm-6">
+            <div class="name">
+              <h4>Dev Ops</h4>
+            </div>
+            
+              <ul class="keywords">
+                
+                  <li>Ansible</li>
+                
+                  <li>PCF</li>
+                
+                  <li>Azure</li>
+                
+                  <li>Docker</li>
+                
+                  <li>Vagrant</li>
+                
+                  <li>Packer</li>
+                
+              </ul>
+            
+          </div>
+        
+          <div class="col-sm-6">
+            <div class="name">
+              <h4>Web</h4>
+            </div>
+            
+              <ul class="keywords">
+                
+                  <li>Spring MVC</li>
+                
+                  <li>Angular2</li>
+                
+                  <li>Typescript</li>
+                
+                  <li>JSP</li>
+                
+                  <li>Bootstrap</li>
+                
+              </ul>
+            
+          </div>
+        
+          <div class="col-sm-6">
+            <div class="name">
+              <h4>XML</h4>
+            </div>
+            
+              <ul class="keywords">
+                
+                  <li>JAXB</li>
+                
+                  <li>XSL(T)</li>
+                
+                  <li>XPath</li>
+                
+                  <li>FOP-XSL</li>
+                
+                  <li>SOAP</li>
+                
+                  <li>WebServices</li>
+                
+              </ul>
+            
+          </div>
+        
+          <div class="col-sm-6">
+            <div class="name">
+              <h4>Servers</h4>
+            </div>
+            
+              <ul class="keywords">
+                
+                  <li>JBoss</li>
+                
+                  <li>Websphere</li>
+                
+                  <li>Weblogic</li>
+                
+                  <li>Glassfish</li>
+                
+                  <li>Tomcat</li>
+                
+                  <li>Apache</li>
+                
+                  <li>Jetty</li>
+                
+              </ul>
+            
+          </div>
+        
+          <div class="col-sm-6">
+            <div class="name">
+              <h4>Databases</h4>
+            </div>
+            
+              <ul class="keywords">
+                
+                  <li>Oracle</li>
+                
+                  <li>Postgresql</li>
+                
+                  <li>MS SQL Server</li>
+                
+                  <li>Informix</li>
+                
+                  <li>MySql</li>
+                
+              </ul>
+            
+          </div>
+        
+          <div class="col-sm-6">
+            <div class="name">
+              <h4>Build/CI Tools</h4>
+            </div>
+            
+              <ul class="keywords">
+                
+                  <li>GIT</li>
+                
+                  <li>Maven</li>
+                
+                  <li>Gradle</li>
+                
+                  <li>ANT</li>
+                
+                  <li>Jenkins</li>
+                
+                  <li>Sonar</li>
+                
+                  <li>Jacoco</li>
+                
+                  <li>SVN</li>
+                
+                  <li>Github Actions</li>
+                
+              </ul>
+            
+          </div>
+        
+          <div class="col-sm-6">
+            <div class="name">
+              <h4>PHP</h4>
+            </div>
+            
+              <ul class="keywords">
+                
+                  <li>Wordpress</li>
+                
+                  <li>Zend Framework</li>
+                
+                  <li>Composer</li>
+                
+              </ul>
+            
+          </div>
+        
+          <div class="col-sm-6">
+            <div class="name">
+              <h4>Other</h4>
+            </div>
+            
+              <ul class="keywords">
+                
+                  <li>Gatsby</li>
+                
+                  <li>node</li>
+                
+                  <li>Go</li>
+                
+              </ul>
+            
+          </div>
+        
+      </div>
+    </div>
+  </section>
+
+
+    <!-- Education -->
+    
+
+
+  <section id="education" class="row">
+    <aside class="col-sm-3">
+      <h3>Education</h3>
+    </aside>
+    <div class="col-sm-9">
+      <div class="row">
+        
+          <div class="col-sm-12">
+            <h4 class="strike-through">
+              <span>Trinity College Dublin</span>
+              <span class="date">
+                September 1999 — September 2000
+              </span>
+            </h4>
+            <div class="area">M.Sc Network and Distributed Systems</div>
+            <div class="studyType">
+              Masters
+              
+            </div>
+            
+              <h4>Courses</h4>
+              
+                <ul class="courses">
+                  <li>Dissertation Title: Collaborative Ad-hoc Applications - An investigation into the use of trust based security in ad-hoc JINI systems.</li>
+                </ul>
+              
+            
+          </div>
+        
+          <div class="col-sm-12">
+            <h4 class="strike-through">
+              <span>Trinity College Dublin</span>
+              <span class="date">
+                September 1995 — June 1999
+              </span>
+            </h4>
+            <div class="area">B.A.I in Computer and Electronic Engineering, B.A in Engineering Mathematics</div>
+            <div class="studyType">
+              Degree
+              
+            </div>
+            
+              <h4>Courses</h4>
+              
+                <ul class="courses">
+                  <li>Final Year Project Title: Digital Filtering System for Internet Telephony.</li>
+                </ul>
+              
+            
+          </div>
+        
+      </div>
+    </div>
+  </section>
+
+
+    <!-- Certifications -->
+    
+
+
+
+    <!-- Awards -->
+    
+
+
+
+
+    <!-- Volunteer -->
+    
+
+
+  <section id="volunteer" class="row">
+    <aside class="col-sm-3">
+      <h3>Volunteer</h3>
+    </aside>
+    <div class="col-sm-9">
+      <div class="row">
+        
+          <div class="col-sm-12">
+            <h4 class="strike-through">
+              <span>Business Houses Athletic Association</span>
+              <span class="date">
+                January 2010 — Now
+              </span>
+            </h4>
+            <div class="website pull-right">
+              <a target="_blank" href="http://bhaa.ie/">http://bhaa.ie/</a>
+            </div>
+            <div class="position">
+              Webmaster and past Chairperson
+            </div>
+            <div class="summary">
+              <p>The BHAA organise running races on an inter-firm basis.</p>
+            </div>
+            
+              <p>
+                <strong>Highlights</strong>
+              </p>
+              <ul class="highlights">
+                
+                  <li class="bullet">Development of a wordpress plugin for online viewing of race results and leagues.</li>
+                
+              </ul>
+            
+          </div>
+        
+      </div>
+    </div>
+  </section>
+
+
+    <!-- Publications -->
+    
+
+
+  <section id="publications" class="row">
+    <aside class="col-sm-3">
+      <h3>Publications</h3>
+    </aside>
+    <div class="col-sm-9">
+      <div class="row">
+        
+          <div class="col-sm-12">
+            <h4 class="strike-through">
+              <span>Publication</span>
+              <span class="date">September 2000</span>
+            </h4>
+            <div class="website pull-right">
+              <a target="_blank" href="http://www.tara.tcd.ie/handle/2262/748"></a>
+            </div>
+            <div class="publisher">
+              <em>Published by</em>
+              <strong>Trinity College Dublin</strong>
+            </div>
+            <div class="summary">
+              <p>Collaborative Ad-hoc Applications</p>
+            </div>
+          </div>
+        
+      </div>
+    </div>
+  </section>
+
+
+    <!-- Languages -->
+    
+
+
+
+    <!-- Interests -->
+    
+
+
+
+    <!-- References -->
+    
+
+
+
+  </div>
+</body>
+</html>
