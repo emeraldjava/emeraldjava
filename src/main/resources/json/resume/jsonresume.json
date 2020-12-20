@@ -1,5 +1,5 @@
 {
-  "meta": { "version": "2020.08.18", "lastModified": "2020-08-18T10:29:37.844Z" },
+  "meta": { "version": "2020.12.20", "lastModified": "2020-08-18T10:29:37.844Z" },
   "basics": {
     "label": "Lead Software Development Engineer",
     "characterClass": "Programmer",
@@ -31,8 +31,9 @@
       "startDate": "2019-10-01",
       "summary": "The Customer Data Management group provides a single set of API to our customers to configure their products.",
       "highlights": [
-        "Team lead for a new team handling data migration using Apache Nifi as a platform.",
-        "Implementation of Spring Boot / Batch / Api applications with full integration test coverage and automated deployment pipelines to PCF.",
+        "Team lead for a team of 6 developers handling data migration using Apache Nifi as a platform.",
+        "Design, development and release of Spring Boot / Batch / OpenApi applications with full integration test coverage.",
+        "Automated deployment pipelines using Jenkins / Ansible to Pivotal Cloud Foundary.",
         "Interview and developer support.",
         "Release management and planning."
       ]
