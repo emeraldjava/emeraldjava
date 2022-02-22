@@ -1,8 +1,8 @@
 # The CV of emeraldjava
 
-[![Build Status](https://github.com/emeraldjava/emeraldjava/workflows/Maven/badge.svg)](https://github.com/emeraldjava/emeraldjava)
+[![Build Status](https://github.com/emeraldjava/emeraldjava/workflows/build/badge.svg)](https://github.com/emeraldjava/emeraldjava)
 
-The CV should appear at [https://emeraldjava.github.io/emeraldjava/](http://emeraldjava.github.io/emeraldjava/)
+The CV appears at [https://emeraldjava.github.io/emeraldjava/](http://emeraldjava.github.io/emeraldjava/)
 
 ## hackmyresume
 
