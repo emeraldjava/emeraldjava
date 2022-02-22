@@ -17,6 +17,7 @@ jobs:
       - name: Install and Build
         run: |
           npm install
+          npm run target
           npm run all
 
       - name: Deploy with github-pages
