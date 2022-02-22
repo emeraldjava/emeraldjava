@@ -39,3 +39,7 @@ see https://github.com/hacksalot/HackMyResume
 ## resumefodder
 
 https://resumefodder.com/generate.html
+
+## jsonresume-theme-caffeine
+
+- https://github.com/kelyvin/jsonresume-theme-caffeine
