@@ -34,6 +34,7 @@ see https://github.com/hacksalot/HackMyResume
     npm i jsonresume-theme-onepage
     npm i jsonresume-theme-short
     npm i jsonresume-theme-jsonresume-theme-rocketspacer
+    npm i jsonresume-theme-caffeine
 
 ## resumefodder
 
