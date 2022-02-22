@@ -22,9 +22,9 @@ jobs:
 
       - name: Deploy with github-pages
         uses: JamesIves/github-pages-deploy-action@v4.2.5
-        env:
-          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          BASE_BRANCH: master # The branch the action should deploy from.
-          BRANCH: gh-pages # The branch the action should deploy to.
-          FOLDER: target # The folder the action should deploy.
-          BUILD_SCRIPT: npm install && npm run-script build
+        with:
+          branch: gh-pages
+          folder: target
+        #env:
+        #  GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        #  BUILD_SCRIPT: npm install && npm run target && npm run all
