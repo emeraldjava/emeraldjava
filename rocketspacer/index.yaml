@@ -1,7 +1,7 @@
 ---
   meta: 
-    version: "2022.02.22"
-    lastModified: "2022-02-22T10:29:37.844Z"
+    version: "2022.05.23"
+    lastModified: "2022-05-23T10:29:37.844Z"
   basics: 
     label: "Lead Software Development Engineer"
     characterClass: "Programmer"
@@ -9,16 +9,17 @@
     phone: ""
     email: "emerald----@------mail.com"
     other: []
-    website: "http://emeraldjava.github.io"
+    website: ""
+    websitez: "http://emeraldjava.github.io"
     name: "Paul O'Connell"
-    summary: "I have been involved in the software industry for nearly 20 years working in both product and consulting environments across financial services, insurance and telecom industries internationally. Interested in Principle Engineer roles where i can share my architectural and delivery experience to a wider group of customer and engineering stakeholders. As team lead I enjoy balancing delivery of projects with team development using agile methodologies with test driven design and continuous integration methodology to develop N-tier applications. With a MSc. Network and Distributed Systems I enjoy learning new technologies with current interests including Gatsby, Go and Spring Cloud Data."
-    picture: "https://github.com/emeraldjava/emeraldjava.github.io/blob/2b3b0c1f868a7be68c71e0eca0cf9cdffda40090/src/images/emeraldjava.jpeg"
+    summary: "I have been involved in the software industry for nearly 20 years working in both product and consulting environments across financial services, insurance and telecom industries internationally. Interested in leadership roles where I can share my architectural and delivery experience to a wider group of customer and engineering stakeholders. As a team leader, I enjoy balancing delivery of projects with team development using agile methodologies with test driven design and continuous integration methodology to develop N-tier applications. With a MSc. Network and Distributed Systems I enjoy learning new technologies with current interests including Gatsby, Go and Spring Cloud Data."
+    picture: ""
     location: 
       address: "Dublin"
       postalCode: "-"
       city: "Dublin"
       countryCode: "Ireland"
-      region: "Europe"
+      region: "Ireland"
     profiles: 
       - 
         network: "GitHub"
@@ -37,14 +38,14 @@
       highlights: 
         - "Team lead for a complex migration of data and messaging services from legacy SOAP request to cloud based REST Apis."
         - "Design, development and release of Spring Boot / Batch / REST / OpenApi applications with full integration test coverage."
-        - "Automated deployment pipelines using Jenkins / Ansible to Pivotal Cloud Foundary."
+        - "Automated integration and deployment pipelines using Jenkins, Docker and Ansible to Pivotal Cloud Foundry."
         - "Large scale data migration and processing using Apache Nifi as a platform."
-        - "Release management and planning, Interview and developer support."
+        - "Release management and planning, interview and developer support."
     - 
       company: "Mastercard"
       position: "Lead Software Development Engineer - Commercial"
       startDate: "2017-08-07"
-      endDate: "2019-09-31"
+      endDate: "2019-09-30"
       summary: "The Commercial payments group support Virtual Credit Cards allowing rules to be configured and validated in real-time to support B2B payments."
       highlights: 
         - "Team lead for the InControl real time Auth message processing system."
@@ -58,9 +59,9 @@
       endDate: "2017-07-30"
       summary: "I worked as a Senior Java developer focused on the delivery of the Infonova R6 platform to our clients."
       highlights: 
-        - "During this time I have acted as Senior Dev, Team Lead and Scrum Master as various times during this engagement."
+        - "Senior Dev, Team Lead and Scrum Master at various times during this engagement."
         - "Delivery of new features, support current production issues while attempting to improve processes of E2E testing and test environment support."
-        - "Involved with a proof of concept projects to demonstrate how our solution could be deployed to the Azure Cloud, and use vagrant / docker for internal test deployments."
+        - "Involved with a proof-of-concept project to demonstrate how our solution could be deployed to the Azure Cloud, and use vagrant / docker for internal test deployments."
         - "I have been asked as a mentor to junior members to the firm and team. I have been involved with the delivery of internal technical training courses."
     - 
       company: "Aegon"
@@ -124,9 +125,9 @@
       summary: "International assignment as a software developer within the Foreign Exchange IT group in Zurich, Switzerland and London, England"
       highlights: 
         - "ZFM is a real time settlement and reconciliation system based on XML messaging over MQ. As Project Leader responsibilities included the design and implementation of an API, the planning and co-ordination of development and testing, both within our group and with other departments."
-        - "The system consist of various java applications communicating via XML and MQ. A web-based tool supports tracking and supervision of messages within the system."
+        - "The system consists of various java applications communicating via XML and MQ. A web-based tool supports tracking and supervision of messages within the system."
         - "eBus provides a consolidated view of all deal confirmation messages within the FX trading platform."
-        - "As Project Lead I was responsible for the design of a common message specification, implementation with XML/XSL over MQ, and the co-ordination of the testing and release phases."
+        - "As project lead I was responsible for the design of a common message specification, implementation with XML/XSL over MQ, and the co-ordination of the testing and release phases."
     - 
       company: "Ericsson"
       position: "Software Engineer"
@@ -134,7 +135,7 @@
       endDate: "2002-12"
       summary: "RANOS is an operations and management system for Ericsson’s 3G telecommunications radio network system."
       highlights: 
-        - "Member of a framework group which provided generic server side components."
+        - "Member of a framework group which provided generic server-side components."
   education: 
     - 
       institution: "Trinity College Dublin"
@@ -168,12 +169,15 @@
         - "Cloud"
         - "Data"
         - "Social"
+        - "Test"
     - 
       name: "Java"
       level: "Master"
       keywords: 
+        - "6,8,11"
         - "J2EE"
         - "JPA"
+        - "Security"
         - "Concurrency"
         - "Reflection"
         - "TDD"
@@ -182,12 +186,10 @@
       name: "Dev Ops"
       level: "Master"
       keywords: 
-        - "Ansible"
         - "Jenkins"
-        - "Azure"
+        - "Ansible"
         - "Docker"
-        - "Vagrant"
-        - "Packer"
+        - "Kubernetes"
     - 
       name: "Web"
       level: "Master"
@@ -206,18 +208,24 @@
         - "XPath"
         - "FOP-XSL"
         - "SOAP"
-        - "WebServices"
     - 
       name: "Servers"
       level: "Master"
       keywords: 
+        - "Tomcat"
+        - "Apache"
         - "JBoss"
         - "Websphere"
         - "Weblogic"
         - "Glassfish"
-        - "Tomcat"
-        - "Apache"
         - "Jetty"
+    - 
+      name: "Cloud"
+      level: "Advanced"
+      keywords: 
+        - "PCF"
+        - "Azure"
+        - "Heroku"
     - 
       name: "Databases"
       level: "Master"
@@ -242,6 +250,7 @@
         - "Jacoco"
         - "SVN"
         - "Github Actions"
+        - "Gitflow"
     - 
       name: "PHP"
       level: "advanced"
@@ -249,6 +258,7 @@
         - "Wordpress"
         - "Zend Framework"
         - "Composer"
+        - "Laravell"
     - 
       name: "Other"
       level: "Advanced"
