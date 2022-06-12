@@ -4,10 +4,12 @@
   "description": "The CV of emeraldjava",
   "main": "index.js",
   "scripts": {
+    "target": "mkdir -p target",
     "rocketspacer": "node ./node_modules/kiss-my-resume/cli.js build ./src/main/resources/json/resume/jsonresume.json -f all -o ./target/rocketspacer -n index -t rocketspacer",
     "classy": "node ./node_modules/kiss-my-resume/cli.js build ./src/main/resources/json/resume/jsonresume.json -f all -o ./target/classy -n index -t classy",
+    "caffeine": "node ./node_modules/kiss-my-resume/cli.js build ./src/main/resources/json/resume/jsonresume.json -f all -o ./target -n index -t caffeine",
     "clean": "del-cli --force ./target",
-    "all": "npm-run-all -p -r rocketspacer classy",
+    "all": "npm-run-all -p -r rocketspacer classy caffeine",
     "deploy": "gh-pages -d target -r https://$GITHUB_TOKEN@github.com/emeraldjava/emeraldjava.git -u \"emeraldjava <paul.t.oconnell@gmail.com>\" "
   },
   "repository": {
@@ -21,10 +23,11 @@
   },
   "homepage": "https://github.com/emeraldjava/emeraldjava#readme",
   "dependencies": {
+    "jsonresume-theme-caffeine": "^1.2.3",
     "jsonresume-theme-classy": "^1.0.9",
-    "jsonresume-theme-elegant": "^1.7.11",
-    "jsonresume-theme-material": "^1.1.3",
-    "jsonresume-theme-modern": "^0.0.5",
+    "jsonresume-theme-elegant": "^1.16.1",
+    "jsonresume-theme-material": "^1.3.1",
+    "jsonresume-theme-modern": "^0.0.18",
     "jsonresume-theme-onepage": "0.0.3",
     "jsonresume-theme-rocketspacer": "^1.2.2",
     "jsonresume-theme-short": "^0.1.7",
@@ -33,7 +36,7 @@
   },
   "devDependencies": {
     "del-cli": "^4.0.1",
-    "gh-pages": "^2.2.0",
+    "gh-pages": "^3.2.3",
     "npm-run-all": "^4.1.5"
   }
 }
