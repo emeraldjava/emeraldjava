@@ -26,6 +26,8 @@ see https://github.com/hacksalot/HackMyResume
 
 ## Json Resume Themes
 
+See https://jsonresume.org/themes/ for the all themese
+
     npm i jsonresume-theme-material
     npm i jsonresume-theme-stackoverflow
     npm i jsonresume-theme-elegant
@@ -35,11 +37,24 @@ see https://github.com/hacksalot/HackMyResume
     npm i jsonresume-theme-short
     npm i jsonresume-theme-jsonresume-theme-rocketspacer
     npm i jsonresume-theme-caffeine
+    npm i jsonresume-theme-actual
 
-## resumefodder
 
-https://resumefodder.com/generate.html
-
-## jsonresume-theme-caffeine
+### jsonresume-theme-caffeine
 
 - https://github.com/kelyvin/jsonresume-theme-caffeine
+
+# resumefodder
+
+has a neat online json to word doc converter
+
+    https://resumefodder.com/generate.html
+
+There are 4 themes
+
+- standard
+- pro
+- iconic
+- refined
+
+https://github.com/steve-perkins/ResumeFodder-templates
