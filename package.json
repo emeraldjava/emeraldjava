@@ -8,7 +8,7 @@
     "rocketspacer": "node ./node_modules/kiss-my-resume/cli.js build ./src/main/resources/json/resume/jsonresume.json -f all -o ./target/rocketspacer -n index -t rocketspacer",
     "classy": "node ./node_modules/kiss-my-resume/cli.js build ./src/main/resources/json/resume/jsonresume.json -f all -o ./target/classy -n index -t classy",
     "actual": "node ./node_modules/kiss-my-resume/cli.js build ./src/main/resources/json/resume/jsonresume.json -f all -o ./target/actual -n index -t actual",
-    "caffeine": "node ./node_modules/kiss-my-resume/cli.js build ./src/main/resources/json/resume/jsonresume.json -f all -o ./target/caffeine -n index -t caffeine",
+    "caffeine": "node ./node_modules/kiss-my-resume/cli.js build ./src/main/resources/json/resume/jsonresume.json -f all -o ./target -n index -t caffeine",
     "onepage": "node ./node_modules/kiss-my-resume/cli.js build ./src/main/resources/json/resume/jsonresume.json -f all -o ./target/onepage -n index -t onepage",
     "stackoverflow": "node ./node_modules/kiss-my-resume/cli.js build ./src/main/resources/json/resume/jsonresume.json -f all -o ./target/stackoverflow -n index -t stackoverflow",
     "material": "node ./node_modules/kiss-my-resume/cli.js build ./src/main/resources/json/resume/jsonresume.json -f all -o ./target/material -n index -t material",
