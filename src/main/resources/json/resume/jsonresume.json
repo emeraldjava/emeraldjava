@@ -1,5 +1,5 @@
 {
-  "meta": { "version": "2022.06.12", "lastModified": "2022-05-23T10:29:37.844Z" },
+  "meta": { "version": "2022.06.18", "lastModified": "2022-06-08T10:29:37.844Z" },
   "basics": {
     "label": "Lead Software Development Engineer",
     "characterClass": "Programmer",
@@ -34,9 +34,9 @@
   "work": [
     {
       "company": "Mastercard",
-      "position": "Lead Software Development Engineer - Customer Data Management",
+      "position": "Customer Data Management",
       "startDate": "2019-10-01",
-      "summary": "The Customer Data Management group provides a single set of API to our customers to configure their products.",
+      "summary": "The Customer Data Management platform provides a set of APIs to our customers to configure their products.",
       "highlights": [
         "Team lead for a complex migration of data and messaging services from legacy SOAP request to cloud based REST Apis.",
         "Design, development and release of Spring Boot / Batch / REST / OpenApi applications with full integration test coverage.",
@@ -47,7 +47,7 @@
     },
     {
       "company": "Mastercard",
-      "position": "Lead Software Development Engineer - Commercial",
+      "position": "Commercial",
       "startDate": "2017-08-07",
       "endDate": "2019-09-30",
       "summary": "The Commercial payments group support Virtual Credit Cards allowing rules to be configured and validated in real-time to support B2B payments.",
@@ -65,7 +65,6 @@
       "endDate": "2017-07-30",
       "summary": "I worked as a Senior Java developer focused on the delivery of the Infonova R6 platform to our clients.",
       "highlights": [
-        "Senior Dev, Team Lead and Scrum Master at various times during this engagement.",
         "Delivery of new features, support current production issues while attempting to improve processes of E2E testing and test environment support.",
         "Involved with a proof-of-concept project to demonstrate how our solution could be deployed to the Azure Cloud, and use vagrant / docker for internal test deployments.",
         "I have been asked as a mentor to junior members to the firm and team. I have been involved with the delivery of internal technical training courses."
@@ -74,32 +73,29 @@
     {
       "company": "Aegon",
       "position": "Senior Software Engineer, Contract",
-      "startDate": "2012-07",
-      "endDate": "2014-12",
-      "summary": "Chief Designer and developer for a new batch platform that generates daily hedging files for multiple products. The system was implemented using Spring Batch to allow the actuarial team to manipulate data on the fly using rules defined via Spring Expression Language.",
+      "startDate": "2012-07-01",
+      "endDate": "2014-12-30",
+      "summary": "Developer for a new batch platform that generates daily hedging files for multiple products. The system was implemented using Spring Batch to allow the actuarial team to manipulate data on the fly using rules defined via Spring Expression Language.",
       "highlights": [
-        "Involved with user Acceptance Testing and Live production releases.",
         "Extended the existing integration test framework to support reporting of code coverage metrics for all modules via Sonar on a nightly basis."
       ]
     },
     {
       "company": "Arantech",
       "position": "Senior Software Engineer, Contract",
-      "startDate": "2011-01",
-      "endDate": "2012-06",
+      "startDate": "2011-01-01",
+      "endDate": "2012-06-30",
       "summary": "Java Contractor working on various Customer Experience Management components in the Touchpoint and Proaction products.",
       "highlights": [
-        "Implemented a generic entity framework to handle database operations in the core Touchpoint product.",
-        "Created a test framework for integration and system testing of the product.",
-        "Introduced the use of the sonar code quality engine to the organisation."
+        "Implemented a generic entity framework to handle database operations in the core Touchpoint product."
       ]
     },
     {
       "company": "Aegon",
       "position": "Senior Software Engineer, Contract",
-      "startDate": "2009-10",
-      "endDate": "2010-10",
-      "summary": "Java Contractor within the Aegon office providing support for UK and Dutch pension providers.",
+      "startDate": "2009-10-01",
+      "endDate": "2010-10-30",
+      "summary": "Aegon provide UK and Dutch pensions.",
       "highlights": [
         "Implemented a validation service that allowed for reuse of rule hierarchies across products and locales from a database configuration."
       ]
@@ -107,20 +103,19 @@
     {
       "company": "Terranua",
       "position": "Software Engineer, Contract",
-      "startDate": "2008-03",
-      "endDate": "2009-09",
-      "summary": "Java Contractor within Terranua's consultancy group focused on providing a risk control system to the Fidelity organization.",
+      "startDate": "2008-03-01",
+      "endDate": "2009-09-30",
+      "summary": "Terranua's consultancy group focused on providing a risk control system to the Fidelity organization.",
       "highlights": [
-        "Risk Reporting: Responsible for a risk reporting system which queries risk details from a database and creates an XML report",
-        "There are then transformed via XSL to HTML and Word formats for user preview and printing."
+        "Risk Reporting: Responsible for a risk reporting system which queries risk details from a database and generates XML reports."
       ]
     },
     {
       "company": "Norkom",
       "position": "Software Engineer, Contract",
-      "startDate": "2007-10",
-      "endDate": "2008-02",
-      "summary": "Java Contractor within Norkom's development group which delivered a financial crime and compliance application that can be deployed into various J2EE server and database environments.",
+      "startDate": "2007-10-01",
+      "endDate": "2008-02-28",
+      "summary": "Norkom's development group provided financial crime and compliance applications that can be deployed into various J2EE server and database environments.",
       "highlights": [
         "Watch List Management Day to day work involved bug fixing and small pieces of new development on various branches of this sub-project."
       ]
@@ -128,33 +123,28 @@
     {
       "company": "Curam",
       "position": "Software Engineer",
-      "startDate": "2006-09",
-      "endDate": "2007-09",
+      "startDate": "2006-09-01",
+      "endDate": "2007-09-30",
       "summary": "Curam provide a social enterprise management solution that can be customised for various social welfare organisations across the globe.",
       "highlights": [
-        "Worked on the Unemployment Insurance product within the workflow group which involved the full software development lifecycle on various J2EE platforms.",
-        "Implementation of a unit testing framework and tools to auto-generate unit test stubs from the project model.",
-        "Maintenance of the smoke test and continuous integration systems."
+        "Worked on the Unemployment Insurance product within the workflow group which involved the full software development lifecycle on various J2EE platforms."
       ]
     },
     {
       "company": "UBS",
       "position": "Software Engineer",
-      "startDate": "2003-01",
-      "endDate": "2006-05",
+      "startDate": "2003-01-01",
+      "endDate": "2006-05-30",
       "summary": "International assignment as a software developer within the Foreign Exchange IT group in Zurich, Switzerland and London, England",
       "highlights": [
-        "ZFM is a real time settlement and reconciliation system based on XML messaging over MQ. As Project Leader responsibilities included the design and implementation of an API, the planning and co-ordination of development and testing, both within our group and with other departments.",
-        "The system consists of various java applications communicating via XML and MQ. A web-based tool supports tracking and supervision of messages within the system.",
-        "eBus provides a consolidated view of all deal confirmation messages within the FX trading platform.",
-        "As project lead I was responsible for the design of a common message specification, implementation with XML/XSL over MQ, and the co-ordination of the testing and release phases."
+        "Developer of real time settlement and reconciliation system for FX trading based on XML messaging over MQ."
       ]
     },
     {
       "company": "Ericsson",
       "position": "Software Engineer",
-      "startDate": "2000-10",
-      "endDate": "2002-12",
+      "startDate": "2000-10-01",
+      "endDate": "2002-12-30",
       "summary": "RANOS is an operations and management system for Ericsson’s 3G telecommunications radio network system.",
       "highlights": [
         "Member of a framework group which provided generic server-side components."
@@ -188,7 +178,7 @@
   "projects": [],
   "skills": [
     { "name": "Spring",
-      "level": "Master",
+      "level": "Advanced",
       "keywords": [
         "Core",
         "Boot",
@@ -202,7 +192,7 @@
       ]
     },
     { "name": "Java",
-      "level": "Master",
+      "level": "Advanced",
       "keywords": [
         "6,8,11",
         "J2EE",
@@ -215,7 +205,7 @@
       ]
     },
     { "name": "Dev Ops",
-      "level": "Master",
+      "level": "Advanced",
       "keywords": [
         "Jenkins",
         "Ansible",
@@ -224,17 +214,17 @@
       ]
     },
     { "name": "Web",
-      "level": "Master",
+      "level": "Advanced",
       "keywords": [
         "Spring MVC",
-        "Angular2",
+        "Angular",
         "Typescript",
         "React",
         "Bootstrap"
       ]
     },
     { "name": "XML",
-      "level": "Master",
+      "level": "Advanced",
       "keywords": [
         "JAXB",
         "XSL(T)",
@@ -244,7 +234,7 @@
       ]
     },
     { "name": "Servers",
-      "level": "Master",
+      "level": "Advanced",
       "keywords": [
         "Tomcat",
         "Apache",
@@ -264,7 +254,7 @@
       ]
     },
     { "name": "Databases",
-      "level": "Master",
+      "level": "Advanced",
       "keywords": [
         "Oracle",
         "Postgresql",
@@ -276,7 +266,7 @@
       ]
     },
     { "name": "Build/CI Tools",
-      "level": "Master",
+      "level": "Advanced",
       "keywords": [
         "GIT",
         "Maven",
@@ -291,7 +281,7 @@
       ]
     },
     { "name": "PHP",
-      "level": "advanced",
+      "level": "Advanced",
       "keywords": [
         "Wordpress",
         "Zend Framework",
