@@ -20,12 +20,14 @@ p {
   margin: 0;
 }
 
+@media not print {
+  body {
+    margin: 30px 0 50px 0;
+  }
+}
 @page {
   size: A4;
   margin: 15mm 0 20mm 0;
-}
-@page :first {
-  margin-top: 10mm;
 }
 a {
   color: #222222;
@@ -100,6 +102,14 @@ li:first-child {
 
 .padding-container-2 {
   padding: 20px 0;
+}
+
+.padding-top-container-2 {
+  padding-top: 20px;
+}
+
+.padding-bottom-container-2 {
+  padding-bottom: 20px;
 }
 
 .margin-text-1 {
@@ -353,8 +363,8 @@ li:first-child {
   font-size: 14.5px;
   font-weight: lighter;
   font-style: italic;
-}</style><title>Resume Paul O'Connell – Lead Software Development Engineer</title></head><body><div class="content"><div class="basics"><div class="table padding-container-2"><div class="main"><span class="name">Paul O'Connell</span><span class="label">Lead Software Development Engineer</span></div><div class="side"><ul class="contact"><li></li><li>emerald----@------mail.com</li><li class="margin-text-5">Dublin, Ireland, Ireland</li></ul></div></div><div class="summary markdown padding-container-2"><p>I have been involved in the software industry for nearly 20 years working in both product and consulting environments across financial services, insurance and telecom industries internationally. Interested in leadership roles where I can share my architectural and delivery experience to a wider group of customer and engineering stakeholders. As a team leader, I enjoy balancing delivery of projects with team development using agile methodologies with test driven design and continuous integration methodology to develop N-tier applications. With a MSc. Network and Distributed Systems I enjoy learning new technologies with current interests including Gatsby, Go and Spring Cloud Data.</p>
-</div></div><div class="table padding-container-2"><div class="main"><div class="work margin-container-4"><p class="section-title no-alone-2">Experience</p><div class="container"><div class="article margin-container-3"><div class="header no-alone-1"><div class="table"><div class="left"><span class="title">Customer Data Management</span><span class="subtitle margin-text-1"><a></a></span></div><div class="right"><span class="date">Oct 2019 - Present</span></div></div></div><div class="summary markdown margin-text-4"><p>The Customer Data Management platform provides a set of APIs to our customers to configure their products.</p>
+}</style><title>Resume Paul O'Connell – Lead Software Development Engineer</title></head><body><div class="content"><div class="basics"><div class="table padding-bottom-container-2"><div class="main"><span class="name">Paul O'Connell</span><span class="label">Lead Software Development Engineer</span></div><div class="side"><ul class="contact"><li></li><li>emerald----@------mail.com</li><li class="margin-text-5">Dublin, Ireland, Ireland</li></ul></div></div><div class="summary markdown padding-container-2"><p>I have been involved in the software industry for nearly 20 years working in both product and consulting environments across financial services, insurance and telecom industries internationally. Interested in leadership roles where I can share my architectural and delivery experience to a wider group of customer and engineering stakeholders. As a team leader, I enjoy balancing delivery of projects with team development using agile methodologies with test driven design and continuous integration methodology to develop N-tier applications. With a MSc. Network and Distributed Systems I enjoy learning new technologies with current interests including Gatsby, Go and Spring Cloud Data.</p>
+</div></div><div class="table padding-top-container-2"><div class="main"><div class="work margin-container-4"><p class="section-title no-alone-2">Experience</p><div class="container"><div class="article margin-container-3"><div class="header no-alone-1"><div class="table"><div class="left"><span class="title">Customer Data Management</span><span class="subtitle margin-text-1"><a></a></span></div><div class="right"><span class="date">Oct 2019 - Present</span></div></div></div><div class="summary markdown margin-text-4"><p>The Customer Data Management platform provides a set of APIs to our customers to configure their products.</p>
 </div><ul class="highlights margin-text-4 no-break"><li>Team lead for a complex migration of data and messaging services from legacy SOAP request to cloud based REST Apis.</li><li>Design, development and release of Spring Boot / Batch / REST / OpenApi applications with full integration test coverage.</li><li>Automated integration and deployment pipelines using Jenkins, Docker and Ansible to Pivotal Cloud Foundry.</li><li>Large scale data migration and processing using Apache Nifi as a platform.</li><li>Release management and planning, interview and developer support.</li></ul></div><div class="article margin-container-3"><div class="header no-alone-1"><div class="table"><div class="left"><span class="title">Commercial</span><span class="subtitle margin-text-1"><a></a></span></div><div class="right"><span class="date">Aug 2017 - Sep 2019</span></div></div></div><div class="summary markdown margin-text-4"><p>The Commercial payments group support Virtual Credit Cards allowing rules to be configured and validated in real-time to support B2B payments.</p>
 </div><ul class="highlights margin-text-4 no-break"><li>Team lead for the InControl real time Auth message processing system.</li><li>Design and development of features across API servers, authentication and frontend nodes.</li><li>Supported improvements to CI/CD practices and investigating how we can apply 'automate-everything' practices to database and cloud deployments.</li><li>Support the product and business owners to incrementally deliver business value in each iteration.</li></ul></div><div class="article margin-container-3"><div class="header no-alone-1"><div class="table"><div class="left"><span class="title">Senior Technical Consultant</span><span class="subtitle margin-text-1"><a></a></span></div><div class="right"><span class="date">Mar 2015 - Jul 2017</span></div></div></div><div class="summary markdown margin-text-4"><p>I worked as a Senior Java developer focused on the delivery of the Infonova R6 platform to our clients.</p>
 </div><ul class="highlights margin-text-4 no-break"><li>Delivery of new features, support current production issues while attempting to improve processes of E2E testing and test environment support.</li><li>Involved with a proof-of-concept project to demonstrate how our solution could be deployed to the Azure Cloud, and use vagrant / docker for internal test deployments.</li><li>I have been asked as a mentor to junior members to the firm and team. I have been involved with the delivery of internal technical training courses.</li></ul></div><div class="article margin-container-3"><div class="header no-alone-1"><div class="table"><div class="left"><span class="title">Senior Software Engineer, Contract</span><span class="subtitle margin-text-1"><a></a></span></div><div class="right"><span class="date">Jul 2012 - Dec 2014</span></div></div></div><div class="summary markdown margin-text-4"><p>Developer for a new batch platform that generates daily hedging files for multiple products. The system was implemented using Spring Batch to allow the actuarial team to manipulate data on the fly using rules defined via Spring Expression Language.</p>
